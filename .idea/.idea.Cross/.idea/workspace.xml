@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Red.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Path.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Path.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Rock.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Rock.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/grid.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/grid.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/grid.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/grid.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GridScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GridScene.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,17 +20,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="400">
+              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding>
-                <marker date="1550849482932" expanded="false" signature="6:78" ph="..." />
-                <marker date="1550849482932" expanded="true" signature="125:2364" ph="{...}" />
-                <marker date="1550849482932" expanded="true" signature="220:272" ph="{...}" />
-                <marker date="1550849482932" expanded="true" signature="312:350" ph="{...}" />
-                <marker date="1550849482932" expanded="true" signature="370:1498" ph="{...}" />
-                <marker date="1550849482932" expanded="true" signature="495:552" ph="/* switch (state) ... */" />
-                <marker date="1550849482932" expanded="true" signature="657:1036" ph="/* if (rb.velocity.x != 0 &amp;&amp; idle) ... */" />
-                <marker date="1550849482932" expanded="true" signature="1048:1491" ph="/* } ... */" />
-                <marker date="1550849482932" expanded="true" signature="1504:2362" ph="/* private void OnCollisionEnter2D(Collision2D collision) ... */" />
+                <marker date="1550853699451" expanded="false" signature="6:78" ph="..." />
+                <marker date="1550853699451" expanded="true" signature="125:2474" ph="{...}" />
+                <marker date="1550853699451" expanded="true" signature="219:281" ph="{...}" />
+                <marker date="1550853699451" expanded="true" signature="321:359" ph="{...}" />
+                <marker date="1550853699451" expanded="true" signature="379:1608" ph="{...}" />
+                <marker date="1550853699451" expanded="true" signature="504:561" ph="/* switch (state) ... */" />
+                <marker date="1550853699451" expanded="true" signature="844:1148" ph="/* if (rb.velocity.x != 0 &amp;&amp; idle) ... */" />
+                <marker date="1550853699451" expanded="true" signature="1159:1601" ph="/* } ... */" />
+                <marker date="1550853699451" expanded="true" signature="1614:2472" ph="/* private void OnCollisionEnter2D(Collision2D collision) ... */" />
               </folding>
             </state>
           </provider>
@@ -47,7 +45,14 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="240" />
     <option name="y" value="130" />
     <option name="width" value="1440" />
@@ -61,6 +66,26 @@
       <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="NaughtyAttributes" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
@@ -113,12 +138,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550852536023</updated>
-      <workItem from="1550852540405" duration="779000" />
+      <workItem from="1550852540405" duration="1495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="779000" />
+    <option name="totallyTimeSpent" value="1495000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -130,13 +155,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="NuGet" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -179,17 +204,18 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="400">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding>
-            <marker date="1550849482932" expanded="false" signature="6:78" ph="..." />
-            <marker date="1550849482932" expanded="true" signature="125:2364" ph="{...}" />
-            <marker date="1550849482932" expanded="true" signature="220:272" ph="{...}" />
-            <marker date="1550849482932" expanded="true" signature="312:350" ph="{...}" />
-            <marker date="1550849482932" expanded="true" signature="370:1498" ph="{...}" />
-            <marker date="1550849482932" expanded="true" signature="495:552" ph="/* switch (state) ... */" />
-            <marker date="1550849482932" expanded="true" signature="657:1036" ph="/* if (rb.velocity.x != 0 &amp;&amp; idle) ... */" />
-            <marker date="1550849482932" expanded="true" signature="1048:1491" ph="/* } ... */" />
-            <marker date="1550849482932" expanded="true" signature="1504:2362" ph="/* private void OnCollisionEnter2D(Collision2D collision) ... */" />
+            <marker date="1550853699451" expanded="false" signature="6:78" ph="..." />
+            <marker date="1550853699451" expanded="true" signature="125:2474" ph="{...}" />
+            <marker date="1550853699451" expanded="true" signature="219:281" ph="{...}" />
+            <marker date="1550853699451" expanded="true" signature="321:359" ph="{...}" />
+            <marker date="1550853699451" expanded="true" signature="379:1608" ph="{...}" />
+            <marker date="1550853699451" expanded="true" signature="504:561" ph="/* switch (state) ... */" />
+            <marker date="1550853699451" expanded="true" signature="844:1148" ph="/* if (rb.velocity.x != 0 &amp;&amp; idle) ... */" />
+            <marker date="1550853699451" expanded="true" signature="1159:1601" ph="/* } ... */" />
+            <marker date="1550853699451" expanded="true" signature="1614:2472" ph="/* private void OnCollisionEnter2D(Collision2D collision) ... */" />
           </folding>
         </state>
       </provider>

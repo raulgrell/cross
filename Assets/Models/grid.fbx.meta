@@ -112,6 +112,8 @@ ModelImporter:
     100212: Cube.111
     100214: Cube.112
     100216: //RootNode
+    100218: Cube.003
+    100220: Cube.001
     400000: Cube.004
     400002: Cube.005
     400004: Cube.006
@@ -221,6 +223,8 @@ ModelImporter:
     400212: Cube.111
     400214: Cube.112
     400216: //RootNode
+    400218: Cube.003
+    400220: Cube.001
     2100000: Ground
     2100002: Rock
     2100004: Path
@@ -332,6 +336,8 @@ ModelImporter:
     2300210: Cube.110
     2300212: Cube.111
     2300214: Cube.112
+    2300216: Cube.003
+    2300218: Cube.001
     3300000: Cube.004
     3300002: Cube.005
     3300004: Cube.006
@@ -440,12 +446,31 @@ ModelImporter:
     3300210: Cube.110
     3300212: Cube.111
     3300214: Cube.112
+    3300216: Cube.003
+    3300218: Cube.001
     4300000: Cube.004
     4300002: Cube.005
     4300004: Cube.006
     4300006: Cube.101
     4300008: Cube.017
-  externalObjects: {}
+    4300010: Cube.003
+    4300012: Cube.001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ground
+    second: {fileID: 2100000, guid: 5197a27192d53864994c99e9a1d7ad57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Path
+    second: {fileID: 2100000, guid: 7137bd94a02b0f9499de7741c9c9ea08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock
+    second: {fileID: 2100000, guid: eb460f2e1d0b22f4da54d7434c0e4389, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
