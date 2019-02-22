@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     private int state;
 
 
-
     void Start()
     {
         rb = GetComponentInChildren<Rigidbody>();
