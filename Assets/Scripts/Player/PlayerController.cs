@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponentInChildren<Rigidbody>();
     }
 
     public void setState(int newState)
@@ -31,27 +31,31 @@ public class PlayerController : MonoBehaviour
  //           case 0:
 
                 rb.velocity = new Vector3(moveHorizontal * speed, 0, moveVertical * speed);
-           //     if (rb.velocity.x != 0 && idle)
-           //     {
-                  //  anim.SetBool("walking", true);
-                  //  if (rb.velocity.x > 0)
-                  //  {
-                  //      spriteRenderer.flipX = false;
-                  //  }
-                  //  else
-                   //     spriteRenderer.flipX = true;
+        if (moveVertical != 0 || moveHorizontal != 0)
+            transform.eulerAngles = new Vector3(0, Mathf.Atan2(-moveHorizontal, -moveVertical) * 180 / Mathf.PI, 0);
+        
 
-         //           idle = false;
+        //     if (rb.velocity.x != 0 && idle)
+        //     {
+        //  anim.SetBool("walking", true);
+        //  if (rb.velocity.x > 0)
+        //  {
+        //      spriteRenderer.flipX = false;
+        //  }
+        //  else
+        //     spriteRenderer.flipX = true;
+
+        //           idle = false;
 
 
-         //       }
-           //     else if (!idle)
-           //     {
-           //         anim.SetBool("walking", false);
-           //         idle = true;
-           //     }
-  //              break;
-//        }
+        //       }
+        //     else if (!idle)
+        //     {
+        //         anim.SetBool("walking", false);
+        //         idle = true;
+        //     }
+        //              break;
+        //        }
         //   if (damaged)
         //   {
         //       float time = Time.deltaTime + 0.1f;
