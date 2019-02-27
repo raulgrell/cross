@@ -225,6 +225,11 @@
           </e>
           <e p="Session.cs" t="Include" />
         </e>
+        <e p="Test" t="Include">
+          <e p="Sci-Fi Styled Modular Pack" t="Include">
+            <e p="Readme.txt" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="Cross.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
