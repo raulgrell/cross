@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class GridMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Vector2Int position;
+    public GridLayer grid;
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(grid.CellToWorld(position), 1);
     }
 }

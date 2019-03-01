@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GridScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GridScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +18,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="304">
               <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding>
                 <marker date="1550853699451" expanded="false" signature="6:78" ph="..." />
@@ -37,21 +35,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="688">
+              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
               <folding>
-                <marker date="1551287840908" expanded="false" signature="6:78" ph="..." />
-                <marker date="1551287840908" expanded="true" signature="118:1212" ph="{...}" />
-                <marker date="1551287840908" expanded="true" signature="331:674" ph="{...}" />
-                <marker date="1551287840908" expanded="true" signature="379:668" ph="{...}" />
-                <marker date="1551287840908" expanded="true" signature="435:658" ph="{...}" />
-                <marker date="1551287840908" expanded="true" signature="707:1170" ph="{...}" />
-                <marker date="1551287840908" expanded="true" signature="877:1164" ph="{...}" />
-                <marker date="1551287840908" expanded="true" signature="933:1154" ph="{...}" />
-                <marker date="1551287840908" expanded="true" signature="1189:1210" ph="{...}" />
+                <marker date="1551295126241" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551295126241" expanded="true" signature="118:1429" ph="{...}" />
+                <marker date="1551295126241" expanded="true" signature="331:674" ph="{...}" />
+                <marker date="1551295126241" expanded="true" signature="379:668" ph="{...}" />
+                <marker date="1551295126241" expanded="true" signature="435:658" ph="{...}" />
+                <marker date="1551295126241" expanded="true" signature="707:1170" ph="{...}" />
+                <marker date="1551295126241" expanded="true" signature="877:1164" ph="{...}" />
+                <marker date="1551295126241" expanded="true" signature="933:1154" ph="{...}" />
+                <marker date="1551295126241" expanded="true" signature="1189:1210" ph="{...}" />
+                <marker date="1551295126241" expanded="true" signature="1263:1427" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+              <folding>
+                <marker date="1551295156292" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551295156292" expanded="true" signature="121:370" ph="{...}" />
+                <marker date="1551295156292" expanded="true" signature="204:225" ph="{...}" />
+                <marker date="1551295156292" expanded="true" signature="244:265" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -65,19 +79,20 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds">
     <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -160,12 +175,12 @@
       <option name="presentableId" value="Default" />
       <updated>1550852536023</updated>
       <workItem from="1550852540405" duration="1495000" />
-      <workItem from="1551229293706" duration="3857000" />
+      <workItem from="1551229293706" duration="5645000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5352000" />
+    <option name="totallyTimeSpent" value="7140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -177,10 +192,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="974" height="1040" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.50104386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -226,7 +240,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="304">
           <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding>
             <marker date="1550853699451" expanded="false" signature="6:78" ph="..." />
@@ -244,18 +258,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="688">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
           <folding>
-            <marker date="1551287840908" expanded="false" signature="6:78" ph="..." />
-            <marker date="1551287840908" expanded="true" signature="118:1212" ph="{...}" />
-            <marker date="1551287840908" expanded="true" signature="331:674" ph="{...}" />
-            <marker date="1551287840908" expanded="true" signature="379:668" ph="{...}" />
-            <marker date="1551287840908" expanded="true" signature="435:658" ph="{...}" />
-            <marker date="1551287840908" expanded="true" signature="707:1170" ph="{...}" />
-            <marker date="1551287840908" expanded="true" signature="877:1164" ph="{...}" />
-            <marker date="1551287840908" expanded="true" signature="933:1154" ph="{...}" />
-            <marker date="1551287840908" expanded="true" signature="1189:1210" ph="{...}" />
+            <marker date="1551295126241" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551295126241" expanded="true" signature="118:1429" ph="{...}" />
+            <marker date="1551295126241" expanded="true" signature="331:674" ph="{...}" />
+            <marker date="1551295126241" expanded="true" signature="379:668" ph="{...}" />
+            <marker date="1551295126241" expanded="true" signature="435:658" ph="{...}" />
+            <marker date="1551295126241" expanded="true" signature="707:1170" ph="{...}" />
+            <marker date="1551295126241" expanded="true" signature="877:1164" ph="{...}" />
+            <marker date="1551295126241" expanded="true" signature="933:1154" ph="{...}" />
+            <marker date="1551295126241" expanded="true" signature="1189:1210" ph="{...}" />
+            <marker date="1551295126241" expanded="true" signature="1263:1427" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+          <folding>
+            <marker date="1551295156292" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551295156292" expanded="true" signature="121:370" ph="{...}" />
+            <marker date="1551295156292" expanded="true" signature="204:225" ph="{...}" />
+            <marker date="1551295156292" expanded="true" signature="244:265" ph="{...}" />
           </folding>
         </state>
       </provider>

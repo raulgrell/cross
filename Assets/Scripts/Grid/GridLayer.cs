@@ -42,4 +42,10 @@ public class GridLayer : MonoBehaviour
     {
         
     }
+
+    public Vector3 CellToWorld(Vector2Int position)
+    {
+        var offset = Vector3.forward * colHeight * position.x + Vector3.right * colWidth * position.y;
+        return transform.TransformPoint(offset);
+    }
 }
