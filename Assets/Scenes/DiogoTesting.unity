@@ -124,9 +124,10 @@ GameObject:
   - component: {fileID: 125657963}
   - component: {fileID: 125657962}
   - component: {fileID: 125657961}
-  - component: {fileID: 125657960}
   - component: {fileID: 125657966}
   - component: {fileID: 125657965}
+  - component: {fileID: 125657960}
+  - component: {fileID: 125657967}
   m_Layer: 5
   m_Name: CutsceneCanvas
   m_TagString: Untagged
@@ -146,10 +147,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63aa92c17193f1d41b4324daa0a7a40d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackgroundImage: {fileID: 125657965}
   panelDatas:
   - {fileID: 11400000, guid: 7d7fcaf4b97edee4fab69b8db079e29a, type: 2}
+  effects:
+  - {fileID: 11400000, guid: 01af4f34a8fda2e43a8063038bc609bf, type: 2}
   panel: {fileID: 6824456153815112944, guid: 96ee13c604451c8468e2f01a0ed311f7, type: 3}
+  text: {fileID: 3629358912235039067, guid: e5b52440f7805014fbfc4e5b8b98cdf4, type: 3}
 --- !u!114 &125657961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,14 +245,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6603774, g: 0.5700427, b: 0.5700427, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 5ef1ecb17b682174ebbeed9a9d7af166, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -266,6 +269,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125657959}
   m_CullTransparentMesh: 0
+--- !u!95 &125657967
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125657959}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ea652ce2ea48f2c4aa374c7f6ac6f245, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &463193953 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3490187548193227192, guid: d3e180fbb6d460b4183ccd4a6f0de3e9,
