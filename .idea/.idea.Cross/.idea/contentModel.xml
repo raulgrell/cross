@@ -211,11 +211,23 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
+          <e p="CutsceneSystem" t="Include">
+            <e p="Abstract" t="Include">
+              <e p="Effect.cs" t="Include" />
+            </e>
+            <e p="CutsceneSystem.cs" t="Include" />
+            <e p="Effects" t="Include">
+              <e p="MovementEffect.cs" t="Include" />
+            </e>
+            <e p="PanelData.cs" t="Include" />
+          </e>
           <e p="Enemy" t="Include">
             <e p="EnemyController.cs" t="Include" />
           </e>
           <e p="Grid" t="Include">
+            <e p="GridCombat.cs" t="Include" />
             <e p="GridElement.cs" t="Include" />
+            <e p="GridInput.cs" t="Include" />
             <e p="GridLayer.cs" t="Include" />
             <e p="GridMovement.cs" t="Include" />
             <e p="GridNode.cs" t="Include" />
@@ -225,9 +237,12 @@
           </e>
           <e p="Session.cs" t="Include" />
         </e>
-        <e p="Test" t="Include">
-          <e p="Sci-Fi Styled Modular Pack" t="Include">
-            <e p="Readme.txt" t="Include" />
+        <e p="Variables" t="Include">
+          <e p="EnemyBehaviour" t="Include">
+            <e p="EnemyBehaviour.cs" t="Include" />
+          </e>
+          <e p="EnemyState" t="Include">
+            <e p="EnemyState.cs" t="Include" />
           </e>
         </e>
       </e>

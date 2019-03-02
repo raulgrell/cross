@@ -7,30 +7,15 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;
     private Rigidbody rb;
-    private int state;
     RaycastHit hit;
     public Transform Waypoint;
     private NavMeshAgent agent;
-
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponentInChildren<Rigidbody>();
     }
-
-    public void setState(int newState)
-    {
-        state = newState;
-    }
-
-    //private void LateUpdate()
-    //{
-    //    Quaternion rotation = transform.rotation;
-    //    rotation.y = -transform.rotation.y;
-    //    transform.rotation = rotation;
-    //}
-
 
     void Update()
     {
@@ -54,18 +39,11 @@ public class PlayerController : MonoBehaviour
         {
             agent.destination = Waypoint.transform.position;
             Vector3 direction = Waypoint.transform.position - transform.position;
-          //  transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(direction.y, direction.x) * -180 / Mathf.PI);
-
+            
             if (Vector3.Distance(transform.position, Waypoint.transform.position) < 1)
             {
                Waypoint.gameObject.SetActive(false);
             }
-      //    
         }
-        //      
-
-
     }
-
-   
 }

@@ -2,10 +2,1018 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Variables/EnemyBehaviour/EnemyBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Variables/EnemyBehaviour/EnemyBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Variables/EnemyState/EnemyState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Variables/EnemyState/EnemyState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GridScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GridScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridElement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Variables.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/3D Free Modular Kit/Test_Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test/3D Free Modular Kit/Test_Map.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Variables/EnemyBehaviour.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Variables/EnemyState.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_1_close.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_1_close.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_1_closed.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_1_closed.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_1_open.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_1_open.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_1_opened.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_1_opened.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_2_close.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_2_close.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_2_closed.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_2_closed.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_2_open.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_2_open.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_2_opened.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_2_opened.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_3_close.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_3_close.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_3_closed.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_3_closed.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_3_open.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_3_open.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_3_opened.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/door_3_opened.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/frame_door_1.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/frame_door_1.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/frame_door_2.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/frame_door_2.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/frame_door_3.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/frame_door_3.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/glass_door_close.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/glass_door_close.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/glass_door_closed.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/glass_door_closed.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/glass_door_open.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/glass_door_open.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/glass_door_opened.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/glass_door_opened.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/glass_panel_1_with_door.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Animations/glass_panel_1_with_door.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Example scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Example scenes/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Example scenes/Materials/Sand.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Example scenes/Materials/Sand.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Example scenes/Materials/Snow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Example scenes/Materials/Snow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Example scenes/outpost on desert.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Example scenes/outpost on desert.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Example scenes/outpost with snow.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Example scenes/outpost with snow.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/Palletes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/Palletes/base color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/Palletes/base color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/Palletes/blue color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/Palletes/blue color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/Palletes/coffee color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/Palletes/coffee color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/Palletes/dark color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/Palletes/dark color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/Palletes/iron man color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/Palletes/iron man color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/blue emission.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/blue emission.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/comuter_wall.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/comuter_wall.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/glass.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/glass.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/hologram.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/hologram.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/hologram_particle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/hologram_particle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/lattice floor.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/lattice floor.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/lattice.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/lattice.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/nature_bush.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/nature_bush.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/nature_ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/nature_ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/nature_leaves.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/nature_leaves.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/nature_root.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/nature_root.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/projector_warning.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/projector_warning.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/screen.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/screen.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/white emision.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/white emision.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/window.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Materials/window.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Cube_1x1_extended.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Cube_1x1_extended.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Cube_1x2_extended.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Cube_1x2_extended.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Cube_2x2_extended.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Cube_2x2_extended.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Cylinder_16_extended.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Cylinder_16_extended.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Joint_T_6.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Joint_T_6.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Joint_X_6.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Joint_X_6.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Joint_Y_6.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Joint_Y_6.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Materials/No Name.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Materials/No Name.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Materials/base color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Materials/base color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Sphere_16_extended.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Sphere_16_extended.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Sphere_32_extended.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/Sphere_32_extended.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/art_1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/art_1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/art_2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/art_2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/art_3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/art_3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/art_4.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/art_4.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/art_5.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/art_5.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/art_6.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/art_6.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/battery.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/battery.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/battery_big.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/battery_big.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/battery_medium.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/battery_medium.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/bed.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/bed.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/big_screen.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/big_screen.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/blank_wall_A.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/blank_wall_A.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/blank_wall_B.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/blank_wall_B.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/blank_wall_C.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/blank_wall_C.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/blank_wall_D.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/blank_wall_D.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/bulletin_board_big.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/bulletin_board_big.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/bulletin_board_small.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/bulletin_board_small.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/bunk_bed.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/bunk_bed.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/cabinet.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/cabinet.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/cabinet_L.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/cabinet_L.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/cabinet_L_cutted.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/cabinet_L_cutted.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/column_end.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/column_end.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/column_kneel.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/column_kneel.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/column_kneel_2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/column_kneel_2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/column_middle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/column_middle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/computer_station.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/computer_station.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/console.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/console.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/console_celing.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/console_celing.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/console_screen.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/console_screen.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/container_big.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/container_big.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/container_small.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/container_small.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_chair.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_chair.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_chair_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_chair_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_chair_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_chair_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_1_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_1_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_1_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_1_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_2_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_2_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_2_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_2_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_3_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_3_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_3_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_3_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_4_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_4_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_4_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_4_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_5.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_5.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_6.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_half_wall_6.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_pilow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_pilow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_pilow_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_pilow_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_pilow_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_pilow_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_plant.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_plant.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_plant_desk.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_plant_desk.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_plant_small.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_plant_small.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_sofa.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_sofa.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_sofa_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_sofa_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_sofa_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_sofa_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_table_glass.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_table_glass.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_table_glass_only_top.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_table_glass_only_top.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_table_no_glass.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_table_no_glass.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_table_no_glass_only_top.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_table_no_glass_only_top.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_table_small_glass.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_table_small_glass.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_table_small_no_glass.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_table_small_no_glass.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_1_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_1_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_1_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_1_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_2_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_2_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_2_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_2_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_3_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_3_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_3_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_3_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_4_computer_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_4_computer_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_4_computer_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_4_computer_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_4_no_computer_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_4_no_computer_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_4_no_computer_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_4_no_computer_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_5.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_5.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_6.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_6.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_E.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_E.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_F.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_F.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_G.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_G.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_H.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/decorative_wall_H.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/desk.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/desk.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/desk_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/desk_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/desk_no_computer.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/desk_no_computer.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_1_left.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_1_left.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_1_right.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_1_right.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_2_left.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_2_left.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_2_right.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_2_right.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_3_bottom_A.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_3_bottom_A.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_3_bottom_B.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_3_bottom_B.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_3_top_A.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_3_top_A.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_3_top_B.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/door_3_top_B.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/double_bed.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/double_bed.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_1_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_1_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_1_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_1_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_L_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_L_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_L_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_L_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_blank.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_blank.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_no_lattice.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_no_lattice.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_no_lattice_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_no_lattice_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_no_lattice_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_2_no_lattice_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_3_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_3_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_3_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_3_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_3_no_clamps.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_3_no_clamps.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_4.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_4.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_5.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_5.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_6.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_6.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_corner_ornament.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_corner_ornament.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_corner_ornament_pipes.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_corner_ornament_pipes.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_corner_ornament_pipes_corner.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/floor_corner_ornament_pipes_corner.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/frame_door_1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/frame_door_1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/frame_door_1_colision_mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/frame_door_1_colision_mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/frame_door_2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/frame_door_2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/frame_door_2_colision_mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/frame_door_2_colision_mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/frame_door_3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/frame_door_3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/frame_door_3_colision_mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/frame_door_3_colision_mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/generator.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/generator.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/glass_panel_1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/glass_panel_1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/glass_panel_1_corner.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/glass_panel_1_corner.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/glass_panel_1_door.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/glass_panel_1_door.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/glass_panel_1_with_door.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/glass_panel_1_with_door.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/hologram.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/hologram.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/hologram_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/hologram_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/hologram_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/hologram_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/hydroponic.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/hydroponic.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_celing_1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_celing_1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_celing_2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_celing_2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_corner_1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_corner_1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_corner_1_blue.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_corner_1_blue.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_wall_1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_wall_1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_wall_1_blue.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_wall_1_blue.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_wall_2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_wall_2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_wall_2_blue.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_wall_2_blue.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_wall_3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_wall_3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_wall_3_blue.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/light_wall_3_blue.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/pilot_seat.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/pilot_seat.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/projector.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/projector.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/projector_2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/projector_2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/projector_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/projector_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/projector_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/projector_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/rotor.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/rotor.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/shelf.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/shelf.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/shelf_small.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/shelf_small.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/shield_generator.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/shield_generator.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/shield_generator_rotor.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/shield_generator_rotor.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/sign.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/sign.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/sing.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/sing.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/sing_small.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/sing_small.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_big.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_big.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_big_with_emmision.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_big_with_emmision.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_small.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_small.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_small_corner_no_emmision.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_small_corner_no_emmision.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_small_corner_with_emmision.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_small_corner_with_emmision.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_small_no_emmision.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_small_no_emmision.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_small_with_emmision.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/stairs_small_with_emmision.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/storage_container_big.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/storage_container_big.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/storage_container_small.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/storage_container_small.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/table_2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/table_2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/torpedo.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/torpedo.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/torpedo_docking_station_1_side.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/torpedo_docking_station_1_side.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/torpedo_docking_station_2_side.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/torpedo_docking_station_2_side.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/vending_machine.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/vending_machine.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/wall_big_no_side_full_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/wall_big_no_side_full_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/wall_big_no_side_full_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/wall_big_no_side_full_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/wall_small_no_side_full_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/wall_small_no_side_full_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_blocker.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_blocker.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_blocker_2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_blocker_2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_blocker_3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_blocker_3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_corner_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_corner_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_corner_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_corner_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_corner_far_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_corner_far_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_corner_far_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_corner_far_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_corner_far_plug.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_corner_far_plug.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_corner_plug.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_corner_plug.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_no_side.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_no_side.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_no_side_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_no_side_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_no_side_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_no_side_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_no_side_full.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_no_side_full.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_no_side_full_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_no_side_full_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_no_side_full_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_no_side_full_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_plug.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_plug.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_supplement.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_supplement.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_offset.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_offset.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_offset_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_offset_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_offset_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_offset_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_offset.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_offset.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_offset_LOD0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_offset_LOD0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_offset_LOD1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Models/window_big_with_side_offset_LOD1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_I.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_I.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_L.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_L.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_T.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_T.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_X.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Corridors/Corridor_X.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts/art_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts/art_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts/art_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts/art_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts/art_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts/art_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts/art_4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts/art_4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts/art_5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts/art_5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts/art_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Arts/art_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_end.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_end.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_kneel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_kneel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_kneel_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_kneel_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_middle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_middle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/decorative_table_glass.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/decorative_table_glass.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/decorative_table_no_glass.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/decorative_table_no_glass.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/decorative_table_no_glass_only_top.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/decorative_table_no_glass_only_top.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/decorative_table_small_glass.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/decorative_table_small_glass.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/decorative_table_small_no_glass.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/decorative_table_small_no_glass.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/desk.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/desk.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/desk_no_computer.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/desk_no_computer.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/table_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Tables/table_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/bed.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/bed.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/big_screen.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/big_screen.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/bulletin_board_big.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/bulletin_board_big.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/bulletin_board_small.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/bulletin_board_small.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/bunk_bed.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/bunk_bed.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/cabinet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/cabinet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/cabinet_L.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/cabinet_L.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/cabinet_L_cutted.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/cabinet_L_cutted.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/computer_station.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/computer_station.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/console.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/console.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/console_celing.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/console_celing.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/console_screen.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/console_screen.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_chair.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_chair.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_pilow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_pilow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_plant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_plant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_plant_desk.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_plant_desk.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_plant_small.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_plant_small.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_sofa.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_sofa.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/double_bed.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/double_bed.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/floor_corner_ornament.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/floor_corner_ornament.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/floor_corner_ornament_pipes.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/floor_corner_ornament_pipes.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/floor_corner_ornament_pipes_corner.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/floor_corner_ornament_pipes_corner.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/hydroponic.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/hydroponic.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/pilot_seat.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/pilot_seat.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/shelf.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/shelf.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/shelf_small.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/shelf_small.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/sign.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/sign.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/sing_small.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/sing_small.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Doors.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Doors/door_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Doors/door_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Doors/door_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Doors/door_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Doors/door_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Doors/door_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Doors/glass_panel_1_with_door.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Doors/glass_panel_1_with_door.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Cube_1x1_extended.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Cube_1x1_extended.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Cube_1x2_extended.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Cube_1x2_extended.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Cube_2x2_extended.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Cube_2x2_extended.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Cylinder_16_extended.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Cylinder_16_extended.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Sphere_16_extended.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Sphere_16_extended.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Sphere_32_extended.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Sphere_32_extended.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_2_L.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_2_L.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_2_blank.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_2_blank.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_2_no_lattice.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_2_no_lattice.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_3_no_clamps.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_3_no_clamps.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Joints.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Joints/Joint_T_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Joints/Joint_T_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Joints/Joint_X_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Joints/Joint_X_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Joints/Joint_Y_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Joints/Joint_Y_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_celing_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_celing_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_celing_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_celing_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_corner_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_corner_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_corner_1_blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_corner_1_blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_1_blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_1_blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_2_blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_2_blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_3_blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_3_blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/Battery.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/Battery.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/Battery_big.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/Battery_big.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/Battery_medium.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/Battery_medium.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/Capacitor.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/Capacitor.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/Shield Core.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/Shield Core.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/container_big.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/container_big.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/container_small.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/container_small.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/generator.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/generator.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/projector stars.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/projector stars.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/projector.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/projector.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/projector_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/projector_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/rotor.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/rotor.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/shield_generator.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/shield_generator.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/storage_container_big.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/storage_container_big.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/storage_container_small.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/storage_container_small.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/torpedo.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/torpedo.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/torpedo_docking_station_1_side.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/torpedo_docking_station_1_side.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/torpedo_docking_station_2_side.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/torpedo_docking_station_2_side.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/vending_machine.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Machines/vending_machine.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_big_with_emmision.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_big_with_emmision.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small_corner_no_emmision.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small_corner_no_emmision.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small_corner_with_emmision.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small_corner_with_emmision.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small_no_emmision.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small_no_emmision.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small_with_emmision.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small_with_emmision.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls/decorative_half_wall_1_LOD.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls/decorative_half_wall_1_LOD.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls/decorative_half_wall_2_LOD.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls/decorative_half_wall_2_LOD.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls/decorative_half_wall_3_LOD.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls/decorative_half_wall_3_LOD.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls/decorative_half_wall_4_LOD.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls/decorative_half_wall_4_LOD.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls/decorative_half_wall_5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls/decorative_half_wall_5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls/decorative_half_wall_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Half walls/decorative_half_wall_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/blank_wall_A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/blank_wall_A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/blank_wall_B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/blank_wall_B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/blank_wall_C.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/blank_wall_C.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/blank_wall_D.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/blank_wall_D.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/decorative_wall_E.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/decorative_wall_E.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/decorative_wall_F.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/decorative_wall_F.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/decorative_wall_G.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/decorative_wall_G.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/decorative_wall_H.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/Simple/decorative_wall_H.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_4_computer.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_4_computer.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_4_no_computer.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_4_no_computer.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/glass_panel_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/glass_panel_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/glass_panel_1_corner.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/glass_panel_1_corner.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/wall_big.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Walls/wall_big.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_blocker.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_blocker.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_corner.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_corner.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_corner_blocker.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_corner_blocker.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_corner_far.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_corner_far.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_blocker.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_blocker.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_blocker_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_blocker_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_blocker_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_blocker_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_far.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_far.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_far_plug.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_far_plug.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_plug.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_plug.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_no_LOD.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_no_LOD.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_plug.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_plug.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_supplement.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_supplement.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_small.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_small.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Readme.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/base-color-normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/base-color-normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/base-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/base-color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/black-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/black-color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/blood-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/blood-color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/blue-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/blue-color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/bush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/bush.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/coffee-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/coffee-color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/computer_wall_metalic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/computer_wall_metalic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/computer_wall_texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/computer_wall_texture.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/dark-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/dark-color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/green-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/green-color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/grey-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/grey-color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/hologram texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/hologram texture.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/keyboard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/keyboard.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/lattice-emision-mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/lattice-emision-mask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/lattice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/lattice.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/mettalic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/mettalic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/nature_leaves.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/nature_leaves.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/projector_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/projector_warning.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/second-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/second-color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/window_big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/window_big.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/window_big_emission_mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/window_big_emission_mask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/window_big_transparent_mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/Sci-Fi Styled Modular Pack/Textures/window_big_transparent_mask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Example_01.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Example_01.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Example_01.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Example_01/LightingData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Example_01/LightingData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Example_01/ReflectionProbe-0.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Example_01/ReflectionProbe-0.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Example_01/ReflectionProbe-1.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Example_01/ReflectionProbe-1.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Point Light Anim.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Point Light Anim.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Point light.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Point light.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Post-Processing Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/Post-Processing Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Column_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Column_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Floor_Angle_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Floor_Angle_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Floor_Half_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Floor_Half_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Floor_Normal_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Floor_Normal_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Floor_Normal_02.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Floor_Normal_02.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Floor_Square_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Floor_Square_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Materials/Wall_Atlas_01_Dif.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Materials/Wall_Atlas_01_Dif.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Roof_Angle_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Roof_Angle_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Roof_Half_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Roof_Half_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Roof_Light_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Roof_Light_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Roof_Normal_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Roof_Normal_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Roof_Square_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Roof_Square_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Wall_Angle_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Wall_Angle_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Wall_Door_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Wall_Door_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Wall_Normal_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Wall_Normal_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Wall_Normal_02.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Wall_Normal_02.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Wall_Top_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Wall_Top_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Wall_Top_Angle_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Meshes/Wall_Top_Angle_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Column_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Column_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Floor_Angle_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Floor_Angle_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Floor_Half_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Floor_Half_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Floor_Normal_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Floor_Normal_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Floor_Normal_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Floor_Normal_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Floor_Square_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Floor_Square_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Pub_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Pub_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Roof_Angle_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Roof_Angle_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Roof_Half_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Roof_Half_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Roof_Light_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Roof_Light_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Roof_Normal_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Roof_Normal_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Roof_Square_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Roof_Square_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Wall_Angle_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Wall_Angle_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Wall_Door_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Wall_Door_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Wall_Normal_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Wall_Normal_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Wall_Normal_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Wall_Normal_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Wall_Top_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Wall_Top_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Wall_Top_Angle_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/Wall_Top_Angle_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/_Legos.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/_Legos/Corridor_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/_Legos/Corridor_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/_Legos/Corridor_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/_Legos/Corridor_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/_Legos/Room_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/_Legos/Room_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/_Legos/Room_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/_Legos/Room_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/_Legos/Room_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Prefabs/_Legos/Room_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Pub.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Pub.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Pub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Pub.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Wall_Atlas_01_Ao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Wall_Atlas_01_Ao.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Wall_Atlas_01_Dif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Wall_Atlas_01_Dif.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Wall_Atlas_01_Illum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Wall_Atlas_01_Illum.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Wall_Atlas_01_Metal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Wall_Atlas_01_Metal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Wall_Atlas_01_Norm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/_3D Scifi Kit Starter Kit/_Textures/Wall_Atlas_01_Norm.png.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,21 +1023,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding>
-                <marker date="1550853699451" expanded="false" signature="6:78" ph="..." />
-                <marker date="1550853699451" expanded="true" signature="125:2474" ph="{...}" />
-                <marker date="1550853699451" expanded="true" signature="219:281" ph="{...}" />
-                <marker date="1550853699451" expanded="true" signature="321:359" ph="{...}" />
-                <marker date="1550853699451" expanded="true" signature="379:1608" ph="{...}" />
-                <marker date="1550853699451" expanded="true" signature="504:561" ph="/* switch (state) ... */" />
-                <marker date="1550853699451" expanded="true" signature="844:1148" ph="/* if (rb.velocity.x != 0 &amp;&amp; idle) ... */" />
-                <marker date="1550853699451" expanded="true" signature="1159:1601" ph="/* } ... */" />
-                <marker date="1550853699451" expanded="true" signature="1614:2472" ph="/* private void OnCollisionEnter2D(Collision2D collision) ... */" />
+                <marker date="1551557640574" expanded="true" signature="6:100" ph="..." />
+                <marker date="1551557640574" expanded="true" signature="147:1960" ph="{...}" />
+                <marker date="1551557640574" expanded="true" signature="300:408" ph="{...}" />
+                <marker date="1551557640574" expanded="true" signature="461:499" ph="{...}" />
+                <marker date="1551557640574" expanded="true" signature="505:687" ph="/* private void LateUpdate() ... */" />
+                <marker date="1551557640574" expanded="true" signature="768:1958" ph="{...}" />
+                <marker date="1551557640574" expanded="true" signature="824:1246" ph="{...}" />
+                <marker date="1551557640574" expanded="true" signature="973:1149" ph="{...}" />
+                <marker date="1551557640574" expanded="true" signature="1166:1236" ph="{...}" />
+                <marker date="1551557640574" expanded="true" signature="1291:1952" ph="{...}" />
+                <marker date="1551557640574" expanded="true" signature="1861:1942" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -38,34 +1048,154 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+            <state relative-caret-position="802">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
-                <marker date="1551295126241" expanded="false" signature="6:78" ph="..." />
-                <marker date="1551295126241" expanded="true" signature="118:1429" ph="{...}" />
-                <marker date="1551295126241" expanded="true" signature="331:674" ph="{...}" />
-                <marker date="1551295126241" expanded="true" signature="379:668" ph="{...}" />
-                <marker date="1551295126241" expanded="true" signature="435:658" ph="{...}" />
-                <marker date="1551295126241" expanded="true" signature="707:1170" ph="{...}" />
-                <marker date="1551295126241" expanded="true" signature="877:1164" ph="{...}" />
-                <marker date="1551295126241" expanded="true" signature="933:1154" ph="{...}" />
-                <marker date="1551295126241" expanded="true" signature="1189:1210" ph="{...}" />
-                <marker date="1551295126241" expanded="true" signature="1263:1427" ph="{...}" />
+                <marker date="1551557638836" expanded="true" signature="6:158" ph="..." />
+                <marker date="1551557638836" expanded="true" signature="198:1829" ph="{...}" />
+                <marker date="1551557638836" expanded="true" signature="442:946" ph="{...}" />
+                <marker date="1551557638836" expanded="true" signature="579:940" ph="{...}" />
+                <marker date="1551557638836" expanded="true" signature="635:930" ph="{...}" />
+                <marker date="1551557638836" expanded="true" signature="969:982" ph="{...}" />
+                <marker date="1551557638836" expanded="true" signature="1019:1482" ph="{...}" />
+                <marker date="1551557638836" expanded="true" signature="1189:1476" ph="{...}" />
+                <marker date="1551557638836" expanded="true" signature="1245:1466" ph="{...}" />
+                <marker date="1551557638836" expanded="true" signature="1535:1699" ph="{...}" />
+                <marker date="1551557638836" expanded="true" signature="1752:1827" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+            <state relative-caret-position="80">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
-                <marker date="1551295156292" expanded="false" signature="6:78" ph="..." />
-                <marker date="1551295156292" expanded="true" signature="121:370" ph="{...}" />
-                <marker date="1551295156292" expanded="true" signature="204:225" ph="{...}" />
-                <marker date="1551295156292" expanded="true" signature="244:265" ph="{...}" />
+                <marker date="1551557638837" expanded="true" signature="6:138" ph="..." />
+                <marker date="1551557638837" expanded="true" signature="181:2115" ph="{...}" />
+                <marker date="1551557638837" expanded="true" signature="293:453" ph="{...}" />
+                <marker date="1551557638837" expanded="true" signature="389:447" ph="{...}" />
+                <marker date="1551557638837" expanded="true" signature="504:863" ph="{...}" />
+                <marker date="1551557638837" expanded="true" signature="882:1963" ph="{...}" />
+                <marker date="1551557638837" expanded="true" signature="1271:1648" ph="{...}" />
+                <marker date="1551557638837" expanded="true" signature="1570:1638" ph="{...}" />
+                <marker date="1551557638837" expanded="true" signature="1996:2113" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Session.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <marker date="1550852665661" expanded="false" signature="6:78" ph="..." />
+                <marker date="1550852665661" expanded="true" signature="116:290" ph="{...}" />
+                <marker date="1550852665661" expanded="true" signature="188:209" ph="{...}" />
+                <marker date="1550852665661" expanded="true" signature="267:288" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+              <folding>
+                <marker date="1551557638826" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551557638826" expanded="true" signature="125:1966" ph="{...}" />
+                <marker date="1551557638826" expanded="true" signature="496:657" ph="{...}" />
+                <marker date="1551557638826" expanded="true" signature="684:934" ph="{...}" />
+                <marker date="1551557638826" expanded="true" signature="731:928" ph="{...}" />
+                <marker date="1551557638826" expanded="true" signature="844:918" ph="{...}" />
+                <marker date="1551557638826" expanded="true" signature="957:1731" ph="{...}" />
+                <marker date="1551557638826" expanded="true" signature="1764:1964" ph="{...}" />
+                <marker date="1551557638826" expanded="true" signature="1873:1958" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <folding>
+                <marker date="1551557638838" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551557638838" expanded="true" signature="117:236" ph="{...}" />
+                <marker date="1551557638838" expanded="true" signature="173:194" ph="{...}" />
+                <marker date="1551557638838" expanded="true" signature="213:234" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <folding>
+                <marker date="1551557638830" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551557638830" expanded="true" signature="119:206" ph="{...}" />
+                <marker date="1551557638830" expanded="true" signature="143:164" ph="{...}" />
+                <marker date="1551557638830" expanded="true" signature="183:204" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridElement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <marker date="1551557638833" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551557638833" expanded="true" signature="120:202" ph="{...}" />
+                <marker date="1551557638833" expanded="true" signature="139:160" ph="{...}" />
+                <marker date="1551557638833" expanded="true" signature="179:200" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+              <folding>
+                <marker date="1551557638828" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551557638828" expanded="true" signature="206:1215" ph="{...}" />
+                <marker date="1551557638828" expanded="true" signature="327:421" ph="{...}" />
+                <marker date="1551557638828" expanded="true" signature="440:640" ph="{...}" />
+                <marker date="1551557638828" expanded="true" signature="470:601" ph="{...}" />
+                <marker date="1551557638828" expanded="true" signature="682:959" ph="{...}" />
+                <marker date="1551557638828" expanded="true" signature="990:1051" ph="{...}" />
+                <marker date="1551557638828" expanded="true" signature="1084:1213" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <marker date="1551557638834" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551557638834" expanded="true" signature="118:188" ph="{...}" />
+                <marker date="1551557638834" expanded="true" signature="142:154" ph="{...}" />
+                <marker date="1551557638834" expanded="true" signature="173:186" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -77,22 +1207,44 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Variables/EnemyState/EnemyState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Variables/EnemyBehaviour/EnemyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Session.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridElement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Components/DontDestroyOnLoad.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Variables/EnemyBehaviour/EnemyBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Variables/EnemyState/EnemyState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridElement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridSelection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="974" />
     <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -109,13 +1261,25 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
-              <item name="NaughtyAttributes" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Enemy" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Grid" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Player" type="1045f7f1:UnityExplorerNode" />
             </path>
           </expand>
           <select />
@@ -123,11 +1287,11 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -136,6 +1300,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -157,10 +1322,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="21876">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="21876" />
       <method v="2" />
     </configuration>
   </component>
@@ -176,11 +1341,12 @@
       <updated>1550852536023</updated>
       <workItem from="1550852540405" duration="1495000" />
       <workItem from="1551229293706" duration="5645000" />
+      <workItem from="1551468069891" duration="19112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7140000" />
+    <option name="totallyTimeSpent" value="26252000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -192,9 +1358,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="974" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.50104386" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24946696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -202,7 +1368,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -234,56 +1400,220 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs</url>
+          <line>29</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs" initialLine="23">
+            <startOffsets>
+              <option value="780" />
+            </startOffsets>
+            <endOffsets>
+              <option value="830" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Variables/EnemyBehaviour/EnemyBehaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="64">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <marker date="1550853699451" expanded="false" signature="6:78" ph="..." />
-            <marker date="1550853699451" expanded="true" signature="125:2474" ph="{...}" />
-            <marker date="1550853699451" expanded="true" signature="219:281" ph="{...}" />
-            <marker date="1550853699451" expanded="true" signature="321:359" ph="{...}" />
-            <marker date="1550853699451" expanded="true" signature="379:1608" ph="{...}" />
-            <marker date="1550853699451" expanded="true" signature="504:561" ph="/* switch (state) ... */" />
-            <marker date="1550853699451" expanded="true" signature="844:1148" ph="/* if (rb.velocity.x != 0 &amp;&amp; idle) ... */" />
-            <marker date="1550853699451" expanded="true" signature="1159:1601" ph="/* } ... */" />
-            <marker date="1550853699451" expanded="true" signature="1614:2472" ph="/* private void OnCollisionEnter2D(Collision2D collision) ... */" />
+            <marker date="1551557638851" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551557638851" expanded="true" signature="126:130" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Variables/EnemyState/EnemyState.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <marker date="1551557638856" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551557638856" expanded="true" signature="119:201" ph="{...}" />
+            <marker date="1551557638856" expanded="true" signature="138:159" ph="{...}" />
+            <marker date="1551557638856" expanded="true" signature="178:199" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridSelection.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Components/DontDestroyOnLoad.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <marker date="1545339617665" expanded="false" signature="6:78" ph="..." />
+            <marker date="1545339617665" expanded="true" signature="126:206" ph="{...}" />
+            <marker date="1545339617665" expanded="true" signature="153:204" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding>
+            <marker date="1551557638826" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551557638826" expanded="true" signature="125:1966" ph="{...}" />
+            <marker date="1551557638826" expanded="true" signature="496:657" ph="{...}" />
+            <marker date="1551557638826" expanded="true" signature="684:934" ph="{...}" />
+            <marker date="1551557638826" expanded="true" signature="731:928" ph="{...}" />
+            <marker date="1551557638826" expanded="true" signature="844:918" ph="{...}" />
+            <marker date="1551557638826" expanded="true" signature="957:1731" ph="{...}" />
+            <marker date="1551557638826" expanded="true" signature="1764:1964" ph="{...}" />
+            <marker date="1551557638826" expanded="true" signature="1873:1958" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Session.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <marker date="1550852665661" expanded="false" signature="6:78" ph="..." />
+            <marker date="1550852665661" expanded="true" signature="116:290" ph="{...}" />
+            <marker date="1550852665661" expanded="true" signature="188:209" ph="{...}" />
+            <marker date="1550852665661" expanded="true" signature="267:288" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <marker date="1551557638834" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551557638834" expanded="true" signature="118:188" ph="{...}" />
+            <marker date="1551557638834" expanded="true" signature="142:154" ph="{...}" />
+            <marker date="1551557638834" expanded="true" signature="173:186" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridElement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <marker date="1551557638833" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551557638833" expanded="true" signature="120:202" ph="{...}" />
+            <marker date="1551557638833" expanded="true" signature="139:160" ph="{...}" />
+            <marker date="1551557638833" expanded="true" signature="179:200" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding>
+            <marker date="1551557638830" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551557638830" expanded="true" signature="119:206" ph="{...}" />
+            <marker date="1551557638830" expanded="true" signature="143:164" ph="{...}" />
+            <marker date="1551557638830" expanded="true" signature="183:204" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <marker date="1551557638838" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551557638838" expanded="true" signature="117:236" ph="{...}" />
+            <marker date="1551557638838" expanded="true" signature="173:194" ph="{...}" />
+            <marker date="1551557638838" expanded="true" signature="213:234" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        <state relative-caret-position="802">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
-            <marker date="1551295126241" expanded="false" signature="6:78" ph="..." />
-            <marker date="1551295126241" expanded="true" signature="118:1429" ph="{...}" />
-            <marker date="1551295126241" expanded="true" signature="331:674" ph="{...}" />
-            <marker date="1551295126241" expanded="true" signature="379:668" ph="{...}" />
-            <marker date="1551295126241" expanded="true" signature="435:658" ph="{...}" />
-            <marker date="1551295126241" expanded="true" signature="707:1170" ph="{...}" />
-            <marker date="1551295126241" expanded="true" signature="877:1164" ph="{...}" />
-            <marker date="1551295126241" expanded="true" signature="933:1154" ph="{...}" />
-            <marker date="1551295126241" expanded="true" signature="1189:1210" ph="{...}" />
-            <marker date="1551295126241" expanded="true" signature="1263:1427" ph="{...}" />
+            <marker date="1551557638836" expanded="true" signature="6:158" ph="..." />
+            <marker date="1551557638836" expanded="true" signature="198:1829" ph="{...}" />
+            <marker date="1551557638836" expanded="true" signature="442:946" ph="{...}" />
+            <marker date="1551557638836" expanded="true" signature="579:940" ph="{...}" />
+            <marker date="1551557638836" expanded="true" signature="635:930" ph="{...}" />
+            <marker date="1551557638836" expanded="true" signature="969:982" ph="{...}" />
+            <marker date="1551557638836" expanded="true" signature="1019:1482" ph="{...}" />
+            <marker date="1551557638836" expanded="true" signature="1189:1476" ph="{...}" />
+            <marker date="1551557638836" expanded="true" signature="1245:1466" ph="{...}" />
+            <marker date="1551557638836" expanded="true" signature="1535:1699" ph="{...}" />
+            <marker date="1551557638836" expanded="true" signature="1752:1827" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+          <folding>
+            <marker date="1551557638828" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551557638828" expanded="true" signature="206:1215" ph="{...}" />
+            <marker date="1551557638828" expanded="true" signature="327:421" ph="{...}" />
+            <marker date="1551557638828" expanded="true" signature="440:640" ph="{...}" />
+            <marker date="1551557638828" expanded="true" signature="470:601" ph="{...}" />
+            <marker date="1551557638828" expanded="true" signature="682:959" ph="{...}" />
+            <marker date="1551557638828" expanded="true" signature="990:1051" ph="{...}" />
+            <marker date="1551557638828" expanded="true" signature="1084:1213" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+        <state relative-caret-position="80">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <marker date="1551295156292" expanded="false" signature="6:78" ph="..." />
-            <marker date="1551295156292" expanded="true" signature="121:370" ph="{...}" />
-            <marker date="1551295156292" expanded="true" signature="204:225" ph="{...}" />
-            <marker date="1551295156292" expanded="true" signature="244:265" ph="{...}" />
+            <marker date="1551557638837" expanded="true" signature="6:138" ph="..." />
+            <marker date="1551557638837" expanded="true" signature="181:2115" ph="{...}" />
+            <marker date="1551557638837" expanded="true" signature="293:453" ph="{...}" />
+            <marker date="1551557638837" expanded="true" signature="389:447" ph="{...}" />
+            <marker date="1551557638837" expanded="true" signature="504:863" ph="{...}" />
+            <marker date="1551557638837" expanded="true" signature="882:1963" ph="{...}" />
+            <marker date="1551557638837" expanded="true" signature="1271:1648" ph="{...}" />
+            <marker date="1551557638837" expanded="true" signature="1570:1638" ph="{...}" />
+            <marker date="1551557638837" expanded="true" signature="1996:2113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <marker date="1551557640574" expanded="true" signature="6:100" ph="..." />
+            <marker date="1551557640574" expanded="true" signature="147:1960" ph="{...}" />
+            <marker date="1551557640574" expanded="true" signature="300:408" ph="{...}" />
+            <marker date="1551557640574" expanded="true" signature="461:499" ph="{...}" />
+            <marker date="1551557640574" expanded="true" signature="505:687" ph="/* private void LateUpdate() ... */" />
+            <marker date="1551557640574" expanded="true" signature="768:1958" ph="{...}" />
+            <marker date="1551557640574" expanded="true" signature="824:1246" ph="{...}" />
+            <marker date="1551557640574" expanded="true" signature="973:1149" ph="{...}" />
+            <marker date="1551557640574" expanded="true" signature="1166:1236" ph="{...}" />
+            <marker date="1551557640574" expanded="true" signature="1291:1952" ph="{...}" />
+            <marker date="1551557640574" expanded="true" signature="1861:1942" ph="{...}" />
           </folding>
         </state>
       </provider>

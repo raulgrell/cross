@@ -4,27 +4,61 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-
     public GameObject player;
-    private Vector3 bossVector;
+    public float cameraSpeed = 16;
+    public float horizontalSway = -2;
+    public float verticalSway = 8;
+    public float horizontalRotation = -8;
+    public float verticalRotation = -2;
+    
     private Vector3 offset;
-    private Camera camera;
-    float initialpositiony;
-
-    public float smoothSpeed = 0.125f;
-
+    private Vector3 direction;
+    private new Camera camera;
+    private Transform selected;
+    
     void Start()
-    { 
+    {
+        camera = GetComponent<Camera>();
         offset = transform.position - player.transform.position;
-        initialpositiony = transform.position.y;
+        direction = transform.eulerAngles;
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
+            {
+                selected = hitInfo.transform;
+            }
+        }
     }
 
     void LateUpdate()
     {
-        if (player != null)
+        if (player == null) return;
+
+        var mousePos = Input.mousePosition;
+        mousePos.x = 2 * (mousePos.x / Screen.width - 0.5f);
+        mousePos.y = 2 * (mousePos.y / Screen.height - 0.5f);
+        
+        var mouseOffset = Vector3.right * mousePos.x * horizontalSway + Vector3.forward * mousePos.y * verticalSway;
+        var mouseRotation = Quaternion.Euler(direction.x + mousePos.y * verticalRotation, mousePos.x * horizontalRotation, 0);
+        transform.rotation = mouseRotation;
+        
+        Vector3 desiredPosition = player.transform.position + offset + mouseOffset;
+        desiredPosition.y = transform.position.y;
+
+        transform.position = Vector3.MoveTowards(transform.position, desiredPosition, cameraSpeed * Time.deltaTime);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(transform.position, player.transform.position);
+        
+        if (selected)
         {
-                Vector3 desiredPosition = player.transform.position + offset;
-                transform.position = desiredPosition;
+            Gizmos.DrawWireCube(selected.position, Vector3.one);
         }
     }
 }

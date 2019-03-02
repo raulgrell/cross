@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
+using UnityEngine.WSA;
 
 public class GridLayer : MonoBehaviour
 {
@@ -10,19 +13,29 @@ public class GridLayer : MonoBehaviour
     public float colWidth = 2;
     public float colHeight = 2;
     public float gutterSize = 0.1f;
+
+    public GridNode[,] nodes;
     
-    void Start()
+    void Awake()
     {
+        nodes = new GridNode[numRows, numCols];
+        var origin = transform.position;
         for (int i = 0; i < numCols; i++)
         {
             for (int j = 0; j < numRows; j++)
             {
                 var offset = Vector3.forward * colHeight * j + Vector3.right * colWidth * i;
-                Instantiate(nodePrefab, transform.position + offset, Quaternion.identity, transform);
+                var nodeObject = Instantiate(nodePrefab, origin + offset, Quaternion.identity, transform);
+                nodes[j, i] = nodeObject.GetComponent<GridNode>();
             }
         }
     }
+    
+    void Update()
+    {
 
+    }
+    
     private void OnDrawGizmos()
     {
         Gizmos.matrix = transform.localToWorldMatrix;
@@ -38,14 +51,14 @@ public class GridLayer : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        
-    }
-
     public Vector3 CellToWorld(Vector2Int position)
     {
-        var offset = Vector3.forward * colHeight * position.x + Vector3.right * colWidth * position.y;
+        var offset = Vector3.right * colWidth * position.x + Vector3.forward * colHeight * position.y;
         return transform.TransformPoint(offset);
+    }
+
+    public bool CellIsWalkable(Vector2Int position)
+    {
+        return nodes[position.y, position.x].occupant == null;
     }
 }
