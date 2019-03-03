@@ -18,6 +18,7 @@ public class CutsceneSystem : MonoBehaviour
     private CutscenePanel currentPanel;
 
     private float timer;
+
     
     void Start()
     {
@@ -32,10 +33,11 @@ public class CutsceneSystem : MonoBehaviour
             cPanel.fromData(panelData[i]);
             panels[i] = cPanel;
             incoming.Add(cPanel);
-            panel.SetActive(false);
         }
 
         currentPanel = incoming.RemoveFirst();
+        Debug.Log("FirstPanel" + currentPanel.data.StartTime );
+        Debug.Log("Second Panel" + incoming);
     }
 
     void Update()

@@ -10,17 +10,21 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
     public Text text;
     private int Id;
     internal PanelData data;
+    internal GameObject[] images;    
 
-    private CutsceneImage[] images;    
     private float timer;
 
     private void Start()
     {
-        foreach (CutsceneImage image in images)
+        for (int i = 0; i < data.Images.Length; i++)
         {
-            image.effect.Setup(this);
+            for(int v = 0; v < data.Images[i].effects.Length; v++)
+        {
+            data.Images[i].effects[v].Setup(this, images[i]);
         }
-   
+        
+    }
+          
 
     }
 
@@ -30,11 +34,14 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
         {
             gameObject.SetActive(false);
         }
-
-        foreach (CutsceneImage image in images)
+        for (int i = 0; i < data.Images.Length; i++)
         {
-            image.effect.Apply(this);
+            for (int v = 0; v < data.Images[i].effects.Length; v++)
+            {
+                data.Images[i].effects[v].Apply(this, images[i]);
+            }
         }
+
 
         timer += Time.deltaTime;
     }
@@ -42,12 +49,12 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
     public void fromData(PanelData panelData)
     {
         data = panelData;
-        images = new CutsceneImage[data.Images.Length];
+        images = new GameObject[data.Images.Length];
         for(int i = 0; i < data.Images.Length; i++)
         {
-            GameObject imageObject = Instantiate(imagePrefab.gameObject,transform);
-            images[i] = data.Images[i];
-            imageObject.GetComponent<Image>().sprite = images[i].image;
+            images[i] = Instantiate(imagePrefab.gameObject,transform);
+            Image newImage = images[i].GetComponent<Image>();
+            newImage.sprite = data.Images[i].image;
         }
         text.text = data.Texts[0].text;
         gameObject.SetActive(false);

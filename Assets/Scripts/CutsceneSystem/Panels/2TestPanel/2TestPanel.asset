@@ -9,9 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2425ccbeee4e96d44aa35852737fd4ab, type: 3}
-  m_Name: Move2PlanetY
+  m_Script: {fileID: 11500000, guid: 061710745562ba544936ac86841545d9, type: 3}
+  m_Name: 2TestPanel
   m_EditorClassIdentifier: 
-  initialPos: {x: 0, y: 0, z: 0}
-  target: {x: 0, y: 200, z: 0}
-  speed: 0.2
+  duration: 5
+  startTime: 2
+  images:
+  - {fileID: 11400000, guid: ed3b059bfc667e842a35d9f8e518c32e, type: 2}
+  texts:
+  - {fileID: 11400000, guid: fe8eb053562eaa249886514ac6fce49e, type: 2}

@@ -6,5 +6,5 @@ using UnityEngine;
 public class CutsceneImage : ScriptableObject
 {
     public Sprite image;
-    public Effect effect;
+    public Effect[] effects;
 }

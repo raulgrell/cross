@@ -12,14 +12,14 @@ public class MovementEffect : Effect
     [SerializeField]
     private float speed;
 
-    public override void Setup(CutscenePanel panel)
+    public override void Setup(CutscenePanel panel, GameObject image)
     {
-        panel.transform.localPosition = initialPos;
+        image.transform.localPosition = initialPos;
     }
 
-    public override void Apply(CutscenePanel panel)
+    public override void Apply(CutscenePanel panel,GameObject image)
     {
-        panel.transform.localPosition = Vector3.MoveTowards(panel.transform.localPosition, target, speed);
+        image.transform.localPosition = Vector3.MoveTowards(image.transform.localPosition, target, speed);
     }
 
 }

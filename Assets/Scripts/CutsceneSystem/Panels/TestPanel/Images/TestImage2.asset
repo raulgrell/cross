@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: TestImage2
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: f6a72338be412934a8b52eff33762c5a, type: 3}
-  effect: {fileID: 11400000, guid: 34c7a38c7ca0e594892d55319330068f, type: 2}
+  effects:
+  - {fileID: 11400000, guid: 34c7a38c7ca0e594892d55319330068f, type: 2}
