@@ -6,12 +6,23 @@ using UnityEngine.UI;
 
 public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
 {
-    public Image image;
+    public Image imagePrefab;
     public Text text;
-    
+    private int Id;
     internal PanelData data;
 
+    private CutsceneImage[] images;    
     private float timer;
+
+    private void Start()
+    {
+        foreach (CutsceneImage image in images)
+        {
+            image.effect.Setup(this);
+        }
+   
+
+    }
 
     private void Update()
     {
@@ -20,9 +31,9 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
             gameObject.SetActive(false);
         }
 
-        foreach (Effect effect in data.Effects)
+        foreach (CutsceneImage image in images)
         {
-            effect.Apply(this);
+            image.effect.Apply(this);
         }
 
         timer += Time.deltaTime;
@@ -31,9 +42,14 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
     public void fromData(PanelData panelData)
     {
         data = panelData;
-        image.sprite = data.Images[0].image;
+        images = new CutsceneImage[data.Images.Length];
+        for(int i = 0; i < data.Images.Length; i++)
+        {
+            GameObject imageObject = Instantiate(imagePrefab.gameObject,transform);
+            images[i] = data.Images[i];
+            imageObject.GetComponent<Image>().sprite = images[i].image;
+        }
         text.text = data.Texts[0].text;
-        transform.localPosition = Vector3.zero;
         gameObject.SetActive(false);
     }
 

@@ -19,7 +19,7 @@ public class MovementEffect : Effect
 
     public override void Apply(CutscenePanel panel)
     {
-        panel.transform.localPosition = Vector3.MoveTowards(panel.transform.localPosition, panel.transform.localPosition + target, speed);
+        panel.transform.localPosition = Vector3.MoveTowards(panel.transform.localPosition, target, speed);
     }
 
 }

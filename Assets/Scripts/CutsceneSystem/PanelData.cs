@@ -7,8 +7,7 @@ using UnityEngine.UI;
 [CreateAssetMenu(menuName = "Cutscene/Panel")]
 public class PanelData : ScriptableObject
 {
-    [SerializeField]
-    private Effect[] effects;
+
     [SerializeField]
     private float duration;
     [SerializeField]
@@ -18,7 +17,7 @@ public class PanelData : ScriptableObject
     [SerializeField]
     private CutsceneText[] texts;
     
-    public Effect[] Effects => effects;
+
     public CutsceneImage[] Images => images;
     public CutsceneText[] Texts => texts;
     public float StartTime => startTime;

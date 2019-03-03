@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 212340fd18634609bafe7669173832d7, type: 3}
-  m_Name: TestImage2
+  m_Name: TestImage1
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: f6a72338be412934a8b52eff33762c5a, type: 3}
-  effect: {fileID: 11400000, guid: 01af4f34a8fda2e43a8063038bc609bf, type: 2}
+  image: {fileID: 21300000, guid: 376982d2432c3d54b87604a56d077153, type: 3}
+  effect: {fileID: 11400000, guid: 34c7a38c7ca0e594892d55319330068f, type: 2}

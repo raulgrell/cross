@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061710745562ba544936ac86841545d9, type: 3}
   m_Name: TestPanel
   m_EditorClassIdentifier: 
-  effects: []
-  duration: 5
-  startTime: 2
+  duration: 8
+  startTime: 10
   images:
   - {fileID: 11400000, guid: 3103e1f8c4936d647af5c57c2cd46082, type: 2}
   - {fileID: 11400000, guid: a4c799be2cd7ead42a785c1e38241dfa, type: 2}

@@ -32,6 +32,7 @@ public class CutsceneSystem : MonoBehaviour
             cPanel.fromData(panelData[i]);
             panels[i] = cPanel;
             incoming.Add(cPanel);
+            panel.SetActive(false);
         }
 
         currentPanel = incoming.RemoveFirst();
@@ -39,14 +40,14 @@ public class CutsceneSystem : MonoBehaviour
 
     void Update()
     {
+        timer += Time.deltaTime;
         if (currentPanel != null && currentPanel.data.StartTime > timer)
         {
+            Debug.Log("here");
             currentPanel.gameObject.SetActive(true);
             currentPanel = (incoming.Count > 0)
                 ? incoming.RemoveFirst()
                 : null;
         }
-
-        timer += Time.deltaTime;
     }
 }
