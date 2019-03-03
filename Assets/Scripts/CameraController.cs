@@ -19,7 +19,9 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         camera = GetComponent<Camera>();
-        offset = transform.position - player.transform.position;
+        offset = (player == null )
+            ? transform.position 
+            : transform.position - player.transform.position;
         direction = transform.eulerAngles;
     }
 
@@ -54,7 +56,8 @@ public class CameraController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawLine(transform.position, player.transform.position);
+        if (player)
+            Gizmos.DrawLine(transform.position, player.transform.position);
         
         if (selected)
         {

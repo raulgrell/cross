@@ -13,6 +13,7 @@
             <e p="DontDestroyOnLoad.cs" t="Include" />
           </e>
           <e p="Containers" t="Include">
+            <e p="Heap.cs" t="Include" />
             <e p="RingBuffer.cs" t="Include" />
           </e>
           <e p="Editor" t="Include">
@@ -212,12 +213,15 @@
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
           <e p="CutsceneSystem" t="Include">
-            <e p="Abstract" t="Include">
-              <e p="Effect.cs" t="Include" />
-            </e>
+            <e p="CutsceneImage.cs" t="Include" />
+            <e p="CutscenePanel.cs" t="Include" />
             <e p="CutsceneSystem.cs" t="Include" />
+            <e p="CutsceneText.cs" t="Include" />
             <e p="Effects" t="Include">
-              <e p="MovementEffect.cs" t="Include" />
+              <e p="Effect.cs" t="Include" />
+              <e p="Movement" t="Include">
+                <e p="MovementEffect.cs" t="Include" />
+              </e>
             </e>
             <e p="PanelData.cs" t="Include" />
           </e>

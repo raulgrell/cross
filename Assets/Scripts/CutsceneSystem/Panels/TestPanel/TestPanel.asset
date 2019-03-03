@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 061710745562ba544936ac86841545d9, type: 3}
-  m_Name: ProtoripoPanel
+  m_Name: TestPanel
   m_EditorClassIdentifier: 
-  endTime: 5
+  effects: []
+  duration: 5
   startTime: 2
-  layer: 0
-  layerText: 0
   images:
-  - {fileID: 21300000, guid: f6a72338be412934a8b52eff33762c5a, type: 3}
-  - {fileID: 21300000, guid: 376982d2432c3d54b87604a56d077153, type: 3}
+  - {fileID: 11400000, guid: 3103e1f8c4936d647af5c57c2cd46082, type: 2}
+  - {fileID: 11400000, guid: a4c799be2cd7ead42a785c1e38241dfa, type: 2}
   texts:
-  - Hi everyone
+  - {fileID: 11400000, guid: 47f96056753a06f4db5a791a827b876e, type: 2}

@@ -1,114 +1,52 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+[RequireComponent(typeof(Canvas))]
 public class CutsceneSystem : MonoBehaviour
 {
-    public PanelData[] panelDatas;
-    public Effect[] effects;
-    public int[,] effectOrder;
-    public GameObject panel;
-    public GameObject text;
-    private PanelData currentPanel;
-    private Image BackgroundImage;
+    public PanelData[] panelData;
+    public GameObject panelPrefab;
+    
+    private Image backgroundImage;
+    private CutscenePanel[] panels;
 
-    // Start is called before the first frame update
+    private Heap<CutscenePanel> incoming;
+    private Heap<CutscenePanel> outgoing;
+    private CutscenePanel currentPanel;
+
+    private float timer;
+    
     void Start()
     {
-        BackgroundImage = GetComponent<Image>();
-        Color transparent = BackgroundImage.color;
-       // transparent.a = 0.5f;
-        BackgroundImage.color = transparent;
-        //Iteration still not working
-        foreach (PanelData panelData in panelDatas)
+        backgroundImage = GetComponent<Image>();
+        
+        incoming = new Heap<CutscenePanel>(panelData.Length);
+        panels = new CutscenePanel[panelData.Length];
+        for(int i = 0; i < panelData.Length; i++)
         {
-       //     panelData.setCanvas(transform.GetComponent<Canvas>());
-            GameObject[] imagePanels = panelData.DisplayImages(panel);
-            GameObject[] textPanels = panelData.DisplayText(text);
-            //Need to check whats the first panel and nexts - not working;
-            currentPanel = panelData;
-
-            //Setting Deactive to false reset every cutscene
-            currentPanel.deactive = false;
-
-            //Setup Effects
-            foreach (Effect effect in effects)
-            {
-                //not working
-                effect.Setup(currentPanel);
-            }
-            //Image Panels Display - completed
-            for (int i = 0; i < imagePanels.Length; i++)
-            {
-
-                //setParent
-                imagePanels[i].transform.SetParent(transform);
-                //Set Position
-                imagePanels[i].transform.localPosition = Vector3.zero + new Vector3(0, -350 * i, 0);
-              
-                //Set Inactive
-                imagePanels[i].gameObject.SetActive(false);
-            }
-            //Text Display - completed
-            for (int i = 0; i < textPanels.Length; i++)
-            {
-
-                //setParent
-                textPanels[i].transform.SetParent(transform);
-                //Set Position 
-                Vector3 position = new Vector3(100 * i, 100 * i, 100 * i);
-                textPanels[i].transform.localPosition = Vector3.zero + position;
-                //Set Inactive
-                textPanels[i].gameObject.SetActive(false);
-            }
+            var panel = Instantiate(panelPrefab, transform);
+            var cPanel = panel.GetComponent<CutscenePanel>();
+            cPanel.fromData(panelData[i]);
+            panels[i] = cPanel;
+            incoming.Add(cPanel);
         }
+
+        currentPanel = incoming.RemoveFirst();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //Time to start CurrentPanel  Work in Progress (only runs once)
-        if (currentPanel.getStartTime < Time.time && (!currentPanel.getPanels[currentPanel.GetSprites.Length - 1].activeSelf && !currentPanel.getTextObject[currentPanel.GetTexts.Length - 1].activeSelf) && !currentPanel.deactive)
+        if (currentPanel != null && currentPanel.data.StartTime > timer)
         {
-            foreach (GameObject obj in currentPanel.getPanels)
-            {
-                obj.SetActive(true);               
-            }
-            foreach(GameObject obj in currentPanel.getTextObject)
-            {
-                obj.SetActive(true);
-            }
-
-
-            //Time to end Current Panel Work in Progress (only runs once)
+            currentPanel.gameObject.SetActive(true);
+            currentPanel = (incoming.Count > 0)
+                ? incoming.RemoveFirst()
+                : null;
         }
-        else if(currentPanel.getEndTime < Time.time && (currentPanel.getPanels[currentPanel.GetSprites.Length - 1].activeSelf && currentPanel.getTextObject[currentPanel.GetTexts.Length - 1].activeSelf) && !currentPanel.deactive)
-        {
-            foreach (GameObject obj in currentPanel.getPanels)
-            {
-                obj.SetActive(false);
-                
-            }
-            foreach (GameObject obj in currentPanel.getTextObject)
-            {
-                obj.SetActive(false);
 
-            }
-            currentPanel.deactive = true;
-           // transform.gameObject.SetActive(false);
-        }
-        //Current Update still needs work
-        if (currentPanel.getPanels[currentPanel.GetSprites.Length - 1].activeSelf)
-        {
-            foreach (Effect effect in effects)
-            {
-                foreach (GameObject obj in currentPanel.getPanels)
-                {
-                    effect.Apply(currentPanel);
-                }
-            }
-        }
+        timer += Time.deltaTime;
     }
 }
