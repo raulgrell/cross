@@ -8,23 +8,31 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
 {
     public Image imagePrefab;
     public Text text;
-    private int Id;
     internal PanelData data;
     internal GameObject[] images;    
+    internal CutsceneImage backgroundImage;
 
     private float timer;
 
     private void Start()
     {
+        GetComponent<Image>().sprite = backgroundImage.image;
+        //For more than one image
         for (int i = 0; i < data.Images.Length; i++)
         {
-            for(int v = 0; v < data.Images[i].effects.Length; v++)
-        {
-            data.Images[i].effects[v].Setup(this, images[i]);
+            //For more than one effect
+            foreach (Effect effect in data.Images[i].effects)
+            {
+                effect.Setup(this, images[i]);
+            }
         }
-        
-    }
-          
+        //For more than one ffect on the background
+        foreach (Effect effect in backgroundImage.effects)
+        {
+            effect.Setup(this, gameObject);
+        }
+        transform.localScale = data.PanelScale;
+
 
     }
 
@@ -36,12 +44,15 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
         }
         for (int i = 0; i < data.Images.Length; i++)
         {
-            for (int v = 0; v < data.Images[i].effects.Length; v++)
+            foreach(Effect effect in data.Images[i].effects)
             {
-                data.Images[i].effects[v].Apply(this, images[i]);
+                effect.Apply(this, images[i]);
             }
         }
-
+        foreach (Effect effect in backgroundImage.effects)
+        {
+            effect.Apply(this, gameObject);
+        }
 
         timer += Time.deltaTime;
     }
@@ -49,6 +60,7 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
     public void fromData(PanelData panelData)
     {
         data = panelData;
+        backgroundImage = panelData.BackgroundImage;
         images = new GameObject[data.Images.Length];
         for(int i = 0; i < data.Images.Length; i++)
         {
@@ -62,7 +74,7 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
 
     public int CompareTo(CutscenePanel other)
     {
-        return data.StartTime > other.data.StartTime ? 1 : -1;
+        return data.StartTime < other.data.StartTime ? 1 : -1;
     }
 
     public int HeapIndex { get; set; }

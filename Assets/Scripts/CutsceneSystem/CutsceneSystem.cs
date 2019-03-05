@@ -36,16 +36,13 @@ public class CutsceneSystem : MonoBehaviour
         }
 
         currentPanel = incoming.RemoveFirst();
-        Debug.Log("FirstPanel" + currentPanel.data.StartTime );
-        Debug.Log("Second Panel" + incoming);
     }
 
     void Update()
     {
         timer += Time.deltaTime;
-        if (currentPanel != null && currentPanel.data.StartTime > timer)
+        if (currentPanel != null && timer > currentPanel.data.StartTime)
         {
-            Debug.Log("here");
             currentPanel.gameObject.SetActive(true);
             currentPanel = (incoming.Count > 0)
                 ? incoming.RemoveFirst()

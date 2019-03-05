@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Cutscene/Effects/MovementEffect")]
+[CreateAssetMenu(menuName = "Cutscene/Effects/Movement")]
 public class MovementEffect : Effect
 {
     [SerializeField]
