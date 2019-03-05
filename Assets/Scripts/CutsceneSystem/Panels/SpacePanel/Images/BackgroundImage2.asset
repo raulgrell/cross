@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212340fd18634609bafe7669173832d7, type: 3}
   m_Name: BackgroundImage2
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  effects: []
+  image: {fileID: 21300000, guid: 10ebbf91b829a3044b5d6ac6f067df9b, type: 3}
+  effects:
+  - {fileID: 11400000, guid: cbcf04d7858192d49a1ff4a32d5976f6, type: 2}
+  - {fileID: 11400000, guid: 47827e1577f84a442a9877fab3bb0a5d, type: 2}

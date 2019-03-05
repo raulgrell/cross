@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061710745562ba544936ac86841545d9, type: 3}
   m_Name: RingmasterPanel
   m_EditorClassIdentifier: 
-  duration: 0
-  startTime: 0
-  images: []
-  texts: []
-  backgroundImage: {fileID: 0}
-  panelScale: {x: 0, y: 0, z: 0}
+  duration: 10
+  startTime: 12
+  images:
+  - {fileID: 11400000, guid: 2485681ec0c505748beb5c0523cf2e40, type: 2}
+  texts:
+  - {fileID: 11400000, guid: 4202a20e36fad424e92349e7267a9b8b, type: 2}
+  backgroundImage: {fileID: 11400000, guid: b389182ca5e391a4eb668354134f06b3, type: 2}
+  panelScale: {x: 1.5, y: 1.5, z: 1}

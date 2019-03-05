@@ -9,4 +9,6 @@ public class CutsceneText : ScriptableObject
     public string text;
     public Color background;
     public Color foreground;
+    public Effect[] effects;
+    public int size;
 }

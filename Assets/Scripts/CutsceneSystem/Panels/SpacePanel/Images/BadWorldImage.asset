@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 212340fd18634609bafe7669173832d7, type: 3}
-  m_Name: TestImage1
+  m_Name: BadWorldImage
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 376982d2432c3d54b87604a56d077153, type: 3}
   effects:
   - {fileID: 11400000, guid: 01af4f34a8fda2e43a8063038bc609bf, type: 2}
+  - {fileID: 11400000, guid: d6f4a2a001fcd144bb0de03383ec6da1, type: 2}

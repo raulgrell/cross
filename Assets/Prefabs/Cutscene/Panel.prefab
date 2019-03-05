@@ -52,7 +52,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imagePrefab: {fileID: 8325783527765925671, guid: c17707aacd4dcf64e93272511bcf458b,
     type: 3}
-  text: {fileID: 3390829981984017029, guid: 00907baa5f85eec44a1fb1038b79145d, type: 3}
+  textPrefab: {fileID: 3390829981984017029, guid: 00907baa5f85eec44a1fb1038b79145d,
+    type: 3}
 --- !u!222 &7305386206106297612
 CanvasRenderer:
   m_ObjectHideFlags: 0

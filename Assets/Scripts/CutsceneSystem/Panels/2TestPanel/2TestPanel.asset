@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 2TestPanel
   m_EditorClassIdentifier: 
   duration: 5
-  startTime: 2
+  startTime: 30
   images:
   - {fileID: 11400000, guid: ed3b059bfc667e842a35d9f8e518c32e, type: 2}
   texts:
   - {fileID: 11400000, guid: fe8eb053562eaa249886514ac6fce49e, type: 2}
+  backgroundImage: {fileID: 0}
+  panelScale: {x: 2, y: 2, z: 0}

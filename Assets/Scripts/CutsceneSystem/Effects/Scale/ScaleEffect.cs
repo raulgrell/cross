@@ -8,12 +8,12 @@ public class ScaleEffect : Effect
     [SerializeField]
     private Vector3 scaleImage;
 
-    public override void Apply(CutscenePanel panel, GameObject image)
+    public override void Apply(CutscenePanel panel, GameObject gameObject)
     {
     }
 
-    public override void Setup(CutscenePanel panel, GameObject image)
+    public override void Setup(CutscenePanel panel, GameObject gameObject)
     {
-        image.transform.localScale = scaleImage;
+        gameObject.transform.localScale = scaleImage;
     }
 }
