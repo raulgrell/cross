@@ -222,6 +222,9 @@
               <e p="Movement" t="Include">
                 <e p="MovementEffect.cs" t="Include" />
               </e>
+              <e p="Scale" t="Include">
+                <e p="ScaleEffect.cs" t="Include" />
+              </e>
             </e>
             <e p="PanelData.cs" t="Include" />
           </e>

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4847921617234908858}
   - component: {fileID: 7305386206106297612}
   - component: {fileID: 8154885806640867154}
+  - component: {fileID: 6515613632066201230}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -91,3 +92,22 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!95 &6515613632066201230
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6824456153815112944}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ea652ce2ea48f2c4aa374c7f6ac6f245, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
