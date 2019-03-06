@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animators/CutsceneAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Animators/CutsceneAnimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animators/ImageAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Animators/ImageAnimation.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cutscene/Panel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cutscene/Panel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/CutsceneSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/CutsceneSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/Effects/Rotation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/Panels/2TestPanel/Texts.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/CutsceneSystem.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="368">
+              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
               <folding>
                 <marker date="1551800167071" expanded="false" signature="6:114" ph="..." />
                 <marker date="1551800167071" expanded="true" signature="194:1376" ph="{...}" />
@@ -335,12 +327,12 @@
       <workItem from="1550852540405" duration="1495000" />
       <workItem from="1551229293706" duration="5645000" />
       <workItem from="1551468069891" duration="19112000" />
-      <workItem from="1551615556594" duration="1945000" />
+      <workItem from="1551615556594" duration="3310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35917000" />
+    <option name="totallyTimeSpent" value="37282000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -728,8 +720,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/CutsceneSystem.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="368">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
           <folding>
             <marker date="1551800167071" expanded="false" signature="6:114" ph="..." />
             <marker date="1551800167071" expanded="true" signature="194:1376" ph="{...}" />
