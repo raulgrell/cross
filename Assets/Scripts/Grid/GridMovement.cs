@@ -8,6 +8,7 @@ public class GridMovement : MonoBehaviour
 {
     public Vector2Int position;
     public GridLayer grid;
+    public bool playerBool;
     private GridElement element;
 
     void Start()
@@ -33,24 +34,27 @@ public class GridMovement : MonoBehaviour
 
     void Update()
     {
-        // Collect input
-        var input = Vector2Int.zero;
-        if (Input.GetKeyDown(KeyCode.A)) input.x -= 1;
-        if (Input.GetKeyDown(KeyCode.D)) input.x += 1;
-        if (Input.GetKeyDown(KeyCode.S)) input.y -= 1;
-        if (Input.GetKeyDown(KeyCode.W)) input.y += 1;
-        
-        // Don't attempt to move if there is no input
-        if (input != Vector2Int.zero)
+        if (playerBool)
         {
-            var newPos = position + input;
-            // TODO: work out where to account for the bounds
-            newPos.x = Mathf.Clamp(newPos.x, 0, grid.numCols - 1);
-            newPos.y = Mathf.Clamp(newPos.y, 0, grid.numRows - 1);
-    
-            if (grid.CellIsWalkable(newPos))
+            // Collect input
+            var input = Vector2Int.zero;
+            if (Input.GetKeyDown(KeyCode.A)) input.x -= 1;
+            if (Input.GetKeyDown(KeyCode.D)) input.x += 1;
+            if (Input.GetKeyDown(KeyCode.S)) input.y -= 1;
+            if (Input.GetKeyDown(KeyCode.W)) input.y += 1;
+
+            // Don't attempt to move if there is no input
+            if (input != Vector2Int.zero)
             {
-                MoveToPosition(newPos);
+                var newPos = position + input;
+                // TODO: work out where to account for the bounds
+                newPos.x = Mathf.Clamp(newPos.x, 0, grid.numCols - 1);
+                newPos.y = Mathf.Clamp(newPos.y, 0, grid.numRows - 1);
+
+                if (grid.CellIsWalkable(newPos))
+                {
+                    MoveToPosition(newPos);
+                }
             }
         }
 

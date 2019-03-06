@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour
     private Vector3 offset;
     private Vector3 direction;
     private new Camera camera;
-    private Transform selected;
+    internal Transform selected;
     
     void Start()
     {

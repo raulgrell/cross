@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee3ef76aa8214636bb42f06080e7dcdb, type: 3}
   m_Name: TestText
   m_EditorClassIdentifier: 
-  text: Testing, attention please!
+  text: Hedona-01
   background: {r: 1, g: 1, b: 1, a: 1}
   foreground: {r: 1, g: 1, b: 1, a: 1}
   effects:
   - {fileID: 11400000, guid: 7f51b4704e500a848be14e472156a406, type: 2}
-  size: 25
+  size: 40

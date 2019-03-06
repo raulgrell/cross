@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212340fd18634609bafe7669173832d7, type: 3}
   m_Name: RingmasterImage
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: cbebb29ac2fd70840b747489997d9f8f, type: 3}
+  image: {fileID: 21300000, guid: 9302133d0bca0f5499127f19ed5371ea, type: 3}
   effects:
-  - {fileID: 11400000, guid: 815aefdc8a42ccb40a2048a58c91e0a8, type: 2}
   - {fileID: 11400000, guid: 04ec850edaf177d44af4fc12c2dda3e9, type: 2}
+  - {fileID: 11400000, guid: 4b570fe1b21093746a0651fc57220690, type: 2}

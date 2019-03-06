@@ -9,19 +9,22 @@ public class EnemyController : MonoBehaviour
     private GridMovement movement;
     private Vector2Int nextPosition;
     private float timer;
+    private float waitTime;
     
     void Start()
     {
         movement = GetComponent<GridMovement>();
+        waitTime = Random.Range(1, 2);
         CalculateNextPosition();
     }
 
     void Update()
     {
-        if (timer > 2f)
+        if (timer > waitTime)
         {
             movement.MoveToPosition(nextPosition);
             CalculateNextPosition();
+            waitTime = Random.Range(1, 2);
             timer = 0;
         }
         timer += Time.deltaTime;
@@ -29,7 +32,7 @@ public class EnemyController : MonoBehaviour
 
     private void CalculateNextPosition()
     {
-        nextPosition = movement.position + new Vector2Int(Random.Range(0,2), Random.Range(0,2));
+        nextPosition = movement.position + new Vector2Int(Random.Range(-1,2), Random.Range(-1,2));
         nextPosition.x = Mathf.Clamp(nextPosition.x, 0, movement.grid.numCols - 1);
         nextPosition.y = Mathf.Clamp(nextPosition.y, 0, movement.grid.numRows - 1);
     }

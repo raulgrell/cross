@@ -13,10 +13,15 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
     internal GameObject[] texts;
     internal CutsceneImage backgroundImage;
 
+    private RectTransform rectTransform;
+
     private float timer;
 
     private void Start()
     {
+        //Panel setup
+        rectTransform = GetComponent<RectTransform>();
+        rectTransform.sizeDelta = new Vector2(backgroundImage.image.bounds.size.x * 100, backgroundImage.image.bounds.size.y * 100);
         GetComponent<Image>().sprite = backgroundImage.image;
         //For more than one image
         for (int i = 0; i < data.Images.Length; i++)
@@ -42,6 +47,7 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
             effect.Setup(this, gameObject);
         }
         transform.localScale = data.PanelScale;
+
 
 
     }
@@ -84,8 +90,11 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
         {
             images[i] = Instantiate(imagePrefab.gameObject,transform);
             Image newImage = images[i].GetComponent<Image>();
+            RectTransform rectTransform = newImage.rectTransform;
             newImage.sprite = data.Images[i].image;
-        }
+            rectTransform.sizeDelta = new Vector2(newImage.sprite.bounds.size.x * 100, newImage.sprite.bounds.size.y * 100);
+            newImage.rectTransform.sizeDelta = rectTransform.sizeDelta;
+    }
         for (int i = 0; i < data.Texts.Length; i++)
         {
             texts[i] = Instantiate(textPrefab.gameObject, transform);

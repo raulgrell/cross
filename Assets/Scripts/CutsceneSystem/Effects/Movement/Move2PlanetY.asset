@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2425ccbeee4e96d44aa35852737fd4ab, type: 3}
   m_Name: Move2PlanetY
   m_EditorClassIdentifier: 
-  initialPos: {x: 0, y: -125, z: 0}
-  target: {x: 0, y: 100, z: 0}
-  speed: 0.2
+  initialPos: {x: -7.5, y: 100, z: 0}
+  target: {x: -7.5, y: 100, z: 0}
+  speed: 0

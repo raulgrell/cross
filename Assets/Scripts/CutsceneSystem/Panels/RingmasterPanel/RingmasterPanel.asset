@@ -19,4 +19,4 @@ MonoBehaviour:
   texts:
   - {fileID: 11400000, guid: 4202a20e36fad424e92349e7267a9b8b, type: 2}
   backgroundImage: {fileID: 11400000, guid: b389182ca5e391a4eb668354134f06b3, type: 2}
-  panelScale: {x: 1.5, y: 1.5, z: 1}
+  panelScale: {x: 1, y: 1, z: 1}

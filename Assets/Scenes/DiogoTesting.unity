@@ -148,7 +148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelData:
   - {fileID: 11400000, guid: 7d7fcaf4b97edee4fab69b8db079e29a, type: 2}
-  - {fileID: 11400000, guid: 217d79a55a9c03f4da83b0b46dc23849, type: 2}
+  - {fileID: 11400000, guid: 00729bea61e44254da4f8e397dbb5317, type: 2}
+  - {fileID: 11400000, guid: c4741070b943fb941bfcde89b851b8ad, type: 2}
   panelPrefab: {fileID: 6824456153815112944, guid: 96ee13c604451c8468e2f01a0ed311f7,
     type: 3}
 --- !u!114 &125657961

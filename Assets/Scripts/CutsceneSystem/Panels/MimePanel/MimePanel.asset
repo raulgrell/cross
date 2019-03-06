@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 061710745562ba544936ac86841545d9, type: 3}
+  m_Name: MimePanel
+  m_EditorClassIdentifier: 
+  duration: 10
+  startTime: 8
+  images:
+  - {fileID: 11400000, guid: 0e966424810c2bb44b570c532e26e714, type: 2}
+  texts:
+  - {fileID: 11400000, guid: b35765edb25c25f478ce10cae4fe0619, type: 2}
+  backgroundImage: {fileID: 11400000, guid: ada5d60fe8961714eb06c90873a34003, type: 2}
+  panelScale: {x: 0.5, y: 0.5, z: 1}
