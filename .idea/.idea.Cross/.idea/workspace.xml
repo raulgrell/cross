@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="" />
+    <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GridScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GridScene.unity" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,13 +12,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/CutsceneSystem.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
               <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
               <folding>
-                <marker date="1551800167071" expanded="false" signature="6:114" ph="..." />
                 <marker date="1551800167071" expanded="true" signature="194:1376" ph="{...}" />
                 <marker date="1551800167071" expanded="true" signature="515:1051" ph="{...}" />
                 <marker date="1551800167071" expanded="true" signature="745:997" ph="{...}" />
@@ -27,15 +28,27 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#0#138#0" expanded="true" />
+                <marker date="1551847380416" expanded="true" signature="1756:1770" ph="{...}" />
+                <marker date="1551847380416" expanded="true" signature="1756:1780" ph="{...}" />
+                <marker date="1551847380416" expanded="true" signature="1756:2095" ph="{...}" />
+                <marker date="1551847380416" expanded="true" signature="2128:2245" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/CutsceneImage.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="16">
               <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="46" />
-              <folding>
-                <marker date="1551614149494" expanded="false" signature="6:78" ph="..." />
-                <marker date="1551614149494" expanded="true" signature="172:230" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -46,9 +59,7 @@
             <state relative-caret-position="480">
               <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
-                <marker date="1551573118732" expanded="false" signature="6:87" ph="..." />
                 <marker date="1551573118732" expanded="true" signature="135:171" ph="{...}" />
-                <marker date="1551573118732" expanded="true" signature="216:2512" ph="{...}" />
                 <marker date="1551573118732" expanded="true" signature="336:384" ph="{...}" />
                 <marker date="1551573118732" expanded="true" signature="413:558" ph="{...}" />
                 <marker date="1551573118732" expanded="true" signature="602:804" ph="{...}" />
@@ -74,11 +85,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/CutscenePanel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-656">
+            <state relative-caret-position="112">
               <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
               <folding>
-                <marker date="1551800138373" expanded="false" signature="6:143" ph="..." />
-                <marker date="1551800138373" expanded="true" signature="213:3086" ph="{...}" />
                 <marker date="1551800138373" expanded="true" signature="465:1326" ph="{...}" />
                 <marker date="1551800138373" expanded="true" signature="620:816" ph="{...}" />
                 <marker date="1551800138373" expanded="true" signature="731:806" ph="{...}" />
@@ -107,7 +116,6 @@
             <state relative-caret-position="336">
               <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
               <folding>
-                <marker date="1551572848951" expanded="false" signature="6:78" ph="..." />
                 <marker date="1551572848951" expanded="true" signature="125:2056" ph="{...}" />
                 <marker date="1551572848951" expanded="true" signature="496:723" ph="{...}" />
                 <marker date="1551572848951" expanded="true" signature="750:1000" ph="{...}" />
@@ -126,10 +134,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="64">
               <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-              <folding>
-                <marker date="1551800138375" expanded="false" signature="6:78" ph="..." />
-                <marker date="1551800138375" expanded="true" signature="171:307" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -139,10 +143,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="32">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <marker date="1551800138376" expanded="false" signature="6:78" ph="..." />
-                <marker date="1551800138376" expanded="true" signature="127:284" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -153,7 +153,6 @@
             <state relative-caret-position="32">
               <caret line="4" column="37" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="37" />
               <folding>
-                <marker date="1551800138381" expanded="false" signature="6:78" ph="..." />
                 <marker date="1551800138381" expanded="true" signature="174:676" ph="{...}" />
                 <marker date="1551800138381" expanded="true" signature="400:469" ph="{...}" />
                 <marker date="1551800138381" expanded="true" signature="544:673" ph="{...}" />
@@ -168,7 +167,6 @@
             <state relative-caret-position="32">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <marker date="1551800138386" expanded="false" signature="6:100" ph="..." />
                 <marker date="1551800138386" expanded="true" signature="191:848" ph="{...}" />
               </folding>
             </state>
@@ -246,10 +244,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="240" />
+    <option name="y" value="130" />
+    <option name="width" value="1440" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -259,10 +257,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -276,7 +275,6 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,11 +326,12 @@
       <workItem from="1551229293706" duration="5645000" />
       <workItem from="1551468069891" duration="19112000" />
       <workItem from="1551615556594" duration="3310000" />
+      <workItem from="1551917322942" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37282000" />
+    <option name="totallyTimeSpent" value="37285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,7 +345,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25479743" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -388,7 +387,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs</url>
-          <line>29</line>
+          <line>30</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs" initialLine="23">
             <startOffsets>
               <option value="780" />
@@ -561,23 +560,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/Panels/Effects/MoveX.asset" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <marker date="1551557638837" expanded="true" signature="6:138" ph="..." />
-            <marker date="1551557638837" expanded="true" signature="293:453" ph="{...}" />
-            <marker date="1551557638837" expanded="true" signature="389:447" ph="{...}" />
-            <marker date="1551557638837" expanded="true" signature="504:863" ph="{...}" />
-            <marker date="1551557638837" expanded="true" signature="882:1963" ph="{...}" />
-            <marker date="1551557638837" expanded="true" signature="1271:1648" ph="{...}" />
-            <marker date="1551557638837" expanded="true" signature="1570:1638" ph="{...}" />
-            <marker date="1551557638837" expanded="true" signature="1996:2113" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Prefabs/Cutscene/Panel.prefab">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -586,13 +568,26 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/Abstract/CutsceneImage.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/Abstract/CutsceneText.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/Effects/MovementEffect.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/CutsceneSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+          <folding>
+            <marker date="1551800167071" expanded="true" signature="194:1376" ph="{...}" />
+            <marker date="1551800167071" expanded="true" signature="515:1051" ph="{...}" />
+            <marker date="1551800167071" expanded="true" signature="745:997" ph="{...}" />
+            <marker date="1551800167071" expanded="true" signature="1070:1374" ph="{...}" />
+            <marker date="1551800167071" expanded="true" signature="1182:1368" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/CutsceneImage.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="46" />
           <folding>
             <marker date="1551614149494" expanded="false" signature="6:78" ph="..." />
-            <marker date="1551614149494" expanded="true" signature="172:230" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -604,7 +599,6 @@
           <folding>
             <marker date="1551573118732" expanded="false" signature="6:87" ph="..." />
             <marker date="1551573118732" expanded="true" signature="135:171" ph="{...}" />
-            <marker date="1551573118732" expanded="true" signature="216:2512" ph="{...}" />
             <marker date="1551573118732" expanded="true" signature="336:384" ph="{...}" />
             <marker date="1551573118732" expanded="true" signature="413:558" ph="{...}" />
             <marker date="1551573118732" expanded="true" signature="602:804" ph="{...}" />
@@ -622,6 +616,32 @@
             <marker date="1551573118732" expanded="true" signature="2057:2125" ph="{...}" />
             <marker date="1551573118732" expanded="true" signature="2142:2193" ph="{...}" />
             <marker date="1551573118732" expanded="true" signature="2295:2510" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/CutscenePanel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <marker date="1551800138373" expanded="true" signature="465:1326" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="620:816" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="731:806" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="901:1095" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="1011:1085" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="1206:1270" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="1353:2034" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="1394:1455" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="1508:1664" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="1579:1654" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="1716:1871" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="1787:1861" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="1930:1994" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="2081:2922" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="2322:2527" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="2579:2879" ph="{...}" />
+            <marker date="1551800138373" expanded="true" signature="2969:3044" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -650,7 +670,6 @@
           <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           <folding>
             <marker date="1551800138375" expanded="false" signature="6:78" ph="..." />
-            <marker date="1551800138375" expanded="true" signature="171:307" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -661,7 +680,6 @@
           <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <marker date="1551800138376" expanded="false" signature="6:78" ph="..." />
-            <marker date="1551800138376" expanded="true" signature="127:284" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -690,45 +708,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/CutscenePanel.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-656">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="50">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <marker date="1551800138373" expanded="false" signature="6:143" ph="..." />
-            <marker date="1551800138373" expanded="true" signature="213:3086" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="465:1326" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="620:816" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="731:806" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="901:1095" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="1011:1085" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="1206:1270" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="1353:2034" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="1394:1455" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="1508:1664" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="1579:1654" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="1716:1871" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="1787:1861" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="1930:1994" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="2081:2922" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="2322:2527" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="2579:2879" ph="{...}" />
-            <marker date="1551800138373" expanded="true" signature="2969:3044" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/CutsceneSystem.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-          <folding>
-            <marker date="1551800167071" expanded="false" signature="6:114" ph="..." />
-            <marker date="1551800167071" expanded="true" signature="194:1376" ph="{...}" />
-            <marker date="1551800167071" expanded="true" signature="515:1051" ph="{...}" />
-            <marker date="1551800167071" expanded="true" signature="745:997" ph="{...}" />
-            <marker date="1551800167071" expanded="true" signature="1070:1374" ph="{...}" />
-            <marker date="1551800167071" expanded="true" signature="1182:1368" ph="{...}" />
+            <element signature="e#0#138#0" expanded="true" />
+            <marker date="1551847380416" expanded="true" signature="1756:1770" ph="{...}" />
+            <marker date="1551847380416" expanded="true" signature="1756:1780" ph="{...}" />
+            <marker date="1551847380416" expanded="true" signature="1756:2095" ph="{...}" />
+            <marker date="1551847380416" expanded="true" signature="2128:2245" ph="{...}" />
           </folding>
         </state>
       </provider>
