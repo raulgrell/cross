@@ -17,4 +17,4 @@ MonoBehaviour:
   foreground: {r: 1, g: 0.9858491, b: 0.9858491, a: 1}
   effects:
   - {fileID: 11400000, guid: f919ece039f12eb489519fbc1d0b9ce7, type: 2}
-  size: 35
+  size: 40

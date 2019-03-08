@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2425ccbeee4e96d44aa35852737fd4ab, type: 3}
   m_Name: MoveRingmaster
   m_EditorClassIdentifier: 
-  initialPos: {x: -300, y: -3000, z: 0}
-  target: {x: -300, y: 0, z: 0}
-  speed: 4
+  initialPos: {x: -300, y: -2000, z: 0}
+  target: {x: -300, y: 1000, z: 0}
+  speed: 7
