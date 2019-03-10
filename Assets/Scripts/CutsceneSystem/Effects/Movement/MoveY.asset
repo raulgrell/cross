@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialPos: {x: 0, y: 300, z: 0}
   target: {x: 0, y: 0, z: 0}
-  speed: 0.3
+  duration: 10
