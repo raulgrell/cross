@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MimePanel
   m_EditorClassIdentifier: 
   duration: 10
-  startTime: 14
+  startTime: 12
   images:
   - {fileID: 11400000, guid: 0e966424810c2bb44b570c532e26e714, type: 2}
   texts:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ClownPanel
   m_EditorClassIdentifier: 
   duration: 10
-  startTime: 14
+  startTime: 12
   images:
   - {fileID: 11400000, guid: db00fce4f124efb489b3a9ad3ca10f58, type: 2}
   - {fileID: 11400000, guid: 2485681ec0c505748beb5c0523cf2e40, type: 2}

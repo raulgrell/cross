@@ -25,7 +25,7 @@ public class PanelData : ScriptableObject
     public CutsceneImage BackgroundImage => backgroundImage;
     public CutsceneImage[] Images => images;
     public CutsceneText[] Texts => texts;
-    public float StartTime => startTime;
     public float Duration => duration;
+    public float StartTime => startTime;
     public float EndTime => startTime + duration;
 }

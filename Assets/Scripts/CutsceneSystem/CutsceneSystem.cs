@@ -16,8 +16,10 @@ public class CutsceneSystem : MonoBehaviour
     private Heap<CutscenePanel> incoming;
     private Heap<CutscenePanel> outgoing;
     private CutscenePanel currentPanel;
+    private PanelData currentPanelData;
 
     private float timer;
+    private bool skipped;
 
     
     void Start()

@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff07875a91b80664d81a9f793880019a, type: 3}
   m_Name: Scale5
   m_EditorClassIdentifier: 
-  scaleImage: {x: 5, y: 5, z: 1}
+  intialScaleImage: {x: 5, y: 5, z: 1}
+  scaleOverTime: 0
+  scale: {x: 0, y: 0, z: 0}

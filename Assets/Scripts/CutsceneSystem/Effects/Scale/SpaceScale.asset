@@ -10,6 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff07875a91b80664d81a9f793880019a, type: 3}
-  m_Name: ScaleRingmaster
+  m_Name: SpaceScale
   m_EditorClassIdentifier: 
-  scaleImage: {x: 1, y: 5, z: 1}
+  intialScaleImage: {x: 1, y: 1, z: 1}
+  scaleOverTime: 1
+  scale: {x: 2, y: 2, z: 1}

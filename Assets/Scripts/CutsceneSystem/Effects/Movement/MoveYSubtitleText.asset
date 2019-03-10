@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2425ccbeee4e96d44aa35852737fd4ab, type: 3}
   m_Name: MoveYSubtitleText
   m_EditorClassIdentifier: 
-  initialPos: {x: 0, y: -500, z: 0}
+  initialPos: {x: 0, y: -700, z: 0}
   target: {x: 0, y: -25, z: 0}
-  duration: 2
+  duration: 3.5
