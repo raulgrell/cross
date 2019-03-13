@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 [CreateAssetMenu(menuName = "Cutscene/Panel")]
 public class PanelData : ScriptableObject
 {

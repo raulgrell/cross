@@ -20,7 +20,6 @@ public class CutsceneSystem : MonoBehaviour
 
     private float timer;
     private bool skipped;
-
     
     void Start()
     {
@@ -37,7 +36,9 @@ public class CutsceneSystem : MonoBehaviour
             incoming.Add(cPanel);
         }
 
-        currentPanel = incoming.RemoveFirst();
+        currentPanel = (incoming.Count > 0)
+            ? incoming.RemoveFirst()
+            : null;
     }
 
     void Update()

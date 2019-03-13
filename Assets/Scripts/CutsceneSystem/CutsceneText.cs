@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 [CreateAssetMenu(menuName = "Cutscene/Text")]
 public class CutsceneText : ScriptableObject
 {

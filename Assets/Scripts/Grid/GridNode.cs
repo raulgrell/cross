@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GridNode : MonoBehaviour
 {
-    public GridElement occupant;
+    public GridUnit unit;
+    public float height;
    
     void Start()
     {
-        
     }
 
     void Update()

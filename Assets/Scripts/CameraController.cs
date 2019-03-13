@@ -14,26 +14,15 @@ public class CameraController : MonoBehaviour
     private Vector3 offset;
     private Vector3 direction;
     private new Camera camera;
-    internal Transform selected;
     
     void Start()
     {
+        var initialPosition = transform.position;
         camera = GetComponent<Camera>();
         offset = (player == null )
-            ? transform.position 
-            : transform.position - player.transform.position;
+            ? initialPosition 
+            : initialPosition - player.transform.position;
         direction = transform.eulerAngles;
-    }
-
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
-            {
-                selected = hitInfo.transform;
-            }
-        }
     }
 
     void LateUpdate()
@@ -49,19 +38,15 @@ public class CameraController : MonoBehaviour
         transform.rotation = mouseRotation;
         
         Vector3 desiredPosition = player.transform.position + offset + mouseOffset;
-        desiredPosition.y = transform.position.y;
+        Vector3 currentPosition = transform.position;
+        desiredPosition.y = currentPosition.y;
 
-        transform.position = Vector3.MoveTowards(transform.position, desiredPosition, cameraSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(currentPosition, desiredPosition, cameraSpeed * Time.deltaTime);
     }
 
     private void OnDrawGizmos()
     {
         if (player)
             Gizmos.DrawLine(transform.position, player.transform.position);
-        
-        if (selected)
-        {
-            Gizmos.DrawWireCube(selected.position, Vector3.one);
-        }
     }
 }

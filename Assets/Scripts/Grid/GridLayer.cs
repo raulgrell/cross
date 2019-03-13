@@ -13,28 +13,27 @@ public class GridLayer : MonoBehaviour
     public float colHeight = 2;
     public float gutterSize = 0.1f;
 
+    public bool isRound;
+
     public GridNode[,] nodes;
-    
+
     void Awake()
     {
         nodes = new GridNode[numRows, numCols];
+
         var origin = transform.position;
         for (int i = 0; i < numCols; i++)
         {
             for (int j = 0; j < numRows; j++)
             {
                 var offset = Vector3.forward * colHeight * j + Vector3.right * colWidth * i;
+                
                 var nodeObject = Instantiate(nodePrefab, origin + offset, Quaternion.identity, transform);
                 nodes[j, i] = nodeObject.GetComponent<GridNode>();
             }
         }
     }
-    
-    void Update()
-    {
 
-    }
-    
     private void OnDrawGizmos()
     {
         Gizmos.matrix = transform.localToWorldMatrix;
@@ -58,6 +57,6 @@ public class GridLayer : MonoBehaviour
 
     public bool CellIsWalkable(Vector2Int position)
     {
-        return nodes[position.y, position.x].occupant == null;
+        return nodes[position.y, position.x].unit == null;
     }
 }
