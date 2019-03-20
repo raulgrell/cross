@@ -3,10 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// I'll explain why we want this later
 public class RingBuffer<T> : IEnumerable<T>
 {
-    T[] buffer;
+    readonly T[] buffer;
     int start;
     int end;
     int length;

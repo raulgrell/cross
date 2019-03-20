@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Vector2 = System.Numerics.Vector2;
 
 [RequireComponent(typeof(GridUnit))]
 public class EnemyController : MonoBehaviour

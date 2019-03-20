@@ -16,6 +16,28 @@
             <e p="Heap.cs" t="Include" />
             <e p="RingBuffer.cs" t="Include" />
           </e>
+          <e p="Dialogue" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CharacterInfo.cs" t="Include" />
+              <e p="DialogueGraph.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="CharacterInfoDrawer.cs" t="Include" />
+                <e p="DialogueGraphEditor.cs" t="Include" />
+              </e>
+              <e p="Nodes" t="Include">
+                <e p="Branch.cs" t="Include" />
+                <e p="Chat.cs" t="Include" />
+                <e p="DialogueBaseNode.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="BranchEditor.cs" t="Include" />
+                  <e p="ChatEditor.cs" t="Include" />
+                  <e p="EventEditor.cs" t="Include" />
+                </e>
+                <e p="Event.cs" t="Include" />
+              </e>
+            </e>
+            <e p="SubGraph.cs" t="Include" />
+          </e>
           <e p="Editor" t="Include">
             <e p="QuickToggle.cs" t="Include" />
             <e p="RenameSelection.cs" t="Include" />
@@ -37,6 +59,14 @@
             <e p="StateAction.cs" t="Include" />
             <e p="StateCondition.cs" t="Include" />
             <e p="StateTransition.cs" t="Include" />
+            <e p="Window" t="Include">
+              <e p="Editor" t="Include">
+                <e p="StateGraphEditor.cs" t="Include" />
+                <e p="StateNodeEditor.cs" t="Include" />
+              </e>
+              <e p="StateGraph.cs" t="Include" />
+              <e p="StateNode.cs" t="Include" />
+            </e>
           </e>
           <e p="NaughtyAttributes" t="Include">
             <e p="Core" t="Include">
@@ -170,6 +200,23 @@
               </e>
             </e>
           </e>
+          <e p="SerializableCallback" t="Include">
+            <e p="Attributes" t="Include">
+              <e p="TargetConstraintAttribute.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="SerializableCallbackDrawer.cs" t="Include" />
+            </e>
+            <e p="InvokableCallback.cs" t="Include" />
+            <e p="InvokableCallbackBase.cs" t="Include" />
+            <e p="InvokableEvent.cs" t="Include" />
+            <e p="InvokableEventBase.cs" t="Include" />
+            <e p="SerializableCallback.cs" t="Include" />
+            <e p="SerializableCallbackBase.cs" t="Include" />
+            <e p="SerializableEvent.cs" t="Include" />
+            <e p="SerializableEventBase.cs" t="Include" />
+            <e p="Test.cs" t="Include" />
+          </e>
           <e p="Tree" t="Include">
             <e p="Editor" t="Include">
               <e p="TreeDataModel" t="Include">
@@ -216,52 +263,6 @@
             <e p="Vector3Variable.cs" t="Include" />
           </e>
           <e p="xNode" t="Include">
-            <e p="Examples" t="Include">
-              <e p="Examples" t="Include">
-                <e p="MathGraph" t="Include">
-                  <e p="Editor" t="Include">
-                    <e p="MathGraphEditor.cs" t="Include" />
-                  </e>
-                  <e p="MathGraph.cs" t="Include" />
-                  <e p="Nodes" t="Include">
-                    <e p="DisplayValue.cs" t="Include" />
-                    <e p="Editor" t="Include">
-                      <e p="DisplayValueEditor.cs" t="Include" />
-                    </e>
-                    <e p="MathNode.cs" t="Include" />
-                    <e p="Vector.cs" t="Include" />
-                  </e>
-                </e>
-                <e p="RuntimeMathGraph" t="Include">
-                  <e p="Scripts" t="Include">
-                    <e p="Connection.cs" t="Include" />
-                    <e p="NodeDrag.cs" t="Include" />
-                    <e p="RuntimeMathGraph.cs" t="Include" />
-                    <e p="RuntimeNodes" t="Include">
-                      <e p="UGUIDisplayValue.cs" t="Include" />
-                      <e p="UGUIMathBaseNode.cs" t="Include" />
-                      <e p="UGUIMathNode.cs" t="Include" />
-                      <e p="UGUIVector.cs" t="Include" />
-                    </e>
-                    <e p="UGUIContextMenu.cs" t="Include" />
-                    <e p="UGUIPort.cs" t="Include" />
-                    <e p="UGUITooltip.cs" t="Include" />
-                  </e>
-                </e>
-                <e p="StateMachine" t="Include">
-                  <e p="Editor" t="Include">
-                    <e p="StateGraphEditor.cs" t="Include" />
-                  </e>
-                  <e p="Nodes" t="Include">
-                    <e p="Editor" t="Include">
-                      <e p="StateNodeEditor.cs" t="Include" />
-                    </e>
-                    <e p="StateNode.cs" t="Include" />
-                  </e>
-                  <e p="StateGraph.cs" t="Include" />
-                </e>
-              </e>
-            </e>
             <e p="Scripts" t="Include">
               <e p="Attributes" t="Include">
                 <e p="NodeEnum.cs" t="Include" />
@@ -355,8 +356,16 @@
           <e p="Blocks" t="Include">
             <e p="BlockData.cs" t="Include" />
           </e>
-          <e p="EnemyState" t="Include">
-            <e p="EnemyState.cs" t="Include" />
+          <e p="Units" t="Include">
+            <e p="ActionAttack.cs" t="Include" />
+            <e p="ActionFollow.cs" t="Include" />
+            <e p="ActionRun.cs" t="Include" />
+            <e p="ConditionAdjacent.cs" t="Include" />
+            <e p="ConditionDistance.cs" t="Include" />
+            <e p="ConditionHealth.cs" t="Include" />
+            <e p="ConditionManhattan.cs" t="Include" />
+            <e p="ConditionVisibility.cs" t="Include" />
+            <e p="UnitState.cs" t="Include" />
           </e>
         </e>
       </e>

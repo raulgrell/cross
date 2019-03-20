@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyState : ScriptableObject
+public class UnitState : State
 {
-
+    
 }
