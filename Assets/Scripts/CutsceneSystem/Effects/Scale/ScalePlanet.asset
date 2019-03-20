@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212340fd18634609bafe7669173832d7, type: 3}
-  m_Name: BackgroundImage2
+  m_Script: {fileID: 11500000, guid: ff07875a91b80664d81a9f793880019a, type: 3}
+  m_Name: ScalePlanet
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 031cb878ffb2769428c1c6a256b970db, type: 3}
-  effects:
-  - {fileID: 11400000, guid: cbcf04d7858192d49a1ff4a32d5976f6, type: 2}
+  intialScaleImage: {x: 0.01, y: 0.01, z: 1}
+  scaleSpeed: 0.0001
+  scale: {x: 0.15, y: 0.15, z: 1}

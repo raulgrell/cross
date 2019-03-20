@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GridScene.unity
     guid: bc1f1a5deba36614db75e3969faf0f5b
   - enabled: 1
-    path: Assets/Scenes/DiogoTesting.unity
+    path: Assets/Scenes/CutsceneScene.unity
     guid: 6398538f0dc45124599e9efb04e3d3ee
   m_configObjects: {}

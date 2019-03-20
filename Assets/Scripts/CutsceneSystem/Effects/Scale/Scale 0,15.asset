@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Scale 0,15
   m_EditorClassIdentifier: 
   intialScaleImage: {x: 0.15, y: 0.15, z: 1}
-  scaleOverTime: 0
+  scaleSpeed: 0
   scale: {x: 0, y: 0, z: 0}

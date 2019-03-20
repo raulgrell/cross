@@ -24,9 +24,10 @@ public class GridCombat : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetMouseButtonDown(0))
         {
-            
+            rotateTowards(Input.mousePosition);
         }
 
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -34,7 +35,7 @@ public class GridCombat : MonoBehaviour
             Time.timeScale = 0.2f;
             targeting = true;
         }
-        
+
         if (targeting && Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
         {
             target = hitInfo.transform;
@@ -45,6 +46,16 @@ public class GridCombat : MonoBehaviour
             Time.timeScale = 1f;                
             targeting = false;
         }
+        if (target && target.CompareTag("Enemy"))
+        {
+            //kinda working
+            transform.LookAt(target);
+        }
+        else if (target)
+        {
+            rotateTowards(target.position);
+        }
+
     }
 
     private void OnDrawGizmos()
@@ -54,6 +65,14 @@ public class GridCombat : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireCube(target.position, Vector3.one);
             Gizmos.DrawLine(transform.position, target.position);
+            
         }
+    }
+    void rotateTowards(Vector3 direction)
+    {
+        //not working
+        float angle = Vector3.Angle(transform.position, direction);
+        transform.localRotation = new Quaternion(0,angle,0,1);
+
     }
 }
