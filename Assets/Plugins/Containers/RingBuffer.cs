@@ -57,19 +57,20 @@ public class RingBuffer<T> : IEnumerable<T>
     {
         T[] newArray = new T[length];
         int newArrayOffset = 0;
-        ArraySegment<T>[] segments = { ArrayOne, ArrayTwo };
+        ArraySegment<T>[] segments = {ArrayOne, ArrayTwo};
         foreach (ArraySegment<T> segment in segments)
         {
             Debug.Assert(segment.Array != null, "segment.Array != null");
             Array.Copy(segment.Array, segment.Offset, newArray, newArrayOffset, segment.Count);
             newArrayOffset += segment.Count;
         }
+
         return newArray;
     }
 
     public IEnumerator<T> GetEnumerator()
     {
-        ArraySegment<T>[] segments = { ArrayOne, ArrayTwo};
+        ArraySegment<T>[] segments = {ArrayOne, ArrayTwo};
         foreach (ArraySegment<T> segment in segments)
         {
             for (int i = 0; i < segment.Count; i++)

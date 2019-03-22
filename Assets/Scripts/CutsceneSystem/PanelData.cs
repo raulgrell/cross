@@ -6,19 +6,12 @@ using UnityEngine.UI;
 [CreateAssetMenu(menuName = "Cutscene/Panel")]
 public class PanelData : ScriptableObject
 {
-
-    [SerializeField]
-    private float duration;
-    [SerializeField]
-    private float startTime;
-    [SerializeField]
-    private CutsceneImage[] images;
-    [SerializeField]
-    private CutsceneText[] texts;
-    [SerializeField]
-    private CutsceneImage backgroundImage;
-    [SerializeField]
-    private Vector3 panelScale;
+    [SerializeField] private float duration;
+    [SerializeField] private float startTime;
+    [SerializeField] private CutsceneImage[] images;
+    [SerializeField] private CutsceneText[] texts;
+    [SerializeField] private CutsceneImage backgroundImage;
+    [SerializeField] private Vector3 panelScale;
 
     public Vector3 PanelScale => panelScale;
     public CutsceneImage BackgroundImage => backgroundImage;

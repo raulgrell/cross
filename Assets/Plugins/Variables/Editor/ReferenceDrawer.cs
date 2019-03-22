@@ -12,13 +12,14 @@ public class ReferenceDrawer : PropertyDrawer
     private bool isConstant;
 
     private const string AssetsBase = "Assets";
-    private static string[] options = { "Use Constant", "Use Variable" };
+    private static string[] options = {"Use Constant", "Use Variable"};
 
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
         if (popupStyle == null)
         {
-            popupStyle = new GUIStyle(GUI.skin.GetStyle("PaneOptions")) {
+            popupStyle = new GUIStyle(GUI.skin.GetStyle("PaneOptions"))
+            {
                 imagePosition = ImagePosition.ImageOnly
             };
         }
@@ -50,7 +51,7 @@ public class ReferenceDrawer : PropertyDrawer
         useConstant.boolValue = isConstant;
         if (!isConstant)
         {
-            Rect rect = new Rect(position) { xMin = position.xMax - 100};
+            Rect rect = new Rect(position) {xMin = position.xMax - 100};
             position.xMax = rect.xMin - buttonStyle.margin.left;
 
             if (GUI.Button(rect, "Create New"))
@@ -78,7 +79,8 @@ public class ReferenceDrawer : PropertyDrawer
 
         for (int i = 0; i < parts.Length; i++)
         {
-            var bindingFlags = BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.FlattenHierarchy | BindingFlags.Instance;
+            var bindingFlags = BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.FlattenHierarchy |
+                               BindingFlags.Instance;
             currentType = currentType.GetField(parts[i], bindingFlags).FieldType;
         }
 

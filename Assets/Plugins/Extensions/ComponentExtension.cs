@@ -37,4 +37,3 @@ public static class ComponentExtension
         return results.ToArray();
     }
 }
-

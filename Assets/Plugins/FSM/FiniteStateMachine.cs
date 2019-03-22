@@ -12,7 +12,7 @@ public class FiniteStateMachine<T> : MonoBehaviour where T : MonoBehaviour
     private T agent;
 
     public T Agent => agent;
-    
+
     private void Start()
     {
         currentState = initialState;
@@ -22,7 +22,7 @@ public class FiniteStateMachine<T> : MonoBehaviour where T : MonoBehaviour
     private void Update()
     {
         StateTransition triggered = null;
-       
+
         foreach (var transition in currentState.Transitions)
         {
             if (transition.IsTriggered(this))
@@ -34,7 +34,7 @@ public class FiniteStateMachine<T> : MonoBehaviour where T : MonoBehaviour
 
         var actions = new List<StateAction>();
         actions.AddRange(currentState.Actions);
-        
+
         if (triggered)
         {
             if (currentState.ExitAction)
@@ -42,10 +42,10 @@ public class FiniteStateMachine<T> : MonoBehaviour where T : MonoBehaviour
 
             if (triggered.Target.EntryAction)
                 actions.Add(triggered.Target.EntryAction);
-            
+
             if (triggered.Action)
                 actions.Add(triggered.Action);
-            
+
             DoActions(actions);
             currentState = triggered.Target;
         }

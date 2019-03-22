@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using NaughtyAttributes;
 using UnityEditor;
 using UnityEngine;
 
@@ -64,7 +63,6 @@ public class GridUnit : MonoBehaviour
         Gizmos.DrawWireSphere(grid.CellToWorld(position), 1);
     }
 
-    [Button("Apply")]
     private void Apply()
     {
         var unitPosition = transform.position;
