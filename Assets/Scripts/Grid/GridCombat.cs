@@ -26,7 +26,7 @@ public class GridCombat : MonoBehaviour
     void Update()
     {
 
-
+        //Attacks
         if (Input.GetMouseButtonDown(0))
         {
             Instantiate(meleePrefab, transform.position + (transform.forward * 2), transform.rotation);           
@@ -38,22 +38,24 @@ public class GridCombat : MonoBehaviour
             Instantiate(projectilePrefab, projectilePos + (transform.forward), transform.rotation);
         }
 
+   
 
+
+
+        //Targeting System
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             Time.timeScale = 0.2f;
             targeting = true;
         }
-
-        if (targeting && Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
-        {
-            target = hitInfo.transform;
-        }
-
         if (Input.GetKeyUp(KeyCode.Tab))
         {
             Time.timeScale = 1f;                
             targeting = false;
+        }
+        if (targeting && Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
+        {
+            target = hitInfo.transform;
         }
         if (target)
         {
@@ -76,10 +78,7 @@ public class GridCombat : MonoBehaviour
     }
     void rotateTowards(Vector3 direction)
     {
-        //not working
         var newRotation = Quaternion.LookRotation(-1 * (transform.position - direction), Vector3.up);
         transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 8);
-
-
     }
 }
