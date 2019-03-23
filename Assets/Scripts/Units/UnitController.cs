@@ -5,9 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(GridUnit))]
 public abstract class UnitController : MonoBehaviour
 {
-    public GridUnit unit;
     public Transform target;
     public float health;
+    
+    internal GridUnit unit;
 
     private void Start()
     {

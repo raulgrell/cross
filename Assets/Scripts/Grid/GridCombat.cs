@@ -11,6 +11,7 @@ class Attack
         positions = pos;
     }
 }
+
 public class GridCombat : MonoBehaviour
 {
     public GameObject projectilePrefab;
@@ -22,37 +23,32 @@ public class GridCombat : MonoBehaviour
     private GridUnit gridUnit;
 
     private List<GridNode> neighbors;
-    
+
     private Transform target;
     private bool targeting;
     private Attack meleeAttack;
-    
+
 
     void Start()
     {
-
         gridUnit = GetComponent<GridUnit>();
         grid = gridUnit.grid;
     }
 
     void Update()
     {
-
         //Attacks
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(meleePrefab, transform.position + (transform.forward * 2), transform.rotation);           
+            Instantiate(meleePrefab, transform.position + (transform.forward * 2), transform.rotation);
         }
+
         if (Input.GetMouseButtonDown(1))
         {
             Vector3 projectilePos = transform.position;
-            projectilePos.y = transform.position.y + 1.5f; 
+            projectilePos.y = transform.position.y + 1.5f;
             Instantiate(projectilePrefab, projectilePos + (transform.forward), transform.rotation);
         }
-
-   
-
-
 
         //Targeting System
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -60,22 +56,24 @@ public class GridCombat : MonoBehaviour
             Time.timeScale = 0.2f;
             targeting = true;
         }
+
         if (Input.GetKeyUp(KeyCode.Tab))
         {
-            Time.timeScale = 1f;                
+            Time.timeScale = 1f;
             targeting = false;
         }
+
         if (targeting && Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
         {
             target = hitInfo.transform;
         }
+
         if (target)
         {
             Vector3 newTarget = target.position;
             newTarget.y = transform.position.y;
             rotateTowards(newTarget);
         }
-
     }
 
     private void OnDrawGizmos()
@@ -87,9 +85,9 @@ public class GridCombat : MonoBehaviour
             Gizmos.DrawLine(transform.position, target.position);
 
             DrawTarget(transform.eulerAngles.y);
-            
         }
     }
+
     void rotateTowards(Vector3 direction)
     {
         var newRotation = Quaternion.LookRotation(-1 * (transform.position - direction), Vector3.up);
@@ -99,11 +97,11 @@ public class GridCombat : MonoBehaviour
 
     void DrawTarget(float rotation)
     {
-
         Vector2Int newPos = new Vector2Int();
         Vector2Int direction = gridUnit.position;
-        Vector2Int[] closeAttacks =new Vector2Int[3];
-        if (rotation <= 23 && rotation > -23)
+        Vector2Int[] closeAttacks = new Vector2Int[3];
+        
+        if (rotation <= 23 && rotation > 0 || rotation > 337 && rotation <= 360)
         {
             closeAttacks[0] = new Vector2Int(direction.x, direction.y + 1);
             closeAttacks[1] = new Vector2Int(direction.x + 1, direction.y + 1);
@@ -174,17 +172,15 @@ public class GridCombat : MonoBehaviour
         Vector3 forwardPosition = grid.CellToWorld(newPos);
         forwardPosition.y = transform.position.y + 1;
         Gizmos.DrawSphere(forwardPosition, 0.5f);
-
     }
 
     void doAttack(Attack attack)
     {
-        for(int i = 0; i < attack.positions.Length; i++) 
+        for (int i = 0; i < attack.positions.Length; i++)
         {
             Vector3 actualPosition = grid.CellToWorld(attack.positions[i]);
             actualPosition.y = transform.position.y;
             Gizmos.DrawWireCube(actualPosition, Vector3.one);
         }
     }
-
 }
