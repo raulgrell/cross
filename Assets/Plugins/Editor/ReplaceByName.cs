@@ -10,11 +10,10 @@ public class ReplaceByName : ScriptableWizard
     public bool m_matchCase = true;
 
     [MenuItem("Custom/Batch Replace By Name")]
-
     static void CreateWizard()
     {
         var replaceGameObjects = DisplayWizard<ReplaceByName>("Replace GameObjects", "Replace");
-        
+
         //Prefill the name field with the active object
         replaceGameObjects.m_name = Selection.activeObject.name;
     }

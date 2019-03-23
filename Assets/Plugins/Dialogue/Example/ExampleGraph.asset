@@ -30,33 +30,10 @@ MonoBehaviour:
   m_Name: Event
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -40, y: 168}
+  position: {x: 88, y: 88}
   ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 114122190655095816}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: answers 1
-        node: {fileID: 114764587866609370}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 1
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 114122190655095816}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
+    keys: []
+    values: []
   input: {fileID: 0}
   output: {fileID: 0}
   trigger: []
@@ -73,80 +50,13 @@ MonoBehaviour:
   m_Name: Branch
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -40, y: -120}
+  position: {x: 120, y: -72}
   ports:
-    keys:
-    - pass
-    - fail
-    - input
-    - output
-    values:
-    - _fieldName: pass
-      _node: {fileID: 114549059752335612}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: fail
-      _node: {fileID: 114549059752335612}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 114549059752335612}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 114764587866609370}
-        reroutePoints: []
-      - fieldName: answers 0
-        node: {fileID: 114764587866609370}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 1
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 114549059752335612}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
+    keys: []
+    values: []
   input: {fileID: 0}
   output: {fileID: 0}
-  conditions:
-  - _target: {fileID: 0}
-    _methodName: 
-    _args: []
-    _dynamic: 0
-    _typeName: Dialogue.Condition, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
-  - _target: {fileID: 0}
-    _methodName: 
-    _args: []
-    _dynamic: 0
-    _typeName: Dialogue.Condition, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
-  - _target: {fileID: 0}
-    _methodName: 
-    _args: []
-    _dynamic: 0
-    _typeName: Dialogue.Condition, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
+  conditions: []
   pass: {fileID: 0}
   fail: {fileID: 0}
 --- !u!114 &114764587866609370
@@ -162,76 +72,12 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -456, y: -72}
+  position: {x: -392, y: -120}
   ports:
-    keys:
-    - answers
-    - input
-    - output
-    - answers 0
-    - answers 1
-    values:
-    - _fieldName: answers
-      _node: {fileID: 114764587866609370}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 114764587866609370}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 1
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 114764587866609370}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 114549059752335612}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: answers 0
-      _node: {fileID: 114764587866609370}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 114549059752335612}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: answers 1
-      _node: {fileID: 114764587866609370}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 114122190655095816}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 1
+    keys: []
+    values: []
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: 89733cd8ccd19284f80a50305c266aae, type: 2}
   text: 
-  answers:
-  - text: 
-    voiceClip: {fileID: 0}
-  - text: 
-    voiceClip: {fileID: 0}
+  answers: []

@@ -6,13 +6,12 @@ public class GridNode : MonoBehaviour
 {
     public GridUnit unit;
     public float height;
-   
-    void Start()
-    {
-    }
+    public bool walkable;
+    public Vector2Int gridPosition;
 
-    void Update()
-    {
-        
-    }
+    public int gCost;
+    public int hCost;
+    public GridNode parent;
+
+    public int FCost => gCost + hCost;
 }

@@ -18,7 +18,7 @@ public class ReplaceSelection : ScriptableWizard
     {
         foreach (GameObject go in ObjectsToReplace)
         {
-            var newObject = (GameObject)PrefabUtility.InstantiatePrefab(Prefab);
+            var newObject = (GameObject) PrefabUtility.InstantiatePrefab(Prefab);
             newObject.transform.SetParent(go.transform.parent, true);
             newObject.transform.localPosition = go.transform.localPosition;
             newObject.transform.localRotation = go.transform.localRotation;

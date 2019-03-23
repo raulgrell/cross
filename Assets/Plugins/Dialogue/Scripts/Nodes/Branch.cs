@@ -32,9 +32,10 @@ namespace Dialogue
             }
 
             //Trigger next nodes
-            NodePort port = GetOutputPort(success ? "pass" : "fail");
-            if (port == null)
-                return;
+            NodePort port;
+            if (success) port = GetOutputPort("pass");
+            else port = GetOutputPort("fail");
+            if (port == null) return;
             for (int i = 0; i < port.ConnectionCount; i++)
             {
                 NodePort connection = port.GetConnection(i);

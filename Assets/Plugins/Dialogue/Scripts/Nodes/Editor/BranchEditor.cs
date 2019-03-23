@@ -5,11 +5,13 @@ using UnityEditor;
 using UnityEngine;
 using XNodeEditor;
 
-namespace DialogueEditor {
+namespace DialogueEditor
+{
     [CustomNodeEditor(typeof(Branch))]
-    public class BranchEditor : NodeEditor {
-
-        public override void OnBodyGUI() {
+    public class BranchEditor : NodeEditor
+    {
+        public override void OnBodyGUI()
+        {
             serializedObject.Update();
 
             Branch node = target as Branch;
@@ -22,7 +24,8 @@ namespace DialogueEditor {
             serializedObject.ApplyModifiedProperties();
         }
 
-        public override int GetWidth() {
+        public override int GetWidth()
+        {
             return 336;
         }
     }

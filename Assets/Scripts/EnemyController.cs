@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(GridUnit))]
-public class EnemyController : MonoBehaviour
+public class EnemyController : UnitController
 {
     private GridUnit unit;
     private Vector2Int nextPosition;
@@ -45,7 +45,7 @@ public class EnemyController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (unit == null)
+        if (unit == null || unit.grid == null)
             return;
         
         Gizmos.color = Color.red;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerController))]
-public class HeroBehaviour : FiniteStateMachine<PlayerController>
+[RequireComponent(typeof(HeroController))]
+public class HeroBehaviour : FiniteStateMachine<HeroController>
 {
 }
