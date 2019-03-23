@@ -205,6 +205,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unit: {fileID: 0}
   height: 0
+  walkable: 0
+  gridPosition: {x: 0, y: 0}
+  gCost: 0
+  hCost: 0
+  parent: {fileID: 0}
 --- !u!1 &148439852
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,7 +488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {x: 0, y: 0}
-  position: {x: 8, y: 7}
+  position: {x: 5, y: 7}
   grid: {fileID: 1522675978}
 --- !u!114 &1251555300
 MonoBehaviour:
@@ -925,6 +930,7 @@ MonoBehaviour:
   meleePrefab: {fileID: 2071526479}
   specialPrefab: {fileID: 436323567}
   camera: {fileID: 1522439774}
+  rotationSpeed: 10
 --- !u!114 &1762909634
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -30,13 +30,7 @@ public class GridCombat : MonoBehaviour
 
     void Start()
     {
-        Vector2Int[] closeAttacks =
-        {
-            new Vector2Int(0,0),
-            new Vector2Int(0,1),
-            new Vector2Int(0,-1)
-        };
-        meleeAttack = new Attack(closeAttacks);
+
         gridUnit = GetComponent<GridUnit>();
         grid = gridUnit.grid;
     }
@@ -105,52 +99,89 @@ public class GridCombat : MonoBehaviour
 
     void DrawTarget(float rotation)
     {
+
         Vector2Int newPos = new Vector2Int();
         Vector2Int direction = gridUnit.position;
+        Vector2Int[] closeAttacks =new Vector2Int[3];
         if (rotation <= 23 && rotation > -23)
         {
+            closeAttacks[0] = new Vector2Int(direction.x, direction.y + 1);
+            closeAttacks[1] = new Vector2Int(direction.x + 1, direction.y + 1);
+            closeAttacks[2] = new Vector2Int(direction.x - 1, direction.y + 1);
+
             newPos = new Vector2Int(direction.x, direction.y + 1);
         }
         else if (rotation <= 181 && rotation > 158)
         {
+            closeAttacks[0] = new Vector2Int(direction.x, direction.y - 1);
+            closeAttacks[1] = new Vector2Int(direction.x + 1, direction.y - 1);
+            closeAttacks[2] = new Vector2Int(direction.x - 1, direction.y - 1);
+
             newPos = new Vector2Int(direction.x, direction.y - 1);
         }
         else if (rotation <= 158 && rotation > 113)
         {
+            closeAttacks[0] = new Vector2Int(direction.x + 1, direction.y - 1);
+            closeAttacks[1] = new Vector2Int(direction.x + 1, direction.y);
+            closeAttacks[2] = new Vector2Int(direction.x, direction.y - 1);
+
             newPos = new Vector2Int(direction.x + 1, direction.y - 1);
         }
         else if (rotation <= 113 && rotation > 68)
         {
+            closeAttacks[0] = new Vector2Int(direction.x + 1, direction.y);
+            closeAttacks[1] = new Vector2Int(direction.x + 1, direction.y + 1);
+            closeAttacks[2] = new Vector2Int(direction.x + 1, direction.y - 1);
+
             newPos = new Vector2Int(direction.x + 1, direction.y);
         }
         else if (rotation <= 68 && rotation > 23f)
         {
+            closeAttacks[0] = new Vector2Int(direction.x + 1, direction.y + 1);
+            closeAttacks[1] = new Vector2Int(direction.x, direction.y + 1);
+            closeAttacks[2] = new Vector2Int(direction.x + 1, direction.y);
+
             newPos = new Vector2Int(direction.x + 1, direction.y + 1);
         }
         else if (rotation <= 337 && rotation > 270)
         {
+            closeAttacks[0] = new Vector2Int(direction.x - 1, direction.y + 1);
+            closeAttacks[1] = new Vector2Int(direction.x, direction.y + 1);
+            closeAttacks[2] = new Vector2Int(direction.x - 1, direction.y);
+
             newPos = new Vector2Int(direction.x - 1, direction.y + 1);
         }
         else if (rotation <= 270 && rotation > 225)
         {
+            closeAttacks[0] = new Vector2Int(direction.x - 1, direction.y);
+            closeAttacks[1] = new Vector2Int(direction.x - 1, direction.y + 1);
+            closeAttacks[2] = new Vector2Int(direction.x - 1, direction.y - 1);
+
             newPos = new Vector2Int(direction.x - 1, direction.y);
         }
         else if (rotation <= 225 && rotation > 181)
         {
+            closeAttacks[0] = new Vector2Int(direction.x - 1, direction.y - 1);
+            closeAttacks[1] = new Vector2Int(direction.x - 1, direction.y);
+            closeAttacks[2] = new Vector2Int(direction.x, direction.y - 1);
+
             newPos = new Vector2Int(direction.x - 1, direction.y - 1);
         }
+
+        meleeAttack = new Attack(closeAttacks);
+        doAttack(meleeAttack);
+
         Vector3 forwardPosition = grid.CellToWorld(newPos);
         forwardPosition.y = transform.position.y + 1;
         Gizmos.DrawSphere(forwardPosition, 0.5f);
-        doAttack(meleeAttack, newPos);
 
     }
 
-    void doAttack(Attack attack, Vector2Int position)
+    void doAttack(Attack attack)
     {
-        foreach(Vector2Int pos in attack.positions)
+        for(int i = 0; i < attack.positions.Length; i++) 
         {
-            Vector3 actualPosition = grid.CellToWorld(position + pos);
+            Vector3 actualPosition = grid.CellToWorld(attack.positions[i]);
             actualPosition.y = transform.position.y;
             Gizmos.DrawWireCube(actualPosition, Vector3.one);
         }
