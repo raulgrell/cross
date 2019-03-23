@@ -2,12 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+class Attack
+{
+    public Vector2Int[] positions;
+
+    public Attack(Vector2Int[] pos)
+    {
+        positions = pos;
+    }
+}
 public class GridCombat : MonoBehaviour
 {
     public GameObject projectilePrefab;
     public GameObject meleePrefab;
     public GameObject specialPrefab;
     public new Camera camera;
+    public float rotationSpeed;
     private GridLayer grid;
     private GridUnit gridUnit;
 
@@ -15,10 +25,18 @@ public class GridCombat : MonoBehaviour
     
     private Transform target;
     private bool targeting;
+    private Attack meleeAttack;
     
 
     void Start()
     {
+        Vector2Int[] closeAttacks =
+        {
+            new Vector2Int(0,0),
+            new Vector2Int(0,1),
+            new Vector2Int(0,-1)
+        };
+        meleeAttack = new Attack(closeAttacks);
         gridUnit = GetComponent<GridUnit>();
         grid = gridUnit.grid;
     }
@@ -73,12 +91,69 @@ public class GridCombat : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireCube(target.position, Vector3.one);
             Gizmos.DrawLine(transform.position, target.position);
+
+            DrawTarget(transform.eulerAngles.y);
             
         }
     }
     void rotateTowards(Vector3 direction)
     {
         var newRotation = Quaternion.LookRotation(-1 * (transform.position - direction), Vector3.up);
-        transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 8);
+        transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * rotationSpeed);
     }
+
+
+    void DrawTarget(float rotation)
+    {
+        Vector2Int newPos = new Vector2Int();
+        Vector2Int direction = gridUnit.position;
+        if (rotation <= 23 && rotation > -23)
+        {
+            newPos = new Vector2Int(direction.x, direction.y + 1);
+        }
+        else if (rotation <= 181 && rotation > 158)
+        {
+            newPos = new Vector2Int(direction.x, direction.y - 1);
+        }
+        else if (rotation <= 158 && rotation > 113)
+        {
+            newPos = new Vector2Int(direction.x + 1, direction.y - 1);
+        }
+        else if (rotation <= 113 && rotation > 68)
+        {
+            newPos = new Vector2Int(direction.x + 1, direction.y);
+        }
+        else if (rotation <= 68 && rotation > 23f)
+        {
+            newPos = new Vector2Int(direction.x + 1, direction.y + 1);
+        }
+        else if (rotation <= 337 && rotation > 270)
+        {
+            newPos = new Vector2Int(direction.x - 1, direction.y + 1);
+        }
+        else if (rotation <= 270 && rotation > 225)
+        {
+            newPos = new Vector2Int(direction.x - 1, direction.y);
+        }
+        else if (rotation <= 225 && rotation > 181)
+        {
+            newPos = new Vector2Int(direction.x - 1, direction.y - 1);
+        }
+        Vector3 forwardPosition = grid.CellToWorld(newPos);
+        forwardPosition.y = transform.position.y + 1;
+        Gizmos.DrawSphere(forwardPosition, 0.5f);
+        doAttack(meleeAttack, newPos);
+
+    }
+
+    void doAttack(Attack attack, Vector2Int position)
+    {
+        foreach(Vector2Int pos in attack.positions)
+        {
+            Vector3 actualPosition = grid.CellToWorld(position + pos);
+            actualPosition.y = transform.position.y;
+            Gizmos.DrawWireCube(actualPosition, Vector3.one);
+        }
+    }
+
 }
