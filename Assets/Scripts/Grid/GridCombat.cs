@@ -99,74 +99,40 @@ public class GridCombat : MonoBehaviour
     {
         Vector2Int newPos = new Vector2Int();
         Vector2Int direction = gridUnit.position;
-        Vector2Int[] closeAttacks = new Vector2Int[3];
         
-        if (rotation <= 23 && rotation > 0 || rotation > 337 && rotation <= 360)
+        // t, tr, r, br, b, bl, l, tl
+        var neighbours = new Vector2Int[8];
+        neighbours[0] = new Vector2Int(direction.x + 0, direction.y + 1);
+        neighbours[1] = new Vector2Int(direction.x + 1, direction.y + 1);
+        neighbours[2] = new Vector2Int(direction.x + 1, direction.y + 0);
+        neighbours[3] = new Vector2Int(direction.x + 1, direction.y - 1);
+        neighbours[4] = new Vector2Int(direction.x + 0, direction.y - 1);
+        neighbours[5] = new Vector2Int(direction.x - 1, direction.y - 1);
+        neighbours[6] = new Vector2Int(direction.x - 1, direction.y + 0);
+        neighbours[7] = new Vector2Int(direction.x - 1, direction.y + 1);
+
+        var sectors = new[]
         {
-            closeAttacks[0] = new Vector2Int(direction.x, direction.y + 1);
-            closeAttacks[1] = new Vector2Int(direction.x + 1, direction.y + 1);
-            closeAttacks[2] = new Vector2Int(direction.x - 1, direction.y + 1);
+            new[] {7, 0, 1},
+            new[] {0, 1, 2},
+            new[] {1, 2, 3},
+            new[] {2, 3, 4},
+            new[] {3, 4, 5},
+            new[] {4, 5, 6},
+            new[] {5, 6, 7},
+            new[] {6, 7, 0},
+        };
 
-            newPos = new Vector2Int(direction.x, direction.y + 1);
-        }
-        else if (rotation <= 181 && rotation > 158)
+        int sector = (int)((rotation + 22.5f) / 45f) % 8;
+
+        var threatened = new []
         {
-            closeAttacks[0] = new Vector2Int(direction.x, direction.y - 1);
-            closeAttacks[1] = new Vector2Int(direction.x + 1, direction.y - 1);
-            closeAttacks[2] = new Vector2Int(direction.x - 1, direction.y - 1);
+            neighbours[sectors[sector][0]],
+            neighbours[sectors[sector][1]],
+            neighbours[sectors[sector][2]]
+        };
 
-            newPos = new Vector2Int(direction.x, direction.y - 1);
-        }
-        else if (rotation <= 158 && rotation > 113)
-        {
-            closeAttacks[0] = new Vector2Int(direction.x + 1, direction.y - 1);
-            closeAttacks[1] = new Vector2Int(direction.x + 1, direction.y);
-            closeAttacks[2] = new Vector2Int(direction.x, direction.y - 1);
-
-            newPos = new Vector2Int(direction.x + 1, direction.y - 1);
-        }
-        else if (rotation <= 113 && rotation > 68)
-        {
-            closeAttacks[0] = new Vector2Int(direction.x + 1, direction.y);
-            closeAttacks[1] = new Vector2Int(direction.x + 1, direction.y + 1);
-            closeAttacks[2] = new Vector2Int(direction.x + 1, direction.y - 1);
-
-            newPos = new Vector2Int(direction.x + 1, direction.y);
-        }
-        else if (rotation <= 68 && rotation > 23f)
-        {
-            closeAttacks[0] = new Vector2Int(direction.x + 1, direction.y + 1);
-            closeAttacks[1] = new Vector2Int(direction.x, direction.y + 1);
-            closeAttacks[2] = new Vector2Int(direction.x + 1, direction.y);
-
-            newPos = new Vector2Int(direction.x + 1, direction.y + 1);
-        }
-        else if (rotation <= 337 && rotation > 270)
-        {
-            closeAttacks[0] = new Vector2Int(direction.x - 1, direction.y + 1);
-            closeAttacks[1] = new Vector2Int(direction.x, direction.y + 1);
-            closeAttacks[2] = new Vector2Int(direction.x - 1, direction.y);
-
-            newPos = new Vector2Int(direction.x - 1, direction.y + 1);
-        }
-        else if (rotation <= 270 && rotation > 225)
-        {
-            closeAttacks[0] = new Vector2Int(direction.x - 1, direction.y);
-            closeAttacks[1] = new Vector2Int(direction.x - 1, direction.y + 1);
-            closeAttacks[2] = new Vector2Int(direction.x - 1, direction.y - 1);
-
-            newPos = new Vector2Int(direction.x - 1, direction.y);
-        }
-        else if (rotation <= 225 && rotation > 181)
-        {
-            closeAttacks[0] = new Vector2Int(direction.x - 1, direction.y - 1);
-            closeAttacks[1] = new Vector2Int(direction.x - 1, direction.y);
-            closeAttacks[2] = new Vector2Int(direction.x, direction.y - 1);
-
-            newPos = new Vector2Int(direction.x - 1, direction.y - 1);
-        }
-
-        meleeAttack = new Attack(closeAttacks);
+        meleeAttack = new Attack(threatened);
         doAttack(meleeAttack);
 
         Vector3 forwardPosition = grid.CellToWorld(newPos);
