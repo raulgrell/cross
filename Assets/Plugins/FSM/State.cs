@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "FSM/State")]
-public class State : ScriptableObject
+public abstract class State : ScriptableObject
 {
     [SerializeField] private StateAction entryAction;
     [SerializeField] private StateAction exitAction;

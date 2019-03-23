@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Run", menuName = "FSM/Action/Run")]
-public class ActionRun: StateAction 
+public class ActionRun: UnitAction 
 {
-    public override void Act<T>(FiniteStateMachine<T> fsm)
+    public override void Act(UnitController agent)
     {
         throw new System.NotImplementedException();
     }

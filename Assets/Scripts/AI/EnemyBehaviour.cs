@@ -5,4 +5,5 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyController))]
 public class EnemyBehaviour : FiniteStateMachine<EnemyController>
 {
+  
 }

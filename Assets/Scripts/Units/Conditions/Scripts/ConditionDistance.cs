@@ -1,13 +1,27 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 [CreateAssetMenu(fileName = "Distance", menuName = "FSM/Condition/Distance")]
-public class ConditionDistance : StateCondition
+public class ConditionDistance : UnitCondition
 {
-    public override bool Test<T>(FiniteStateMachine<T> fsm)
+    public ConditionType type;
+    public float value;
+    
+    public override bool Test(UnitController unit)
     {
-        throw new System.NotImplementedException();
+        var  distance = Vector3.Distance(unit.transform.position, unit.target.position);
+        switch (type)
+        {
+            case ConditionType.Minimum:
+                return distance > value;
+            case ConditionType.Maximum:
+                return distance < value;
+            case ConditionType.Exact:
+                return distance == value;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
     }
 }

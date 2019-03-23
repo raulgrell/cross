@@ -11,13 +11,9 @@ namespace QAI
     [CreateAssetMenu(fileName = "Machine", menuName = "FSM/Machine", order = 1)]
     public abstract class AIGraph : NodeGraph
     {
-        /// <summary>Returns the current blackboard being executed.</summary>
-        public AIBlackboard Blackboard
-        {
-            get { return _blackboard; }
-        }
-
         protected AIBlackboard _blackboard;
+        
+        public AIBlackboard Blackboard => _blackboard;
 
         /// <summary>
         /// Get a value of type T from the blackboard by key name.

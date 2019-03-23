@@ -39,9 +39,13 @@
             <e p="SubGraph.cs" t="Include" />
           </e>
           <e p="Editor" t="Include">
+            <e p="QuickToggle.cs" t="Include" />
             <e p="RenameSelection.cs" t="Include" />
             <e p="ReplaceByName.cs" t="Include" />
             <e p="ReplaceSelection.cs" t="Include" />
+            <e p="Windows" t="Include">
+              <e p="GraphEditorWindow.cs" t="Include" />
+            </e>
           </e>
           <e p="Extensions" t="Include">
             <e p="ComponentExtension.cs" t="Include" />
@@ -173,6 +177,32 @@
             <e p="SerializableHashSet.cs" t="Include" />
             <e p="UserSerializableDictionaries.cs" t="Include" />
           </e>
+          <e p="Tree" t="Include">
+            <e p="Editor" t="Include">
+              <e p="TreeDataModel" t="Include">
+                <e p="TreeElement.cs" t="Include" />
+                <e p="TreeElementUtility.cs" t="Include" />
+                <e p="TreeModel.cs" t="Include" />
+              </e>
+              <e p="TreeViewExamples" t="Include">
+                <e p="BackendData" t="Include">
+                  <e p="MyTreeAsset.cs" t="Include" />
+                  <e p="MyTreeAssetEditor.cs" t="Include" />
+                  <e p="MyTreeElement.cs" t="Include" />
+                  <e p="MyTreeElementGenerator.cs" t="Include" />
+                  <e p="TreeViewWithTreeModel.cs" t="Include" />
+                </e>
+                <e p="CustomHeightTreeView.cs" t="Include" />
+                <e p="CustomHeightWindow.cs" t="Include" />
+                <e p="MultiColumnTreeView.cs" t="Include" />
+                <e p="MultiColumnWindow.cs" t="Include" />
+                <e p="SimpleTreeView.cs" t="Include" />
+                <e p="SimpleTreeViewWindow.cs" t="Include" />
+                <e p="TransformsTreeView.cs" t="Include" />
+                <e p="TransformsTreeViewWindow.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Variables" t="Include">
             <e p="BoolVariable.cs" t="Include" />
             <e p="ColorVariable.cs" t="Include" />
@@ -228,10 +258,12 @@
             </e>
           </e>
         </e>
+        <e p="projectileScript.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AI" t="Include">
             <e p="EnemyBehaviour.cs" t="Include" />
             <e p="HeroBehaviour.cs" t="Include" />
+            <e p="SquadController.cs" t="Include" />
           </e>
           <e p="CameraController.cs" t="Include" />
           <e p="CutsceneSystem" t="Include">
@@ -247,24 +279,41 @@
             </e>
             <e p="PanelData.cs" t="Include" />
           </e>
-          <e p="EnemyController.cs" t="Include" />
           <e p="Grid" t="Include">
             <e p="GridCombat.cs" t="Include" />
             <e p="GridInput.cs" t="Include" />
             <e p="GridLayer.cs" t="Include" />
             <e p="GridNode.cs" t="Include" />
+            <e p="GridPathfinding.cs" t="Include" />
             <e p="GridUnit.cs" t="Include" />
           </e>
-          <e p="GridPathfinding" t="Include">
-            <e p="Grid.cs" t="Include" />
-            <e p="Node.cs" t="Include" />
-            <e p="Pathfinding.cs" t="Include" />
-            <e p="Unit.cs" t="Include" />
-          </e>
-          <e p="HeroController.cs" t="Include" />
           <e p="Session.cs" t="Include" />
-          <e p="SquadController.cs" t="Include" />
-          <e p="UnitController.cs" t="Include" />
+          <e p="Units" t="Include">
+            <e p="Actions" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ActionAttack.cs" t="Include" />
+                <e p="ActionFollow.cs" t="Include" />
+                <e p="ActionRun.cs" t="Include" />
+                <e p="ActionStop.cs" t="Include" />
+                <e p="UnitAction.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Conditions" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ConditionDistance.cs" t="Include" />
+                <e p="ConditionHealth.cs" t="Include" />
+                <e p="ConditionManhattan.cs" t="Include" />
+                <e p="ConditionVisibility.cs" t="Include" />
+                <e p="UnitCondition.cs" t="Include" />
+              </e>
+            </e>
+            <e p="EnemyController.cs" t="Include" />
+            <e p="HeroController.cs" t="Include" />
+            <e p="States" t="Include">
+              <e p="UnitState.cs" t="Include" />
+            </e>
+            <e p="UnitController.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Resources" t="Include">
@@ -285,26 +334,6 @@
               <e p="TMPro.cginc" t="Include" />
               <e p="TMPro_Properties.cginc" t="Include" />
               <e p="TMPro_Surface.cginc" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Variables" t="Include">
-          <e p="Units" t="Include">
-            <e p="Actions" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="ActionAttack.cs" t="Include" />
-                <e p="ActionFollow.cs" t="Include" />
-                <e p="ActionRun.cs" t="Include" />
-                <e p="ActionStop.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Conditions" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="ConditionDistance.cs" t="Include" />
-                <e p="ConditionHealth.cs" t="Include" />
-                <e p="ConditionManhattan.cs" t="Include" />
-                <e p="ConditionVisibility.cs" t="Include" />
-              </e>
             </e>
           </e>
         </e>

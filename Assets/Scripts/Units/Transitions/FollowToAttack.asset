@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de77890ffb6fe47469218bae2e4c0674, type: 3}
   m_Name: FollowToAttack
   m_EditorClassIdentifier: 
-  decision: {fileID: 0}
+  decision: {fileID: 11400000, guid: d80cd11259f13694a87bcdb767bf29b8, type: 2}
   action: {fileID: 0}
-  target: {fileID: 0}
+  target: {fileID: 11400000, guid: d4b2642afe64b1249bc5c87d04ea30f0, type: 2}

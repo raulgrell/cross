@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8913018737534625713}
+  - component: {fileID: 7183522390261173404}
   - component: {fileID: 1677838329977838706}
   - component: {fileID: 2316665328631087629}
   - component: {fileID: 5230122269678996370}
-  - component: {fileID: 7183522390261173404}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -34,6 +34,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7183522390261173404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5078883518902111652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d5a5b01e214c5468308622b61e5ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unit: {fileID: 0}
+  height: 0
+  walkable: 0
+  gridPosition: {x: 0, y: 0}
+  gCost: 0
+  hCost: 0
+  parent: {fileID: 0}
 --- !u!33 &1677838329977838706
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -93,15 +112,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &7183522390261173404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5078883518902111652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71d5a5b01e214c5468308622b61e5ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

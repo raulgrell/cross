@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public abstract class UnitController : MonoBehaviour
+[RequireComponent(typeof(GridUnit))]
+public class HeroController : UnitController
 {
-    
 }

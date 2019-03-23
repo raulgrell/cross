@@ -1,12 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Health", menuName = "FSM/Condition/Health")]
-public class ConditionHealth : StateCondition
+public class ConditionHealth : UnitCondition
 {
-    public override bool Test<T>(FiniteStateMachine<T> fsm)
+    public ConditionType type;
+    public float value;
+    
+    public override bool Test(UnitController unit)
     {
-        throw new System.NotImplementedException();
+        switch (type)
+        {
+            case ConditionType.Minimum:
+                return unit.health > value;
+            case ConditionType.Maximum:
+                return unit.health < value;
+            case ConditionType.Exact:
+                return unit.health == value;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
     }
 }

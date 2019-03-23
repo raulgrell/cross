@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4648b30c7b11e4948b257c0aa90b7cc6, type: 3}
+  m_Script: {fileID: 11500000, guid: abb8ada2fa494fc4c9bb67be39f8905a, type: 3}
   m_Name: Idle
   m_EditorClassIdentifier: 
   entryAction: {fileID: 0}
   exitAction: {fileID: 0}
-  actions: []
+  actions:
+  - {fileID: 11400000, guid: b4fed29658c087042ab9fd88c2421a66, type: 2}
   transitions:
   - {fileID: 11400000, guid: 619e4d40673f4234d9cac626d6a479f2, type: 2}

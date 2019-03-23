@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de77890ffb6fe47469218bae2e4c0674, type: 3}
   m_Name: AttackToRun
   m_EditorClassIdentifier: 
-  decision: {fileID: 11400000, guid: 03ad9fc50a655e74da107f9b213df2de, type: 2}
-  action: {fileID: 11400000, guid: b4fed29658c087042ab9fd88c2421a66, type: 2}
-  target: {fileID: 11400000, guid: 734ac2ce131e2354a98e5be6db9d6207, type: 2}
+  decision: {fileID: 11400000, guid: cd25f8dfc7a73d64495331868a5c5aa3, type: 2}
+  action: {fileID: 0}
+  target: {fileID: 11400000, guid: f141e2e21174b8045ab0b5e2371255ba, type: 2}

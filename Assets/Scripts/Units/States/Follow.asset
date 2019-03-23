@@ -9,10 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4648b30c7b11e4948b257c0aa90b7cc6, type: 3}
+  m_Script: {fileID: 11500000, guid: abb8ada2fa494fc4c9bb67be39f8905a, type: 3}
   m_Name: Follow
   m_EditorClassIdentifier: 
   entryAction: {fileID: 0}
   exitAction: {fileID: 0}
-  actions: []
-  transitions: []
+  actions:
+  - {fileID: 11400000, guid: df0814565f57a7948af12c3cfd500a0f, type: 2}
+  transitions:
+  - {fileID: 11400000, guid: 1f242d2c5dc33934592c2f09720efd4f, type: 2}
+  - {fileID: 11400000, guid: ab6e9fde8fd781d47ab0ce10508cf19c, type: 2}

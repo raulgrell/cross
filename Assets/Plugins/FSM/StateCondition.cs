@@ -5,5 +5,5 @@ using UnityEngine.EventSystems;
 
 public abstract class StateCondition : ScriptableObject
 {
-    public abstract bool Test<T>(FiniteStateMachine<T> fsm) where T : MonoBehaviour;
+    public abstract bool Test<T>(FiniteStateMachine<T> unit) where T : MonoBehaviour;
 }

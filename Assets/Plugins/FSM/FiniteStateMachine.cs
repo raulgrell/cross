@@ -9,8 +9,8 @@ public class FiniteStateMachine<T> : MonoBehaviour where T : MonoBehaviour
     public State initialState;
 
     private State currentState;
-    private T agent;
 
+    private T agent;
     public T Agent => agent;
 
     private void Start()
@@ -57,7 +57,7 @@ public class FiniteStateMachine<T> : MonoBehaviour where T : MonoBehaviour
 
     private void DoActions(List<StateAction> actions)
     {
-        foreach (StateAction action in actions)
+        foreach (var action in actions)
         {
             action.Act(this);
         }

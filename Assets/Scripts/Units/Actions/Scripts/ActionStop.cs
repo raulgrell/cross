@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Stop", menuName = "FSM/Action/Stop")]
-public class ActionStop : StateAction 
+public class ActionStop : UnitAction 
 {
-    public override void Act<T>(FiniteStateMachine<T> fsm)
+    public override void Act(UnitController agent)
     {
-        throw new System.NotImplementedException();
     }
 }

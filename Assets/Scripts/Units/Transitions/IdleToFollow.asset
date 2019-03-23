@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de77890ffb6fe47469218bae2e4c0674, type: 3}
   m_Name: IdleToFollow
   m_EditorClassIdentifier: 
-  decision: {fileID: 0}
+  decision: {fileID: 11400000, guid: 03ad9fc50a655e74da107f9b213df2de, type: 2}
   action: {fileID: 0}
-  target: {fileID: 0}
+  target: {fileID: 11400000, guid: d9e2f6360d6dd3842920271d7c480ffd, type: 2}
