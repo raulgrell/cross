@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-class Attack
+class BasicAttack
 {
     public Vector2Int[] positions;
 
-    public Attack(Vector2Int[] pos)
+    public BasicAttack(Vector2Int[] pos)
     {
         positions = pos;
     }
@@ -17,16 +17,22 @@ public class GridCombat : MonoBehaviour
     public GameObject projectilePrefab;
     public GameObject meleePrefab;
     public GameObject specialPrefab;
+    public GameObject Target;
     public new Camera camera;
     public float rotationSpeed;
     private GridLayer grid;
     private GridUnit gridUnit;
 
-    private List<GridNode> neighbors;
+   // private List<GridNode> neighbors;
 
     private Transform target;
     private bool targeting;
-    private Attack meleeAttack;
+    private BasicAttack meleeAttack;
+    private BasicAttack rangedAttack;
+
+    private float timer;
+    private bool attacked;
+    
 
 
     void Start()
@@ -38,17 +44,8 @@ public class GridCombat : MonoBehaviour
     void Update()
     {
         //Attacks
-        if (Input.GetMouseButtonDown(0))
-        {
-            Instantiate(meleePrefab, transform.position + (transform.forward * 2), transform.rotation);
-        }
-
-        if (Input.GetMouseButtonDown(1))
-        {
-            Vector3 projectilePos = transform.position;
-            projectilePos.y = transform.position.y + 1.5f;
-            Instantiate(projectilePrefab, projectilePos + (transform.forward), transform.rotation);
-        }
+        DrawTarget(transform.eulerAngles.y, 1);
+        
 
         //Targeting System
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -84,7 +81,6 @@ public class GridCombat : MonoBehaviour
             Gizmos.DrawWireCube(target.position, Vector3.one);
             Gizmos.DrawLine(transform.position, target.position);
 
-            DrawTarget(transform.eulerAngles.y);
         }
     }
 
@@ -95,21 +91,21 @@ public class GridCombat : MonoBehaviour
     }
 
 
-    void DrawTarget(float rotation)
+    void DrawTarget(float rotation, int range)
     {
         Vector2Int newPos = new Vector2Int();
         Vector2Int direction = gridUnit.position;
         
         // t, tr, r, br, b, bl, l, tl
         var neighbours = new Vector2Int[8];
-        neighbours[0] = new Vector2Int(direction.x + 0, direction.y + 1);
-        neighbours[1] = new Vector2Int(direction.x + 1, direction.y + 1);
-        neighbours[2] = new Vector2Int(direction.x + 1, direction.y + 0);
-        neighbours[3] = new Vector2Int(direction.x + 1, direction.y - 1);
-        neighbours[4] = new Vector2Int(direction.x + 0, direction.y - 1);
-        neighbours[5] = new Vector2Int(direction.x - 1, direction.y - 1);
-        neighbours[6] = new Vector2Int(direction.x - 1, direction.y + 0);
-        neighbours[7] = new Vector2Int(direction.x - 1, direction.y + 1);
+        neighbours[0] = new Vector2Int(direction.x + 0, direction.y + range);
+        neighbours[1] = new Vector2Int(direction.x + range, direction.y + range);
+        neighbours[2] = new Vector2Int(direction.x + range, direction.y + 0);
+        neighbours[3] = new Vector2Int(direction.x + range, direction.y - range);
+        neighbours[4] = new Vector2Int(direction.x + 0, direction.y - range);
+        neighbours[5] = new Vector2Int(direction.x - range, direction.y - range);
+        neighbours[6] = new Vector2Int(direction.x - range, direction.y + 0);
+        neighbours[7] = new Vector2Int(direction.x - range, direction.y + range);
 
         var sectors = new[]
         {
@@ -125,28 +121,85 @@ public class GridCombat : MonoBehaviour
 
         int sector = (int)((rotation + 22.5f) / 45f) % 8;
 
-        var threatened = new []
+        Vector2Int[] threatenedMelee;
+        int attackRange = 3;
+        Vector2Int[] threatenedRanged = new Vector2Int[attackRange];
+
+        //meleeAttack
+        threatenedMelee = new[]
         {
             neighbours[sectors[sector][0]],
             neighbours[sectors[sector][1]],
             neighbours[sectors[sector][2]]
         };
 
-        meleeAttack = new Attack(threatened);
-        doAttack(meleeAttack);
+        //RangedAttack
+        for (int i = 0; i < attackRange; i++)
+        {
+            threatenedRanged[i] = neighbours[sectors[sector][1]] + (neighbours[sectors[sector][1]] - direction) * i;
+        }
 
-        Vector3 forwardPosition = grid.CellToWorld(newPos);
-        forwardPosition.y = transform.position.y + 1;
-        Gizmos.DrawSphere(forwardPosition, 0.5f);
+       
+        //Special Attaack in progress
+        //else
+        //{
+        //    if ((direction.x - neighbours[sectors[sector][1]].x >= 1 || direction.x - neighbours[sectors[sector][1]].x <= -1) && direction.y - neighbours[sectors[sector][1]].y == 0)
+        //    {
+        //        threatened = new[]
+        //        {
+        //         new Vector2Int (neighbours[sectors[sector][1]].x + 1,neighbours[sectors[sector][1]].y ),
+        //         //neighbours[sectors[sector][1]],
+        //         //neighbours[sectors[sector][2]]
+        //         };
+        //    }
+        //}
+
+        meleeAttack = new BasicAttack(threatenedMelee);
+        rangedAttack = new BasicAttack(threatenedRanged);
+        if (Input.GetMouseButtonDown(0) && !attacked)
+        {
+            doAttack(meleeAttack);
+            attacked = true;
+        }
+        if (Input.GetMouseButtonDown(1) && !attacked)
+        {
+            doAttack(rangedAttack);
+            attacked = true;
+        }
+
+        if (attacked)
+        {
+            timer += Time.deltaTime;
+            if (timer > 0.5f)
+            {
+                foreach (GameObject g in trash)
+                    Destroy(g);
+                timer = 0;
+                attacked = false;
+            }
+        }
     }
-
-    void doAttack(Attack attack)
+    List<GameObject> trash;
+    void doAttack(BasicAttack attack)
     {
+        trash = new List<GameObject>();
         for (int i = 0; i < attack.positions.Length; i++)
         {
-            Vector3 actualPosition = grid.CellToWorld(attack.positions[i]);
-            actualPosition.y = transform.position.y;
-            Gizmos.DrawWireCube(actualPosition, Vector3.one);
+            Vector2Int gridPosition = attack.positions[i];
+            Debug.Log(attack.positions[i]);
+            if (gridPosition.x < grid.numCols && gridPosition.x > 0 && gridPosition.y > 0 && gridPosition.y < grid.numRows)
+            {
+                GridNode node = grid.nodes[gridPosition.y, gridPosition.x];
+                Vector3 worldPosition = grid.CellToWorld(node.gridPosition);
+                worldPosition.y = transform.position.y;
+                trash.Add(Instantiate(meleePrefab,worldPosition,meleePrefab.transform.rotation, null));
+                if (node.unit != null)
+                {   
+                Destroy(node.unit.gameObject);
+                }
+            }
+
         }
+        
     }
 }
