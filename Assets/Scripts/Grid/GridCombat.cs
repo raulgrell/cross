@@ -5,10 +5,12 @@ using UnityEngine;
 class BasicAttack
 {
     public Vector2Int[] positions;
+    public float speed;
 
-    public BasicAttack(Vector2Int[] pos)
+    public BasicAttack(Vector2Int[] pos, float speed)
     {
         positions = pos;
+        this.speed = speed;
     }
 }
 
@@ -29,6 +31,8 @@ public class GridCombat : MonoBehaviour
     private bool targeting;
     private BasicAttack meleeAttack;
     private BasicAttack rangedAttack;
+    private BasicAttack specialAttack;
+    private BasicAttack currentAttack;
 
     private float timer;
     private bool attacked;
@@ -125,6 +129,9 @@ public class GridCombat : MonoBehaviour
         int attackRange = 3;
         Vector2Int[] threatenedRanged = new Vector2Int[attackRange];
 
+        Vector2Int[] threatenedSpecial = new Vector2Int[attackRange];
+
+
         //meleeAttack
         threatenedMelee = new[]
         {
@@ -140,6 +147,7 @@ public class GridCombat : MonoBehaviour
         }
 
        
+       
         //Special Attaack in progress
         //else
         //{
@@ -154,23 +162,26 @@ public class GridCombat : MonoBehaviour
         //    }
         //}
 
-        meleeAttack = new BasicAttack(threatenedMelee);
-        rangedAttack = new BasicAttack(threatenedRanged);
+        meleeAttack = new BasicAttack(threatenedMelee,1);
+        rangedAttack = new BasicAttack(threatenedRanged,2);
         if (Input.GetMouseButtonDown(0) && !attacked)
         {
             doAttack(meleeAttack);
+            currentAttack = meleeAttack;
             attacked = true;
         }
         if (Input.GetMouseButtonDown(1) && !attacked)
         {
             doAttack(rangedAttack);
+            currentAttack = rangedAttack;
             attacked = true;
         }
 
         if (attacked)
         {
             timer += Time.deltaTime;
-            if (timer > 0.5f)
+            
+            if (timer > currentAttack.speed)
             {
                 foreach (GameObject g in trash)
                     Destroy(g);
@@ -187,7 +198,7 @@ public class GridCombat : MonoBehaviour
         {
             Vector2Int gridPosition = attack.positions[i];
             Debug.Log(attack.positions[i]);
-            if (gridPosition.x < grid.numCols && gridPosition.x > 0 && gridPosition.y > 0 && gridPosition.y < grid.numRows)
+            if (gridPosition.x < grid.numCols && gridPosition.x >= 0 && gridPosition.y >= 0 && gridPosition.y < grid.numRows)
             {
                 GridNode node = grid.nodes[gridPosition.y, gridPosition.x];
                 Vector3 worldPosition = grid.CellToWorld(node.gridPosition);
