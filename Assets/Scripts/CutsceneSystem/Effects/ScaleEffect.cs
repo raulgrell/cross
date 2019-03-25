@@ -11,18 +11,36 @@ public class ScaleEffect : Effect
     private float scaleSpeed;
     [SerializeField]
     private Vector3 scale;
+    [SerializeField]
+    private bool rectTransform;
 
     private Vector3 currentScale;
+    private Vector3 currentSize;
 
     public override void Apply(CutscenePanel panel, GameObject gameObject)
     {
-        if (scaleSpeed != 0)
+        if (!rectTransform)
         {
-            if(scale.x >= currentScale.x && scale.y >= currentScale.y)
+            if (scaleSpeed != 0)
             {
-                currentScale.x += scaleSpeed;
-                currentScale.y += scaleSpeed;
-                gameObject.transform.localScale = currentScale;
+                if (scale.x >= currentScale.x && scale.y >= currentScale.y)
+                {
+                    currentScale.x += scaleSpeed;
+                    currentScale.y += scaleSpeed;
+                    gameObject.transform.localScale = currentScale;
+
+                }
+            }
+        }
+        else
+        {
+            if (scaleSpeed != 0)
+            {
+                if (scale.x > currentSize.x)
+                    currentSize.x += scaleSpeed;
+                if(scale.y > currentSize.y)
+                    currentSize.y += scaleSpeed;
+                    gameObject.GetComponent<RectTransform>().sizeDelta = currentSize;
 
             }
         }
@@ -30,7 +48,15 @@ public class ScaleEffect : Effect
 
     public override void Setup(CutscenePanel panel, GameObject gameObject)
     {
-        gameObject.transform.localScale = intialScaleImage;
-        currentScale = intialScaleImage;
+        if (!rectTransform)
+        {
+            gameObject.transform.localScale = intialScaleImage;
+            currentScale = intialScaleImage;
+        }
+        else
+        {
+            gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(intialScaleImage.x, intialScaleImage.y);
+            currentSize = gameObject.GetComponent<RectTransform>().sizeDelta;
+        }
     }
 }

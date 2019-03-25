@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 125657965}
   m_Layer: 5
   m_Name: CutsceneCanvas
-  m_TagString: Untagged
+  m_TagString: Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,8 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelData:
   - {fileID: 11400000, guid: 7d7fcaf4b97edee4fab69b8db079e29a, type: 2}
-  - {fileID: 11400000, guid: c4741070b943fb941bfcde89b851b8ad, type: 2}
-  - {fileID: 11400000, guid: 00729bea61e44254da4f8e397dbb5317, type: 2}
+  - {fileID: 11400000, guid: 217d79a55a9c03f4da83b0b46dc23849, type: 2}
   panelPrefab: {fileID: 6824456153815112944, guid: 96ee13c604451c8468e2f01a0ed311f7,
     type: 3}
 --- !u!114 &125657961
@@ -244,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

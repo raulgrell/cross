@@ -46,7 +46,13 @@ public class CutsceneSystem : MonoBehaviour
         timer += Time.deltaTime;
         if (currentPanel != null && timer > currentPanel.data.StartTime)
         {
-            currentPanel.gameObject.SetActive(true);
+            if (currentPanel.transform.parent.name == transform.name)
+                currentPanel.gameObject.SetActive(true);
+            else
+            {
+                currentPanel.transform.parent.gameObject.SetActive(true);
+                currentPanel.gameObject.SetActive(true);
+            }
             currentPanel = (incoming.Count > 0)
                 ? incoming.RemoveFirst()
                 : null;

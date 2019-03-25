@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212340fd18634609bafe7669173832d7, type: 3}
   m_Name: RingmasterBackground
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 376982d2432c3d54b87604a56d077153, type: 3}
+  image: {fileID: 21300000, guid: f8f12601d4f21dc49bce9b840a8f07d9, type: 3}
   effects:
   - {fileID: 11400000, guid: 0e0bba449972f514ea8b764d14e27490, type: 2}

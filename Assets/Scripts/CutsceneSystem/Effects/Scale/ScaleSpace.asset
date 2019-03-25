@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee3ef76aa8214636bb42f06080e7dcdb, type: 3}
-  m_Name: RingmasterText
+  m_Script: {fileID: 11500000, guid: ff07875a91b80664d81a9f793880019a, type: 3}
+  m_Name: ScaleSpace
   m_EditorClassIdentifier: 
-  text: Welcome :)
-  background: {r: 1, g: 1, b: 1, a: 1}
-  foreground: {r: 1, g: 1, b: 1, a: 1}
-  effects:
-  - {fileID: 11400000, guid: a00026775d3a25b47a268d2b4b90df2a, type: 2}
-  size: 35
+  intialScaleImage: {x: 0.15, y: 0.15, z: 1}
+  scaleSpeed: 0.001
+  scale: {x: 1, y: 1, z: 1}
+  size: 0

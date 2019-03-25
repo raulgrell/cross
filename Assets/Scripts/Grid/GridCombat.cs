@@ -74,6 +74,7 @@ public class GridCombat : MonoBehaviour
             Vector3 newTarget = target.position;
             newTarget.y = transform.position.y;
             rotateTowards(newTarget);
+
         }
     }
 
@@ -162,8 +163,8 @@ public class GridCombat : MonoBehaviour
         //    }
         //}
 
-        meleeAttack = new BasicAttack(threatenedMelee,1);
-        rangedAttack = new BasicAttack(threatenedRanged,2);
+        meleeAttack = new BasicAttack(threatenedMelee,0.5f);
+        rangedAttack = new BasicAttack(threatenedRanged,1);
         if (Input.GetMouseButtonDown(0) && !attacked)
         {
             doAttack(meleeAttack);

@@ -11,8 +11,10 @@ public class PanelData : ScriptableObject
     [SerializeField] private CutsceneImage[] images;
     [SerializeField] private CutsceneText[] texts;
     [SerializeField] private CutsceneImage backgroundImage;
+    [SerializeField] private CutsceneMask mask;
     [SerializeField] private Vector3 panelScale;
 
+    public CutsceneMask Mask => mask;
     public Vector3 PanelScale => panelScale;
     public CutsceneImage BackgroundImage => backgroundImage;
     public CutsceneImage[] Images => images;
