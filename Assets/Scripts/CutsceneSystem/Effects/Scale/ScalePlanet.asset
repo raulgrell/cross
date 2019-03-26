@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff07875a91b80664d81a9f793880019a, type: 3}
   m_Name: ScalePlanet
   m_EditorClassIdentifier: 
-  intialScaleImage: {x: 0.01, y: 0.01, z: 1}
-  scaleSpeed: 0.0001
-  scale: {x: 0.15, y: 0.15, z: 1}
+  intialScaleImage: {x: 0.15, y: 0.15, z: 1}
+  scaleSpeed: 0
+  scale: {x: 1, y: 1, z: 1}
+  rectTransform: 0

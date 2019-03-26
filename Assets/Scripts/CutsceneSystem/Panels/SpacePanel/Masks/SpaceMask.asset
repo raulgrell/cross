@@ -15,6 +15,7 @@ MonoBehaviour:
   image: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   effects:
   - {fileID: 11400000, guid: 330f83310c4328d43af7aaccf0ae94a9, type: 2}
+  - {fileID: 11400000, guid: e005ca6b75b62a7438a83889cdbcd0a0, type: 2}
   order1: 0
   order2: 0
-  size: {x: 1000, y: 1000}
+  size: {x: 400, y: 400}
