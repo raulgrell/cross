@@ -5,10 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-<<<<<<< HEAD
   - Canvas
-=======
->>>>>>> Level layout, materials, mime model
   layers:
   - Default
   - TransparentFX
@@ -19,21 +16,12 @@ TagManager:
   - 
   - 
   - PostProcessing
-<<<<<<< HEAD
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-=======
   - Player
   - Unit
   - Wall
   - Ground
   - Attack
   - Field
->>>>>>> Level layout, materials, mime model
   - 
   - 
   - 
@@ -55,12 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< HEAD
   - name: Back
     uniqueID: 1846295059
     locked: 0
   - name: Front
     uniqueID: 2430095735
     locked: 0
-=======
->>>>>>> Level layout, materials, mime model
