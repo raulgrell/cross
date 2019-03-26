@@ -15,7 +15,7 @@ namespace XNodeEditor
         }
 
         /// <summary> The last editor we checked. This should be the one we modify </summary>
-        private static XNodeEditor.NodeGraphEditor lastEditor;
+        private static NodeGraphEditor lastEditor;
 
         /// <summary> The last key we checked. This should be the one we modify </summary>
         private static string lastKey = "xNode.Settings";
@@ -23,7 +23,7 @@ namespace XNodeEditor
         private static Dictionary<Type, Color> typeColors = new Dictionary<Type, Color>();
         private static Dictionary<string, Settings> settings = new Dictionary<string, Settings>();
 
-        [System.Serializable]
+        [Serializable]
         public class Settings : ISerializationCallbackReceiver
         {
             [SerializeField] private Color32 _gridLineColor = new Color(0.45f, 0.45f, 0.45f);
@@ -112,15 +112,15 @@ namespace XNodeEditor
         /// <summary> Get settings of current active editor </summary>
         public static Settings GetSettings()
         {
-            if (lastEditor != XNodeEditor.NodeEditorWindow.current.graphEditor)
+            if (lastEditor != NodeEditorWindow.current.graphEditor)
             {
-                object[] attribs = XNodeEditor.NodeEditorWindow.current.graphEditor.GetType()
-                    .GetCustomAttributes(typeof(XNodeEditor.NodeGraphEditor.CustomNodeGraphEditorAttribute), true);
+                object[] attribs = NodeEditorWindow.current.graphEditor.GetType()
+                    .GetCustomAttributes(typeof(NodeGraphEditor.CustomNodeGraphEditorAttribute), true);
                 if (attribs.Length == 1)
                 {
-                    XNodeEditor.NodeGraphEditor.CustomNodeGraphEditorAttribute attrib =
-                        attribs[0] as XNodeEditor.NodeGraphEditor.CustomNodeGraphEditorAttribute;
-                    lastEditor = XNodeEditor.NodeEditorWindow.current.graphEditor;
+                    NodeGraphEditor.CustomNodeGraphEditorAttribute attrib =
+                        attribs[0] as NodeGraphEditor.CustomNodeGraphEditorAttribute;
+                    lastEditor = NodeEditorWindow.current.graphEditor;
                     lastKey = attrib.editorPrefsKey;
                 }
                 else return null;
@@ -272,7 +272,7 @@ namespace XNodeEditor
         }
 
         /// <summary> Return color based on type </summary>
-        public static Color GetTypeColor(System.Type type)
+        public static Color GetTypeColor(Type type)
         {
             VerifyLoaded();
             if (type == null) return Color.gray;

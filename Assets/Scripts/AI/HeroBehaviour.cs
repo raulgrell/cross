@@ -3,6 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(HeroController))]
-public class HeroBehaviour : FiniteStateMachine<HeroController>
+public class HeroBehaviour : StateMachine<HeroController>
 {
 }

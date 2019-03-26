@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEditor;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 public class GridUnit : MonoBehaviour
 {
@@ -19,8 +21,8 @@ public class GridUnit : MonoBehaviour
 
     public void MoveToPosition(Vector2Int newPos)
     {
-        // TODO: Actually fix this
-        if (newPos.x < 0 || newPos.x >= grid.numCols || newPos.y < 0 || newPos.y >= grid.numCols)
+        if (newPos.x < 0 || newPos.x >= grid.numCols ||
+            newPos.y < 0 || newPos.y >= grid.numRows)
             return;
 
         // Notify grid of the movement
@@ -29,13 +31,17 @@ public class GridUnit : MonoBehaviour
         position = newPos;
     }
 
+    public void MoveToWorldPosition(Vector3 newWorldPos)
+    {
+        var newPos = grid.WorldToCell(newWorldPos);
+        MoveToPosition(newPos);
+    }
+
     void Update()
     {
-        // Don't attempt to move if there is no input
         if (input != Vector2Int.zero)
         {
             var newPos = position + input;
-            // TODO: work out where to account for the bounds
             newPos.x = Mathf.Clamp(newPos.x, 0, grid.numCols - 1);
             newPos.y = Mathf.Clamp(newPos.y, 0, grid.numRows - 1);
 

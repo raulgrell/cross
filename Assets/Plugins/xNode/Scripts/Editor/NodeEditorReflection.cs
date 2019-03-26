@@ -103,8 +103,8 @@ namespace XNodeEditor
         /// <summary> Get all classes deriving from baseType via reflection </summary>
         public static Type[] GetDerivedTypes(Type baseType)
         {
-            List<System.Type> types = new List<System.Type>();
-            System.Reflection.Assembly[] assemblies = System.AppDomain.CurrentDomain.GetAssemblies();
+            List<Type> types = new List<Type>();
+            Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
             foreach (Assembly assembly in assemblies)
             {
                 types.AddRange(assembly.GetTypes().Where(t => !t.IsAbstract && baseType.IsAssignableFrom(t)).ToArray());
@@ -115,13 +115,13 @@ namespace XNodeEditor
 
         public static void AddCustomContextMenuItems(GenericMenu contextMenu, object obj)
         {
-            KeyValuePair<ContextMenu, System.Reflection.MethodInfo>[] items = GetContextMenuMethods(obj);
+            KeyValuePair<ContextMenu, MethodInfo>[] items = GetContextMenuMethods(obj);
             if (items.Length != 0)
             {
                 contextMenu.AddSeparator("");
                 for (int i = 0; i < items.Length; i++)
                 {
-                    KeyValuePair<ContextMenu, System.Reflection.MethodInfo> kvp = items[i];
+                    KeyValuePair<ContextMenu, MethodInfo> kvp = items[i];
                     contextMenu.AddItem(new GUIContent(kvp.Key.menuItem), false, () => kvp.Value.Invoke(obj, null));
                 }
             }

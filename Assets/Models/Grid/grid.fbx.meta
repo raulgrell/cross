@@ -114,6 +114,14 @@ ModelImporter:
     100216: //RootNode
     100218: Cube.003
     100220: Cube.001
+    100222: Camera
+    100224: Cube
+    100226: Cube.000
+    100228: Cube.002
+    100230: Cube.100
+    100232: Cube.113
+    100234: Empty
+    100236: Point
     400000: Cube.004
     400002: Cube.005
     400004: Cube.006
@@ -225,9 +233,19 @@ ModelImporter:
     400216: //RootNode
     400218: Cube.003
     400220: Cube.001
+    400222: Camera
+    400224: Cube
+    400226: Cube.000
+    400228: Cube.002
+    400230: Cube.100
+    400232: Cube.113
+    400234: Empty
+    400236: Point
+    2000000: Camera
     2100000: Ground
     2100002: Rock
     2100004: Path
+    2100006: No Name
     2300000: Cube.004
     2300002: Cube.005
     2300004: Cube.006
@@ -338,6 +356,11 @@ ModelImporter:
     2300214: Cube.112
     2300216: Cube.003
     2300218: Cube.001
+    2300220: Cube
+    2300222: Cube.000
+    2300224: Cube.002
+    2300226: Cube.100
+    2300228: Cube.113
     3300000: Cube.004
     3300002: Cube.005
     3300004: Cube.006
@@ -448,6 +471,11 @@ ModelImporter:
     3300214: Cube.112
     3300216: Cube.003
     3300218: Cube.001
+    3300220: Cube
+    3300222: Cube.000
+    3300224: Cube.002
+    3300226: Cube.100
+    3300228: Cube.113
     4300000: Cube.004
     4300002: Cube.005
     4300004: Cube.006
@@ -455,6 +483,10 @@ ModelImporter:
     4300008: Cube.017
     4300010: Cube.003
     4300012: Cube.001
+    4300014: Cube.000
+    4300016: Cube.002
+    4300018: Cube
+    10800000: Point
   externalObjects:
   - first:
       type: UnityEngine:Material

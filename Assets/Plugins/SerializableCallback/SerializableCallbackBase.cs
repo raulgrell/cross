@@ -224,7 +224,7 @@ public struct Arg
         if (type == typeof(bool)) return ArgType.Bool;
         else if (type == typeof(int)) return ArgType.Int;
         else if (type == typeof(float)) return ArgType.Float;
-        else if (type == typeof(String)) return ArgType.String;
+        else if (type == typeof(System.String)) return ArgType.String;
         else if (type == typeof(Object)) return ArgType.Object;
         else return ArgType.Unsupported;
     }

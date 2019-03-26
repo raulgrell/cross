@@ -134,7 +134,7 @@ namespace XNode
         [SerializeField] public NodeGraph graph;
 
         /// <summary> Position on the <see cref="NodeGraph"/> </summary>
-        [SerializeField] public Vector2 position;
+        [SerializeField] public UnityEngine.Vector2 position;
 
         /// <summary> It is recommended not to modify these at hand. Instead, see <see cref="InputAttribute"/> and <see cref="OutputAttribute"/> </summary>
         [SerializeField] private NodePortDictionary ports = new NodePortDictionary();

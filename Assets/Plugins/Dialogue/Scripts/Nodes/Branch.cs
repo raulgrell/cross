@@ -16,8 +16,6 @@ namespace Dialogue
         [Output] public DialogueBaseNode pass;
         [Output] public DialogueBaseNode fail;
 
-        private bool success;
-
         public override void Trigger()
         {
             // Perform condition
@@ -33,8 +31,7 @@ namespace Dialogue
 
             //Trigger next nodes
             NodePort port;
-            if (success) port = GetOutputPort("pass");
-            else port = GetOutputPort("fail");
+            port = GetOutputPort(success ? "pass" : "fail");
             if (port == null) return;
             for (int i = 0; i < port.ConnectionCount; i++)
             {

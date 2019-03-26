@@ -1,53 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unit;
 using UnityEngine;
 
 [RequireComponent(typeof(GridUnit))]
+[RequireComponent(typeof(EnemyBehaviour))]
 public class EnemyController : UnitController
 {
-    private Vector2Int nextPosition;
-    private float timer;
-    private float waitTime;
-
+    public UnitData data;
     [Range(1f, 50f)] public float speed = 20;
 
     [Range(0.01f, 1f)] public float refreshInterval = 0.2f;
 
-    GridNode[] path;
-    int targetIndex;
+    private EnemyBehaviour behaviour;
 
     void Start()
     {
         unit = GetComponent<GridUnit>();
-        waitTime = Random.Range(1f, 2f);
-        CalculateNextPosition();
-
+        behaviour = GetComponent<EnemyBehaviour>();
         StartCoroutine(RequestPath());
     }
 
     void Update()
     {
-        if (timer > waitTime)
-        {
-            unit.MoveToPosition(nextPosition);
-            CalculateNextPosition();
-            waitTime = Random.Range(1f, 2f);
-            timer = 0;
-        }
-
-        timer += Time.deltaTime;
-    }
-
-    private void CalculateNextPosition()
-    {
-        nextPosition = unit.position + new Vector2Int(Random.Range(-1, 2), Random.Range(-1, 2));
-        nextPosition.x = Mathf.Clamp(nextPosition.x, 0, unit.grid.numCols - 1);
-        nextPosition.y = Mathf.Clamp(nextPosition.y, 0, unit.grid.numRows - 1);
+        unit.MoveToPosition(gridWaypoint);
     }
 
     private void OnValidate()
     {
-        // OnDrawGizmos requires reference to the unit
         unit = GetComponent<GridUnit>();
     }
 
@@ -57,59 +37,48 @@ public class EnemyController : UnitController
             return;
 
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(unit.grid.CellToWorld(nextPosition), Vector3.one);
+        Gizmos.DrawWireCube(unit.grid.CellToWorld(gridWaypoint), Vector3.one);
         
         if (path == null)
             return;
-
-        for (int i = targetIndex; i < path.Length; i++)
+        
+        for (int i = nodeIndex; i < path.Length; i++)
         {
-            Vector2 lineStart = (i == targetIndex) ? (transform.position) : path[i - 1].transform.position;
-
+            Vector3 lineStart = i == nodeIndex
+                ? transform.position : path[i - 1].transform.position + Vector3.up;
+            Vector3 lineEnd = path[i].transform.position + Vector3.up;
+            
             Gizmos.color = Color.blue;
-            Gizmos.DrawSphere(path[i].transform.position, 0.2f);
-            Gizmos.DrawLine(lineStart, path[i].transform.position);
+            Gizmos.DrawSphere(lineEnd, 0.2f);
+            Gizmos.DrawLine(lineStart, lineEnd);
         }
     }
 
     IEnumerator RequestPath()
     {
-        Vector3 targetPositionOld = target.position + Vector3.forward;
+        Vector3 targetPositionOld = target.position + Vector3.up;
 
         while (true)
         {
             var targetPos = target.position;
+            
             if (targetPositionOld != targetPos)
             {
-                targetPositionOld = targetPos;
+                targetPositionOld = target.position;
                 path = GridPathfinding.RequestPath(transform.position, targetPos);
-                StopCoroutine(nameof(FollowPath));
-                StartCoroutine(nameof(FollowPath));
+                nodeIndex = 0;
+                if (path.Length > 0)
+                    gridWaypoint = path[0].gridPosition;
             }
 
-            yield return new WaitForSeconds(refreshInterval);
-        }
-    }
-
-    IEnumerator FollowPath()
-    {
-        if (path.Length <= 0)
-            yield break;
-
-        targetIndex = 0;
-        Vector3 currentWaypoint = path[0].transform.position;
-
-        while (true)
-        {
-            if (transform.position == currentWaypoint)
+            if (refreshInterval != 0)
             {
-                targetIndex++;
-                if (targetIndex >= path.Length)
-                    yield break;
-                currentWaypoint = path[targetIndex].transform.position;
+                yield return new WaitForSeconds(refreshInterval);
             }
-
-            yield return null;
+            else
+            {
+                yield break;
+            }
         }
     }
 }

@@ -11,8 +11,7 @@ namespace DialogueEditor
     {
         public override string GetNodeMenuName(System.Type type)
         {
-            if (type.Namespace == "Dialogue") return base.GetNodeMenuName(type).Replace("Dialogue/", "");
-            else return null;
+            return type.Namespace == "Dialogue" ? base.GetNodeMenuName(type).Replace("Dialogue/", "") : null;
         }
     }
 }

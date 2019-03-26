@@ -42,8 +42,8 @@ public class SerializableDictionaryPropertyDrawer : PropertyDrawer
     {
         public PropertyIdentity(SerializedProperty property)
         {
-            this.instance = property.serializedObject.targetObject;
-            this.propertyPath = property.propertyPath;
+            instance = property.serializedObject.targetObject;
+            propertyPath = property.propertyPath;
         }
 
         public UnityEngine.Object instance;
@@ -547,7 +547,7 @@ public class SerializableDictionaryPropertyDrawer : PropertyDrawer
         }
         else
         {
-            return object.Equals(value1, value2);
+            return Equals(value1, value2);
         }
     }
 

@@ -2,21 +2,21 @@
 
 public static class VectorExtension
 {
-    public static Vector2 Clamp(this Vector2 target, float min, float max)
+    public static UnityEngine.Vector2 Clamp(this UnityEngine.Vector2 target, float min, float max)
     {
         target.x = Mathf.Clamp(target.x, min, max);
         target.y = Mathf.Clamp(target.y, min, max);
         return target;
     }
 
-    public static Vector2 Clamp(this Vector2 target, Vector2 min, Vector2 max)
+    public static UnityEngine.Vector2 Clamp(this UnityEngine.Vector2 target, UnityEngine.Vector2 min, UnityEngine.Vector2 max)
     {
         target.x = Mathf.Clamp(target.x, min.x, max.x);
         target.y = Mathf.Clamp(target.y, min.y, max.y);
         return target;
     }
 
-    public static Vector3 Clamp(this Vector3 target, float min, float max)
+    public static UnityEngine.Vector3 Clamp(this UnityEngine.Vector3 target, float min, float max)
     {
         target.x = Mathf.Clamp(target.x, min, max);
         target.y = Mathf.Clamp(target.y, min, max);
@@ -24,7 +24,7 @@ public static class VectorExtension
         return target;
     }
 
-    public static Vector3 Clamp(this Vector3 target, Vector3 min, Vector3 max)
+    public static UnityEngine.Vector3 Clamp(this UnityEngine.Vector3 target, UnityEngine.Vector3 min, UnityEngine.Vector3 max)
     {
         target.x = Mathf.Clamp(target.x, min.x, max.x);
         target.y = Mathf.Clamp(target.y, min.y, max.y);
@@ -32,18 +32,18 @@ public static class VectorExtension
         return target;
     }
 
-    public static Vector2 xy(this Vector3 target)
+    public static UnityEngine.Vector2 xy(this UnityEngine.Vector3 target)
     {
-        return new Vector2(target.x, target.y);
+        return new UnityEngine.Vector2(target.x, target.y);
     }
 
-    public static Vector3 xyz(this Vector2 target, float z)
+    public static UnityEngine.Vector3 xyz(this UnityEngine.Vector2 target, float z)
     {
-        return new Vector3(target.x, target.y, z);
+        return new UnityEngine.Vector3(target.x, target.y, z);
     }
 
-    public static Vector3 xyz(this Vector3 target, float z)
+    public static UnityEngine.Vector3 xyz(this UnityEngine.Vector3 target, float z)
     {
-        return new Vector3(target.x, target.y, z);
+        return new UnityEngine.Vector3(target.x, target.y, z);
     }
 }

@@ -192,10 +192,10 @@ namespace XNodeEditor
             }
         }
 
-        private static System.Type GetType(SerializedProperty property)
+        private static Type GetType(SerializedProperty property)
         {
-            System.Type parentType = property.serializedObject.targetObject.GetType();
-            System.Reflection.FieldInfo fi = NodeEditorWindow.GetFieldInfo(parentType, property.name);
+            Type parentType = property.serializedObject.targetObject.GetType();
+            FieldInfo fi = NodeEditorWindow.GetFieldInfo(parentType, property.name);
             return fi.FieldType;
         }
 
@@ -291,8 +291,8 @@ namespace XNodeEditor
         public static void PortPair(XNode.NodePort input, XNode.NodePort output)
         {
             GUILayout.BeginHorizontal();
-            NodeEditorGUILayout.PortField(input, GUILayout.MinWidth(0));
-            NodeEditorGUILayout.PortField(output, GUILayout.MinWidth(0));
+            PortField(input, GUILayout.MinWidth(0));
+            PortField(output, GUILayout.MinWidth(0));
             GUILayout.EndHorizontal();
         }
 
@@ -398,7 +398,7 @@ namespace XNodeEditor
                     {
                         Vector2 pos = rect.position +
                                       (port.IsOutput ? new Vector2(rect.width + 6, 0) : new Vector2(-36, 0));
-                        NodeEditorGUILayout.PortField(pos, port);
+                        PortField(pos, port);
                     }
                 };
             list.elementHeightCallback =
@@ -530,7 +530,7 @@ namespace XNodeEditor
                                 arrayData.DeleteArrayElementAtIndex(arrayData.arraySize - 1);
                             }
 
-                            UnityEngine.Debug.LogWarning(
+                            Debug.LogWarning(
                                 "Array size exceeded instance ports size. Excess items removed.");
                         }
 

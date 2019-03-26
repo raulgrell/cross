@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System;
+using Debug = System.Diagnostics.Debug;
 
 public class GridPathfinding : MonoBehaviour
 {
@@ -14,17 +15,14 @@ public class GridPathfinding : MonoBehaviour
         instance = this;
     }
 
-    public static GridNode[] RequestPath(Vector2 from, Vector2 to)
+    public static GridNode[] RequestPath(Vector3 from, Vector3 to)
     {
         return instance.FindPath(from, to);
     }
 
-    GridNode[] FindPath(Vector2 from, Vector2 to)
+    GridNode[] FindPath(Vector3 from, Vector3 to)
     {
-        var sw = new Stopwatch();
-        sw.Start();
-
-        var waypoints = new GridNode[0];
+        GridNode[] waypoints = null;
         var pathSuccess = false;
         
         var startNode = grid.WorldToNode(from);
@@ -47,13 +45,9 @@ public class GridPathfinding : MonoBehaviour
             while (openSet.Count > 0)
             {
                 GridNode currentGridNode = openSet.RemoveFirst();
-                
                 closedSet.Add(currentGridNode);
-
                 if (currentGridNode == targetNode)
                 {
-                    sw.Stop();
-                    print("Path found: " + sw.ElapsedMilliseconds + " ms");
                     pathSuccess = true;
                     break;
                 }
@@ -64,7 +58,6 @@ public class GridPathfinding : MonoBehaviour
                         continue;
 
                     int newCostToNeighbour = currentGridNode.gCost + GridLayer.GetDistance(currentGridNode, neighbour);
-                    
                     if (newCostToNeighbour >= neighbour.gCost && openSet.Contains(neighbour))
                         continue;
                     
@@ -83,7 +76,6 @@ public class GridPathfinding : MonoBehaviour
         if (pathSuccess)
         {
             waypoints = RetracePath(startNode, targetNode);
-            print(waypoints);
         }
 
         return waypoints;
@@ -110,7 +102,7 @@ public class GridPathfinding : MonoBehaviour
     GridNode[] SimplifyPath(List<GridNode> path)
     {
         var waypoints = new List<GridNode>();
-        Vector2 directionOld = Vector2.zero;
+        Vector2Int directionOld = Vector2Int.zero;
 
         for (int i = 1; i < path.Count; i++)
         {

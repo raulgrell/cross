@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: 1058bfeaf2ac5ab42be990933609ed49
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: arms
+    100002: arms2
+    100004: Default
+    100006: eyes1
+    100008: eyes2
+    100010: foot
+    100012: hat
+    100014: head
+    100016: legs
+    100018: lower body
+    100020: //RootNode
+    100022: mouth
+    100024: neck
+    100026: neck1
+    100028: neck2
+    100030: neck2.2
+    100032: Object_1
+    100034: Object_10
+    100036: Object_11
+    100038: Object_12
+    100040: Object_13
+    100042: Object_14
+    100044: Object_15
+    100046: Object_16
+    100048: Object_17
+    100050: Object_18
+    100052: Object_19
+    100054: Object_2
+    100056: Object_20
+    100058: Object_21
+    100060: Object_22
+    100062: Object_23
+    100064: Object_24
+    100066: Object_25
+    100068: Object_26
+    100070: Object_27
+    100072: Object_28
+    100074: Object_29
+    100076: Object_3
+    100078: Object_30
+    100080: Object_31
+    100082: Object_32
+    100084: Object_33
+    100086: Object_34
+    100088: Object_4
+    100090: Object_5
+    100092: Object_6
+    100094: Object_7
+    100096: Object_8
+    100098: Object_9
+    100100: triangles
+    100102: upper body
+    400000: arms
+    400002: arms2
+    400004: Default
+    400006: eyes1
+    400008: eyes2
+    400010: foot
+    400012: hat
+    400014: head
+    400016: legs
+    400018: lower body
+    400020: //RootNode
+    400022: mouth
+    400024: neck
+    400026: neck1
+    400028: neck2
+    400030: neck2.2
+    400032: Object_1
+    400034: Object_10
+    400036: Object_11
+    400038: Object_12
+    400040: Object_13
+    400042: Object_14
+    400044: Object_15
+    400046: Object_16
+    400048: Object_17
+    400050: Object_18
+    400052: Object_19
+    400054: Object_2
+    400056: Object_20
+    400058: Object_21
+    400060: Object_22
+    400062: Object_23
+    400064: Object_24
+    400066: Object_25
+    400068: Object_26
+    400070: Object_27
+    400072: Object_28
+    400074: Object_29
+    400076: Object_3
+    400078: Object_30
+    400080: Object_31
+    400082: Object_32
+    400084: Object_33
+    400086: Object_34
+    400088: Object_4
+    400090: Object_5
+    400092: Object_6
+    400094: Object_7
+    400096: Object_8
+    400098: Object_9
+    400100: triangles
+    400102: upper body
+    2100000: New material 003
+    2100002: New material 006_2
+    2100004: New material 010
+    2100006: New material 018_2
+    2100008: New material 015_3
+    2100010: New material 013
+    2100012: New material 006
+    2100014: New material 018
+    2100016: New material 015_2
+    2100018: New material 015
+    2100020: New material 006_4
+    2100022: New material 015_4
+    2100024: New material 018_3
+    2100026: New material 006_3
+    2100028: New material 018_4
+    2300000: Object_1
+    2300002: Object_10
+    2300004: Object_11
+    2300006: Object_12
+    2300008: Object_13
+    2300010: Object_14
+    2300012: Object_15
+    2300014: Object_16
+    2300016: Object_17
+    2300018: Object_18
+    2300020: Object_19
+    2300022: Object_2
+    2300024: Object_20
+    2300026: Object_21
+    2300028: Object_22
+    2300030: Object_23
+    2300032: Object_24
+    2300034: Object_25
+    2300036: Object_26
+    2300038: Object_27
+    2300040: Object_28
+    2300042: Object_29
+    2300044: Object_3
+    2300046: Object_30
+    2300048: Object_31
+    2300050: Object_32
+    2300052: Object_33
+    2300054: Object_34
+    2300056: Object_4
+    2300058: Object_5
+    2300060: Object_6
+    2300062: Object_7
+    2300064: Object_8
+    2300066: Object_9
+    3300000: Object_1
+    3300002: Object_10
+    3300004: Object_11
+    3300006: Object_12
+    3300008: Object_13
+    3300010: Object_14
+    3300012: Object_15
+    3300014: Object_16
+    3300016: Object_17
+    3300018: Object_18
+    3300020: Object_19
+    3300022: Object_2
+    3300024: Object_20
+    3300026: Object_21
+    3300028: Object_22
+    3300030: Object_23
+    3300032: Object_24
+    3300034: Object_25
+    3300036: Object_26
+    3300038: Object_27
+    3300040: Object_28
+    3300042: Object_29
+    3300044: Object_3
+    3300046: Object_30
+    3300048: Object_31
+    3300050: Object_32
+    3300052: Object_33
+    3300054: Object_34
+    3300056: Object_4
+    3300058: Object_5
+    3300060: Object_6
+    3300062: Object_7
+    3300064: Object_8
+    3300066: Object_9
+    4300000: Object_20
+    4300002: Object_11
+    4300004: Object_34
+    4300006: Object_14
+    4300008: Object_15
+    4300010: Object_16
+    4300012: Object_17
+    4300014: Object_18
+    4300016: Object_19
+    4300018: Object_12
+    4300020: Object_13
+    4300022: Object_10
+    4300024: Object_2
+    4300026: Object_4
+    4300028: Object_6
+    4300030: Object_8
+    4300032: Object_3
+    4300034: Object_5
+    4300036: Object_7
+    4300038: Object_9
+    4300040: Object_1
+    4300042: Object_25
+    4300044: Object_26
+    4300046: Object_27
+    4300048: Object_30
+    4300050: Object_31
+    4300052: Object_21
+    4300054: Object_22
+    4300056: Object_23
+    4300058: Object_24
+    4300060: Object_28
+    4300062: Object_29
+    4300064: Object_32
+    4300066: Object_33
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

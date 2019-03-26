@@ -459,7 +459,7 @@ namespace XNode
         }
 
         /// <summary> Get reroute points for a given connection. This is used for organization </summary>
-        public List<Vector2> GetReroutePoints(int index)
+        public List<UnityEngine.Vector2> GetReroutePoints(int index)
         {
             return connections[index].reroutePoints;
         }
@@ -545,7 +545,7 @@ namespace XNode
             [NonSerialized] private NodePort port;
 
             /// <summary> Extra connection path points for organization </summary>
-            [SerializeField] public List<Vector2> reroutePoints = new List<Vector2>();
+            [SerializeField] public List<UnityEngine.Vector2> reroutePoints = new List<UnityEngine.Vector2>();
 
             public PortConnection(NodePort port)
             {

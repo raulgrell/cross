@@ -8,7 +8,7 @@ namespace XNodeEditor
 {
     /// <summary> Base class to derive custom Node editors from. Use this to create your own custom inspectors and editors for your nodes. </summary>
     [CustomNodeEditor(typeof(XNode.Node))]
-    public class NodeEditor : XNodeEditor.Internal.NodeEditorBase<NodeEditor, NodeEditor.CustomNodeEditorAttribute,
+    public class NodeEditor : Internal.NodeEditorBase<NodeEditor, NodeEditor.CustomNodeEditorAttribute,
         XNode.Node>
     {
         /// <summary> Fires every whenever a node was modified through the editor </summary>
@@ -100,15 +100,13 @@ namespace XNodeEditor
         public void Rename(string newName)
         {
             if (newName == null || newName.Trim() == "")
-                newName = UnityEditor.ObjectNames.NicifyVariableName(target.GetType().Name);
+                newName = ObjectNames.NicifyVariableName(target.GetType().Name);
             target.name = newName;
             AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(target));
         }
 
         [AttributeUsage(AttributeTargets.Class)]
-        public class CustomNodeEditorAttribute : Attribute,
-            XNodeEditor.Internal.NodeEditorBase<NodeEditor, NodeEditor.CustomNodeEditorAttribute, XNode.Node>.
-            INodeEditorAttrib
+        public class CustomNodeEditorAttribute : Attribute, INodeEditorAttrib
         {
             private Type inspectedType;
 

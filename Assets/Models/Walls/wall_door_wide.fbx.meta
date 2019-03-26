@@ -6,6 +6,8 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: Material
+    2100002: Wall
+    2100004: Black
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cube.005
@@ -13,7 +15,17 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: 2f309dfb75b902143b4abbfa3f40c11b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material
+    second: {fileID: 2100000, guid: 5aeac04d2d6460f49983b573601f6988, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
     second: {fileID: 2100000, guid: 5aeac04d2d6460f49983b573601f6988, type: 2}
   materials:
     importMaterials: 1

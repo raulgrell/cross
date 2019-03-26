@@ -6,7 +6,7 @@ using UnityEngine;
 public class GridNode : MonoBehaviour, IHeapItem<GridNode>
 {
     public GridUnit unit;
-    public float height;
+    public float height;    
     public bool walkable = true;
     public Vector2Int gridPosition;
 

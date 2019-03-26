@@ -8,7 +8,7 @@ namespace XNodeEditor
 {
     /// <summary> Base class to derive custom Node Graph editors from. Use this to override how graphs are drawn in the editor. </summary>
     [CustomNodeGraphEditor(typeof(XNode.NodeGraph))]
-    public class NodeGraphEditor : XNodeEditor.Internal.NodeEditorBase<NodeGraphEditor,
+    public class NodeGraphEditor : Internal.NodeEditorBase<NodeGraphEditor,
         NodeGraphEditor.CustomNodeGraphEditorAttribute, XNode.NodeGraph>
     {
         /// <summary> The position of the window in screen space. </summary>
@@ -78,7 +78,7 @@ namespace XNodeEditor
         {
             XNode.Node node = target.AddNode(type);
             node.position = position;
-            if (string.IsNullOrEmpty(node.name)) node.name = UnityEditor.ObjectNames.NicifyVariableName(type.Name);
+            if (string.IsNullOrEmpty(node.name)) node.name = ObjectNames.NicifyVariableName(type.Name);
             AssetDatabase.AddObjectToAsset(node, target);
             if (NodeEditorPreferences.GetSettings().autoSave) AssetDatabase.SaveAssets();
             NodeEditorWindow.RepaintAll();
@@ -104,8 +104,7 @@ namespace XNodeEditor
 
         [AttributeUsage(AttributeTargets.Class)]
         public class CustomNodeGraphEditorAttribute : Attribute,
-            XNodeEditor.Internal.NodeEditorBase<NodeGraphEditor, NodeGraphEditor.CustomNodeGraphEditorAttribute,
-                XNode.NodeGraph>.INodeEditorAttrib
+            INodeEditorAttrib
         {
             private Type inspectedType;
             public string editorPrefsKey;

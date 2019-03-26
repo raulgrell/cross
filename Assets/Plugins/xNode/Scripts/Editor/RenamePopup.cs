@@ -15,7 +15,7 @@ namespace XNodeEditor
         /// <summary> Show a rename popup for an asset at mouse position. Will trigger reimport of the asset on apply.
         public static RenamePopup Show(Object target, float width = 200)
         {
-            RenamePopup window = EditorWindow.GetWindow<RenamePopup>(true, "Rename " + target.name, true);
+            RenamePopup window = GetWindow<RenamePopup>(true, "Rename " + target.name, true);
             if (current != null) current.Close();
             current = window;
             window.target = target;
@@ -58,7 +58,7 @@ namespace XNodeEditor
             {
                 if (GUILayout.Button("Revert to default") || (e.isKey && e.keyCode == KeyCode.Return))
                 {
-                    target.name = UnityEditor.ObjectNames.NicifyVariableName(target.GetType().Name);
+                    target.name = ObjectNames.NicifyVariableName(target.GetType().Name);
                     AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(target));
                     Close();
                 }

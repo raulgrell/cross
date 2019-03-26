@@ -221,7 +221,7 @@ namespace XNodeEditor
         }
 
         /// <summary>Creates Script from Template's path.</summary>
-        internal static UnityEngine.Object CreateScript(string pathName, string templatePath)
+        internal static Object CreateScript(string pathName, string templatePath)
         {
             string className = Path.GetFileNameWithoutExtension(pathName).Replace(" ", string.Empty);
             string templateText = string.Empty;

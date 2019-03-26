@@ -137,7 +137,7 @@ public class SerializableCallbackDrawer : PropertyDrawer
         public MenuItem(string path, string name, GenericMenu.MenuFunction action)
         {
             this.action = action;
-            this.label = new GUIContent(path + '/' + name);
+            label = new GUIContent(path + '/' + name);
             this.path = path;
         }
     }
@@ -301,7 +301,7 @@ public class SerializableCallbackDrawer : PropertyDrawer
         return types;
     }
 
-    private void SetMethod(SerializedProperty property, UnityEngine.Object target, MethodInfo methodInfo, bool dynamic)
+    private void SetMethod(SerializedProperty property, Object target, MethodInfo methodInfo, bool dynamic)
     {
         SerializedProperty targetProp = property.FindPropertyRelative("_target");
         targetProp.objectReferenceValue = target;

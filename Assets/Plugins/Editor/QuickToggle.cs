@@ -133,7 +133,7 @@ public class QuickToggle
 
         var flags = BindingFlags.InvokeMethod | BindingFlags.Static | BindingFlags.NonPublic;
         Type editorGuiUtil = typeof(EditorGUIUtility);
-        getObjectIcon = editorGuiUtil.GetMethod("GetIconForObject", flags, null, new []{ typeof(UnityEngine.Object) }, null);
+        getObjectIcon = editorGuiUtil.GetMethod("GetIconForObject", flags, null, new []{ typeof(Object) }, null);
 
         // Not calling BuildStyles() in constructor because script gets loaded
         // on Unity initialization, styles might not be loaded yet
@@ -329,7 +329,7 @@ public class QuickToggle
 
     private static Object[] GatherObjects(GameObject root)
     {
-        List<UnityEngine.Object> objects = new List<UnityEngine.Object>();
+        List<Object> objects = new List<Object>();
         Stack<GameObject> recurseStack = new Stack<GameObject>(new[] { root });
 
         while (recurseStack.Count > 0)

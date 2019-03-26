@@ -68,7 +68,7 @@ public class GridLayer : MonoBehaviour
         float layerWidth = numCols * cellSize;
         float layerHeight = numRows * cellSize;
         float percentX = Mathf.Clamp01((worldPosition.x - transform.position.x) / layerWidth);
-        float percentY = Mathf.Clamp01((worldPosition.y - transform.position.y) / layerHeight);
+        float percentY = Mathf.Clamp01((worldPosition.z - transform.position.z) / layerHeight);
         int x = Mathf.RoundToInt((numCols - 1) * percentX);
         int y = Mathf.RoundToInt((numRows - 1) * percentY);
         return new Vector2Int(x, y);
@@ -98,7 +98,7 @@ public class GridLayer : MonoBehaviour
                 int checkX = gridNode.gridPosition.x + x;
                 int checkY = gridNode.gridPosition.y + y;
 
-                if (checkX >= 0 && checkX < numCols && checkY >= 0 && checkY < numRows)
+                if (0 <= checkX && checkX < numCols && 0 <= checkY && checkY < numRows)
                     neighbours.Add(nodes[checkY, checkX]);
             }
         }
@@ -127,13 +127,13 @@ public class GridLayer : MonoBehaviour
 
             // top, right, bottom, left
             if (IsWalkable(vx, y + radius))
-                return nodes[vx, y + radius];
+                return nodes[y + radius, vx];
             if (IsWalkable(x + radius, hy))
-                return nodes[x + radius, hy];
+                return nodes[hy, x + radius];
             if (IsWalkable(vx, y - radius))
-                return nodes[vx, y - radius];
+                return nodes[y - radius, vx];
             if (IsWalkable(x - radius, hy))
-                return nodes[x - radius, hy];
+                return nodes[hy, x - radius];
         }
 
         return null;

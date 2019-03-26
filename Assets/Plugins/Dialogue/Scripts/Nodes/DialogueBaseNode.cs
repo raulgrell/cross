@@ -10,7 +10,7 @@ namespace Dialogue
         [Output(backingValue = ShowBackingValue.Never)]
         public DialogueBaseNode output;
 
-        abstract public void Trigger();
+        public abstract void Trigger();
 
         public override object GetValue(NodePort port)
         {

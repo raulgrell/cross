@@ -56,7 +56,7 @@ namespace XNodeEditor.Internal
             editorTypes = new Dictionary<Type, Type>();
 
             //Get all classes deriving from NodeEditor via reflection
-            Type[] nodeEditors = XNodeEditor.NodeEditorWindow.GetDerivedTypes(typeof(T));
+            Type[] nodeEditors = NodeEditorWindow.GetDerivedTypes(typeof(T));
             for (int i = 0; i < nodeEditors.Length; i++)
             {
                 if (nodeEditors[i].IsAbstract) continue;
