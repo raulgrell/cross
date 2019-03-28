@@ -24,10 +24,14 @@ public class CameraController : MonoBehaviour
             : initialPosition - player.transform.position;
         direction = transform.eulerAngles;
     }
+    private Vector3 centerPlayer;
+    List<Transform> t = new List<Transform>();
+    Transform temp;
 
     void LateUpdate()
     {
         if (player == null) return;
+
 
         var mousePos = Input.mousePosition;
         mousePos.x = 2 * (mousePos.x / Screen.width - 0.5f);
@@ -42,11 +46,99 @@ public class CameraController : MonoBehaviour
         desiredPosition.y = currentPosition.y;
 
         transform.position = Vector3.MoveTowards(currentPosition, desiredPosition, cameraSpeed * Time.deltaTime);
+
+        centerPlayer = player.transform.position;
+        centerPlayer.y = centerPlayer.y + 2;
+        if(Physics.Raycast(camera.ScreenPointToRay(camera.WorldToScreenPoint(centerPlayer)), out RaycastHit hitInfo))
+        {
+            if (!hitInfo.transform.CompareTag("Player") && !t.Contains(hitInfo.transform))
+            {
+                    temp = hitInfo.transform;
+                    t.Add(temp);
+                    if (!temp.GetComponent<MeshRenderer>())
+                    {
+                    for (int i = 0; i < temp.childCount; i++)
+                        temp.GetChild(i).GetComponent<MeshRenderer>().enabled = false;
+                   //     FadeObj(true, temp.GetChild(i));
+                    }
+                    else
+                    temp.GetComponent<MeshRenderer>().enabled = false;
+               //     FadeObj(true, temp);
+
+            }
+            else if(t.Count > 1 && t[0].name != hitInfo.transform.name)
+            {
+                //TODO: Fix condiciont to only enable when not colliding with any obj
+                if (!t[0].GetComponent<MeshRenderer>())
+                {
+                    for (int i = 0; i < t[0].childCount; i++)
+                        t[0].GetChild(i).GetComponent<MeshRenderer>().enabled = true;
+                }
+                else
+                    t[0].GetComponent<MeshRenderer>().enabled = true;
+                t.RemoveAt(0);
+            }
+            else if(hitInfo.transform.CompareTag("Player")  && t.Count > 0)
+            {
+                foreach (Transform temporary in t)
+                {
+                    if (!temporary.GetComponent<MeshRenderer>())
+                    {
+                        for (int i = 0; i < temporary.childCount; i++)
+                            temporary.GetChild(i).GetComponent<MeshRenderer>().enabled = true;
+                    }
+                    else
+                        temporary.GetComponent<MeshRenderer>().enabled = true;
+                }
+                t.Clear();
+            }
+
+        }
     }
 
-    private void OnDrawGizmos()
+    //TODO: Fading obj
+    bool finished = false;
+    float timer;
+    Color fadeColor;
+    private void FadeObj(bool inOut, Transform obj)
     {
-        if (player)
-            Gizmos.DrawLine(transform.position, player.transform.position);
+        timer += 0.1f;
+        fadeColor = obj.GetComponent<MeshRenderer>().material.color;
+        if (!finished)
+        {
+            if (inOut)
+            {
+                if (timer < 1)
+                {
+                    fadeColor.a -= timer;
+                    Debug.Log(fadeColor.a);
+                }
+                else
+                {
+                    timer = 0;
+                    finished = true;
+                }
+
+            }
+            else
+            {
+                if (timer < 1)
+                    fadeColor.a = timer;
+                else
+                {
+                    timer = 0;
+                    finished = true;
+                }
+            }
+            obj.GetComponent<MeshRenderer>().material.color = fadeColor;
+        }
+        else return;
     }
+
+        private void OnDrawGizmos()
+        {
+            if (player)
+                Gizmos.DrawLine(transform.position, centerPlayer);
+        }
+    
 }

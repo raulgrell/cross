@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff07875a91b80664d81a9f793880019a, type: 3}
-  m_Name: ScaleSpaceMask
+  m_Script: {fileID: 11500000, guid: 212340fd18634609bafe7669173832d7, type: 3}
+  m_Name: SideClownImage
   m_EditorClassIdentifier: 
-  intialScaleImage: {x: 100, y: 100, z: 1}
-  scaleSpeed: 1
-  scale: {x: 1200, y: 800, z: 1}
-  rectTransform: 1
+  image: {fileID: 21300000, guid: bb83c880e8f463144a671a14c7d35f71, type: 3}
+  effects: []

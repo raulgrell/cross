@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212340fd18634609bafe7669173832d7, type: 3}
   m_Name: MimeImage
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 3acf44cbb8520f04fbab9eac308f15a9, type: 3}
+  image: {fileID: 21300000, guid: 4985b1becd71eee499037500f089cb9f, type: 3}
   effects:
   - {fileID: 11400000, guid: 4b570fe1b21093746a0651fc57220690, type: 2}
