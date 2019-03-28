@@ -13,7 +13,7 @@ public class PlayerInteraction : MonoBehaviour
     private TextMeshProUGUI currentText;
     private int i = 0;
     // Start is called before the first frame update
-    private bool spawning;
+    private bool spawning,finished;
     void Start()
     {
         foreach (char c in text)
@@ -29,7 +29,6 @@ public class PlayerInteraction : MonoBehaviour
             currentText = textObj.GetComponentInChildren<TextMeshProUGUI>();
         }
         StartCoroutine(EachC());
-
         return null;
     }
 
@@ -39,19 +38,27 @@ public class PlayerInteraction : MonoBehaviour
         {
         currentText.text += characters[i];
         i++;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         }
+        finished = true;
     }
     // Update is called once per frame
     void Update()
     {
         if (gridCombat.Target)
         {
-            if (gridCombat.Target.CompareTag("Interactable"))
+            if (gridCombat.Target.CompareTag("Interactable") && Input.GetMouseButtonDown(0) && !finished)
             {
-                SpawnText();
+                spawning = true;
+            }
+            else if (finished)
+            {
+                spawning = false;
+                Destroy(currentText.transform.parent.gameObject);
+                finished = false;
             }
         }
-
+        if (spawning)
+            SpawnText();
     }
 }

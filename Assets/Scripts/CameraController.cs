@@ -54,52 +54,51 @@ public class CameraController : MonoBehaviour
 
         centerPlayer = player.transform.position;
         centerPlayer.y = centerPlayer.y + 2;
+        RaycastHit[] hits = Physics.RaycastAll(camera.ScreenPointToRay(camera.WorldToScreenPoint(centerPlayer)));
 
-        if (!Physics.Raycast(camera.ScreenPointToRay(camera.WorldToScreenPoint(centerPlayer)),
-            out RaycastHit hitInfo)) return;
-        
-        if (!hitInfo.transform.CompareTag("Player") && !t.Contains(hitInfo.transform))
+        foreach (RaycastHit hit in hits)
         {
-            temp = hitInfo.transform;
-            t.Add(temp);
-            if (!temp.GetComponent<MeshRenderer>())
+            if (!hit.transform.CompareTag("Player") && !t.Contains(hit.transform))
             {
-                for (int i = 0; i < temp.childCount; i++)
-                    temp.GetChild(i).GetComponent<MeshRenderer>().enabled = false;
-                //     FadeObj(true, temp.GetChild(i));
-            }
-            else
-                temp.GetComponent<MeshRenderer>().enabled = false;
-
-            //     FadeObj(true, temp);
-        }
-        else if (t.Count > 1 && t[0].name != hitInfo.transform.name)
-        {
-            //TODO: Fix condiciont to only enable when not colliding with any obj
-            if (!t[0].GetComponent<MeshRenderer>())
-            {
-                for (int i = 0; i < t[0].childCount; i++)
-                    t[0].GetChild(i).GetComponent<MeshRenderer>().enabled = true;
-            }
-            else
-                t[0].GetComponent<MeshRenderer>().enabled = true;
-
-            t.RemoveAt(0);
-        }
-        else if (hitInfo.transform.CompareTag("Player") && t.Count > 0)
-        {
-            foreach (Transform temporary in t)
-            {
-                if (!temporary.GetComponent<MeshRenderer>())
+                temp = hit.transform;
+                t.Add(temp);
+                if (!temp.GetComponent<MeshRenderer>())
                 {
-                    for (int i = 0; i < temporary.childCount; i++)
-                        temporary.GetChild(i).GetComponent<MeshRenderer>().enabled = true;
+                    for (int i = 0; i < temp.childCount; i++)
+                        temp.GetChild(i).GetComponent<MeshRenderer>().enabled = false;
+                    //     FadeObj(true, temp.GetChild(i));
                 }
                 else
-                    temporary.GetComponent<MeshRenderer>().enabled = true;
-            }
+                    temp.GetComponent<MeshRenderer>().enabled = false;
+                //     FadeObj(true, temp);
 
-            t.Clear();
+            }
+            //else if (t.Count > 1 && t[0].name != hitInfo.transform.name)
+            //{
+            //    //TODO: Fix condiciont to only enable when not colliding with any obj
+            //    if (!t[0].GetComponent<MeshRenderer>())
+            //    {
+            //        for (int i = 0; i < t[0].childCount; i++)
+            //            t[0].GetChild(i).GetComponent<MeshRenderer>().enabled = true;
+            //    }
+            //    else
+            //        t[0].GetComponent<MeshRenderer>().enabled = true;
+            //    t.RemoveAt(0);
+            //}
+            //else if (t.Count > 0 && hits.Length)
+            //{
+            //    foreach (Transform temporary in t)
+            //    {
+            //        if (!temporary.GetComponent<MeshRenderer>())
+            //        {
+            //            for (int i = 0; i < temporary.childCount; i++)
+            //                temporary.GetChild(i).GetComponent<MeshRenderer>().enabled = true;
+            //        }
+            //        else
+            //            temporary.GetComponent<MeshRenderer>().enabled = true;
+            //    }
+            //    t.Clear();
+            //}
         }
     }
 
