@@ -8,17 +8,41 @@ public class PlayerInteraction : MonoBehaviour
     public GridCombat gridCombat;
     public Canvas interactionCanvas;
     public GameObject interactionTextPrefab;
-    public string text;
     List<char> characters = new List<char>();
     private TextMeshProUGUI currentText;
     private int i = 0;
     // Start is called before the first frame update
     private bool spawning,finished;
-    void Start()
-    {
-        foreach (char c in text)
-            characters.Add(c);
 
+    void Update()
+    {
+        if (gridCombat.Target)
+        {
+            if (gridCombat.Target.CompareTag("Interactable") && Input.GetMouseButtonDown(0) && characters.Count < 1)
+            {
+                i = 0;
+                spawning = true;
+                characters = getCharacters(gridCombat.Target.transform.GetComponent<InteractableObj>().text);
+            }
+            else if (gridCombat.Target.CompareTag("Interactable")  && finished && Input.GetMouseButtonDown(0))
+            {
+                spawning = false;
+                if(currentText)
+                Destroy(currentText.transform.parent.gameObject);
+                characters.Clear();
+                finished = false;
+                
+            }
+        }
+        if (spawning && !finished)
+            SpawnText();
+    }
+    List<char> getCharacters(string text)
+    {
+        List<char> tempChar = new List<char>();
+        foreach (char c in text)
+            tempChar.Add(c);
+        return tempChar;
     }
 
     IEnumerator SpawnText()
@@ -27,6 +51,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             GameObject textObj = Instantiate(interactionTextPrefab, interactionCanvas.transform);
             currentText = textObj.GetComponentInChildren<TextMeshProUGUI>();
+            currentText.text = "";
         }
         StartCoroutine(EachC());
         return null;
@@ -38,27 +63,9 @@ public class PlayerInteraction : MonoBehaviour
         {
         currentText.text += characters[i];
         i++;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         }
         finished = true;
     }
     // Update is called once per frame
-    void Update()
-    {
-        if (gridCombat.Target)
-        {
-            if (gridCombat.Target.CompareTag("Interactable") && Input.GetMouseButtonDown(0) && !finished)
-            {
-                spawning = true;
-            }
-            else if (finished)
-            {
-                spawning = false;
-                Destroy(currentText.transform.parent.gameObject);
-                finished = false;
-            }
-        }
-        if (spawning)
-            SpawnText();
-    }
 }

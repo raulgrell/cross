@@ -24,7 +24,7 @@ public class SecurityCameraMovement : MonoBehaviour
             var xDistance = target.position.x - model.position.x;
             var zDistance = target.position.z - model.position.z;
             float current = Mathf.Atan2(xDistance, zDistance) * Mathf.Rad2Deg;
-            var targetAngle = target.eulerAngles.y;
+            var targetAngle = target.eulerAngles.z;
             var result = (current - targetAngle);
             angle.y = result + 180;
         }

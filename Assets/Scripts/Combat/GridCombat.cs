@@ -98,9 +98,9 @@ public class GridCombat : MonoBehaviour
 
         if (target)
         {
-            Vector3 newTarget = target.position;
-            newTarget.y = transform.position.y;
-            rotateTowards(newTarget);
+           // Vector3 newTarget = target.position;
+           // newTarget.y = transform.position.y;
+           //// rotateTowards(newTarget);
         }
     }
 
