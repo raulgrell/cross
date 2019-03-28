@@ -1,16 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "FSM/Transition")]
-public class StateTransition : ScriptableObject
+[Serializable]
+public class StateTransition
 {
+    [SerializeField] private StateVariable target;
     [SerializeField] private StateCondition decision;
     [SerializeField] private StateAction action;
-    [SerializeField] private StateVariable target;
 
-    public State Target => target.Value;
+    public StateVariable Target => target;
     public StateAction Action => action;
 
     public bool IsTriggered<T>(StateMachine<T> fsm) where T : MonoBehaviour

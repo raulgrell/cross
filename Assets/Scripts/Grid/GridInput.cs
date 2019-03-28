@@ -6,10 +6,12 @@ using UnityEngine;
 public class GridInput : MonoBehaviour
 {
     private GridUnit movement;
+    private GridCombat combat;
     
     void Start()
     {
         movement = GetComponent<GridUnit>();
+        combat = GetComponent<GridCombat>();
     }
 
     void Update()
@@ -18,5 +20,6 @@ public class GridInput : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D)) movement.input.x += 1;
         if (Input.GetKeyDown(KeyCode.S)) movement.input.y -= 1;
         if (Input.GetKeyDown(KeyCode.W)) movement.input.y += 1;
+        
     }
 }

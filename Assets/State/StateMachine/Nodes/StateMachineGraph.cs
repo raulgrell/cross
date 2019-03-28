@@ -8,30 +8,29 @@ namespace QAI.FSM
     [CreateAssetMenu(fileName = "StateMachineGraph", menuName = "FSM/StateMachineGraph", order = 1)]
     public class StateMachineGraph : AIGraph
     {
-        [SerializeField] private StateNode _entryState;
+        [SerializeField] private StateNode initialState;
 
         public void SetEntryState(StateNode state)
         {
-            if (_entryState != null)
-                _entryState.IsEntry = false;
+            if (initialState != null)
+                initialState.IsEntry = false;
 
-            _entryState = state;
+            initialState = state;
         }
 
         public void UnsetEntryState(StateNode state)
         {
-            if (state == _entryState)
-                _entryState = null;
+            if (state == initialState)
+                initialState = null;
         }
 
         public override void Init(Blackboard blackboard)
         {
-            _blackboard = blackboard;
-            _blackboard.states[GetInstanceID()] = _entryState;
-            _entryState.Enter();
+            _blackboard = blackboard;_blackboard.states[GetInstanceID()] = initialState;
+            initialState.Enter();
         }
 
-        public override AIGraphRunner.Result Run(Blackboard blackboard)
+        public override Result Run(Blackboard blackboard)
         {
             _blackboard = blackboard;
             if (!_blackboard.states.TryGetValue(GetInstanceID(), out object state))

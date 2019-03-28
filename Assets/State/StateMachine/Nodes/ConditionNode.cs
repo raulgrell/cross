@@ -5,19 +5,17 @@ using XNode;
 
 namespace QAI.FSM
 {
-    /// <summary>Base node for all check nodes in a Finite State Machine.</summary>
-    /// <remarks>Check nodes are used to control whether transitions are activated or not.</remarks>
-    [Node.NodeTintAttribute("#BAFFBE")]
-    public abstract class ConditionNode : StateNode
+    [NodeTintAttribute("#BAFFBE")]
+    public abstract class ConditionNode : StateMachineNode
     {
         /// <summary>Connection to current state.</summary>
         [Input] public FSMConnection _entry;
 
         /// <summary>Variable to be used in the check.</summary>
-        [Input] public BlackboardNode _variable = null;
+        [Input] public VariableNode _variable = null;
 
         /// <summary>Connection to new state.</summary>
-        [Node.OutputAttribute] public FSMConnection _exit = null;
+        [Output] public FSMConnection _exit = null;
 
         /// <summary>Whether to negate the result.</summary>
         [SerializeField] protected bool _negate = false;
@@ -32,7 +30,7 @@ namespace QAI.FSM
         protected bool _isValidVariable;
 
         /// <summary>Expected type in the variable field.</summary>
-        protected System.Type _expectedType = typeof(BlackboardNode);
+        protected System.Type _expectedType = typeof(VariableNode);
 
         /// <summary>Initialize node for execution.</summary>
         protected override void Init()

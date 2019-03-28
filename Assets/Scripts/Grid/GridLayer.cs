@@ -25,6 +25,11 @@ public class GridLayer : MonoBehaviour
     {
         return InBounds(x, y) && nodes[y, x].walkable;
     }
+    
+    bool IsEmpty(int x, int y)
+    {
+        return nodes[y, x] == null;
+    }
 
     void Awake()
     {
@@ -52,7 +57,7 @@ public class GridLayer : MonoBehaviour
             for (int j = 0; j < numRows; j++)
             {
                 var offset = Vector3.forward * cellSize * j + Vector3.right * cellSize * i + gutterOffset / 2;
-                Gizmos.DrawWireCube(offset - gutterOffset / 2 + Vector3.up, new Vector3(cellSize, 0, cellSize) - gutterOffset);
+                Gizmos.DrawWireSphere(offset - gutterOffset / 2 + Vector3.up, 0.1f);
             }
         }
     }

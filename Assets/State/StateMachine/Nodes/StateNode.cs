@@ -8,6 +8,11 @@ namespace QAI.FSM
     [NodeTint("#bae1ff")]
     public abstract class StateNode : StateMachineNode
     {
+        [SerializeField] [HideInInspector] bool _isEntry;
+        
+        [SerializeField] [HideInInspector] List<FSMConnection> entries = new List<FSMConnection>();
+        [SerializeField] [HideInInspector] List<FSMConnection> exits = new List<FSMConnection>();
+
         public bool IsEntry
         {
             get => _isEntry;
@@ -28,9 +33,6 @@ namespace QAI.FSM
             IsEntry = true;
         }
 
-        [SerializeField] [HideInInspector] bool _isEntry;
-        [SerializeField] [HideInInspector] List<FSMConnection> entries = new List<FSMConnection>();
-        [SerializeField] [HideInInspector] List<FSMConnection> exits = new List<FSMConnection>();
 
         protected override void Init()
         {
@@ -44,6 +46,10 @@ namespace QAI.FSM
         }
 
         public virtual void Exit()
+        {
+        }
+        
+        public virtual void Run()
         {
         }
 

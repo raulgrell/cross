@@ -1,24 +1,41 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using Unit;
 using UnityEngine;
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
+[Serializable]
 [CreateAssetMenu(fileName = "Attack", menuName = "FSM/Action/Attack")]
 public class ActionAttack : UnitAction
 {
-    [Expandable]
-    public UnitData data;
-
+    public float actionTime;
+    
+    [Range(0.1f, 0.9f)]
+    public float variance;
+    
     private float timer;
 
     private void OnEnable()
     {
-        timer = 0;
+        ResetTimer();
     }
 
     public override void Act(UnitController agent)
     {
-        timer += Time.deltaTime;
+        if (timer < 0)
+        {
+            agent.Attack();
+            ResetTimer();
+        }
+
+        timer -= Time.deltaTime;
+    }
+    
+    public void ResetTimer()
+    {
+        timer = Random.Range(actionTime * (1 - variance), actionTime * (1 + variance));
     }
 }

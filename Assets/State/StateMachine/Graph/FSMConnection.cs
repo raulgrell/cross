@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,8 +6,7 @@ using XNode;
 
 namespace QAI.FSM
 {
-    /// <summary>Class used for connecting nodes in the graph.</summary>
-    [System.Serializable]
+    [Serializable]
     public class FSMConnection
     {
         /// <summary>Node to which this connection belongs to.</summary>
@@ -18,56 +18,41 @@ namespace QAI.FSM
         /// <summary>Node port by which the connection is done.</summary>
         [SerializeField] [HideInInspector] string _portName;
 
-        /// <summary>Is the connection empty?</summary>
         bool _isEmpty;
+        bool _isCheckNode;
+        bool _isStateNode;
 
-        /// <summary>Is the connection check node?</summary>
-        bool _isCheck;
-
-        /// <summary>Is the connection a state node?</summary>
-        bool _isState;
-
-        /// <summary>Get the port name.</summary>
         public string PortName => _portName;
-
-        /// <summary>Get whether it is connected.</summary>
         public bool Connected => _connected;
 
-        /// <summary>Class constructor.</summary>
         public FSMConnection(Node node, string portName)
         {
-            // Cache node and port.
             _node = node;
             _portName = portName;
         }
 
-        /// <summary>Initialize connection for execution.</summary>
         public void Init()
         {
-            // Cache type of connected node.
             NodePort port = _node.GetOutputPort(_portName);
             _isEmpty = port?.Connection == null;
             _connected = !_isEmpty ? port.Connection.node : null;
-            _isCheck = !_isEmpty && _connected.GetType().IsSubclassOf(typeof(ConditionNode));
-            _isState = !_isEmpty && _connected.GetType().IsSubclassOf(typeof(StateNode));
+            _isCheckNode = !_isEmpty && _connected.GetType().IsSubclassOf(typeof(ConditionNode));
+            _isStateNode = !_isEmpty && _connected.GetType().IsSubclassOf(typeof(StateNode));
         }
 
         /// <summary>Get the connection state node if any.</summary>
         public StateNode GetState()
         {
-            // Return null if not connected.
             if (_isEmpty)
                 return null;
 
-            // If connected is a check make it.
-            if (_isCheck)
+            if (_isCheckNode)
             {
                 ConditionNode transition = _connected as ConditionNode;
                 return transition.Check();
             }
 
-            // Return connected in case it is a state.
-            if (_isState)
+            if (_isStateNode)
                 return _connected as StateNode;
 
             return null;

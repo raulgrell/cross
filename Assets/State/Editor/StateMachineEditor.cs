@@ -12,7 +12,7 @@ namespace QAI.FSM
             bool isValid =
                 type.IsSubclassOf(typeof(StateNode)) ||
                 type.IsSubclassOf(typeof(ActionNode)) ||
-                type.IsSubclassOf(typeof(BlackboardNode)) ||
+                type.IsSubclassOf(typeof(VariableNode)) ||
                 type.IsSubclassOf(typeof(ConditionNode));
 
             return isValid ? base.GetNodeMenuName(type).Replace("FSM/", "") : null;

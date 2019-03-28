@@ -15,11 +15,13 @@ public class FloatReference : Reference<float, FloatVariable>
     }
 }
 
+[Serializable]
 [CreateAssetMenu(menuName = "Variable/Float")]
 public class FloatVariable : Variable<float>
 {
 }
 
+[Serializable]
 [CreateNodeMenuAttribute("Variable/Float")]
 public class FloatNode : VariableNode<float>
 {

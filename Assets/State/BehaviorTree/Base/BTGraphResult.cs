@@ -1,7 +1,7 @@
 namespace QAI.BT
 {
     /// <summary>AI graph result implementation for Behavior Trees.</summary>
-    public class BTGraphResult : AIGraphRunner.Result
+    public class BTGraphResult : AIGraph.Result
     {
         /// <summary>Internal list of valid result values.</summary>
         enum Results

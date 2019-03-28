@@ -11,6 +11,7 @@
       <e p="Assets" t="Include">
         <e p="Plugins" t="Include">
           <e p="Attributes" t="Include">
+            <e p="ExpandableAttribute.cs" t="Include" />
             <e p="ReadOnlyAttribute.cs" t="Include" />
           </e>
           <e p="Components" t="Include">
@@ -23,30 +24,9 @@
             <e p="Heap.cs" t="Include" />
             <e p="RingBuffer.cs" t="Include" />
           </e>
-          <e p="Dialogue" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="CharacterInfo.cs" t="Include" />
-              <e p="DialogueGraph.cs" t="Include" />
-              <e p="Editor" t="Include">
-                <e p="CharacterInfoDrawer.cs" t="Include" />
-                <e p="DialogueGraphEditor.cs" t="Include" />
-              </e>
-              <e p="Nodes" t="Include">
-                <e p="Branch.cs" t="Include" />
-                <e p="Chat.cs" t="Include" />
-                <e p="DialogueBaseNode.cs" t="Include" />
-                <e p="Editor" t="Include">
-                  <e p="BranchEditor.cs" t="Include" />
-                  <e p="ChatEditor.cs" t="Include" />
-                  <e p="EventEditor.cs" t="Include" />
-                </e>
-                <e p="Event.cs" t="Include" />
-              </e>
-            </e>
-            <e p="SubGraph.cs" t="Include" />
-          </e>
           <e p="Editor" t="Include">
             <e p="DockableSnapWindow.cs" t="Include" />
+            <e p="ExpandableAttributeDrawer.cs" t="Include" />
             <e p="GraphEditorWindow.cs" t="Include" />
             <e p="QuickToggle.cs" t="Include" />
             <e p="RenameSelection.cs" t="Include" />
@@ -83,7 +63,6 @@
             <e p="SerializableCallbackBase.cs" t="Include" />
             <e p="SerializableEvent.cs" t="Include" />
             <e p="SerializableEventBase.cs" t="Include" />
-            <e p="Test.cs" t="Include" />
           </e>
           <e p="SerializableDictionary" t="Include">
             <e p="Editor" t="Include">
@@ -161,25 +140,30 @@
               <e p="ActionFollow.cs" t="Include" />
               <e p="ActionRun.cs" t="Include" />
               <e p="ActionStop.cs" t="Include" />
+            </e>
+            <e p="Base" t="Include">
               <e p="UnitAction.cs" t="Include" />
+              <e p="UnitCondition.cs" t="Include" />
+              <e p="UnitState.cs" t="Include" />
             </e>
             <e p="Conditions" t="Include">
               <e p="ConditionDistance.cs" t="Include" />
               <e p="ConditionHealth.cs" t="Include" />
               <e p="ConditionManhattan.cs" t="Include" />
               <e p="ConditionVisibility.cs" t="Include" />
-              <e p="UnitCondition.cs" t="Include" />
             </e>
             <e p="EnemyBehaviour.cs" t="Include" />
             <e p="HeroBehaviour.cs" t="Include" />
             <e p="SquadController.cs" t="Include" />
           </e>
-          <e p="Attacks" t="Include">
+          <e p="CameraController.cs" t="Include" />
+          <e p="Combat" t="Include">
             <e p="Attack.cs" t="Include" />
+            <e p="BasicAttack.cs" t="Include" />
+            <e p="GridCombat.cs" t="Include" />
             <e p="MeleeAttack.cs" t="Include" />
             <e p="projectileScript.cs" t="Include" />
           </e>
-          <e p="CameraController.cs" t="Include" />
           <e p="CutsceneSystem" t="Include">
             <e p="Effects" t="Include">
               <e p="Effect.cs" t="Include" />
@@ -196,13 +180,18 @@
               <e p="PanelData.cs" t="Include" />
             </e>
           </e>
+          <e p="Exploration" t="Include">
+            <e p="SecurityCameraMovement.cs" t="Include" />
+          </e>
           <e p="Grid" t="Include">
-            <e p="GridCombat.cs" t="Include" />
             <e p="GridInput.cs" t="Include" />
             <e p="GridLayer.cs" t="Include" />
             <e p="GridNode.cs" t="Include" />
             <e p="GridPathfinding.cs" t="Include" />
             <e p="GridUnit.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="PlayerInteraction.cs" t="Include" />
           </e>
           <e p="Session.cs" t="Include" />
           <e p="Units" t="Include">
@@ -253,6 +242,8 @@
           </e>
           <e p="Editor" t="Include">
             <e p="AIGraphEditor.cs" t="Include" />
+            <e p="CharacterInfoDrawer.cs" t="Include" />
+            <e p="DialogueGraphEditor.cs" t="Include" />
             <e p="ReferenceDrawer.cs" t="Include" />
             <e p="StateMachineEditor.cs" t="Include" />
             <e p="StateNodeEditor.cs" t="Include" />
@@ -269,18 +260,30 @@
               <e p="GenericAction.cs" t="Include" />
               <e p="GenericCondition.cs" t="Include" />
               <e p="GenericState.cs" t="Include" />
+              <e p="GenericVariable.cs" t="Include" />
             </e>
             <e p="Graph" t="Include">
               <e p="AIGraph.cs" t="Include" />
               <e p="AIGraphRunner.cs" t="Include" />
+              <e p="CharacterInfo.cs" t="Include" />
+              <e p="DialogueGraph.cs" t="Include" />
               <e p="FSMBehaviorTreeNode.cs" t="Include" />
               <e p="FSMConnection.cs" t="Include" />
               <e p="FSMSubmachineNode.cs" t="Include" />
+              <e p="SubGraph.cs" t="Include" />
             </e>
             <e p="Nodes" t="Include">
               <e p="ActionNode.cs" t="Include" />
-              <e p="BlackboardNode.cs" t="Include" />
+              <e p="Branch.cs" t="Include" />
+              <e p="Chat.cs" t="Include" />
               <e p="ConditionNode.cs" t="Include" />
+              <e p="DialogueBaseNode.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="BranchEditor.cs" t="Include" />
+                <e p="ChatEditor.cs" t="Include" />
+                <e p="EventEditor.cs" t="Include" />
+              </e>
+              <e p="Event.cs" t="Include" />
               <e p="StateMachineGraph.cs" t="Include" />
               <e p="StateMachineNode.cs" t="Include" />
               <e p="StateNode.cs" t="Include" />
@@ -295,20 +298,16 @@
           <e p="Types" t="Include">
             <e p="BoolVariable.cs" t="Include" />
             <e p="ColorVariable.cs" t="Include" />
+            <e p="ConditionVariable.cs" t="Include" />
             <e p="FloatVariable.cs" t="Include" />
             <e p="IntVariable.cs" t="Include" />
             <e p="PrefabsVariable.cs" t="Include" />
             <e p="PrefabVariable.cs" t="Include" />
-            <e p="ScriptableVariable.cs" t="Include" />
             <e p="StateVariable.cs" t="Include" />
             <e p="StringVariable.cs" t="Include" />
+            <e p="TransitionVariable.cs" t="Include" />
             <e p="Vector2Variable.cs" t="Include" />
             <e p="Vector3Variable.cs" t="Include" />
-          </e>
-          <e p="Units" t="Include">
-            <e p="States" t="Include">
-              <e p="UnitState.cs" t="Include" />
-            </e>
           </e>
           <e p="Variable.cs" t="Include" />
         </e>

@@ -10,7 +10,7 @@ namespace QAI.BT.Custom
     public class IsNullCheck : BTTaskNode
     {
         /// <summary>The variable to check for null.</summary>
-        [Input] public BlackboardNode _variable = null;
+        [Input] public VariableNode _variable = null;
 
         /// <summary>Execute the check.</summary>
         protected override BTGraphResult InternalRun()

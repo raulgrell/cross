@@ -53,7 +53,7 @@ namespace QAI.BT
         }
 
         /// <summary>Execute the behavior tree in the blackboard.</summary>
-        public override AIGraphRunner.Result Run(Blackboard blackboard)
+        public override AIGraph.Result Run(Blackboard blackboard)
         {
             // Save blackboard while executing.
             _blackboard = blackboard;

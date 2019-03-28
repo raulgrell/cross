@@ -23,6 +23,10 @@ namespace QAI
 
         public abstract void Init(Blackboard blackboard);
 
-        public abstract AIGraphRunner.Result Run(Blackboard blackboard);
+        public abstract Result Run(Blackboard blackboard);
+
+        public abstract class Result
+        {
+        }
     }
 }

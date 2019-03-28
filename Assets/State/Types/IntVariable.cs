@@ -21,6 +21,6 @@ public class IntVariable : Variable<int>
 }
 
 [CreateNodeMenuAttribute("Variable/Int")]
-public class IntNode : VariableNode<float>
+public class IntNode : VariableNode<int>
 {
 }

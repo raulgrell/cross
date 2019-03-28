@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
+[Serializable]
 public abstract class StateAction : ScriptableObject
 {
     public abstract void Act<T>(StateMachine<T> fsm) where T : MonoBehaviour;

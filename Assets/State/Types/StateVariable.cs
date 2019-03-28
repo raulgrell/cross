@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using QAI;
 using UnityEngine;
+using XNode;
 
 [Serializable]
 public class StateReference : Reference<State, StateVariable>
@@ -17,5 +19,10 @@ public class StateReference : Reference<State, StateVariable>
 
 [CreateAssetMenu(menuName = "Variable/State")]
 public class StateVariable : Variable<State>
+{
+}
+
+[CreateNodeMenuAttribute("Variable/State")]
+public class StateVariableNode : VariableNode<State>
 {
 }

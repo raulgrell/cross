@@ -3,23 +3,19 @@ using QAI.FSM;
 using UnityEngine;
 using XNode;
 
-namespace Unit
+[CreateNodeMenuAttribute("FSM/Condition/Shared")]
+class GenericCondition : ConditionNode
 {
+    [SerializeField] private StateCondition condition;
 
-[Node.CreateNodeMenuAttribute("FSM/Condition/Shared")]
-    class GenericCondition : ConditionNode
+    protected override void Init()
     {
-        [SerializeField] private StateCondition condition;
+        _expectedType = typeof(BoolNode);
+        base.Init();
+    }
 
-        protected override void Init()
-        {
-            _expectedType = typeof(BoolNode);
-            base.Init();
-        }
-
-        protected override bool CheckCondition()
-        {
-            throw new System.NotImplementedException();
-        }
+    protected override bool CheckCondition()
+    {
+        throw new NotImplementedException();
     }
 }

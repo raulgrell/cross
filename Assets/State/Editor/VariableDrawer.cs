@@ -1,24 +1,54 @@
-﻿using UnityEditor;
+﻿using System;
 using UnityEngine;
-using System.Reflection;
-using System.IO;
-using System;
-
-[CustomEditor(typeof(Variable), true)]
-public class GenericVariableEditor : Editor {
-
-    bool _runtimeFoldout = true;
-
-    public override void OnInspectorGUI() {
-        // Draw super.
-        base.OnInspectorGUI();
-        // Only show on runtime.
-        EditorGUILayout.Separator();
-        _runtimeFoldout = EditorGUILayout.Foldout(_runtimeFoldout, "Runtime");
-        if (_runtimeFoldout) {
-            EditorGUI.BeginDisabledGroup(true);
-            EditorGUILayout.TextField("Value", target.ToString());
-            EditorGUI.EndDisabledGroup();
+using UnityEditor;
+     
+[CustomPropertyDrawer(typeof(Variable), true)]
+public class VariableDrawer : PropertyDrawer
+{
+    Editor editor;
+     
+    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    {
+        // Draw label
+        EditorGUI.PropertyField(position, property, label, true);
+     
+        // Draw foldout arrow
+        if (property.objectReferenceValue != null)
+        {
+            property.isExpanded = EditorGUI.Foldout(position, property.isExpanded, GUIContent.none);
+        }
+     
+        // Draw foldout properties
+        if (property.isExpanded)
+        {
+            // Make child fields be indented
+            EditorGUI.indentLevel++;
+     
+            // background
+            GUILayout.BeginVertical("box");
+     
+            if (!editor)
+                Editor.CreateCachedEditor(property.objectReferenceValue, null, ref editor);
+     
+            // Draw object properties
+            EditorGUI.BeginChangeCheck();
+            if (editor) // catch empty property
+            {
+                editor.OnInspectorGUI ();
+            }
+            if (EditorGUI.EndChangeCheck())
+                property.serializedObject.ApplyModifiedProperties();
+     
+            GUILayout.EndVertical ();
+     
+            // Set indent back to what it was
+            EditorGUI.indentLevel--;
         }
     }
+}
+     
+[CanEditMultipleObjects]
+[CustomEditor(typeof(UnityEngine.Object), true)]
+public class UnityObjectEditor : Editor
+{
 }

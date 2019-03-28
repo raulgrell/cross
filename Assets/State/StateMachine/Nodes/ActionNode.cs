@@ -7,5 +7,6 @@ namespace QAI.FSM
 {
     public abstract class ActionNode : StateMachineNode
     {
+        
     }
 }

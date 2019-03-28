@@ -6,9 +6,8 @@ using UnityEngine;
 
 public class StateMachine<T> : MonoBehaviour where T : MonoBehaviour
 {
-    public State initialState;
-
-    private State currentState;
+    public StateVariable initialState;
+    private StateVariable currentState;
 
     private T agent;
     public T Agent => agent;
@@ -23,7 +22,7 @@ public class StateMachine<T> : MonoBehaviour where T : MonoBehaviour
     {
         StateTransition triggered = null;
 
-        foreach (var transition in currentState.Transitions)
+        foreach (var transition in currentState.Value.Transitions)
         {
             if (transition.IsTriggered(this))
             {
@@ -33,15 +32,15 @@ public class StateMachine<T> : MonoBehaviour where T : MonoBehaviour
         }
 
         var actions = new List<StateAction>();
-        actions.AddRange(currentState.Actions);
+        actions.AddRange(currentState.Value.Actions);
 
-        if (triggered)
+        if (triggered != null)
         {
-            if (currentState.ExitAction)
-                actions.Add(currentState.ExitAction);
+            if (currentState.Value.ExitAction)
+                actions.Add(currentState.Value.ExitAction);
 
-            if (triggered.Target.EntryAction)
-                actions.Add(triggered.Target.EntryAction);
+            if (triggered.Target.Value.EntryAction)
+                actions.Add(triggered.Target.Value.EntryAction);
 
             if (triggered.Action)
             {

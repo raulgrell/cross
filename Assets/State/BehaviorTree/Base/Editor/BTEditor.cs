@@ -12,7 +12,7 @@ namespace QAI.BT
         public override string GetNodeMenuName(System.Type type)
         {
             // Make sure type is a valid instance.
-            if (!type.IsSubclassOf(typeof(BTNode)) && !type.IsSubclassOf(typeof(BlackboardNode)))
+            if (!type.IsSubclassOf(typeof(BTNode)) && !type.IsSubclassOf(typeof(VariableNode)))
             {
                 return null;
             }

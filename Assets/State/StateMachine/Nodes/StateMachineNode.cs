@@ -11,7 +11,7 @@ namespace QAI.FSM
         
         public override object GetValue(NodePort port) => null;
 
-        public T GetBlackboardValue<T>(string portName, BlackboardNode node, T fallback = default)
+        public T GetBlackboardValue<T>(string portName, VariableNode node, T fallback = default)
         {
             // Check if we need to change the fallback from the value in the node.
             T value = node != null ? (T) node.GetValue() : fallback;
@@ -40,18 +40,13 @@ namespace QAI.FSM
 
             // Add component and save it in blackboard.
             T component = go.AddComponent<T>();
-            Debug.LogWarning(string.Format("Adding component {0} on execution.", component.ToString()));
+            Debug.LogWarning($"Adding component {component} on execution.");
             return component;
         }
 
         protected T GetComponent<T>(string key) where T : MonoBehaviour
         {
-            T component = FSM.GetValue<T>(key) ?? AddComponent<T>();
-            return component;
-        }
-
-        public virtual void Run()
-        {
+            return FSM.GetValue<T>(key) ?? AddComponent<T>();
         }
     }
 }

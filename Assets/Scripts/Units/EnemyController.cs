@@ -4,12 +4,8 @@ using Unit;
 using UnityEngine;
 
 [RequireComponent(typeof(GridUnit))]
-[RequireComponent(typeof(EnemyBehaviour))]
 public class EnemyController : UnitController
 {
-    public UnitData data;
-    [Range(1f, 50f)] public float speed = 20;
-
     [Range(0.01f, 1f)] public float refreshInterval = 0.2f;
 
     private EnemyBehaviour behaviour;
@@ -17,13 +13,9 @@ public class EnemyController : UnitController
     void Start()
     {
         unit = GetComponent<GridUnit>();
+        combat = GetComponent<GridCombat>();
         behaviour = GetComponent<EnemyBehaviour>();
         StartCoroutine(RequestPath());
-    }
-
-    void Update()
-    {
-        unit.MoveToPosition(gridWaypoint);
     }
 
     private void OnValidate()

@@ -49,9 +49,19 @@ public class ReferenceDrawer : PropertyDrawer
 
         isConstant = EditorGUI.Popup(buttonRect, useConstant.boolValue ? 0 : 1, options, popupStyle) == 0;
         useConstant.boolValue = isConstant;
-        if (!isConstant)
+
+        if (isConstant)
         {
-            Rect rect = new Rect(position) {xMin = position.xMax - 100};
+            // Check if it's a scriptable object, create editor,
+            // otherwise, create property field.
+            // Find a way not to override custom property drawers
+        }
+        else
+        {
+            Rect rect = new Rect(position)
+            {
+                xMin = position.xMax - 100
+            };
             position.xMax = rect.xMin - buttonStyle.margin.left;
 
             if (GUI.Button(rect, "Create New"))

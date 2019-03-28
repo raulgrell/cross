@@ -8,16 +8,10 @@ namespace QAI.FSM
     [CustomNodeEditor(typeof(StateNode))]
     public class StateNodeEditor : NodeEditor
     {
-        /// <summary>Virtual node port for new entries.</summary>
         NodePort _entry;
-
-        /// <summary>Virtual node port for new exits.</summary>
         NodePort _exit;
-
-        /// <summary>Reference to the target state.</summary>
         StateNode _state;
 
-        /// <summary>Draw node's body.</summary>
         public override void OnBodyGUI()
         {
             base.OnBodyGUI();
@@ -33,9 +27,9 @@ namespace QAI.FSM
             int entryCount = _state.EntriesCount;
 
             // Check if we need to create new entry.
-            _entry = target.GetInputPort("entry") 
+            _entry = target.GetInputPort("_entry") 
                      ?? target.AddInstanceInput(typeof(FSMConnection), Node.ConnectionType.Override,
-                         Node.TypeConstraint.None, "entry");
+                         Node.TypeConstraint.None, "_entry");
 
             // If entry connection is not empty create new entry.
             if (_entry.Connection != null)
@@ -45,9 +39,9 @@ namespace QAI.FSM
             }
 
             // Check if we need to create new exit.
-            _exit = target.GetOutputPort("exit")
+            _exit = target.GetOutputPort("_exit")
                     ?? target.AddInstanceOutput(typeof(FSMConnection), Node.ConnectionType.Override,
-                        Node.TypeConstraint.None, "exit");
+                        Node.TypeConstraint.None, "_exit");
 
             // If exit connection is not empty create new exit.
             if (_exit.Connection != null)

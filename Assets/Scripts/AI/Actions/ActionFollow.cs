@@ -8,6 +8,8 @@ using UnityEngine;
 public class ActionFollow : UnitAction
 {
     public float actionTime;
+    
+    [Range(0.1f, 0.9f)]
     public float variance;
     
     private float timer;
@@ -19,7 +21,7 @@ public class ActionFollow : UnitAction
 
     public void ResetTimer()
     {
-        timer = Random.Range(actionTime - variance, actionTime + variance);
+        timer = Random.Range(actionTime * (1 - variance), actionTime * (1 + variance));
     }
 
     public override void Act(UnitController agent)
@@ -27,9 +29,10 @@ public class ActionFollow : UnitAction
         if (timer < 0)
         {
             if (agent.IsAtWaypoint())
+            {
                 agent.GoToNextWaypoint();
-            
-            ResetTimer();
+                ResetTimer();
+            }
         }
 
         timer -= Time.deltaTime;

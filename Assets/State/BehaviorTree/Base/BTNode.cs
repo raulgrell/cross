@@ -41,7 +41,7 @@ namespace QAI.BT
         /// <param name="node">Manually loaded blackboard variable node.</param>
         /// <param name="fallback">Fallback value, defaults to default type value.</param>
         /// <typeparam ref="T">Type of the value returned by the blackboard node.</param>
-        public T GetBlackboardValue<T>(string portName, BlackboardNode node, T fallback = default(T))
+        public T GetBlackboardValue<T>(string portName, VariableNode node, T fallback = default(T))
         {
             // Check if we need to change the fallback from the value in the node.
             T value = node != null ? (T) node.GetValue() : fallback;

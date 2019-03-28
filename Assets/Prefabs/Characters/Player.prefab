@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 6328867675829411651}
   - component: {fileID: 6328867675829411646}
   - component: {fileID: 6328867675829411645}
-  - component: {fileID: 6328867675829411649}
   m_Layer: 9
-  m_Name: TestPlayer
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,14 +82,6 @@ MonoBehaviour:
   Target: {fileID: 0}
   camera: {fileID: 0}
   rotationSpeed: 0
---- !u!33 &6328867675829411649
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6328867675829411654}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &6328867677107998107
 PrefabInstance:
   m_ObjectHideFlags: 0

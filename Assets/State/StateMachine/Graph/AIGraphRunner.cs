@@ -4,7 +4,6 @@ using StateNode = QAI.FSM.StateNode;
 
 namespace QAI
 {
-    /// <summary>Class for executing AI Graph attached to a Game Object. Inherits from <c>MonoBehaviour</c>.</summary>
     public class AIGraphRunner : MonoBehaviour
     {
         public event Action OnGraphInit;
@@ -28,6 +27,20 @@ namespace QAI
 
                 InitBlackboard();
             }
+        }
+        
+        void Start()
+        {
+            if (graph != null)
+                Graph = graph;
+        }
+
+        void Update()
+        {
+            if (!blackboard)
+                return;
+
+            graph.Run(blackboard);
         }
 
         protected void InitBlackboard()
@@ -59,25 +72,7 @@ namespace QAI
             blackboard.variables.TryGetValue(key, out object value);
             return value;
         }
-
-        void Start()
-        {
-            if (graph != null)
-                Graph = graph;
-        }
-
-        void Update()
-        {
-            if (!blackboard)
-                return;
-
-            graph.Run(blackboard);
-        }
-
-        public abstract class Result
-        {
-        }
-
+        
         public object GetStateFromBlackboard(int key)
         {
             if (blackboard == null)

@@ -10,7 +10,7 @@ namespace QAI.BT.Custom
     public class DebugVariable : BTTaskNode
     {
         /// <summary>The target variable to debug.</summary>
-        [Input] public BlackboardNode _target = null;
+        [Input] public VariableNode _target = null;
 
         /// <summary>A reference to check whether the target is set or not.</summary>
         object _notSet = new object();

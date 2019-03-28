@@ -21,6 +21,6 @@ public class ColorVariable : Variable<Color>
 }
 
 [CreateNodeMenuAttribute("Variable/Color")]
-public class ColorNode : VariableNode<float>
+public class ColorNode : VariableNode<Color>
 {
 }
