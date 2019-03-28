@@ -5,261 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Orange.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Purple.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Colors/White.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Colors/White.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Yellow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Yellow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Black.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Black.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Blue.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Blue.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Green.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Green.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Orange.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Orange.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Purple.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Purple.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Red.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Red.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/White.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/White.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Yellow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Lights/Yellow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/MetalPlates.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/MetalPlates.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Clown/23.03.2019.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Clown/23.03.2019.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Clown/clown.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Clown/clown.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Exterior/Space-outside (1).FBX" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Exterior/Space-outside (1).FBX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Interior/barril1.FBX" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Interior/barril1.FBX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Interior/camera animaçao.FBX" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Interior/camera animaçao.FBX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Props.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Props/umbrella.FBX" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Props/umbrella.FBX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Walls/SPACESHIPWALLS.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Walls/SPACESHIPWALLS.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Walls/SPACESHIPWALLS2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Walls/SPACESHIPWALLS2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Attributes/ExpandableAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Attributes/ExpandableAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/ExpandableAttributeDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/ExpandableAttributeDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Psycho.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Psycho.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Combat/Ranged.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Combat/Ranged.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Base.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/BasicAttack.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/BasicAttack.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/GridCombat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Generic/GenericVariable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Generic/GenericVariable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/State/Types/ConditionVariable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/State/Types/ConditionVariable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/State/Types/TransitionVariable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/State/Types/TransitionVariable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Units/Behaviours/StateMachineGraph.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Units/Data.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Units/Data/New Unit Data.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Clown.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Green.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/MetalPlates03/MetalPlates03_nrm.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Textures/MetalPlates03/MetalPlates03_nrm.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Mime/mime3finalversion.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Mime/mime3finalversion.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/obstáculos.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Interior/barril 2.FBX" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/obstáculos.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Interior/barril 2.FBX.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Interior.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/.gitmodules" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Example.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Lights.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Example/Characters.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Exterior.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Example/Characters/Bob.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Example/Characters/Bob.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Purple.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Example/Characters/Joe.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Example/Characters/Joe.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Data/New Unit Data.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Example/ExampleGraph.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Example/ExampleGraph.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Orange.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Icons.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Icons.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Icons/branch.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Icons/branch.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Icons/branch.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Icons/branch.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Icons/chat.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Icons/chat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Icons/chat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Icons/chat.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Icons/event.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Icons/event.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Icons/event.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Icons/event.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/CharacterInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/CharacterInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/CharacterInfo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/CharacterInfo.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/DialogueGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/DialogueGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/DialogueGraph.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/DialogueGraph.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Editor/CharacterInfoDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Editor/CharacterInfoDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Editor/CharacterInfoDrawer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Editor/CharacterInfoDrawer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Editor/DialogueGraphEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Editor/DialogueGraphEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Editor/DialogueGraphEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Editor/DialogueGraphEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Branch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Branch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Branch.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Branch.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Chat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Chat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Chat.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Chat.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/DialogueBaseNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/DialogueBaseNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/DialogueBaseNode.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/DialogueBaseNode.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Editor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Editor/BranchEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Editor/BranchEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Editor/BranchEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Editor/BranchEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Editor/ChatEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Editor/ChatEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Editor/ChatEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Editor/ChatEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Editor/EventEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Editor/EventEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Editor/EventEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Editor/EventEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Event.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Scripts/Nodes/Event.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/Event.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/SubGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/SubGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/SubGraph.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/SubGraph.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue/Submodules.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SerializableCallback/Test.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SerializableCallback/Test.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Melee.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Combat/Melee.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Units/TestEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Units/TestEnemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ArenaScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ArenaScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ModelScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ModelScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProBuilderScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProBuilderScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionFollow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/UnitAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/UnitAction.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitAction.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionManhattan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionManhattan.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Conditions/UnitCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitCondition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Conditions/UnitCondition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitCondition.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/EnemyBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/EnemyBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Attack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/Attack.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Attack.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/MeleeAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/MeleeAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/MeleeAttack.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/MeleeAttack.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/ProjectileScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/ProjectileScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/ProjectileScript.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/ProjectileScript.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/Panels/2TestPanel/Texts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/GridCombat.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/UnitController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/UnitController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/UnitData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/UnitData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/BehaviorTree/Base/BTGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Base/BTGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/BehaviorTree/Base/BTGraphResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Base/BTGraphResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/BehaviorTree/Base/BTNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Base/BTNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/BehaviorTree/Base/Editor/BTEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Base/Editor/BTEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/BehaviorTree/Checks/IsNullCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Checks/IsNullCheck.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/BehaviorTree/Tasks/DebugVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/BehaviorTree/Tasks/DebugVariable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Editor/ReferenceDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Editor/ReferenceDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Editor/StateMachineEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Editor/StateMachineEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Editor/StateNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Editor/StateNodeEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Editor/VariableDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Editor/VariableDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Editor/VariableDrawer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Editor/VariableDrawer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Generic/GenericAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Generic/GenericAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Generic/GenericCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Generic/GenericCondition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Generic/GenericState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Generic/GenericState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/AIGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/AIGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/AIGraphRunner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/AIGraphRunner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/FSMConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/FSMConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/FSMSubmachineNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Graph/FSMSubmachineNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/ActionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/ActionNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/BlackboardNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/BlackboardNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/ConditionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/ConditionNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/StateMachineGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/StateMachineGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/StateMachineNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/StateMachineNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/StateNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/StateNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/VariableNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/VariableNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/VariableNode.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/Nodes/VariableNode.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/StateAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/StateAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/StateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/StateMachine/StateTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/StateMachine/StateTransition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Types/ColorVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Types/ColorVariable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Types/FloatVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Types/FloatVariable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Types/IntVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Types/IntVariable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Types/ScriptableVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Types/ScriptableVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Types/StateVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Types/StateVariable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Types/Vector2Variable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Types/Vector2Variable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Actions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Actions.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Actions/Attack.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Actions/Attack.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Actions/Attack.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Actions/Attack.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Actions/Follow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Actions/Follow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Actions/Follow.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Actions/Follow.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Actions/Run.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Actions/Run.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Actions/Run.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Actions/Run.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Actions/Stop.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Actions/Stop.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Actions/Stop.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Actions/Stop.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Behaviours.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Behaviours.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Behaviours/SharedFloat.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Behaviours/SharedFloat.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Behaviours/StateMachineGraph.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Behaviours/StateMachineGraph.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Behaviours/StateMachineGraph.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/CanSeeTarget.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/CanSeeTarget.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/CanSeeTarget.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/CanSeeTarget.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/DistanceClose.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/DistanceClose.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/DistanceClose.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/DistanceClose.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/DistanceFar.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/DistanceFar.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/DistanceFar.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/DistanceFar.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/HealthFull.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/HealthFull.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/HealthFull.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/HealthFull.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/HealthLow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/HealthLow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/HealthLow.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/HealthLow.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/ManhattanAdjacent.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/ManhattanAdjacent.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/ManhattanAdjacent.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/ManhattanAdjacent.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/ManhattanAdjacentNot.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/ManhattanAdjacentNot.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/ManhattanClose.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/ManhattanClose.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/ManhattanClose.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/ManhattanClose.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/ManhattanFar.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/ManhattanFar.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/ManhattanFar.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/ManhattanFar.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/VisibilityHigh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/VisibilityHigh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/VisibilityHigh.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/VisibilityHigh.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/VisibilityLow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/VisibilityLow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/VisibilityLow.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/VisibilityLow.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/VisibilityNone.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/VisibilityNone.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Conditions/VisibilityNone.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/VisibilityNone.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/States.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/States.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/States/Attack.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/States/Attack.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/States/Attack.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/States/Attack.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/States/Follow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/States/Follow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/States/Follow.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/States/Follow.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/States/Idle.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/States/Idle.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/States/Idle.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/States/Idle.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/States/Run.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/States/Run.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/States/Run.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/States/Run.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/States/UnitState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/States/UnitState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions/AttackToFollow.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions/AttackToFollow.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions/AttackToRun.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions/AttackToRun.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions/FollowToAttack.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions/FollowToAttack.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions/FollowToIdle.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions/FollowToIdle.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions/IdleToFollow.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions/IdleToFollow.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions/RunToIdle.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Units/Transitions/RunToIdle.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/Variable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/Variable.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -397,12 +143,12 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
-                <marker date="1553741649218" expanded="false" signature="6:78" ph="..." />
-                <marker date="1553741649218" expanded="true" signature="155:641" ph="{...}" />
-                <marker date="1553741649218" expanded="true" signature="241:343" ph="{...}" />
-                <marker date="1553741649218" expanded="true" signature="362:639" ph="{...}" />
+                <marker date="1553772400512" expanded="false" signature="6:78" ph="..." />
+                <marker date="1553772400512" expanded="true" signature="155:632" ph="{...}" />
+                <marker date="1553772400512" expanded="true" signature="241:343" ph="{...}" />
+                <marker date="1553772400512" expanded="true" signature="362:630" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -715,9 +461,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attacks/BasicAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs" />
       </list>
     </option>
   </component>
@@ -839,12 +585,12 @@
       <workItem from="1553348811969" duration="33561000" />
       <workItem from="1553397292241" duration="34110000" />
       <workItem from="1553596962899" duration="33082000" />
-      <workItem from="1553727384173" duration="10869000" />
+      <workItem from="1553727384173" duration="11268000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208708000" />
+    <option name="totallyTimeSpent" value="209107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -857,6 +603,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15938166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1719,12 +1466,12 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <marker date="1553741649218" expanded="false" signature="6:78" ph="..." />
-            <marker date="1553741649218" expanded="true" signature="155:641" ph="{...}" />
-            <marker date="1553741649218" expanded="true" signature="241:343" ph="{...}" />
-            <marker date="1553741649218" expanded="true" signature="362:639" ph="{...}" />
+            <marker date="1553772400512" expanded="false" signature="6:78" ph="..." />
+            <marker date="1553772400512" expanded="true" signature="155:632" ph="{...}" />
+            <marker date="1553772400512" expanded="true" signature="241:343" ph="{...}" />
+            <marker date="1553772400512" expanded="true" signature="362:630" ph="{...}" />
           </folding>
         </state>
       </provider>

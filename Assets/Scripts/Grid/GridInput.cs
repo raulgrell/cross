@@ -20,6 +20,5 @@ public class GridInput : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D)) movement.input.x += 1;
         if (Input.GetKeyDown(KeyCode.S)) movement.input.y -= 1;
         if (Input.GetKeyDown(KeyCode.W)) movement.input.y += 1;
-        
     }
 }
