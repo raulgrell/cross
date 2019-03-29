@@ -15,4 +15,4 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: 0ac60231fa17f784e974100942b7b286, type: 3}
   effects:
   - {fileID: 11400000, guid: 62ef41ea8fa70084cbffd97e551fc332, type: 2}
-  - {fileID: 11400000, guid: d83a0cb9178ba3844b87c7679d368f81, type: 2}
+  - {fileID: 11400000, guid: 64b0bb29a79108945a67b5ff3812fb51, type: 2}

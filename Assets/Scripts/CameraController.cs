@@ -54,37 +54,45 @@ public class CameraController : MonoBehaviour
 
         centerPlayer = player.transform.position;
         centerPlayer.y = centerPlayer.y + 2;
-        RaycastHit[] hits = Physics.RaycastAll(camera.ScreenPointToRay(camera.WorldToScreenPoint(centerPlayer)));
+        RaycastHit[] hits = Physics.RaycastAll(camera.ScreenPointToRay(camera.WorldToScreenPoint(centerPlayer)),25);
 
-        foreach (RaycastHit hit in hits)
-        {
-            if (!hit.transform.CompareTag("Player") && !t.Contains(hit.transform))
+            foreach (RaycastHit hit in hits)
             {
-                temp = hit.transform;
-                t.Add(temp);
-                if (!temp.GetComponent<MeshRenderer>())
+                if (!hit.transform.CompareTag("Player") && !t.Contains(hit.transform))
                 {
-                    for (int i = 0; i < temp.childCount; i++)
-                        temp.GetChild(i).GetComponent<MeshRenderer>().enabled = false;
-                    //     FadeObj(true, temp.GetChild(i));
-                }
-                else
-                    temp.GetComponent<MeshRenderer>().enabled = false;
-                //     FadeObj(true, temp);
+                    temp = hit.transform;
+                    t.Add(temp);
+                    if (!temp.GetComponent<MeshRenderer>())
+                    {
+                        for (int i = 0; i < temp.childCount; i++)
+                            temp.GetChild(i).GetComponent<MeshRenderer>().enabled = false;
+                        //     FadeObj(true, temp.GetChild(i));
+                    }
+                    else
+                        temp.GetComponent<MeshRenderer>().enabled = false;
+                    //     FadeObj(true, temp);
 
-            }
-            //else if (t.Count > 1 && t[0].name != hitInfo.transform.name)
-            //{
-            //    //TODO: Fix condiciont to only enable when not colliding with any obj
-            //    if (!t[0].GetComponent<MeshRenderer>())
-            //    {
-            //        for (int i = 0; i < t[0].childCount; i++)
-            //            t[0].GetChild(i).GetComponent<MeshRenderer>().enabled = true;
-            //    }
-            //    else
-            //        t[0].GetComponent<MeshRenderer>().enabled = true;
-            //    t.RemoveAt(0);
-            //}
+                }
+                if (t.Count > hits.Length - 1)
+                {
+                    foreach (Transform temporary in t)
+                    {
+                            if (!temporary.GetComponent<MeshRenderer>())
+                            {
+                                for (int i = 0; i < temporary.childCount; i++)
+                                 temporary.GetChild(i).GetComponent<MeshRenderer>().enabled = true;
+                            }
+                            else
+                        temporary.GetComponent<MeshRenderer>().enabled = true;
+                    }
+                    t.Clear();
+                }
+                           
+                }
+            
+                
+
+            
             //else if (t.Count > 0 && hits.Length)
             //{
             //    foreach (Transform temporary in t)
@@ -99,7 +107,7 @@ public class CameraController : MonoBehaviour
             //    }
             //    t.Clear();
             //}
-        }
+        
     }
 
     private void FadeObj(bool inOut, Transform obj)

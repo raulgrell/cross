@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff07875a91b80664d81a9f793880019a, type: 3}
   m_Name: ScaleSpaceMask
   m_EditorClassIdentifier: 
-  intialScaleImage: {x: 100, y: 100, z: 1}
+  intialScaleImage: {x: 300, y: 300, z: 1}
   scaleSpeed: 1
-  scale: {x: 1200, y: 800, z: 1}
+  scale: {x: 600, y: 600, z: 1}
   rectTransform: 1

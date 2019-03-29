@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2425ccbeee4e96d44aa35852737fd4ab, type: 3}
   m_Name: MoveXSpace
   m_EditorClassIdentifier: 
-  initialPos: {x: -400, y: 0, z: 0}
-  target: {x: 500, y: 0, z: 0}
+  initialPos: {x: 200, y: 0, z: 0}
+  target: {x: -200, y: 0, z: 0}
   duration: 20

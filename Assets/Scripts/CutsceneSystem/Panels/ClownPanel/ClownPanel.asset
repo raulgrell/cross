@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061710745562ba544936ac86841545d9, type: 3}
   m_Name: ClownPanel
   m_EditorClassIdentifier: 
-  duration: 10
-  startTime: 12
+  duration: 15
+  startTime: 10
   images:
   - {fileID: 11400000, guid: db00fce4f124efb489b3a9ad3ca10f58, type: 2}
-  - {fileID: 11400000, guid: 2485681ec0c505748beb5c0523cf2e40, type: 2}
+  - {fileID: 11400000, guid: db00fce4f124efb489b3a9ad3ca10f58, type: 2}
+  - {fileID: 11400000, guid: 151410f575f4f234dad00cee53a763a3, type: 2}
+  - {fileID: 11400000, guid: 151410f575f4f234dad00cee53a763a3, type: 2}
   texts:
   - {fileID: 11400000, guid: b095e02331bbfd142bf003a2e988e243, type: 2}
   backgroundImage: {fileID: 11400000, guid: b9d8448b8d95d4e4882c04717c984e9d, type: 2}
+  mask: {fileID: 0}
   panelScale: {x: 1, y: 1, z: 1}

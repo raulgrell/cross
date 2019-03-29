@@ -29,7 +29,6 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
 
         if (data.Mask != null)
         {
-            Debug.Log("here");
             foreach (Effect effect in data.Mask.effects)
             {
                 effect.Setup(this, transform.parent.gameObject);
@@ -97,7 +96,6 @@ public class CutscenePanel : MonoBehaviour, IHeapItem<CutscenePanel>
         }
         if (data.Mask != null)
         {
-            Debug.Log("here");
             foreach (Effect effect in data.Mask.effects)
             {
                 effect.Apply(this, transform.parent.gameObject);

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2425ccbeee4e96d44aa35852737fd4ab, type: 3}
-  m_Name: MoveMimePanel
+  m_Name: MoveSideClown1
   m_EditorClassIdentifier: 
-  initialPos: {x: -500, y: 0, z: 0}
-  target: {x: -450, y: 100, z: 0}
-  duration: 5
+  initialPos: {x: 0, y: -1000, z: 0}
+  target: {x: -200, y: 100, z: 0}
+  duration: 2

@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: SideClownImage
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: bb83c880e8f463144a671a14c7d35f71, type: 3}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: 62ef41ea8fa70084cbffd97e551fc332, type: 2}
+  - {fileID: 11400000, guid: a7814007152d2c74ab812f62c32a34d6, type: 2}

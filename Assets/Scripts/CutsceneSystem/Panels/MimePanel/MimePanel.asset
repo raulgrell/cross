@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: MimePanel
   m_EditorClassIdentifier: 
   duration: 10
-  startTime: 12
+  startTime: 5
   images:
   - {fileID: 11400000, guid: 0e966424810c2bb44b570c532e26e714, type: 2}
   texts:
   - {fileID: 11400000, guid: b35765edb25c25f478ce10cae4fe0619, type: 2}
   backgroundImage: {fileID: 11400000, guid: ada5d60fe8961714eb06c90873a34003, type: 2}
+  mask: {fileID: 0}
   panelScale: {x: 0.5, y: 0.5, z: 1}

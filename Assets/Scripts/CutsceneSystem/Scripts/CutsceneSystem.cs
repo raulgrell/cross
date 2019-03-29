@@ -53,9 +53,14 @@ public class CutsceneSystem : MonoBehaviour
                 currentPanel.transform.parent.gameObject.SetActive(true);
                 currentPanel.gameObject.SetActive(true);
             }
+
             currentPanel = (incoming.Count > 0)
                 ? incoming.RemoveFirst()
                 : null;
+        }
+        else if(!currentPanel)
+        {
+        //    gameObject.SetActive(false);
         }
     }
 }

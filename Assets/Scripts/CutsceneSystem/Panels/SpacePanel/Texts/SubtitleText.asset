@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee3ef76aa8214636bb42f06080e7dcdb, type: 3}
   m_Name: SubtitleText
   m_EditorClassIdentifier: 
-  text: A Space Comedy
+  text: dedicated to the persuit of pleasure
   background: {r: 1, g: 1, b: 1, a: 1}
   foreground: {r: 1, g: 0.9858491, b: 0.9858491, a: 1}
   effects:
