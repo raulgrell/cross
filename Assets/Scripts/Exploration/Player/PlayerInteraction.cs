@@ -16,23 +16,26 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        if (gridCombat.Target)
+        if (Input.GetMouseButtonDown(0) && !finished)
         {
-            if (gridCombat.Target.CompareTag("Interactable") && Input.GetMouseButtonDown(0) && characters.Count < 1)
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
             {
-                i = 0;
-                spawning = true;
-                characters = getCharacters(gridCombat.Target.transform.GetComponent<InteractableObj>().text);
+                if (hitInfo.transform.CompareTag("Interactable") && characters.Count < 1)
+                {
+                    i = 0;
+                    spawning = true;
+                    characters = getCharacters(hitInfo.transform.GetComponent<InteractableObj>().text);
+                }
             }
-            else if (gridCombat.Target.CompareTag("Interactable")  && finished && Input.GetMouseButtonDown(0))
-            {
-                spawning = false;
-                if(currentText)
+        }
+        else if (finished && Input.GetMouseButtonDown(0))
+        {
+            spawning = false;
+            if (currentText)
                 Destroy(currentText.transform.parent.gameObject);
-                characters.Clear();
-                finished = false;
-                
-            }
+            characters.Clear();
+            finished = false;
+
         }
         if (spawning && !finished)
             SpawnText();
