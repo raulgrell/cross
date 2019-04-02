@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Unit;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Visibility", menuName = "FSM/Condition/Visibility")]

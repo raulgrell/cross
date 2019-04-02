@@ -24,3 +24,6 @@ MonoBehaviour:
     - target: {fileID: 11400000, guid: f141e2e21174b8045ab0b5e2371255ba, type: 2}
       decision: {fileID: 11400000, guid: cd25f8dfc7a73d64495331868a5c5aa3, type: 2}
       action: {fileID: 0}
+    - target: {fileID: 11400000, guid: bcb9cd73f14cbe945b5e9d3b787a7dd4, type: 2}
+      decision: {fileID: 11400000, guid: cd25f8dfc7a73d64495331868a5c5aa3, type: 2}
+      action: {fileID: 0}

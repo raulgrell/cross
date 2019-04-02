@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unit;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Distance", menuName = "FSM/Condition/Distance")]

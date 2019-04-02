@@ -13,136 +13,9 @@ MonoBehaviour:
   m_Name: StateMachineGraph
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 114586679207427486}
-  - {fileID: 114324117660280780}
-  - {fileID: 114586518842179220}
-  - {fileID: 114029673436114612}
-  - {fileID: 114948172391521934}
-  - {fileID: 114004934737351190}
+  - {fileID: 114578124232039190}
   initialState: {fileID: 0}
---- !u!114 &114004934737351190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Color Node
-  m_EditorClassIdentifier: Assembly-CSharp::ColorNode
-  graph: {fileID: 11400000}
-  position: {x: -280, y: -312}
-  ports:
-    keys:
-    - _value
-    values:
-    - _fieldName: _value
-      _node: {fileID: 114004934737351190}
-      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _value: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &114029673436114612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: State Variable Node
-  m_EditorClassIdentifier: Assembly-CSharp::StateVariableNode
-  graph: {fileID: 11400000}
-  position: {x: -520, y: -344}
-  ports:
-    keys:
-    - _value
-    values:
-    - _fieldName: _value
-      _node: {fileID: 114029673436114612}
-      _typeQualifiedName: State, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _value:
-    entryAction: {fileID: 0}
-    exitAction: {fileID: 0}
-    actions: []
-    transitions: []
---- !u!114 &114324117660280780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec8d0f2cfb69d0e47bbaebe500896c87, type: 3}
-  m_Name: Generic Condition
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -152, y: -72}
-  ports:
-    keys:
-    - _entry
-    - _variable
-    - _exit
-    values:
-    - _fieldName: _entry
-      _node: {fileID: 114324117660280780}
-      _typeQualifiedName: QAI.FSM.FSMConnection, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Generic Condition
-        node: {fileID: 114586679207427486}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _variable
-      _node: {fileID: 114324117660280780}
-      _typeQualifiedName: QAI.VariableNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: _exit
-      _node: {fileID: 114324117660280780}
-      _typeQualifiedName: QAI.FSM.FSMConnection, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Generic Condition
-        node: {fileID: 114586518842179220}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _entry:
-    _node: {fileID: 0}
-    _portName: 
-  _variable: {fileID: 114948172391521934}
-  _exit:
-    _node: {fileID: 114324117660280780}
-    _portName: _exit
-  _negate: 0
-  condition: {fileID: 11400000, guid: 03ad9fc50a655e74da107f9b213df2de, type: 2}
---- !u!114 &114586518842179220
+--- !u!114 &114578124232039190
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,15 +28,14 @@ MonoBehaviour:
   m_Name: Generic State
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 72, y: -312}
+  position: {x: -504, y: -280}
   ports:
     keys:
     - _entry
     - _exit
-    - Generic Condition
     values:
     - _fieldName: _entry
-      _node: {fileID: 114586518842179220}
+      _node: {fileID: 114578124232039190}
       _typeQualifiedName: QAI.FSM.FSMConnection, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections: []
@@ -172,66 +44,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 1
     - _fieldName: _exit
-      _node: {fileID: 114586518842179220}
-      _typeQualifiedName: QAI.FSM.FSMConnection, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: Generic Condition
-      _node: {fileID: 114586518842179220}
-      _typeQualifiedName: QAI.FSM.FSMConnection, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _exit
-        node: {fileID: 114324117660280780}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 1
-  _isEntry: 0
-  entries:
-  - _node: {fileID: 114586518842179220}
-    _portName: Generic Condition
-  exits: []
-  state: {fileID: 0}
-  counter:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
---- !u!114 &114586679207427486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 115dd64d1b4746e409a50612ffccf9c8, type: 3}
-  m_Name: Generic State
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -504, y: -168}
-  ports:
-    keys:
-    - _entry
-    - _exit
-    values:
-    - _fieldName: _entry
-      _node: {fileID: 114586679207427486}
-      _typeQualifiedName: QAI.FSM.FSMConnection, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: _exit
-      _node: {fileID: 114586679207427486}
+      _node: {fileID: 114578124232039190}
       _typeQualifiedName: QAI.FSM.FSMConnection, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections: []
@@ -242,36 +55,8 @@ MonoBehaviour:
   _isEntry: 0
   entries: []
   exits: []
-  state: {fileID: 11400000, guid: d4b2642afe64b1249bc5c87d04ea30f0, type: 2}
+  state: {fileID: 0}
   counter:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
---- !u!114 &114948172391521934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae251ec10b6475c8390ef194f5a415d, type: 3}
-  m_Name: Generic Variable
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -520, y: 56}
-  ports:
-    keys:
-    - _value
-    values:
-    - _fieldName: _value
-      _node: {fileID: 114948172391521934}
-      _typeQualifiedName: Variable, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _value: {fileID: 11400000, guid: d4b2642afe64b1249bc5c87d04ea30f0, type: 2}

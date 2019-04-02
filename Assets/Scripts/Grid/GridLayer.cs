@@ -15,21 +15,6 @@ public class GridLayer : MonoBehaviour
     public GridNode[,] nodes;
 
     public int Count => numCols * numRows;
-    
-    bool InBounds(int x, int y)
-    {
-        return (x >= 0 && x < numCols && y >= 0 && y < numRows);
-    }
-
-    bool IsWalkable(int x, int y)
-    {
-        return InBounds(x, y) && nodes[y, x].walkable;
-    }
-    
-    bool IsEmpty(int x, int y)
-    {
-        return nodes[y, x] == null;
-    }
 
     void Awake()
     {
@@ -41,7 +26,7 @@ public class GridLayer : MonoBehaviour
             for (int j = 0; j < numRows; j++)
             {
                 var offset = Vector3.forward * cellSize * j + Vector3.right * cellSize * i;
-                var node = GridNode.Spawn(nodePrefab, true, origin + offset, new Vector2Int(i, j), transform);
+                var node = GridNode.Spawn(nodePrefab, origin + offset, new Vector2Int(i, j), transform);
                 nodes[j, i] = node;
             }
         }
@@ -60,6 +45,21 @@ public class GridLayer : MonoBehaviour
                 Gizmos.DrawWireSphere(offset - gutterOffset / 2 + Vector3.up, 0.1f);
             }
         }
+    }
+    
+    public bool InBounds(int x, int y)
+    {
+        return (x >= 0 && x < numCols && y >= 0 && y < numRows);
+    }
+
+    public bool IsWalkable(int x, int y)
+    {
+        return InBounds(x, y) && nodes[y, x].walkable;
+    }
+    
+    public bool IsEmpty(int x, int y)
+    {
+        return nodes[y, x] == null;
     }
 
     public Vector3 CellToWorld(Vector2Int position)

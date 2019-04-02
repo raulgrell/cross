@@ -18,21 +18,31 @@ public class GridNode : MonoBehaviour, IHeapItem<GridNode>
         
     public int HeapIndex { get; set; }
     
-    public static GridNode Spawn(GameObject prefab, bool isWalkable, Vector3 worldPos, Vector2Int gridPos, Transform parent)
+    public static GridNode Spawn(GameObject prefab, Vector3 worldPos, Vector2Int gridPos, Transform parent)
     {
         var obj = Instantiate(prefab, worldPos, Quaternion.identity, parent);
-        var node = obj.GetComponent<GridNode>();
         obj.transform.position = worldPos;
-        node.walkable = isWalkable;
+        
+        var node = obj.GetComponent<GridNode>();
+        node.walkable = true;
         node.gridPosition = gridPos;
+
+        if (Physics.Raycast(worldPos + Vector3.up * 2, Vector3.down, out RaycastHit hitInfo))
+        {
+            node.height = hitInfo.point.y;
+            obj.transform.position = obj.transform.position.SetY(node.height);
+        }
+
         return node;
     }
     
     public int CompareTo(GridNode gridNodeToCompare)
     {
         int compare = FCost.CompareTo(gridNodeToCompare.FCost);
+        
         if (compare == 0)
             compare = hCost.CompareTo(gridNodeToCompare.hCost);
+        
         return -compare;
     }
 }

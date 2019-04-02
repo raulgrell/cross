@@ -147,6 +147,6 @@ public class CameraController : MonoBehaviour
     private void OnDrawGizmos()
     {
         if (player)
-            Gizmos.DrawLine(transform.position, centerPlayer);
+            Gizmos.DrawLine(transform.position, player.transform.position);
     }
 }

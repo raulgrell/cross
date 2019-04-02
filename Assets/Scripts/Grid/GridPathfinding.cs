@@ -46,6 +46,7 @@ public class GridPathfinding : MonoBehaviour
             {
                 GridNode currentGridNode = openSet.RemoveFirst();
                 closedSet.Add(currentGridNode);
+                
                 if (currentGridNode == targetNode)
                 {
                     pathSuccess = true;
@@ -75,13 +76,13 @@ public class GridPathfinding : MonoBehaviour
 
         if (pathSuccess)
         {
-            waypoints = RetracePath(startNode, targetNode);
+            waypoints = BuildPath(startNode, targetNode);
         }
 
         return waypoints;
     }
 
-    GridNode[] RetracePath(GridNode startGridNode, GridNode endGridNode)
+    GridNode[] BuildPath(GridNode startGridNode, GridNode endGridNode)
     {
         List<GridNode> path = new List<GridNode>();
         GridNode currentGridNode = endGridNode;
@@ -92,26 +93,9 @@ public class GridPathfinding : MonoBehaviour
             currentGridNode = currentGridNode.parent;
         }
 
-//        GridNode[] waypoints = SimplifyPath(path);
         GridNode[] waypoints = path.ToArray();
         Array.Reverse(waypoints);
 
         return waypoints;
-    }
-
-    GridNode[] SimplifyPath(List<GridNode> path)
-    {
-        var waypoints = new List<GridNode>();
-        Vector2Int directionOld = Vector2Int.zero;
-
-        for (int i = 1; i < path.Count; i++)
-        {
-            Vector2Int directionNew = path[i - 1].gridPosition - path[i].gridPosition;
-            if (directionNew != directionOld)
-                waypoints.Add(path[i]);
-            directionOld = directionNew;
-        }
-
-        return waypoints.ToArray();
     }
 }

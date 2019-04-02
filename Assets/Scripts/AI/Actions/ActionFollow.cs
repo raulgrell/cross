@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
-using Unit;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Follow", menuName = "FSM/Action/Follow")]
@@ -9,8 +8,7 @@ public class ActionFollow : UnitAction
 {
     public float actionTime;
     
-    [Range(0.1f, 0.9f)]
-    public float variance;
+    [Range(0.1f, 0.9f)] public float variance;
     
     private float timer;
 

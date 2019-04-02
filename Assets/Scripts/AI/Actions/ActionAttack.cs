@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
-using Unit;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -13,8 +12,7 @@ public class ActionAttack : UnitAction
 {
     public float actionTime;
     
-    [Range(0.1f, 0.9f)]
-    public float variance;
+    [Range(0.1f, 0.9f)] public float variance;
     
     private float timer;
 

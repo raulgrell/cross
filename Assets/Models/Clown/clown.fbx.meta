@@ -1230,12 +1230,137 @@ ModelImporter:
     4300466: Object_4
     4300468: Object_5
     4300470: Object_6
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_2
+    second: {fileID: 2100000, guid: 200ce6530c46b504f8af48b91e2513e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _ears
+    second: {fileID: 2100000, guid: fe8bcebc81851ff4e8c31521fd39e6a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _ears_2
+    second: {fileID: 2100000, guid: ae9d6b1ddc2e134428b2c0104ea571e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _ears_3
+    second: {fileID: 2100000, guid: da6f9a7fdff4a504e8504ce7c739c68e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _ears_4
+    second: {fileID: 2100000, guid: b1e7d2e4cb04ed4428124c44a0d720a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _eyes_1
+    second: {fileID: 2100000, guid: 9f0c59e075c805f4d91b40bc4938df14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _eyes_1_2
+    second: {fileID: 2100000, guid: 095c09e27e0b06f4e97820a34ea8cd34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _face
+    second: {fileID: 2100000, guid: f2d9d0faa50547f45859b54f2fd5a6b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _face_2
+    second: {fileID: 2100000, guid: d8d97d37a879fa64a90e601f9ca14156, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs
+    second: {fileID: 2100000, guid: 46d96cde8d234094c94acc2be9d548ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_10
+    second: {fileID: 2100000, guid: e2811b2d5897efe4bb4740af37f056ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_11
+    second: {fileID: 2100000, guid: 9499bb37b00e1de4ab15fc43af7a62a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_12
+    second: {fileID: 2100000, guid: 2b55a33185eff554b84f89f68dff0dd1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_13
+    second: {fileID: 2100000, guid: 2641852fd3871e34fb5e442f8b376271, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_14
+    second: {fileID: 2100000, guid: 5e23214a7a683614781c37e7b6196574, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_15
+    second: {fileID: 2100000, guid: 0a4da081ddade794bb528424dca0dc59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_16
+    second: {fileID: 2100000, guid: 0f4ea6eb7a0c32f4e8ee779acc46a4aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_2
+    second: {fileID: 2100000, guid: 4ff76a4af96e8f444953793bc1a47e65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_3
+    second: {fileID: 2100000, guid: 4c25da487efc39f489ef6180c181c1d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_4
+    second: {fileID: 2100000, guid: 78ce7f01589f2cc4bbacafbd3fd326ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_5
+    second: {fileID: 2100000, guid: a2c6a7324fea5d545ad624fc895d9c3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_6
+    second: {fileID: 2100000, guid: a5f2ebd8f3c5c76498e3b858994ba258, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_7
+    second: {fileID: 2100000, guid: 09ebe3555876fe54ab10a224e46fd913, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_8
+    second: {fileID: 2100000, guid: a9d22ea4755c0e14fa666e129e21789b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _hairs_9
+    second: {fileID: 2100000, guid: 1a35cab10d17c254e943f19640751228, type: 2}
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 1
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

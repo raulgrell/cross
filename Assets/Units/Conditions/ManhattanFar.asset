@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3561571ec8854ae79628030e1e670d7b, type: 3}
   m_Name: ManhattanFar
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
   value: 9
   negate: 0
