@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 212340fd18634609bafe7669173832d7, type: 3}
-  m_Name: RingmasterBackground
+  m_Name: ClownMainImage2
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: f8f12601d4f21dc49bce9b840a8f07d9, type: 3}
-  effects: []
+  image: {fileID: 21300000, guid: 0ac60231fa17f784e974100942b7b286, type: 3}
+  effects:
+  - {fileID: 11400000, guid: 62ef41ea8fa70084cbffd97e551fc332, type: 2}
+  - {fileID: 11400000, guid: 64b0bb29a79108945a67b5ff3812fb51, type: 2}

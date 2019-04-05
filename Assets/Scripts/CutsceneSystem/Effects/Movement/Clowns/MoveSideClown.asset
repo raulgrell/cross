@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2425ccbeee4e96d44aa35852737fd4ab, type: 3}
-  m_Name: MoveClown
+  m_Name: MoveSideClown
   m_EditorClassIdentifier: 
-  initialPos: {x: -1000, y: 0, z: 0}
-  target: {x: 0, y: 0, z: 0}
-  duration: 10
+  initialPos: {x: 0, y: 800, z: 0}
+  target: {x: 50, y: -100, z: 0}
+  duration: 2

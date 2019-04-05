@@ -28,10 +28,10 @@ namespace QAI.BT.Custom
 
             // Only debug if the current game object is selected.
             GameObject go = BT.GetValue<GameObject>("GameObject");
-            if (Selection.activeGameObject == go)
-            {
-                Debug.Log(string.Format("{0}: Result {1}", name, target));
-            }
+            //if (Selection.activeGameObject == go)
+            //{
+            //    Debug.Log(string.Format("{0}: Result {1}", name, target));
+            //}
 
             // Return success.
             return BTGraphResult.Success;

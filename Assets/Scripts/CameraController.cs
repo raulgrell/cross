@@ -54,41 +54,41 @@ public class CameraController : MonoBehaviour
 
         centerPlayer = player.transform.position;
         centerPlayer.y = centerPlayer.y + 2;
-        RaycastHit[] hits = Physics.RaycastAll(camera.ScreenPointToRay(camera.WorldToScreenPoint(centerPlayer)),25);
+        //RaycastHit[] hits = Physics.RaycastAll(camera.ScreenPointToRay(camera.WorldToScreenPoint(centerPlayer)),25);
 
-            foreach (RaycastHit hit in hits)
-            {
-                if (!hit.transform.CompareTag("Player") && !t.Contains(hit.transform))
-                {
-                    temp = hit.transform;
-                    t.Add(temp);
-                    if (!temp.GetComponent<MeshRenderer>())
-                    {
-                        for (int i = 0; i < temp.childCount; i++)
-                            temp.GetChild(i).GetComponent<MeshRenderer>().enabled = false;
-                        //     FadeObj(true, temp.GetChild(i));
-                    }
-                    else
-                        temp.GetComponent<MeshRenderer>().enabled = false;
-                    //     FadeObj(true, temp);
+        //    foreach (RaycastHit hit in hits)
+        //    {
+        //        if (!hit.transform.CompareTag("Player") && !t.Contains(hit.transform))
+        //        {
+        //            temp = hit.transform;
+        //            t.Add(temp);
+        //            if (!temp.GetComponent<MeshRenderer>())
+        //            {
+        //                for (int i = 0; i < temp.childCount; i++)
+        //                    temp.GetChild(i).GetComponent<MeshRenderer>().enabled = false;
+        //                //     FadeObj(true, temp.GetChild(i));
+        //            }
+        //            else
+        //                temp.GetComponent<MeshRenderer>().enabled = false;
+        //            //     FadeObj(true, temp);
 
-                }
-                if (t.Count > hits.Length - 1)
-                {
-                    foreach (Transform temporary in t)
-                    {
-                            if (!temporary.GetComponent<MeshRenderer>())
-                            {
-                                for (int i = 0; i < temporary.childCount; i++)
-                                 temporary.GetChild(i).GetComponent<MeshRenderer>().enabled = true;
-                            }
-                            else
-                        temporary.GetComponent<MeshRenderer>().enabled = true;
-                    }
-                    t.Clear();
-                }
+        //        }
+        //        if (t.Count > hits.Length - 1)
+        //        {
+        //            foreach (Transform temporary in t)
+        //            {
+        //                    if (!temporary.GetComponent<MeshRenderer>())
+        //                    {
+        //                        for (int i = 0; i < temporary.childCount; i++)
+        //                         temporary.GetChild(i).GetComponent<MeshRenderer>().enabled = true;
+        //                    }
+        //                    else
+        //                temporary.GetComponent<MeshRenderer>().enabled = true;
+        //            }
+        //            t.Clear();
+        //        }
                            
-                }
+        //        }
             
                 
 

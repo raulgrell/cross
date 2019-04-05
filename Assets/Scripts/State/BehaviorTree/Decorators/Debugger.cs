@@ -23,10 +23,10 @@ namespace QAI.BT
 
             // Only debug if the current game object is selected.
             GameObject go = BT.GetValue<GameObject>("GameObject");
-            if (Selection.activeGameObject == go)
-            {
-                Debug.Log(string.Format("{0}: Result {1}", name, result));
-            }
+            //if (Selection.activeGameObject == go)
+            //{
+            //    Debug.Log(string.Format("{0}: Result {1}", name, result));
+            //}
 
             // Return negation of result.
             return result;
