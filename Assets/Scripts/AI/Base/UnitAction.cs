@@ -9,8 +9,11 @@ public abstract class UnitAction : StateAction
     
     public override void Act<T>(StateMachine<T> fsm)
     {
-        Act(fsm.Agent as UnitController);
+        if (Act(fsm.Agent as UnitController))
+        {
+            OnComplete?.Invoke();
+        };
     }
 
-    public abstract void Act(UnitController agent);
+    public abstract bool Act(UnitController agent);
 }

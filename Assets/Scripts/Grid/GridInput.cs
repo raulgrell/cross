@@ -2,12 +2,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
+
+public enum TargetState
+{
+    None,
+    Targeting,
+    Locked
+}
 
 [RequireComponent(typeof(GridUnit))]
 public class GridInput : MonoBehaviour
 {
     private GridUnit unit;
     private GridCombat combat;
+    public new Camera camera;
+
+    private TargetState state;
     
     void Start()
     {
@@ -36,7 +47,49 @@ public class GridInput : MonoBehaviour
             default:
                 throw new ArgumentOutOfRangeException();
         }
-        
 
+        switch (state)
+        {
+            case TargetState.Targeting:
+                if (Input.GetKeyUp(KeyCode.Tab))
+                {
+                    Time.timeScale = 1f;
+                    if (Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
+                    {
+                        combat.Target = hitInfo.transform;
+                        state = TargetState.Locked;
+                    }
+                    else
+                    {
+                        combat.Target = null;
+                        state = TargetState.None;
+                    }
+                }
+                break;
+            case TargetState.Locked:
+                Vector3 newTarget = combat.Target.position.SetY(transform.position.y);
+                RotateTowards(newTarget);
+                if (Input.GetKeyDown(KeyCode.Tab))
+                {
+                    Time.timeScale = 0.2f;
+                    state = TargetState.Targeting;
+                }
+                break;
+            case TargetState.None:
+                if (Input.GetKeyDown(KeyCode.Tab))
+                {
+                    Time.timeScale = 0.2f;
+                    state = TargetState.Targeting;
+                }
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+    }
+    
+    void RotateTowards(Vector3 direction)
+    {
+        var newRotation = Quaternion.LookRotation(-1 * (transform.position - direction), Vector3.up);
+        transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 1f);
     }
 }

@@ -17,3 +17,4 @@ MonoBehaviour:
   targets: []
   spread: 1
   range: 4
+  distance: 3

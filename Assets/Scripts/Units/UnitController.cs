@@ -6,13 +6,14 @@ using UnityEngine;
 public abstract class UnitController : MonoBehaviour
 {
     public Transform target;
-    public float health;
+    public int health;
 
     internal GridUnit unit;
     internal GridCombat combat;
     internal GridNode[] path;
     internal int nodeIndex;
     internal Vector2Int gridWaypoint;
+    
     [Range(0.01f, 1f)] public float refreshInterval = 0.2f;
 
     protected virtual void Start()
@@ -27,7 +28,7 @@ public abstract class UnitController : MonoBehaviour
             return;
 
         gridWaypoint = path[nodeIndex].gridPosition;
-        unit.input = gridWaypoint - unit.position;
+        unit.MoveTowards(gridWaypoint);
         nodeIndex += 1;
     }
 
@@ -75,5 +76,10 @@ public abstract class UnitController : MonoBehaviour
                 yield return new WaitForSeconds(refreshInterval);
             }
         }
+    }
+
+    public void LookAtTarget()
+    {
+        unit.LookAt(unit.grid.WorldToCell(target.position));
     }
 }

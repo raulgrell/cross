@@ -335,6 +335,7 @@
         <e p="Scripts" t="Include">
           <e p="AI" t="Include">
             <e p="Actions" t="Include">
+              <e p="ActionAim.cs" t="Include" />
               <e p="ActionAttack.cs" t="Include" />
               <e p="ActionFollow.cs" t="Include" />
               <e p="ActionRun.cs" t="Include" />
@@ -349,6 +350,7 @@
               <e p="ConditionDistance.cs" t="Include" />
               <e p="ConditionHealth.cs" t="Include" />
               <e p="ConditionManhattan.cs" t="Include" />
+              <e p="ConditionPath.cs" t="Include" />
               <e p="ConditionTarget.cs" t="Include" />
               <e p="ConditionVisibility.cs" t="Include" />
             </e>
@@ -356,7 +358,10 @@
             <e p="HeroBehaviour.cs" t="Include" />
             <e p="SquadController.cs" t="Include" />
           </e>
-          <e p="CameraController.cs" t="Include" />
+          <e p="Camera" t="Include">
+            <e p="CameraController.cs" t="Include" />
+            <e p="CameraObstacleFade.cs" t="Include" />
+          </e>
           <e p="Combat" t="Include">
             <e p="Attacks" t="Include">
               <e p="MeleeAttack.cs" t="Include" />
@@ -364,11 +369,16 @@
               <e p="SpecialAttack.cs" t="Include" />
               <e p="UnitAttack.cs" t="Include" />
             </e>
+            <e p="CombatBlock.cs" t="Include" />
             <e p="CombatEffect.cs" t="Include" />
+            <e p="CombatHealth.cs" t="Include" />
             <e p="CombatProjectile.cs" t="Include" />
             <e p="Editor" t="Include">
               <e p="AttackEditor.cs" t="Include" />
+              <e p="RangedAttackEditor.cs" t="Include" />
+              <e p="SpecialAttackEditor.cs" t="Include" />
               <e p="TargetDrawer.cs" t="Include" />
+              <e p="TargetFrameDrawer.cs" t="Include" />
             </e>
           </e>
           <e p="CutsceneSystem" t="Include">
@@ -447,7 +457,6 @@
             </e>
             <e p="Editor" t="Include">
               <e p="AIGraphEditor.cs" t="Include" />
-              <e p="CharacterInfoDrawer.cs" t="Include" />
               <e p="DialogueGraphEditor.cs" t="Include" />
               <e p="ReferenceDrawer.cs" t="Include" />
               <e p="StateMachineEditor.cs" t="Include" />
@@ -456,7 +465,6 @@
             </e>
             <e p="Reference.cs" t="Include" />
             <e p="StateMachine" t="Include">
-              <e p="Blackboard.cs" t="Include" />
               <e p="Checks" t="Include">
                 <e p="IsNullCheck.cs" t="Include" />
                 <e p="IsTrueCheck.cs" t="Include" />
@@ -470,7 +478,7 @@
               <e p="Graph" t="Include">
                 <e p="AIGraph.cs" t="Include" />
                 <e p="AIGraphRunner.cs" t="Include" />
-                <e p="CharacterInfo.cs" t="Include" />
+                <e p="Blackboard.cs" t="Include" />
                 <e p="DialogueGraph.cs" t="Include" />
                 <e p="FSMBehaviorTreeNode.cs" t="Include" />
                 <e p="FSMConnection.cs" t="Include" />
@@ -492,7 +500,6 @@
                 <e p="StateMachineGraph.cs" t="Include" />
                 <e p="StateMachineNode.cs" t="Include" />
                 <e p="StateNode.cs" t="Include" />
-                <e p="VariableNode.cs" t="Include" />
               </e>
               <e p="State.cs" t="Include" />
               <e p="StateAction.cs" t="Include" />

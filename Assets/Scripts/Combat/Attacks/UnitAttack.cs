@@ -14,7 +14,6 @@ public enum EffectType
     None,
     Damage,
     Condition,
-    Generate
 }
 
 public abstract class UnitAttack : ScriptableObject
@@ -25,7 +24,7 @@ public abstract class UnitAttack : ScriptableObject
 
     [Range(0, 3)] public int spread = 1;
 
-    [Range(0, 6)] public int range = 1;
+    [Range(1, 6)] public int range = 1;
 
     public Vector2Int[] GetThreatened(GridUnit unit)
     {
@@ -47,3 +46,4 @@ public class Target
     public EffectType effect;
     public int damage;
 }
+

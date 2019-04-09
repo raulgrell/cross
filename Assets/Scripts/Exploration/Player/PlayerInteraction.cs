@@ -66,8 +66,8 @@ public class PlayerInteraction : MonoBehaviour
                 Destroy(currentText.transform.parent.gameObject);
             characters.Clear();
             finished = false;
-
         }
+
         if (spawning && !finished)
             SpawnText();
     }
@@ -88,19 +88,20 @@ public class PlayerInteraction : MonoBehaviour
             currentText = textObj.GetComponentInChildren<TextMeshProUGUI>();
             currentText.text = "";
         }
+
         StartCoroutine(EachC());
         return null;
     }
 
     IEnumerator EachC()
     {
-        while(i < characters.Count)
+        while (i < characters.Count)
         {
-        currentText.text += characters[i];
-        i++;
-        yield return new WaitForSeconds(3f);
+            currentText.text += characters[i];
+            i++;
+            yield return new WaitForSeconds(3f);
         }
+
         finished = true;
     }
-    // Update is called once per frame
 }

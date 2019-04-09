@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Blackboard : ScriptableObject
 {
-    [Serializable]
     public class StringDictionary : SerializableDictionary<string, object>
     {
     }

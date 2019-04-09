@@ -14,7 +14,7 @@ public class GridUnit : MonoBehaviour
 {
     public Vector2Int input;
     public Vector2Int position;
-    public Vector2Int forward;
+    public Vector2Int forward = Vector2Int.up;
     public GridLayer grid;
 
     internal GridUnitState state;
@@ -28,52 +28,59 @@ public class GridUnit : MonoBehaviour
         state = GridUnitState.Idle;
         prevPosition = position;
 
-        if (grid.CellIsWalkable(position))
+        if (grid.IsWalkable(position.x, position.y))
             MoveToPosition(position);
     }
 
-    public void Look(Vector2Int newDir)
-    {
-        forward = newDir;
-        LookAt(position + newDir);
-    }
-    
     public void LookAt(Vector2Int target)
     {
+        forward = DirectionTo(target);
         var world = grid.CellToWorld(target);
-        world.y = grid.nodes[target.y, target.x].height;
+        world.y = transform.position.y;
         transform.LookAt(world);
     }
 
     public void Move(Vector2Int moveDir)
     {
-        Look(moveDir);
-        MoveToPosition(position + moveDir);
+        var target = position + moveDir;
+        LookAt(target);
+        MoveToPosition(target);
+    }
+
+    public Vector2Int DirectionTo(Vector2Int target)
+    {
+        var direction = target - position;
+        var absDir = new Vector2Int(Mathf.Abs(direction.x), Mathf.Abs(direction.y));
+        direction.Clamp(new Vector2Int(-1, -1), new Vector2Int(1, 1));
+        return absDir.x > absDir.y 
+            ? new Vector2Int(direction.x, 0) 
+            : new Vector2Int(0, direction.y);
     }
 
     public void MoveTowards(Vector2Int newPos)
     {
-        var direction = newPos - position;
-        var absDir = new Vector2Int(Mathf.Abs(direction.x), Mathf.Abs(direction.y));
-        direction.Clamp(new Vector2Int(-1, -1), new Vector2Int(1, 1));
-
-        if (absDir.x > absDir.y)
-            Move(new Vector2Int(direction.x, 0));
+        var direction = DirectionTo(newPos);
+        Move(direction);
     }
 
     public void MoveToPosition(Vector2Int newPos)
     {
         if (newPos.x < 0 || newPos.x >= grid.numCols ||
             newPos.y < 0 || newPos.y >= grid.numRows)
+        {
+            Debug.Log($"MoveToPosition: {newPos} out of bounds");
             return;
+        }
 
-        if (!grid.CellIsWalkable(newPos))
+        if (!grid.IsWalkable(newPos.x, newPos.y))
+        {
+            Debug.Log($"MoveToPosition: {newPos} not walkable");
             return;
+        }
 
         prevPosition = position;
         position = newPos;
         state = GridUnitState.Moving;
-
         grid.nodes[newPos.y, newPos.x].unit = this;
     }
 
@@ -102,7 +109,6 @@ public class GridUnit : MonoBehaviour
                     LookAt(newPos);
                     MoveToPosition(newPos);
                 }
-
                 break;
             case GridUnitState.Moving:
                 var unitPosition = transform.position;

@@ -33,7 +33,6 @@ namespace QAI.FSM
             IsEntry = true;
         }
 
-
         protected override void Init()
         {
             base.Init();
@@ -103,7 +102,7 @@ namespace QAI.FSM
             if (connection.ValueType != typeof(FSMConnection))
                 return;
 
-            NodePort newport = AddInstanceOutput(typeof(FSMConnection), Node.ConnectionType.Override, TypeConstraint.None, connection.node.name);
+            NodePort newport = AddInstanceOutput(typeof(FSMConnection), ConnectionType.Override, TypeConstraint.None, connection.node.name);
             exits.Add(new FSMConnection(this, newport.fieldName));
             newport.Connect(connection);
         }

@@ -10,16 +10,10 @@ namespace QAI.BT
     public abstract class BTNode : Node
     {
         /// <summary>Get the behavior tree.</summary>
-        protected BTGraph BT
-        {
-            get { return graph as BTGraph; }
-        }
+        protected BTGraph BT => graph as BTGraph;
 
         /// <summary>Get the parent port.</summary>
-        public NodePort Parent
-        {
-            get { return GetInputPort("_parent"); }
-        }
+        public NodePort Parent => GetInputPort("_parent");
 
         /// <summary>Parent connection.</summary>
         [HideInInspector] [Input] public BTConnection _parent;

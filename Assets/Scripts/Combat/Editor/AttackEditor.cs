@@ -12,7 +12,7 @@ public class UnitAttackEditor : Editor
 
     Dictionary<Vector2Int, Target> targetMap;
 
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         UnitAttack attack = (UnitAttack) target;
         targetMap = new Dictionary<Vector2Int, Target>();
@@ -27,8 +27,6 @@ public class UnitAttackEditor : Editor
     {
         base.OnInspectorGUI();
         UnitAttack attack = (UnitAttack) target;
-
-        EditorGUILayout.Space();
 
         showTargets = EditorGUILayout.Foldout(showTargets, $"Targets ({attack.targets.Count})");
         if (showTargets)
@@ -48,6 +46,7 @@ public class UnitAttackEditor : Editor
             rowStyle.fixedHeight = 25;
 
             GUIStyle rowHeaderStyle = new GUIStyle();
+            rowHeaderStyle.fixedHeight = 25;
             rowHeaderStyle.fixedWidth = columnStyle.fixedWidth - 1;
 
             GUIStyle columnHeaderStyle = new GUIStyle();
@@ -58,13 +57,6 @@ public class UnitAttackEditor : Editor
             columnLabelStyle.fixedWidth = rowHeaderStyle.fixedWidth - 6;
             columnLabelStyle.alignment = TextAnchor.MiddleCenter;
             columnLabelStyle.fontStyle = FontStyle.Bold;
-
-            GUIStyle cornerLabelStyle = new GUIStyle();
-            cornerLabelStyle.fixedWidth = 42;
-            cornerLabelStyle.alignment = TextAnchor.MiddleRight;
-            cornerLabelStyle.fontStyle = FontStyle.BoldAndItalic;
-            cornerLabelStyle.fontSize = 14;
-            cornerLabelStyle.padding.top = -5;
 
             GUIStyle rowLabelStyle = new GUIStyle();
             rowLabelStyle.fixedWidth = 25;
@@ -77,7 +69,7 @@ public class UnitAttackEditor : Editor
             EditorGUILayout.BeginHorizontal(tableStyle);
 
             var cols = attack.spread * 2 + 1;
-            var rows = attack.range + 1;
+            var rows = attack.range + 2;
 
             for (int x = -1; x < cols; x++)
             {
@@ -89,7 +81,7 @@ public class UnitAttackEditor : Editor
                     if (x == -1 && y == -1)
                     {
                         EditorGUILayout.BeginHorizontal(rowHeaderStyle);
-                        EditorGUILayout.LabelField("", cornerLabelStyle);
+                        EditorGUILayout.LabelField("", columnLabelStyle);
                         EditorGUILayout.EndHorizontal();
                     }
                     else if (x == -1)
@@ -107,7 +99,7 @@ public class UnitAttackEditor : Editor
 
                     if (pos.x == 0 && pos.y == 0)
                     {
-                        EditorGUILayout.BeginHorizontal(rowHeaderStyle);
+                        EditorGUILayout.BeginHorizontal(rowStyle);
                         EditorGUILayout.LabelField("▲", columnLabelStyle);
                         EditorGUILayout.EndHorizontal();
                     }

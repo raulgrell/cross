@@ -21,15 +21,18 @@ public class ActionAttack : UnitAction
         ResetTimer();
     }
 
-    public override void Act(UnitController agent)
+    public override bool Act(UnitController agent)
     {
         if (timer < 0)
         {
+            agent.LookAtTarget();
             agent.Attack();
             ResetTimer();
         }
 
         timer -= Time.deltaTime;
+
+        return false;
     }
     
     public void ResetTimer()

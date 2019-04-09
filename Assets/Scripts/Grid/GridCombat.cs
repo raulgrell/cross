@@ -12,8 +12,6 @@ public enum CombatState
 
 public class GridCombat : MonoBehaviour
 {
-    public new Camera camera;
-    public float rotationSpeed;
     public UnitAttack meleeAttack;
     public UnitAttack rangedAttack;
     public UnitAttack specialAttack;
@@ -23,13 +21,17 @@ public class GridCombat : MonoBehaviour
     private GridLayer grid;
     private GridUnit unit;
     private bool targeting;
-    private Vector2Int[] currentAttack;
-    
+
     private List<GameObject> trash;
 
     private float timer;
 
-    public Transform Target => target;
+    public Transform Target
+    {
+        get => target;
+        set => target = value;
+    }
+
     public CombatState State => state;
 
     void Start()
@@ -55,7 +57,7 @@ public class GridCombat : MonoBehaviour
                 {
                     foreach (GameObject g in trash)
                         Destroy(g);
-                
+
                     timer = 0;
                     state = CombatState.Idle;
                 }
@@ -63,33 +65,6 @@ public class GridCombat : MonoBehaviour
             default:
                 throw new ArgumentOutOfRangeException();
         }
-
-        //Targeting System
-        if (transform.name == "Player")
-        {
-            if (Input.GetKeyDown(KeyCode.Tab))
-            {
-                Time.timeScale = 0.2f;
-                targeting = true;
-            }
-
-            if (Input.GetKeyUp(KeyCode.Tab))
-            {
-                Time.timeScale = 1f;
-                targeting = false;
-            }
-        }
-
-        if (targeting && Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
-        {
-            target = hitInfo.transform;
-        }
-
-        if (!target)
-            return;
-        
-        //Vector3 newTarget = target.position.SetY(transform.position.y);
-        //RotateTowards(newTarget);
     }
 
     public void Attack(UnitAttack attack)
@@ -106,12 +81,12 @@ public class GridCombat : MonoBehaviour
                 GridNode node = grid.nodes[gridPosition.y, gridPosition.x];
                 Vector3 worldPosition = grid.CellToWorld(node.gridPosition);
                 worldPosition.y = transform.position.y;
-                
+
                 trash.Add(Instantiate(meleeAttack.attackPrefab, worldPosition, meleeAttack.attackPrefab.transform.rotation, null));
-                
+
                 if (node.unit != null)
                 {
-                    
+
                 }
             }
         }
@@ -124,11 +99,5 @@ public class GridCombat : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(target.position, Vector3.one);
         Gizmos.DrawLine(transform.position, target.position);
-    }
-
-    void RotateTowards(Vector3 direction)
-    {
-        var newRotation = Quaternion.LookRotation(-1 * (transform.position - direction), Vector3.up);
-        transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * rotationSpeed);
     }
 }

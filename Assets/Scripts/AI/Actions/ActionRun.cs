@@ -5,8 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Run", menuName = "FSM/Action/Run")]
 public class ActionRun: UnitAction 
 {
-    public override void Act(UnitController agent)
+    public override bool Act(UnitController agent)
     {
         agent.MoveAwayFromTarget();
+        return false;
     }
 }

@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
+using XNode;
 
-public class StateMachine<T> : MonoBehaviour where T : MonoBehaviour
+public abstract class StateMachine<T> : MonoBehaviour where T : MonoBehaviour
 {
     public StateVariable initialState;
     private StateVariable currentState;
 
     private T agent;
+    
     public T Agent => agent;
 
     private void Start()
@@ -29,36 +27,33 @@ public class StateMachine<T> : MonoBehaviour where T : MonoBehaviour
             break;
         }
 
-        var actions = new List<StateAction>();
-        actions.AddRange(currentState.Value.Actions);
-
-        if (triggered != null)
-        {
-            if (currentState.Value.ExitAction)
-                actions.Add(currentState.Value.ExitAction);
-
-            if (triggered.Target.Value.EntryAction)
-                actions.Add(triggered.Target.Value.EntryAction);
-
-            if (triggered.Action)
-            {
-                actions.Add(triggered.Action);
-            }
-
-            DoActions(actions);
-            currentState = triggered.Target;
-        }
-        else
-        {
-            DoActions(actions);
-        }
-    }
-
-    private void DoActions(List<StateAction> actions)
-    {
-        foreach (var action in actions)
-        {
+        foreach (var action in currentState.Value.Actions)
             action.Act(this);
-        }
+
+        if (triggered == null) return;
+        
+        if (currentState.Value.ExitAction)
+            currentState.Value.ExitAction.Act(this);
+        currentState.Value.OnExit();
+            
+        triggered.Target.Value.OnEnter();
+        if (triggered.Target.Value.EntryAction)
+            triggered.Target.Value.EntryAction.Act(this);
+
+        if (triggered.Action)
+            triggered.Action.Act(this);
+            
+        currentState = triggered.Target;
     }
+}
+
+public abstract class StateGraph : NodeGraph
+{
+    public abstract class Result
+    {
+    }
+
+    public abstract void Init(Blackboard blackboard);
+
+    public abstract Result Run(Blackboard blackboard);
 }

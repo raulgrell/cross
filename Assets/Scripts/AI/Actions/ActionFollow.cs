@@ -22,7 +22,7 @@ public class ActionFollow : UnitAction
         timer = Random.Range(actionTime * (1 - variance), actionTime * (1 + variance));
     }
 
-    public override void Act(UnitController agent)
+    public override bool Act(UnitController agent)
     {
         if (timer < 0)
         {
@@ -34,5 +34,7 @@ public class ActionFollow : UnitAction
         }
 
         timer -= Time.deltaTime;
+
+        return false;
     }
 }

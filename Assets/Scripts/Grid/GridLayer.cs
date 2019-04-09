@@ -42,7 +42,7 @@ public class GridLayer : MonoBehaviour
             for (int j = 0; j < numRows; j++)
             {
                 var offset = Vector3.forward * cellSize * j + Vector3.right * cellSize * i + gutterOffset / 2;
-                Gizmos.DrawWireSphere(offset - gutterOffset / 2 + Vector3.up, 0.1f);
+                Gizmos.DrawWireSphere(offset - gutterOffset / 2 + Vector3.up, 0.05f);
             }
         }
     }
@@ -59,7 +59,7 @@ public class GridLayer : MonoBehaviour
     
     public bool IsEmpty(int x, int y)
     {
-        return nodes[y, x] == null;
+        return nodes[y, x].unit == null;
     }
 
     public Vector3 CellToWorld(Vector2Int position)
@@ -85,12 +85,6 @@ public class GridLayer : MonoBehaviour
         return nodes[cell.y, cell.x];
     }
 
-    public bool CellIsWalkable(Vector2Int position)
-    {
-        var gridNode = nodes[position.y, position.x];
-        return IsWalkable(position.x, position.y) && gridNode.unit == null;
-    }
-    
     public List<GridNode> GetNeighbours(GridNode gridNode, int depth = 1)
     {
         var neighbours = new List<GridNode>();
@@ -131,14 +125,10 @@ public class GridLayer : MonoBehaviour
             int hy = i + y;
 
             // top, right, bottom, left
-            if (IsWalkable(vx, y + radius))
-                return nodes[y + radius, vx];
-            if (IsWalkable(x + radius, hy))
-                return nodes[hy, x + radius];
-            if (IsWalkable(vx, y - radius))
-                return nodes[y - radius, vx];
-            if (IsWalkable(x - radius, hy))
-                return nodes[hy, x - radius];
+            if (IsWalkable(vx, y + radius)) return nodes[y + radius, vx];
+            if (IsWalkable(x + radius, hy)) return nodes[hy, x + radius];
+            if (IsWalkable(vx, y - radius)) return nodes[y - radius, vx];
+            if (IsWalkable(x - radius, hy)) return nodes[hy, x - radius];
         }
 
         return null;

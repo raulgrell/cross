@@ -19,7 +19,7 @@ namespace QAI.BT.Custom
         protected override BTGraphResult InternalRun()
         {
             // Get value of variable
-            object target = GetBlackboardValue<object>("_target", _target, _notSet);
+            object target = GetBlackboardValue("_target", _target, _notSet);
             // Make sure target is set.
             if (target == _notSet)
             {

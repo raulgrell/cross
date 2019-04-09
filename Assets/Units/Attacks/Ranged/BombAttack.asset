@@ -34,4 +34,5 @@ MonoBehaviour:
     damage: 0
   spread: 1
   range: 6
-  ranged: 0
+  currentFrame: 0
+  frames: []

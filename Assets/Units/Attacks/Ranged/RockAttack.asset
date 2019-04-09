@@ -28,3 +28,5 @@ MonoBehaviour:
     damage: 0
   spread: 0
   range: 4
+  currentFrame: 0
+  frames: []
