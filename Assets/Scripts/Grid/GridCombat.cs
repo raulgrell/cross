@@ -63,18 +63,21 @@ public class GridCombat : MonoBehaviour
             default:
                 throw new ArgumentOutOfRangeException();
         }
-        
-        //Targeting System
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            Time.timeScale = 0.2f;
-            targeting = true;
-        }
 
-        if (Input.GetKeyUp(KeyCode.Tab))
+        //Targeting System
+        if (transform.name == "Player")
         {
-            Time.timeScale = 1f;
-            targeting = false;
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                Time.timeScale = 0.2f;
+                targeting = true;
+            }
+
+            if (Input.GetKeyUp(KeyCode.Tab))
+            {
+                Time.timeScale = 1f;
+                targeting = false;
+            }
         }
 
         if (targeting && Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
@@ -85,8 +88,8 @@ public class GridCombat : MonoBehaviour
         if (!target)
             return;
         
-        Vector3 newTarget = target.position.SetY(transform.position.y);
-        RotateTowards(newTarget);
+        //Vector3 newTarget = target.position.SetY(transform.position.y);
+        //RotateTowards(newTarget);
     }
 
     public void Attack(UnitAttack attack)
@@ -117,7 +120,7 @@ public class GridCombat : MonoBehaviour
     private void OnDrawGizmos()
     {
         if (!target) return;
-        Gizmos.matrix = transform.localToWorldMatrix;
+        //Gizmos.matrix = transform.worldToLocalMatrix;
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(target.position, Vector3.one);
         Gizmos.DrawLine(transform.position, target.position);

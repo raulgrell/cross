@@ -5,22 +5,56 @@ using TMPro;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public GridCombat gridCombat;
     public Canvas interactionCanvas;
     public GameObject interactionTextPrefab;
-    List<char> characters = new List<char>();
+    public float interactableY = 2.5f;
+    private GridCombat gridCombat;
     private TextMeshProUGUI currentText;
+    private GridUnit gridUnit;
     private int i = 0;
+    List<char> characters = new List<char>();
     // Start is called before the first frame update
-    private bool spawning,finished;
-
+    private bool spawning,finished, holding;
+    private InteractableObj currentObj;
+    private void Start()
+    {
+        gridCombat = GetComponent<GridCombat>();
+        gridUnit = GetComponent<GridUnit>();
+    }
     void Update()
     {
+        if(Input.GetMouseButtonDown(1) && !holding)
+        {
+                if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit info))
+                {
+                    if (info.transform.CompareTag("Interactable"))
+                    {
+                        Debug.Log("here");
+                        currentObj = info.transform.GetComponent<InteractableObj>();
+                        Vector3 newPos = gridUnit.grid.CellToWorld(currentObj.getGridPos);
+                        newPos.y = interactableY;
+                        currentObj.transform.position = newPos;
+                        currentObj.state = 1;
+                        holding = true;
+                    }
+            }
+
+        }
+        else if(Input.GetMouseButtonUp(1) && holding)
+        {
+            currentObj.transform.position = new Vector3(currentObj.transform.position.x, currentObj.getGroundedY, currentObj.transform.position.z);
+            currentObj.getGridPos = gridUnit.grid.WorldToCell(currentObj.transform.position);
+            holding = false;
+            currentObj.state = 0;
+            currentObj = null;
+        }
         if (Input.GetMouseButtonDown(0) && !finished)
         {
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
             {
-                if (hitInfo.transform.CompareTag("Interactable") && characters.Count < 1)
+                Debug.Log(hitInfo.transform.name);
+
+                if (hitInfo.transform.CompareTag("Interactable") && characters.Count < 1 && hitInfo.transform.GetComponent<InteractableObj>().text.Length > 0)
                 {
                     i = 0;
                     spawning = true;
