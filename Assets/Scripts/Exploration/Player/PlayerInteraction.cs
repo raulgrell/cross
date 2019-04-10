@@ -10,7 +10,7 @@ public class PlayerInteraction : MonoBehaviour
     public float interactableY = 2.5f;
     private GridCombat gridCombat;
     private TextMeshProUGUI currentText;
-    private GridUnit gridUnit;
+    internal GridUnit gridUnit;
     private int i = 0;
     List<char> characters = new List<char>();
     // Start is called before the first frame update
@@ -30,11 +30,14 @@ public class PlayerInteraction : MonoBehaviour
                     if (info.transform.CompareTag("Interactable"))
                     {
                         currentObj = info.transform.GetComponent<InteractableObj>();
+                        if (Vector2.Distance(gridUnit.position, currentObj.getGridPos) < 3)
+                        {
                         Vector3 newPos = gridUnit.grid.CellToWorld(currentObj.getGridPos);
                         newPos.y = interactableY;
                         currentObj.transform.position = newPos;
                         currentObj.state = 1;
                         holding = true;
+                        }
                     }
             }
 

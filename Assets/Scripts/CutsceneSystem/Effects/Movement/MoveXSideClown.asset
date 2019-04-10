@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MoveXSideClown
   m_EditorClassIdentifier: 
   initialPos: {x: 225, y: -500, z: 0}
-  target: {x: 0, y: -500, z: 0}
+  target: {x: 75, y: -500, z: 0}
   duration: 2

@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061710745562ba544936ac86841545d9, type: 3}
   m_Name: SidePanel
   m_EditorClassIdentifier: 
-  duration: 10
-  startTime: 1
+  duration: 5
+  startTime: 20
   images:
   - {fileID: 11400000, guid: 799bf8d9924583245893c9b7b7f2871d, type: 2}
   - {fileID: 11400000, guid: 553e6650b48b4594c90bdc3670091d7a, type: 2}
   texts:
   - {fileID: 11400000, guid: 10cd7f6cd0101e64d9d1b7e356e60b00, type: 2}
   backgroundImage: {fileID: 11400000, guid: 6dd933a0f50dc3b4a82ed6233fc421de, type: 2}
-  mask: {fileID: 11400000, guid: 0b4e6400b6df63f4cbac055dad8c456a, type: 2}
+  mask: {fileID: 11400000, guid: 12af97092662e2c4c80ceffb0cb256be, type: 2}
   panelScale: {x: 1, y: 1, z: 1}
