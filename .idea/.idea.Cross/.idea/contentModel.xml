@@ -402,6 +402,7 @@
             <e p="Player" t="Include">
               <e p="PlayerInteraction.cs" t="Include" />
             </e>
+            <e p="roomScript.cs" t="Include" />
             <e p="SpecificObjects" t="Include">
               <e p="DoorScripts.cs" t="Include" />
               <e p="SecurityCameraMovement.cs" t="Include" />
@@ -457,7 +458,6 @@
             </e>
             <e p="Editor" t="Include">
               <e p="AIGraphEditor.cs" t="Include" />
-              <e p="DialogueGraphEditor.cs" t="Include" />
               <e p="ReferenceDrawer.cs" t="Include" />
               <e p="StateMachineEditor.cs" t="Include" />
               <e p="StateNodeEditor.cs" t="Include" />
@@ -483,10 +483,8 @@
                 <e p="FSMBehaviorTreeNode.cs" t="Include" />
                 <e p="FSMConnection.cs" t="Include" />
                 <e p="FSMSubmachineNode.cs" t="Include" />
-                <e p="SubGraph.cs" t="Include" />
               </e>
               <e p="Nodes" t="Include">
-                <e p="ActionNode.cs" t="Include" />
                 <e p="Branch.cs" t="Include" />
                 <e p="Chat.cs" t="Include" />
                 <e p="ConditionNode.cs" t="Include" />
@@ -495,17 +493,15 @@
                   <e p="BranchEditor.cs" t="Include" />
                   <e p="ChatEditor.cs" t="Include" />
                   <e p="EventEditor.cs" t="Include" />
+                  <e p="StateGraphEditor.cs" t="Include" />
                 </e>
                 <e p="Event.cs" t="Include" />
                 <e p="StateMachineGraph.cs" t="Include" />
                 <e p="StateMachineNode.cs" t="Include" />
                 <e p="StateNode.cs" t="Include" />
               </e>
-              <e p="State.cs" t="Include" />
-              <e p="StateAction.cs" t="Include" />
-              <e p="StateCondition.cs" t="Include" />
+              <e p="StateGraph.cs" t="Include" />
               <e p="StateMachine.cs" t="Include" />
-              <e p="StateTransition.cs" t="Include" />
             </e>
             <e p="Types" t="Include">
               <e p="BoolVariable.cs" t="Include" />

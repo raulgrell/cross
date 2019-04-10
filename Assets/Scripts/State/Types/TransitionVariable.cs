@@ -23,6 +23,6 @@ public class StateTransitionVariable : Variable<StateTransition>
 }
 
 [CreateNodeMenuAttribute("Variable/Transition")]
-public class StateTransitionNode : VariableNode<StateTransition>
+public class StateTransitionVariableNode : VariableNode<StateTransition>
 {
 }
