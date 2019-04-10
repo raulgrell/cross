@@ -33,6 +33,7 @@ public class PlayerInteraction : MonoBehaviour
                         currentObj = info.transform.GetComponent<InteractableObj>();
                         if (Vector2.Distance(gridUnit.position, currentObj.getGridPos) < 3)
                         {
+                        gridUnit.grid.nodes[currentObj.getGridPos.x, currentObj.getGridPos.y].walkable = true;
                         Vector3 newPos = gridUnit.grid.CellToWorld(currentObj.getGridPos);
                         newPos.y = interactableY;
                         currentObj.transform.position = newPos;
@@ -47,6 +48,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentObj.transform.position = new Vector3(currentObj.transform.position.x, currentObj.getGroundedY, currentObj.transform.position.z);
             currentObj.getGridPos = gridUnit.grid.WorldToCell(currentObj.transform.position);
+            gridUnit.grid.nodes[currentObj.getGridPos.x, currentObj.getGridPos.y].walkable = false;
             holding = false;
             currentObj.state = 0;
             currentObj = null;

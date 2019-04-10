@@ -18,10 +18,12 @@ public class InteractableObj : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteraction>();
         Vector3 actualWorldPosition = new Vector3(transform.position.x, grid.transform.position.y, transform.position.z);
         getGridPos = grid.WorldToCell(actualWorldPosition);
+        grid.nodes[getGridPos.x, getGridPos.y].walkable = false;
     }
 
     private void Update()
     {
+        
         switch (state)
         {
             case 0:
