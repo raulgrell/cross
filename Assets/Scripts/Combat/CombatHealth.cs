@@ -5,15 +5,12 @@ using UnityEngine;
 public class CombatHealth : MonoBehaviour
 {
     public int health;
+    public healthUI healthUI;
 
     public bool Damage(int amount)
     {
         health -= amount;
-        if (health < 0)
-        {
-            Destroy(gameObject);
-            return true;
-        }
+        healthUI.UpdateHealth(amount);
 
         return false;
     }

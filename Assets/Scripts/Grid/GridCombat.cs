@@ -43,6 +43,7 @@ public class GridCombat : MonoBehaviour
 
     void Update()
     {
+
         switch (state)
         {
             case CombatState.Idle:
@@ -83,7 +84,14 @@ public class GridCombat : MonoBehaviour
                 Instantiate(meleeAttack.attackPrefab, worldPosition, meleeAttack.attackPrefab.transform.rotation, null);
 
                 if (node.unit != null)
-                    node.unit.gameObject.GetComponent<CombatHealth>().Damage(threatened[i].damage);
+                {
+                    node.unit.gameObject.GetComponent<CombatHealth>().Damage(1);
+                    if (node.unit.gameObject.GetComponent<CombatHealth>().health <= 0)
+                    {
+                        Destroy(gameObject);
+                    }
+
+                }
             }
         }
     }

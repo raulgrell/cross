@@ -15,5 +15,6 @@ MonoBehaviour:
   text: Who will survive
   background: {r: 1, g: 1, b: 1, a: 1}
   foreground: {r: 1, g: 1, b: 1, a: 1}
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: 8d5a01b1acd2ffc41b662ab23bdae243, type: 2}
   size: 50

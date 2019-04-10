@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Canvas))]
 public class CutsceneSystem : MonoBehaviour
@@ -58,9 +59,9 @@ public class CutsceneSystem : MonoBehaviour
                 ? incoming.RemoveFirst()
                 : null;
         }
-        else if(!currentPanel)
+        else if(!currentPanel && timer < currentPanel.data.StartTime + currentPanel.data.Duration)
         {
-        //    gameObject.SetActive(false);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
