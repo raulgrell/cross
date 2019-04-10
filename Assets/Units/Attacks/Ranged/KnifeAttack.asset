@@ -34,15 +34,35 @@ MonoBehaviour:
     damage: 0
   spread: 1
   range: 6
-  currentFrame: 1
+  currentFrame: 4
   frames:
-  - position: {x: 0, y: 6}
-    frame: 0
-  - position: {x: 0, y: 5}
-    frame: 0
-  - position: {x: 0, y: 6}
-    frame: 1
-  - position: {x: 0, y: 4}
+  - position: {x: 0, y: 2}
     frame: 1
   - position: {x: 0, y: 3}
+    frame: 2
+  - position: {x: 0, y: 4}
+    frame: 2
+  - position: {x: 0, y: 2}
+    frame: 2
+  - position: {x: 0, y: 3}
     frame: 1
+  - position: {x: 0, y: 2}
+    frame: 0
+  - position: {x: 0, y: 2}
+    frame: 3
+  - position: {x: 0, y: 3}
+    frame: 3
+  - position: {x: 0, y: 4}
+    frame: 3
+  - position: {x: 0, y: 5}
+    frame: 3
+  - position: {x: 0, y: 2}
+    frame: 4
+  - position: {x: 0, y: 3}
+    frame: 4
+  - position: {x: 0, y: 4}
+    frame: 4
+  - position: {x: 0, y: 5}
+    frame: 4
+  - position: {x: 0, y: 6}
+    frame: 4

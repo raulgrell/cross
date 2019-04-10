@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public enum GridUnitState
 {
@@ -12,15 +13,14 @@ public enum GridUnitState
 
 public class GridUnit : MonoBehaviour
 {
-    public Vector2Int input;
     public Vector2Int position;
-    public Vector2Int forward = Vector2Int.up;
     public GridLayer grid;
 
     internal GridUnitState state;
 
     private Vector2Int prevPosition;
     
+    public Vector2Int forward = Vector2Int.up;
     public Vector2Int right => new Vector2Int(forward.y, -forward.x);
 
     void Start()
@@ -67,16 +67,10 @@ public class GridUnit : MonoBehaviour
     {
         if (newPos.x < 0 || newPos.x >= grid.numCols ||
             newPos.y < 0 || newPos.y >= grid.numRows)
-        {
-            Debug.Log($"MoveToPosition: {newPos} out of bounds");
             return;
-        }
 
         if (!grid.IsWalkable(newPos.x, newPos.y))
-        {
-            Debug.Log($"MoveToPosition: {newPos} not walkable");
             return;
-        }
 
         prevPosition = position;
         position = newPos;
@@ -98,17 +92,6 @@ public class GridUnit : MonoBehaviour
         {
             case GridUnitState.Idle:
                 transform.localEulerAngles = new Vector3(0, local.y, 0);
-
-                if (input != Vector2Int.zero)
-                {
-                    var newPos = position + input;
-                    newPos.x = Mathf.Clamp(newPos.x, 0, grid.numCols - 1);
-                    newPos.y = Mathf.Clamp(newPos.y, 0, grid.numRows - 1);
-                    input = Vector2Int.zero;
-
-                    LookAt(newPos);
-                    MoveToPosition(newPos);
-                }
                 break;
             case GridUnitState.Moving:
                 var unitPosition = transform.position;
@@ -120,7 +103,6 @@ public class GridUnit : MonoBehaviour
                     state = GridUnitState.Idle;
                     grid.nodes[prevPosition.y, prevPosition.x].unit = null;
                 }
-
                 transform.localEulerAngles = new Vector3(5, local.y, 0);
                 break;
             case GridUnitState.Attacking:

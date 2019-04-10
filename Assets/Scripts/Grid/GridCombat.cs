@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public enum CombatState
 {
     Idle,
     Block,
+    Parry,
     Threat,
     Attack,
 }
@@ -24,7 +26,7 @@ public class GridCombat : MonoBehaviour
 
     private List<GameObject> trash;
 
-    private float timer;
+    private float stateTimer;
 
     public Transform Target
     {
@@ -32,7 +34,15 @@ public class GridCombat : MonoBehaviour
         set => target = value;
     }
 
-    public CombatState State => state;
+    public CombatState State
+    {
+        get => state;
+        set
+        {
+            stateTimer = 0;
+            state = value;
+        }
+    }
 
     void Start()
     {
@@ -49,32 +59,40 @@ public class GridCombat : MonoBehaviour
             case CombatState.Idle:
                 break;
             case CombatState.Block:
+                if (stateTimer > 0.1f)
+                    State = CombatState.Idle;
+                break;
+            case CombatState.Parry:
+                if (stateTimer > 0.2f)
+                    State = CombatState.Idle;
                 break;
             case CombatState.Threat:
+                if (stateTimer > 0.3f)
+                    State = CombatState.Idle;
+                break;
             case CombatState.Attack:
-                timer += Time.deltaTime;
-
-                if (timer > 0.5f)
-                {
-                    timer = 0;
-                    state = CombatState.Idle;
-                }
+                if (stateTimer > 0.5f)
+                    State = CombatState.Idle;
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
         }
+        
+        stateTimer += Time.deltaTime;
     }
 
     public void Attack(UnitAttack attack)
     {
         state = CombatState.Attack;
-        timer = 0;
+        stateTimer = 0;
         
         var threatened = attack.GetThreatened(unit);
 
         for (int i = 0; i < threatened.Length; i++)
         {
-            Vector2Int gridPosition = threatened[i].position;
+            Target hit = threatened[i];
+            Vector2Int gridPosition = hit.position;
+            
             if (grid.InBounds(gridPosition.x, gridPosition.y))
             {
                 GridNode node = grid.nodes[gridPosition.y, gridPosition.x];
@@ -85,12 +103,8 @@ public class GridCombat : MonoBehaviour
 
                 if (node.unit != null)
                 {
-                    node.unit.gameObject.GetComponent<CombatHealth>().Damage(1);
-                    if (node.unit.gameObject.GetComponent<CombatHealth>().health <= 0)
-                    {
+                    if (node.unit.gameObject.GetComponent<CombatHealth>().Damage(1))
                         Destroy(gameObject);
-                    }
-
                 }
             }
         }
@@ -99,9 +113,19 @@ public class GridCombat : MonoBehaviour
     private void OnDrawGizmos()
     {
         if (!target) return;
-        //Gizmos.matrix = transform.worldToLocalMatrix;
+        var targetPos = target.position;
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(target.position, Vector3.one);
-        Gizmos.DrawLine(transform.position, target.position);
+        Gizmos.DrawWireCube(targetPos, Vector3.one);
+        Gizmos.DrawLine(transform.position, targetPos);
+    }
+
+    public void Block()
+    {
+        State = CombatState.Block;
+    }
+
+    public void Parry()
+    {
+        State = CombatState.Parry;
     }
 }

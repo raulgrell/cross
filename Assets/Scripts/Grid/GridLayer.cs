@@ -51,15 +51,15 @@ public class GridLayer : MonoBehaviour
     {
         return (x >= 0 && x < numCols && y >= 0 && y < numRows);
     }
-
-    public bool IsWalkable(int x, int y)
-    {
-        return InBounds(x, y) && nodes[y, x].walkable;
-    }
     
     public bool IsEmpty(int x, int y)
     {
         return nodes[y, x].unit == null;
+    }
+
+    public bool IsWalkable(int x, int y)
+    {
+        return InBounds(x, y) && IsEmpty(x, y) && nodes[y, x].walkable;
     }
 
     public Vector3 CellToWorld(Vector2Int position)

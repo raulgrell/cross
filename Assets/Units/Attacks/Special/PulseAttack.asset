@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15386841de5e4df58ed24063ded896b4, type: 3}
-  m_Name: StarAttack
+  m_Name: PulseAttack
   m_EditorClassIdentifier: 
   targetPrefab: {fileID: 0}
   attackPrefab: {fileID: 0}
@@ -18,13 +18,25 @@ MonoBehaviour:
   - position: {x: -1, y: 1}
     effect: 1
     damage: 0
-  - position: {x: 1, y: -1}
+  - position: {x: 0, y: 1}
     effect: 1
     damage: 0
   - position: {x: 1, y: 1}
     effect: 1
     damage: 0
+  - position: {x: 1, y: 0}
+    effect: 1
+    damage: 0
+  - position: {x: 1, y: -1}
+    effect: 1
+    damage: 0
+  - position: {x: 0, y: -1}
+    effect: 1
+    damage: 0
   - position: {x: -1, y: -1}
+    effect: 1
+    damage: 0
+  - position: {x: -1, y: 0}
     effect: 1
     damage: 0
   spread: 1

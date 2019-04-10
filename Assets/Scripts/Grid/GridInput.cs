@@ -19,7 +19,7 @@ public class GridInput : MonoBehaviour
     public new Camera camera;
 
     private TargetState state;
-    
+
     void Start()
     {
         unit = GetComponent<GridUnit>();
@@ -28,18 +28,27 @@ public class GridInput : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)) unit.Move(Vector2Int.left);
-        if (Input.GetKeyDown(KeyCode.D)) unit.Move(Vector2Int.right);
-        if (Input.GetKeyDown(KeyCode.S)) unit.Move(Vector2Int.down);
-        if (Input.GetKeyDown(KeyCode.W)) unit.Move(Vector2Int.up);
-
         switch (combat.State)
         {
             case CombatState.Idle:
-                if (Input.GetMouseButtonDown(0)) combat.Attack(combat.meleeAttack);
-                if (Input.GetMouseButtonDown(1)) combat.Attack(combat.rangedAttack);
+                if (Input.GetKeyDown(KeyCode.LeftShift))
+                {
+                    combat.Block();
+                    if (Input.GetMouseButtonDown(1)) combat.Attack(combat.specialAttack);
+                }
+                else
+                {
+                    if (Input.GetMouseButtonDown(0)) combat.Attack(combat.meleeAttack);
+                    if (Input.GetMouseButtonDown(1)) combat.Attack(combat.rangedAttack);
+                }
+
+                if (Input.GetKeyDown(KeyCode.A)) unit.Move(Vector2Int.left);
+                if (Input.GetKeyDown(KeyCode.D)) unit.Move(Vector2Int.right);
+                if (Input.GetKeyDown(KeyCode.S)) unit.Move(Vector2Int.down);
+                if (Input.GetKeyDown(KeyCode.W)) unit.Move(Vector2Int.up);
                 break;
             case CombatState.Block:
+                    if (Input.GetMouseButtonDown(0)) combat.Parry();
                 break;
             case CombatState.Threat:
             case CombatState.Attack:
@@ -65,6 +74,7 @@ public class GridInput : MonoBehaviour
                         state = TargetState.None;
                     }
                 }
+
                 break;
             case TargetState.Locked:
                 Vector3 newTarget = combat.Target.position.SetY(transform.position.y);
@@ -74,6 +84,7 @@ public class GridInput : MonoBehaviour
                     Time.timeScale = 0.2f;
                     state = TargetState.Targeting;
                 }
+
                 break;
             case TargetState.None:
                 if (Input.GetKeyDown(KeyCode.Tab))
@@ -81,12 +92,13 @@ public class GridInput : MonoBehaviour
                     Time.timeScale = 0.2f;
                     state = TargetState.Targeting;
                 }
+
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
         }
     }
-    
+
     void RotateTowards(Vector3 direction)
     {
         var newRotation = Quaternion.LookRotation(-1 * (transform.position - direction), Vector3.up);

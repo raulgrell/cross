@@ -369,7 +369,6 @@
               <e p="SpecialAttack.cs" t="Include" />
               <e p="UnitAttack.cs" t="Include" />
             </e>
-            <e p="CombatBlock.cs" t="Include" />
             <e p="CombatEffect.cs" t="Include" />
             <e p="CombatHealth.cs" t="Include" />
             <e p="CombatProjectile.cs" t="Include" />

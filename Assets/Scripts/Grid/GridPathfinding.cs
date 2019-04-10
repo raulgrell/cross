@@ -8,7 +8,8 @@ using Debug = System.Diagnostics.Debug;
 public class GridPathfinding : MonoBehaviour
 {
     public GridLayer grid;
-    static GridPathfinding instance;
+    
+    private static GridPathfinding instance;
 
     void Awake()
     {
