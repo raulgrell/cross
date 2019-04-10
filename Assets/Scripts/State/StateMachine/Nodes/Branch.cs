@@ -22,16 +22,13 @@ namespace Dialogue
             bool success = true;
             for (int i = 0; i < conditions.Length; i++)
             {
-                if (!conditions[i].Invoke())
-                {
-                    success = false;
-                    break;
-                }
+                if (conditions[i].Invoke()) continue;
+                success = false;
+                break;
             }
 
             //Trigger next nodes
-            NodePort port;
-            port = GetOutputPort(success ? "pass" : "fail");
+            NodePort port = GetOutputPort(success ? "pass" : "fail");
             if (port == null) return;
             for (int i = 0; i < port.ConnectionCount; i++)
             {

@@ -1,11 +1,50 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using XNode;
 
-public abstract class StateGraph : NodeGraph
+public class Blackboard : ScriptableObject
 {
-    public abstract void Init();
-    public abstract bool Run();
+    public class StringDictionary : SerializableDictionary<string, object>
+    {
+    }
+
+    [Serializable]
+    public class IntDictionary : SerializableDictionary<int, object>
+    {
+    }
+
+    [SerializeField] public StringDictionary variables = new StringDictionary();
+}
+
+public abstract class AIGraph : NodeGraph
+{
+    protected Blackboard blackboard;
+    public Blackboard Blackboard => blackboard;
+
+    public T GetValue<T>(string key)
+    {
+        if (blackboard == null)
+            return default;
+
+        if (blackboard.variables.TryGetValue(key, out object value))
+            return value.GetType().IsAssignableFrom(typeof(T)) ? (T) value : default;
+
+        return default;
+    }
+
+    public abstract void Init(Blackboard blackboard);
+
+    public abstract bool Run(Blackboard blackboard);
+
+    public abstract class Result
+    {
+    }
+}
+
+public abstract class StateGraph : AIGraph
+{
+    public StateNode current;
 }
 
 [NodeWidth(360)]
@@ -17,11 +56,11 @@ public abstract class StateGraphNode : Node
 [CreateAssetMenu(fileName = "StateGraph", menuName = "AI/StateGraph", order = 1)]
 public class UnitGraph : StateGraph
 {
-    public override void Init()
+    public override void Init(Blackboard b)
     {
     }
 
-    public override bool Run()
+    public override bool Run(Blackboard b)
     {
         return false;
     }
@@ -48,6 +87,15 @@ public class StateNode : StateGraphNode
     public StateAction ExitAction => exitAction;
     public StateAction[] Actions => actions;
     public StateGraphTransitionNode[] Transitions => transitions.ToArray();
+
+    public virtual void Run()
+    {
+    }
+    
+    public void Trigger()
+    {
+        (graph as StateGraph).current = this;
+    }
 }
 
 [CreateNodeMenu("AI/Transition/Static")]
@@ -72,7 +120,7 @@ public class ActionNode : StateGraphNode
     [SerializeField] private StateAction action;
 }
 
-[CreateNodeMenu("AI/State/Subgraph")]
+[CreateNodeMenu("AI/State/SubGraph")]
 public class StateSubGraph : StateGraphNode
 {
     [Input] public bool exec;

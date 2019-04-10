@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class CombatHealth : MonoBehaviour
 {
-    public float speed;
-    
-    private void Update()
+    public int health;
+
+    public bool Damage(int amount)
     {
-        transform.position += transform.forward * speed;
+        health -= amount;
+        if (health < 0)
+        {
+            Destroy(gameObject);
+            return true;
+        }
+
+        return false;
     }
 }

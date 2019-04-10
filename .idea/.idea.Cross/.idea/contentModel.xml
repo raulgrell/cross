@@ -418,87 +418,29 @@
           </e>
           <e p="Session.cs" t="Include" />
           <e p="State" t="Include">
-            <e p="BehaviorTree" t="Include">
-              <e p="Base" t="Include">
-                <e p="BTBranchNode.cs" t="Include" />
-                <e p="BTBuilder.cs" t="Include" />
-                <e p="BTCompositeNode.cs" t="Include" />
-                <e p="BTConnection.cs" t="Include" />
-                <e p="BTDecoratorNode.cs" t="Include" />
-                <e p="BTGraph.cs" t="Include" />
-                <e p="BTGraphResult.cs" t="Include" />
-                <e p="BTNode.cs" t="Include" />
-                <e p="BTSubtreeNode.cs" t="Include" />
-                <e p="BTTaskNode.cs" t="Include" />
-                <e p="Editor" t="Include">
-                  <e p="BTBranchNodeEditor.cs" t="Include" />
-                  <e p="BTCompositeNodeEditor.cs" t="Include" />
-                  <e p="BTDecoratorNodeEditor.cs" t="Include" />
-                  <e p="BTEditor.cs" t="Include" />
-                  <e p="BTNodeEditor.cs" t="Include" />
-                  <e p="BTTaskNodeEditor.cs" t="Include" />
-                </e>
-              </e>
-              <e p="Checks" t="Include">
-                <e p="IsNullCheck.cs" t="Include" />
-                <e p="IsTruthy.cs" t="Include" />
-              </e>
-              <e p="Composites" t="Include">
-                <e p="Selector.cs" t="Include" />
-                <e p="Sequencer.cs" t="Include" />
-              </e>
-              <e p="Decorators" t="Include">
-                <e p="Debugger.cs" t="Include" />
-                <e p="Inverter.cs" t="Include" />
-                <e p="Succeeder.cs" t="Include" />
-              </e>
-              <e p="Tasks" t="Include">
-                <e p="DebugVariable.cs" t="Include" />
-              </e>
-            </e>
             <e p="Editor" t="Include">
               <e p="AIGraphEditor.cs" t="Include" />
               <e p="ReferenceDrawer.cs" t="Include" />
-              <e p="StateMachineEditor.cs" t="Include" />
-              <e p="StateNodeEditor.cs" t="Include" />
+              <e p="StateGraphEditor.cs" t="Include" />
               <e p="VariableDrawer.cs" t="Include" />
             </e>
             <e p="Reference.cs" t="Include" />
             <e p="StateMachine" t="Include">
-              <e p="Checks" t="Include">
-                <e p="IsNullCheck.cs" t="Include" />
-                <e p="IsTrueCheck.cs" t="Include" />
-              </e>
               <e p="Generic" t="Include">
                 <e p="GenericAction.cs" t="Include" />
-                <e p="GenericCondition.cs" t="Include" />
                 <e p="GenericState.cs" t="Include" />
                 <e p="GenericVariable.cs" t="Include" />
-              </e>
-              <e p="Graph" t="Include">
-                <e p="AIGraph.cs" t="Include" />
-                <e p="AIGraphRunner.cs" t="Include" />
-                <e p="Blackboard.cs" t="Include" />
-                <e p="DialogueGraph.cs" t="Include" />
-                <e p="FSMBehaviorTreeNode.cs" t="Include" />
-                <e p="FSMConnection.cs" t="Include" />
-                <e p="FSMSubmachineNode.cs" t="Include" />
               </e>
               <e p="Nodes" t="Include">
                 <e p="Branch.cs" t="Include" />
                 <e p="Chat.cs" t="Include" />
-                <e p="ConditionNode.cs" t="Include" />
                 <e p="DialogueBaseNode.cs" t="Include" />
                 <e p="Editor" t="Include">
                   <e p="BranchEditor.cs" t="Include" />
                   <e p="ChatEditor.cs" t="Include" />
                   <e p="EventEditor.cs" t="Include" />
-                  <e p="StateGraphEditor.cs" t="Include" />
                 </e>
                 <e p="Event.cs" t="Include" />
-                <e p="StateMachineGraph.cs" t="Include" />
-                <e p="StateMachineNode.cs" t="Include" />
-                <e p="StateNode.cs" t="Include" />
               </e>
               <e p="StateGraph.cs" t="Include" />
               <e p="StateMachine.cs" t="Include" />

@@ -6,5 +6,5 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyController))]
 public class EnemyBehaviour : StateMachine<EnemyController>
 {
-    public StateMachineGraph graph;
+    public StateGraph graph;
 }

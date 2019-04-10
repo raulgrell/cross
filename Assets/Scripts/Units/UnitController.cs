@@ -6,7 +6,6 @@ using UnityEngine;
 public abstract class UnitController : MonoBehaviour
 {
     public Transform target;
-    public int health;
 
     internal GridUnit unit;
     internal GridCombat combat;

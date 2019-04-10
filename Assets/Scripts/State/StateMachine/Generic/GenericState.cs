@@ -1,8 +1,6 @@
 using System;
 using UnityEngine;
 
-namespace QAI.FSM.Custom
-{
     [CreateNodeMenu("FSM/State/Shared")]
     class GenericState : StateNode
     {
@@ -14,4 +12,3 @@ namespace QAI.FSM.Custom
             counter.Value += 1;
         }
     }
-}

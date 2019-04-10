@@ -11,14 +11,16 @@ public class ConditionHealth : UnitCondition
     
     public override bool Test(UnitController unit)
     {
+        var health = unit.GetComponent<CombatHealth>().health;
+        
         switch (type)
         {
             case ConditionType.Minimum:
-                return unit.health >= value;
+                return health >= value;
             case ConditionType.Maximum:
-                return unit.health <= value;
+                return health <= value;
             case ConditionType.Exact:
-                return unit.health == value;
+                return health == value;
             default:
                 return false;
         }

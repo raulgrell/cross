@@ -55,9 +55,6 @@ public class GridCombat : MonoBehaviour
 
                 if (timer > 0.5f)
                 {
-                    foreach (GameObject g in trash)
-                        Destroy(g);
-
                     timer = 0;
                     state = CombatState.Idle;
                 }
@@ -70,24 +67,23 @@ public class GridCombat : MonoBehaviour
     public void Attack(UnitAttack attack)
     {
         state = CombatState.Attack;
+        timer = 0;
+        
         var threatened = attack.GetThreatened(unit);
 
-        trash = new List<GameObject>();
         for (int i = 0; i < threatened.Length; i++)
         {
-            Vector2Int gridPosition = threatened[i];
+            Vector2Int gridPosition = threatened[i].position;
             if (grid.InBounds(gridPosition.x, gridPosition.y))
             {
                 GridNode node = grid.nodes[gridPosition.y, gridPosition.x];
                 Vector3 worldPosition = grid.CellToWorld(node.gridPosition);
                 worldPosition.y = transform.position.y;
 
-                trash.Add(Instantiate(meleeAttack.attackPrefab, worldPosition, meleeAttack.attackPrefab.transform.rotation, null));
+                Instantiate(meleeAttack.attackPrefab, worldPosition, meleeAttack.attackPrefab.transform.rotation, null);
 
                 if (node.unit != null)
-                {
-
-                }
+                    node.unit.gameObject.GetComponent<CombatHealth>().Damage(threatened[i].damage);
             }
         }
     }

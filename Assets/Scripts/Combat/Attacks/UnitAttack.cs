@@ -26,13 +26,18 @@ public abstract class UnitAttack : ScriptableObject
 
     [Range(1, 6)] public int range = 1;
 
-    public Vector2Int[] GetThreatened(GridUnit unit)
+    public Target[] GetThreatened(GridUnit unit)
     {
-        var t = new Vector2Int[targets.Count];
+        var t = new Target[targets.Count];
         for (int i = 0; i < targets.Count; i++)
         {
-            var p = targets[i].position;
-            t[i] = unit.position + unit.right * p.x + unit.forward * p.y;
+            var p = targets[i];
+            t[i] = new Target
+            {
+                position = unit.position + unit.right * p.position.x + unit.forward * p.position.y,
+                effect = p.effect,
+                damage = p.damage
+            };
         }
 
         return t;

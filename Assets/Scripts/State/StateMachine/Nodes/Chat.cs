@@ -31,7 +31,7 @@ namespace Dialogue
             else
             {
                 if (answers.Count <= index) return;
-                port = GetOutputPort("answers " + index);
+                port = GetOutputPort($"answers {index}");
             }
 
             if (port == null) return;
@@ -44,7 +44,6 @@ namespace Dialogue
 
         public override void Trigger()
         {
-            (graph as StateGraph).current = this;
         }
     }
 }

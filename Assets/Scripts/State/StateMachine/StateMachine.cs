@@ -39,7 +39,6 @@ public class StateTransition
     }
 }
 
-
 public abstract class StateAction : ScriptableObject
 {
     public abstract void Act<T>(StateMachine<T> fsm) where T : MonoBehaviour;

@@ -9,13 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 573535576715526776}
+  - component: {fileID: 2353102091990491351}
   - component: {fileID: 573535576715526724}
   - component: {fileID: 6039133427821621545}
   - component: {fileID: 573535576715526722}
   - component: {fileID: 5475576834924857659}
   - component: {fileID: 5189935092953758547}
   m_Layer: 0
-  m_Name: Grunt 1
+  m_Name: Psycho
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,6 +37,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2353102091990491351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573535576715526779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f12a977df1c647c98ae6478b79bf4df9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!114 &573535576715526724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,7 +94,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  health: 0
   refreshInterval: 0.2
 --- !u!114 &5475576834924857659
 MonoBehaviour:
