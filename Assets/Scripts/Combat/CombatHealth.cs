@@ -10,6 +10,7 @@ public class CombatHealth : MonoBehaviour
     public bool Damage(int amount)
     {
         health -= amount;
+        if(healthUI)
         healthUI.UpdateHealth(amount);
 
         return false;

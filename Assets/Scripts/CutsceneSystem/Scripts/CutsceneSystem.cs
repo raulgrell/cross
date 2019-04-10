@@ -21,6 +21,8 @@ public class CutsceneSystem : MonoBehaviour
 
     private float timer;
     private bool skipped;
+
+    private float maxTimer;
     
     void Start()
     {
@@ -55,11 +57,18 @@ public class CutsceneSystem : MonoBehaviour
                 currentPanel.gameObject.SetActive(true);
             }
 
-            currentPanel = (incoming.Count > 0)
-                ? incoming.RemoveFirst()
-                : null;
+            if (incoming.Count > 0)
+            {
+                currentPanel = incoming.RemoveFirst();
+            }
+            else
+            {
+                maxTimer = currentPanel.data.StartTime + currentPanel.data.Duration;
+                currentPanel = null;
+            }
+
         }
-        else if(!currentPanel && timer < currentPanel.data.StartTime + currentPanel.data.Duration)
+        else if(!currentPanel && timer > maxTimer)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

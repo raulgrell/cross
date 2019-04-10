@@ -43,7 +43,7 @@ public class GridCombat : MonoBehaviour
 
     void Update()
     {
-
+        
         switch (state)
         {
             case CombatState.Idle:
