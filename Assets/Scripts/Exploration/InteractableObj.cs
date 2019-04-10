@@ -31,7 +31,7 @@ public class InteractableObj : MonoBehaviour
                     {
                         Vector3 newPos = info.transform.position;
                         newPos.y = transform.position.y;
-                        transform.position = newPos;
+                        transform.position = Vector3.Lerp(transform.position, newPos, 1000);
                        
                     }
                 }

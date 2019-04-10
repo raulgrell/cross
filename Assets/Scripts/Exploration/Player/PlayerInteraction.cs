@@ -29,7 +29,6 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     if (info.transform.CompareTag("Interactable"))
                     {
-                        Debug.Log("here");
                         currentObj = info.transform.GetComponent<InteractableObj>();
                         Vector3 newPos = gridUnit.grid.CellToWorld(currentObj.getGridPos);
                         newPos.y = interactableY;
@@ -52,8 +51,6 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
             {
-                Debug.Log(hitInfo.transform.name);
-
                 if (hitInfo.transform.CompareTag("Interactable") && characters.Count < 1 && hitInfo.transform.GetComponent<InteractableObj>().text.Length > 0)
                 {
                     i = 0;
@@ -74,6 +71,7 @@ public class PlayerInteraction : MonoBehaviour
         if (spawning && !finished)
             SpawnText();
     }
+
     List<char> getCharacters(string text)
     {
         List<char> tempChar = new List<char>();
