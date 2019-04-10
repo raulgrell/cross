@@ -2,154 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameObjectTimeline.playable" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameObjectTimeline.playable.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Combat/Melee.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Combat/Melee.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Combat/Projectile.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Combat/Projectile.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Combat/Special.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Combat/Special.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Sand.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Sand.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Dialogue.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Grunt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Grunt.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Psycho.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Psycho.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Sid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Sid.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Wacko.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Wacko.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Axe.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Axe.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Hammer.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Hammer.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Melee.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Combat/Melee.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Ranged.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Combat/Ranged.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Special.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Combat/Special.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Target.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Combat/Target.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GridLayer.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GridLayer.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tile.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tile.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Units.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Units/Enemy.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Units/Enemy.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Units/TestEnemy.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Units/TestEnemy.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Units/TestPlayer.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Units/TestPlayer.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ArenaScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ArenaScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/EnemyBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/EnemyBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Attacks/UnitAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Attacks/UnitAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/CombatEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/CombatEffect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/CombatHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/CombatHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTBranchNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTBranchNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTBuilder.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTCompositeNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTCompositeNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTConnection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTConnection.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTDecoratorNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTDecoratorNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTGraph.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTGraph.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTGraphResult.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTGraphResult.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTSubtreeNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTSubtreeNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTTaskNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/BTTaskNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor/BTBranchNodeEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor/BTBranchNodeEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor/BTCompositeNodeEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor/BTCompositeNodeEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor/BTDecoratorNodeEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor/BTDecoratorNodeEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor/BTEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor/BTEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor/BTNodeEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor/BTNodeEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor/BTTaskNodeEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Base/Editor/BTTaskNodeEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Checks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Checks/IsNullCheck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Checks/IsNullCheck.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Checks/IsTruthy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Checks/IsTruthy.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Composites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Composites/Selector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Composites/Selector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Composites/Sequencer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Composites/Sequencer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Decorators.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Decorators/Debugger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Decorators/Debugger.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Decorators/Inverter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Decorators/Inverter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Decorators/Succeeder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Decorators/Succeeder.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Icons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Icons/branch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Icons/branch.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Icons/chat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Icons/chat.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Icons/event.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Icons/event.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Tasks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Tasks/DebugVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/BehaviorTree/Tasks/DebugVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/Editor/StateMachineEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/Editor/StateMachineEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/Editor/StateNodeEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/Editor/StateNodeEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Checks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Checks/IsNullCheck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Checks/IsNullCheck.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Checks/IsTrueCheck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Checks/IsTrueCheck.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericCondition.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericCondition.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/AIGraph.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/AIGraph.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/AIGraphRunner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/AIGraphRunner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/Blackboard.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/Blackboard.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/DialogueGraph.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/DialogueGraph.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/FSMBehaviorTreeNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/FSMBehaviorTreeNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/FSMConnection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/FSMConnection.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/FSMSubmachineNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Graph/FSMSubmachineNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Branch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Branch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Chat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Chat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/ConditionNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/ConditionNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Editor/StateGraphEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/State/Editor/StateGraphEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Editor/StateGraphEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/State/Editor/StateGraphEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/StateMachineGraph.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/StateMachineGraph.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/StateMachineNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/StateMachineNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/StateNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/StateNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/StateGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/StateGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/StateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/UnitController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/UnitController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Behaviours/StateMachineGraph.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Behaviours/StateMachineGraph.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Conditions/HealthFull.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/HealthFull.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Conditions/HealthLow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Conditions/HealthLow.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grid/Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Grid/Tile.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -287,7 +140,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Branch.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
-              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
               <folding>
                 <marker date="1554917968813" expanded="false" signature="6:175" ph="..." />
                 <marker date="1554917968813" expanded="true" signature="195:1176" ph="{...}" />
@@ -728,12 +581,12 @@
       <workItem from="1554076842168" duration="10837000" />
       <workItem from="1554144819868" duration="14526000" />
       <workItem from="1554217083976" duration="48513000" />
-      <workItem from="1554826656364" duration="14246000" />
+      <workItem from="1554826656364" duration="14568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332503000" />
+    <option name="totallyTimeSpent" value="332825000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1399,7 +1252,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Branch.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
             <marker date="1554917968813" expanded="false" signature="6:175" ph="..." />
             <marker date="1554917968813" expanded="true" signature="195:1176" ph="{...}" />
