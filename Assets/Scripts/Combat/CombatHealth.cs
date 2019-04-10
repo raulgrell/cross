@@ -13,6 +13,9 @@ public class CombatHealth : MonoBehaviour
         if(healthUI)
         healthUI.UpdateHealth(amount);
 
+        if (health <= 0) 
+            return true;
+
         return false;
     }
 }

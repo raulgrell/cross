@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class healthUI : MonoBehaviour
 {
-    private List<Transform> healthHearts = new List<Transform>();
+    public List<Transform> healthHearts = new List<Transform>();
 
-    private void Start()
-    {
-        for(int i = 0; i < healthHearts.Count; i++)
-        {
-            healthHearts[i] = transform.GetChild(i);
-        }
-    }
 
     public void UpdateHealth(int Damage)
     {

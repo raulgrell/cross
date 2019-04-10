@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -74,6 +75,7 @@ public class PlayerInteraction : MonoBehaviour
         if (spawning && !finished)
             SpawnText();
     }
+
 
     List<char> getCharacters(string text)
     {

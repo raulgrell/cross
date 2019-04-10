@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum CombatState
 {
@@ -104,7 +105,12 @@ public class GridCombat : MonoBehaviour
                 if (node.unit != null)
                 {
                     if (node.unit.gameObject.GetComponent<CombatHealth>().Damage(1))
-                        Destroy(gameObject);
+                    {
+                        if(node.unit.transform.CompareTag("Player"))
+                            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+                        Destroy(node.unit.gameObject);
+                    }
                 }
             }
         }
