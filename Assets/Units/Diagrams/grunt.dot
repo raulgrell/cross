@@ -1,0 +1,5 @@
+digraph G {
+    idle -> follow, attack, run
+    follow -> idle, attack, run
+    attack -> follow, run
+}

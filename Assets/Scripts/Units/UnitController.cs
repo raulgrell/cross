@@ -31,7 +31,7 @@ public abstract class UnitController : MonoBehaviour
         nodeIndex += 1;
     }
 
-    public bool IsAtWaypoint()
+    public bool AtCurrentWaypoint()
     {
         if (unit.state == GridUnitState.Moving)
             return false;
@@ -80,5 +80,10 @@ public abstract class UnitController : MonoBehaviour
     public void LookAtTarget()
     {
         unit.LookAt(unit.grid.WorldToCell(target.position));
+    }
+
+    public void GrabTarget()
+    {
+        throw new System.NotImplementedException();
     }
 }

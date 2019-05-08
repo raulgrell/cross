@@ -1,0 +1,7 @@
+digraph G {
+    idle -> block, threat
+    block -> idle, parry
+    parry -> idle
+    threat -> attack
+    attack -> idle
+}

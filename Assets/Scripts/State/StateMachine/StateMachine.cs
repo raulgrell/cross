@@ -51,9 +51,10 @@ public abstract class StateCondition : ScriptableObject
 
 public abstract class StateMachine<T> : MonoBehaviour where T : MonoBehaviour
 {
+    public StateGraph graph;
     public StateVariable initialState;
     private StateVariable currentState;
-
+    
     private T agent;
 
     public T Agent => agent;

@@ -5,14 +5,7 @@ using XNode;
 
 public class Blackboard : ScriptableObject
 {
-    public class StringDictionary : SerializableDictionary<string, object>
-    {
-    }
-
-    [Serializable]
-    public class IntDictionary : SerializableDictionary<int, object>
-    {
-    }
+    public class StringDictionary : SerializableDictionary<string, Variable> {}
 
     [SerializeField] public StringDictionary variables = new StringDictionary();
 }
@@ -27,8 +20,8 @@ public abstract class AIGraph : NodeGraph
         if (blackboard == null)
             return default;
 
-        if (blackboard.variables.TryGetValue(key, out object value))
-            return value.GetType().IsAssignableFrom(typeof(T)) ? (T) value : default;
+        if (blackboard.variables.TryGetValue(key, out Variable value))
+            return value.GetType().IsAssignableFrom(typeof(T)) ? (T)value.value : default;
 
         return default;
     }
@@ -36,10 +29,6 @@ public abstract class AIGraph : NodeGraph
     public abstract void Init(Blackboard blackboard);
 
     public abstract bool Run(Blackboard blackboard);
-
-    public abstract class Result
-    {
-    }
 }
 
 public abstract class StateGraph : AIGraph
@@ -66,12 +55,6 @@ public class UnitGraph : StateGraph
     }
 }
 
-
-[CreateNodeMenu("AI/State/Root")]
-public class RootStateNode : StateGraphNode
-{
-    [SerializeField] private State state;
-}
 
 [CreateNodeMenu("AI/State/Static")]
 public class StateNode : StateGraphNode
@@ -126,4 +109,26 @@ public class StateSubGraph : StateGraphNode
     [Input] public bool exec;
     public NodeGraph subGraph;
     [Output] public bool output;
+}
+
+public abstract class VariableCondition : StateCondition
+{
+    public object _variable;
+}
+
+public class IsNullCheck : VariableCondition {
+
+    public override bool Test<T>(StateMachine<T> fsm){
+        // Check if variable is null.
+        object variable = fsm.graph.GetValue<object>("_variable");
+        bool isNull = variable == null;
+        if (isNull) return true;
+        
+        // Check if variable is of value type.
+        Type type = variable.GetType();
+        if (type.IsValueType)
+            isNull = variable == Activator.CreateInstance(type);
+        
+        return isNull;
+    }
 }

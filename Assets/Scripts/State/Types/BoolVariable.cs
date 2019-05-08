@@ -1,8 +1,5 @@
 using System;
-using QAI;
-using UnityEditor;
 using UnityEngine;
-using XNode;
 
 [Serializable]
 public class BoolReference : Reference<bool, BoolVariable>
@@ -19,6 +16,11 @@ public class BoolReference : Reference<bool, BoolVariable>
 
 [CreateAssetMenu(menuName = "Variable/Bool")]
 public class BoolVariable : Variable<bool>
+{
+}
+
+[CreateNodeMenuAttribute("Variable/Bool")]
+public class BoolTest : VariableNode<bool>
 {
 }
 

@@ -26,7 +26,7 @@ public class ActionFollow : UnitAction
     {
         if (timer < 0)
         {
-            if (agent.IsAtWaypoint())
+            if (agent.AtCurrentWaypoint())
             {
                 agent.GoToNextWaypoint();
                 ResetTimer();

@@ -1,8 +1,6 @@
 using System;
-using QAI;
 using UnityEngine;
 using XNode;
-
 
 [NodeTint("#FFBABB")]
 public abstract class VariableNode : Node
@@ -35,9 +33,10 @@ public abstract class VariableNode<T> : VariableNode
 [Serializable]
 public abstract class Variable : ScriptableObject
 {
+    public object value;
 }
 
-public class Variable<T> : Variable
+public abstract class Variable<T> : Variable
 {
     public T Value;
 

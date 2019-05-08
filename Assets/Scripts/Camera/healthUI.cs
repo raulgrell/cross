@@ -6,7 +6,6 @@ public class healthUI : MonoBehaviour
 {
     public List<Transform> healthHearts = new List<Transform>();
 
-
     public void UpdateHealth(int Damage)
     {
         for(int i = 0; i < Damage; i++)
