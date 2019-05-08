@@ -15,6 +15,7 @@ public class GridUnit : MonoBehaviour
 {
     public Vector2Int position;
     public GridLayer grid;
+    public int speed = 16;
 
     internal GridUnitState state;
 
@@ -97,7 +98,7 @@ public class GridUnit : MonoBehaviour
                 var unitPosition = transform.position;
                 var cellPosition = grid.CellToWorld(position);
                 cellPosition.y = unitPosition.y;
-                transform.position = Vector3.MoveTowards(unitPosition, cellPosition, 16 * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(unitPosition, cellPosition, speed * Time.deltaTime);
                 if (Vector3.Distance(transform.position, cellPosition) < 0.1f)
                 {
                     state = GridUnitState.Idle;

@@ -9,7 +9,7 @@ public class PlayerInteraction : MonoBehaviour
     public Canvas interactionCanvas;
     public GameObject interactionTextPrefab;
     public float interactableY = 2.5f;
-    private GridCombat gridCombat;
+    internal GridCombat gridCombat;
     private TextMeshProUGUI currentText;
     internal GridUnit gridUnit;
     private int i = 0;
@@ -22,6 +22,7 @@ public class PlayerInteraction : MonoBehaviour
         gridCombat = GetComponent<GridCombat>();
         gridUnit = GetComponent<GridUnit>();
     }
+    
     void Update()
     {
         if(Input.GetMouseButtonDown(1) && !holding)
@@ -30,28 +31,35 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     if (info.transform.CompareTag("Interactable"))
                     {
-                        currentObj = info.transform.GetComponent<InteractableObj>();
-                        if (Vector2.Distance(gridUnit.position, currentObj.getGridPos) < 3)
+                    gridCombat.State = CombatState.Interacting;
+                    currentObj = info.transform.GetComponent<InteractableObj>();
+                        //Debug.Log(Vector2.Distance(gridUnit.position, currentObj.getGridPos));
+                        //Debug.Log("Unit Pos" + gridUnit.position + " Object Position" + currentObj.getGridPos);
+                        if (Vector2.Distance(gridUnit.position, currentObj.getGridPos) <= 1.5f)
                         {
                         gridUnit.grid.nodes[currentObj.getGridPos.x, currentObj.getGridPos.y].walkable = true;
-                        Vector3 newPos = gridUnit.grid.CellToWorld(currentObj.getGridPos);
-                        newPos.y = interactableY;
+                        Vector3 newPos = gridUnit.grid.CellToWorld(gridUnit.position);
+                        newPos.y = interactableY + currentObj.getGroundedY;
                         currentObj.transform.position = newPos;
                         currentObj.state = 1;
                         holding = true;
                         }
-                    }
+                }
             }
 
         }
         else if(Input.GetMouseButtonUp(1) && holding)
         {
-            currentObj.transform.position = new Vector3(currentObj.transform.position.x, currentObj.getGroundedY, currentObj.transform.position.z);
-            currentObj.getGridPos = gridUnit.grid.WorldToCell(currentObj.transform.position);
-            gridUnit.grid.nodes[currentObj.getGridPos.x, currentObj.getGridPos.y].walkable = false;
-            holding = false;
-            currentObj.state = 0;
-            currentObj = null;
+            //currentObj.transform.position = new Vector3(currentObj.transform.position.x, currentObj.getGroundedY, currentObj.transform.position.z);
+            //currentObj.getGridPos = gridUnit.grid.WorldToCell(currentObj.transform.position);
+            if (Vector2.Distance(gridUnit.position, currentObj.getGridPos) <= 3)
+                {
+                gridCombat.State = CombatState.Idle;
+                currentObj.state = 0;
+                    holding = false;
+                    currentObj = null;
+                }
+            
         }
         if (Input.GetMouseButtonDown(0) && !finished)
         {
@@ -59,6 +67,8 @@ public class PlayerInteraction : MonoBehaviour
             {
                 if (hitInfo.transform.CompareTag("Interactable") && characters.Count < 1 && hitInfo.transform.GetComponent<InteractableObj>().text.Length > 0)
                 {
+                    Debug.Log("here");
+                  //  gridCombat.State = CombatState.Interacting;
                     i = 0;
                     spawning = true;
                     characters = getCharacters(hitInfo.transform.GetComponent<InteractableObj>().text);
@@ -72,6 +82,7 @@ public class PlayerInteraction : MonoBehaviour
                 Destroy(currentText.transform.parent.gameObject);
             characters.Clear();
             finished = false;
+        //    gridCombat.State = CombatState.Idle;
         }
 
         if (spawning && !finished)

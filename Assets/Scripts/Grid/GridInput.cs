@@ -16,6 +16,7 @@ public class GridInput : MonoBehaviour
 {
     private GridUnit unit;
     private GridCombat combat;
+    private PlayerAnimation animation;
     public new Camera camera;
 
     private TargetState state;
@@ -24,6 +25,7 @@ public class GridInput : MonoBehaviour
     {
         unit = GetComponent<GridUnit>();
         combat = GetComponent<GridCombat>();
+        animation = GetComponent<PlayerAnimation>();
     }
 
     void Update()
@@ -31,12 +33,18 @@ public class GridInput : MonoBehaviour
         switch (combat.State)
         {
             case CombatState.Idle:
+                if (Input.GetKey(KeyCode.K))
+                    animation.Dance();
+                else if (Input.anyKey)
+                    animation.StopDancing();
+
                 if (Input.GetKeyDown(KeyCode.LeftShift))
                 {
                     combat.Block();
+                    animation.BlockAnimation();
                     if (Input.GetMouseButtonDown(1)) combat.Attack(combat.specialAttack);
                 }
-                else
+                else 
                 {
                     if (Input.GetMouseButtonDown(0)) combat.Attack(combat.meleeAttack);
                     if (Input.GetMouseButtonDown(1)) combat.Attack(combat.rangedAttack);
@@ -48,10 +56,17 @@ public class GridInput : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.W)) unit.Move(Vector2Int.up);
                 break;
             case CombatState.Block:
-                    if (Input.GetMouseButtonDown(0)) combat.Parry();
                 break;
             case CombatState.Threat:
             case CombatState.Attack:
+                break;
+            case CombatState.Hurt:
+                break;
+            case CombatState.Interacting:
+                if (Input.GetKeyDown(KeyCode.A)) unit.Move(Vector2Int.left);
+                if (Input.GetKeyDown(KeyCode.D)) unit.Move(Vector2Int.right);
+                if (Input.GetKeyDown(KeyCode.S)) unit.Move(Vector2Int.down);
+                if (Input.GetKeyDown(KeyCode.W)) unit.Move(Vector2Int.up);
                 break;
             default:
                 throw new ArgumentOutOfRangeException();

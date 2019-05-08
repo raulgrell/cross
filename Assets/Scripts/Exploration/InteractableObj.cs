@@ -21,29 +21,62 @@ public class InteractableObj : MonoBehaviour
         grid.nodes[getGridPos.x, getGridPos.y].walkable = false;
     }
 
+    bool throwing;
     private void Update()
     {
-        
+
         switch (state)
         {
             case 0:
-                break;
-            case 1:
+                Vector3 pos = new Vector3();
                 if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit info))
                 {
-                    if (info.transform.CompareTag("Tile"))
+                    pos = info.transform.position;
+                    pos.y = getGroundedY;
+                    getGridPos = grid.WorldToCell(pos);
+                    if (Input.GetKey(KeyCode.LeftShift))
                     {
-                        Debug.Log(Vector2.Distance(player.gridUnit.position, getGridPos));
-                        if (Vector2.Distance(player.gridUnit.position, getGridPos) <= 3)
-                        {
-                            Vector3 newPos = info.transform.position;
-                            newPos.y = transform.position.y;
-                            getGridPos = grid.WorldToCell(newPos);
-                            transform.position = Vector3.Lerp(transform.position, newPos, 1000);
-                        }
+                        transform.position = Vector3.MoveTowards(transform.position, pos, 1f);
+                        throwing = true;
                     }
+                    else
+                        transform.position = Vector3.MoveTowards(transform.position, pos, 0.5f);
+
+                    grid.nodes[getGridPos.x, getGridPos.y].walkable = false;
+                    player.gridUnit.speed = 16;
                 }
+                if(transform.position == pos)
+                {
+                    if (throwing)
+                    {
+                        state = 3;
+                    }
+                    state = 2;
+                }
+
+                break;
+            case 1:
+                player.gridUnit.speed = 8;
+                getGridPos = player.gridUnit.position;
+                Vector3 newPos = grid.CellToWorld(getGridPos);
+                newPos.y = transform.position.y;
+                transform.position = newPos;
+                break;
+            case 2:
+
+                break;
+
+            case 3:
+                Debug.Log(grid.nodes[getGridPos.x, getGridPos.y].unit);
+                if (grid.nodes[getGridPos.x, getGridPos.y].unit != null)
+                {
+                    grid.nodes[getGridPos.x, getGridPos.y].unit.GetComponent<CombatHealth>().Damage(5);
+                    Destroy(transform);
+                }
+                else
+                    Destroy(transform);
                 break;
         }
+        
     }
 }

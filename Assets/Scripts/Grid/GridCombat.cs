@@ -11,6 +11,8 @@ public enum CombatState
     Parry,
     Threat,
     Attack,
+    Hurt,
+    Interacting,
 }
 
 public class GridCombat : MonoBehaviour
@@ -24,10 +26,10 @@ public class GridCombat : MonoBehaviour
     private GridLayer grid;
     private GridUnit unit;
     private bool targeting;
-
-    private List<GameObject> trash;
+    private Vector3 origPos;
 
     private float stateTimer;
+    private PlayerAnimation animation;
 
     public Transform Target
     {
@@ -47,7 +49,10 @@ public class GridCombat : MonoBehaviour
 
     void Start()
     {
+        origPos = transform.position;
         unit = GetComponent<GridUnit>();
+        if (transform.CompareTag("Player"))
+            animation = GetComponent<PlayerAnimation>();
         grid = unit.grid;
         state = CombatState.Idle;
     }
@@ -60,7 +65,7 @@ public class GridCombat : MonoBehaviour
             case CombatState.Idle:
                 break;
             case CombatState.Block:
-                if (stateTimer > 0.1f)
+                if (stateTimer > 1f)
                     State = CombatState.Idle;
                 break;
             case CombatState.Parry:
@@ -75,25 +80,46 @@ public class GridCombat : MonoBehaviour
                 if (stateTimer > 0.5f)
                     State = CombatState.Idle;
                 break;
+            case CombatState.Hurt:
+                break;
+            case CombatState.Interacting:
+                break;
             default:
                 throw new ArgumentOutOfRangeException();
         }
         
         stateTimer += Time.deltaTime;
     }
+    private UnitAttack currentAttack;
 
     public void Attack(UnitAttack attack)
     {
         state = CombatState.Attack;
+        currentAttack = attack;
+
+        if (unit.CompareTag("Player"))
+        {
+            if (attack.name == "BasicAttack")
+                animation.BasicAttackAnimation();
+            else
+                animation.AttackAnimation();
+        }
+        else
+            DamageTile();       
         stateTimer = 0;
         
-        var threatened = attack.GetThreatened(unit);
+
+    }
+
+    public void DamageTile()
+    {
+        var threatened = currentAttack.GetThreatened(unit);
 
         for (int i = 0; i < threatened.Length; i++)
         {
             Target hit = threatened[i];
             Vector2Int gridPosition = hit.position;
-            
+
             if (grid.InBounds(gridPosition.x, gridPosition.y))
             {
                 GridNode node = grid.nodes[gridPosition.y, gridPosition.x];
@@ -102,13 +128,32 @@ public class GridCombat : MonoBehaviour
 
                 Instantiate(meleeAttack.attackPrefab, worldPosition, meleeAttack.attackPrefab.transform.rotation, null);
 
-                if (node.unit != null)
+                if (node.unit != null && node.unit != this.unit)
                 {
-                    if (node.unit.gameObject.GetComponent<CombatHealth>().Damage(1))
+                    CombatHealth health = node.unit.gameObject.GetComponent<CombatHealth>();
+                    if (node.unit.transform.CompareTag("Player"))
                     {
-                        if(node.unit.transform.CompareTag("Player"))
-                            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                        GridCombat playerCombat = node.unit.GetComponent<GridCombat>();
+                        if (playerCombat.state != CombatState.Hurt && playerCombat.state != CombatState.Block)
+                        {
+                            if (health.Damage(1))
+                            {
+                                Vector3.Lerp(transform.position, origPos, 1);
+                                health.health = 5;
+                                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                            }
+                            else
+                                playerCombat.animation.HurtAnimation();
 
+                        }
+                        else if (playerCombat.state == CombatState.Block)
+                        {
+                            playerCombat.meleeAttack = meleeAttack;
+                            //if(node.unit.transform.CompareTag("Enemy"))
+                        }
+                    }
+                    else if(health.Damage(1))
+                    {
                         Destroy(node.unit.gameObject);
                     }
                 }

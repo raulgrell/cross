@@ -378,10 +378,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.73
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: -0.69, y: 2.46, z: 0}
+  m_Center: {x: -0.84, y: 2.3, z: 0}
 --- !u!114 &1184988815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,7 +407,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ad20fd065a444e40974895fbe6a7b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grid: {fileID: 0}
   text: Someone is watching me
+  groundedY: 0
 --- !u!1 &5654114691709257872
 GameObject:
   m_ObjectHideFlags: 0
