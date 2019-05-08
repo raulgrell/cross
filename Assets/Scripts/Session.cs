@@ -4,11 +4,12 @@ using UnityEngine;
 
 public enum GameState
 {
-    Init,
+    Scene,
     Explore,
     Combat
 }
 
 public class Session : MonoBehaviour
 {
+    
 }

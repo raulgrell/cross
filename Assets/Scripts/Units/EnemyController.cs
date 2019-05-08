@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyController : UnitController
 {
     private EnemyBehaviour behaviour;
+    private SquadController squad;
 
     protected override void Start()
     {

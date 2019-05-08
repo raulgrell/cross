@@ -20,4 +20,9 @@ public class SquadController : MonoBehaviour
     public GridLayer grid;
     public GridUnit leader;
     public List<GridUnit> units;
+
+    Vector2Int[] GetNodesAroundTarget()
+    {
+        return new Vector2Int[]{};
+    }
 }
