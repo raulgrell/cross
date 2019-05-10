@@ -8,6 +8,7 @@ public class InteractableObj : MonoBehaviour
     public string text;
     public float groundedY;
     internal int state = 2;
+    internal bool throwing;
     private PlayerInteraction player;
 
     public float getGroundedY => groundedY;
@@ -21,7 +22,6 @@ public class InteractableObj : MonoBehaviour
         grid.nodes[getGridPos.x, getGridPos.y].walkable = false;
     }
 
-    bool throwing;
     private void Update()
     {
 
@@ -45,15 +45,13 @@ public class InteractableObj : MonoBehaviour
                     grid.nodes[getGridPos.x, getGridPos.y].walkable = false;
                     player.gridUnit.speed = 16;
                 }
-                if(transform.position == pos)
-                {
+                if (transform.position == pos)
                     if (throwing)
                     {
                         state = 3;
                     }
-                    state = 2;
-                }
-
+                    else
+                        state = 2;
                 break;
             case 1:
                 player.gridUnit.speed = 8;
@@ -67,14 +65,16 @@ public class InteractableObj : MonoBehaviour
                 break;
 
             case 3:
-                Debug.Log(grid.nodes[getGridPos.x, getGridPos.y].unit);
                 if (grid.nodes[getGridPos.x, getGridPos.y].unit != null)
                 {
+                    Debug.Log(grid.nodes[getGridPos.x, getGridPos.y].unit.name);
                     grid.nodes[getGridPos.x, getGridPos.y].unit.GetComponent<CombatHealth>().Damage(5);
-                    Destroy(transform);
+                    Destroy(gameObject);
                 }
                 else
-                    Destroy(transform);
+                    Destroy(gameObject);
+                throwing = false;
+                state = 2;
                 break;
         }
         

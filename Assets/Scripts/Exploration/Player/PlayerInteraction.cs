@@ -54,8 +54,8 @@ public class PlayerInteraction : MonoBehaviour
             //currentObj.getGridPos = gridUnit.grid.WorldToCell(currentObj.transform.position);
             if (Vector2.Distance(gridUnit.position, currentObj.getGridPos) <= 3)
                 {
-                gridCombat.State = CombatState.Idle;
-                currentObj.state = 0;
+                    gridCombat.State = CombatState.Idle;
+                    currentObj.state = 0;
                     holding = false;
                     currentObj = null;
                 }

@@ -6,12 +6,15 @@ public class CombatHealth : MonoBehaviour
 {
     public int health;
     public healthUI healthUI;
+    public EnemyHealthBar enemyBar;
 
     public bool Damage(int amount)
     {
         health -= amount;
         if(healthUI)
-        healthUI.UpdateHealth(amount);
+            healthUI.UpdateHealth(amount);
+        if (enemyBar)
+            enemyBar.UpdateHealth(amount);
 
         if (health <= 0) 
             return true;

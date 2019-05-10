@@ -128,7 +128,7 @@ public class GridCombat : MonoBehaviour
 
                 Instantiate(meleeAttack.attackPrefab, worldPosition, meleeAttack.attackPrefab.transform.rotation, null);
 
-                if (node.unit != null && node.unit != this.unit)
+                if (node.unit != null && node.unit != unit)
                 {
                     CombatHealth health = node.unit.gameObject.GetComponent<CombatHealth>();
                     if (node.unit.transform.CompareTag("Player"))
