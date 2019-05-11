@@ -10,6 +10,7 @@ public class InteractableObj : MonoBehaviour
     internal int state = 2;
     internal bool throwing;
     private PlayerInteraction player;
+    private Transform target;
 
     public float getGroundedY => groundedY;
     public Vector2Int getGridPos { get; set; }
@@ -31,6 +32,7 @@ public class InteractableObj : MonoBehaviour
                 Vector3 pos = new Vector3();
                 if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit info))
                 {
+                    target = info.transform;
                     pos = info.transform.position;
                     pos.y = getGroundedY;
                     getGridPos = grid.WorldToCell(pos);
@@ -65,14 +67,16 @@ public class InteractableObj : MonoBehaviour
                 break;
 
             case 3:
-                if (grid.nodes[getGridPos.x, getGridPos.y].unit != null)
+
+                if (target.CompareTag("Enemy"))
                 {
-                    Debug.Log(grid.nodes[getGridPos.x, getGridPos.y].unit.name);
-                    grid.nodes[getGridPos.x, getGridPos.y].unit.GetComponent<CombatHealth>().Damage(5);
+                    if (target.gameObject.HasComponent<CombatHealth>())
+                        if (target.GetComponent<CombatHealth>().Damage(5))
+                            Destroy(target.gameObject);
                     Destroy(gameObject);
                 }
                 else
-                    Destroy(gameObject);
+                   Destroy(gameObject);
                 throwing = false;
                 state = 2;
                 break;

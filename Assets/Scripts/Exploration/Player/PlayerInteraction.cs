@@ -67,7 +67,6 @@ public class PlayerInteraction : MonoBehaviour
             {
                 if (hitInfo.transform.CompareTag("Interactable") && characters.Count < 1 && hitInfo.transform.GetComponent<InteractableObj>().text.Length > 0)
                 {
-                    Debug.Log("here");
                   //  gridCombat.State = CombatState.Interacting;
                     i = 0;
                     spawning = true;
