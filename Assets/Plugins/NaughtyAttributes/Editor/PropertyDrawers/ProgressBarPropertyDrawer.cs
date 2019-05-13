@@ -18,7 +18,7 @@ namespace NaughtyAttributes.Editor
             }
 
             var value = property.propertyType == SerializedPropertyType.Integer ? property.intValue : property.floatValue;
-            var valueFormatted = property.propertyType == SerializedPropertyType.Integer ? value.ToString() : System.String.Format("{0:0.00}", value);
+            var valueFormatted = property.propertyType == SerializedPropertyType.Integer ? value.ToString() : String.Format("{0:0.00}", value);
 
             ProgressBarAttribute progressBarAttribute = PropertyUtility.GetAttribute<ProgressBarAttribute>(property);
             var position = EditorGUILayout.GetControlRect();

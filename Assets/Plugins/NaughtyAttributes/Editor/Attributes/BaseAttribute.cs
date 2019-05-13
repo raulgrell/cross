@@ -16,7 +16,7 @@ namespace NaughtyAttributes.Editor
         {
             get
             {
-                return targetAttributeType;
+                return this.targetAttributeType;
             }
         }
     }

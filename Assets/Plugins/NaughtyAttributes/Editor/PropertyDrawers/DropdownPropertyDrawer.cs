@@ -22,11 +22,11 @@ namespace NaughtyAttributes.Editor
 
             if (valuesFieldInfo == null)
             {
-                DrawWarningBox(string.Format("{0} cannot find a values field with name \"{1}\"", dropdownAttribute.GetType().Name, dropdownAttribute.ValuesFieldName));
+                this.DrawWarningBox(string.Format("{0} cannot find a values field with name \"{1}\"", dropdownAttribute.GetType().Name, dropdownAttribute.ValuesFieldName));
                 EditorGUILayout.PropertyField(property, true);
             }
             else if (valuesFieldInfo.GetValue(target) is IList &&
-                     fieldInfo.FieldType == GetElementType(valuesFieldInfo))
+                     fieldInfo.FieldType == this.GetElementType(valuesFieldInfo))
             {
                 // Selected value
                 object selectedValue = fieldInfo.GetValue(target);
@@ -51,7 +51,7 @@ namespace NaughtyAttributes.Editor
                 }
 
                 // Draw the dropdown
-                DrawDropdown(target, fieldInfo, property.displayName, selectedValueIndex, values, displayOptions);
+                this.DrawDropdown(target, fieldInfo, property.displayName, selectedValueIndex, values, displayOptions);
             }
             else if (valuesFieldInfo.GetValue(target) is IDropdownList)
             {
@@ -87,11 +87,11 @@ namespace NaughtyAttributes.Editor
                 }
 
                 // Draw the dropdown
-                DrawDropdown(target, fieldInfo, property.displayName, selectedValueIndex, values.ToArray(), displayOptions.ToArray());
+                this.DrawDropdown(target, fieldInfo, property.displayName, selectedValueIndex, values.ToArray(), displayOptions.ToArray());
             }
             else
             {
-                DrawWarningBox(typeof(DropdownAttribute).Name + " works only when the type of the field is equal to the element type of the array");
+                this.DrawWarningBox(typeof(DropdownAttribute).Name + " works only when the type of the field is equal to the element type of the array");
                 EditorGUILayout.PropertyField(property, true);
             }
         }

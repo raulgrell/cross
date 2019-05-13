@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
 
@@ -8,6 +9,8 @@ public class GridLayer : MonoBehaviour
 {
     public LayerMask unwalkableMask;
     public GameObject nodePrefab;
+    public Transform floor;
+    public GridModels floorBlocks;
     public int numCols = 12;
     public int numRows = 8;
     public float cellSize = 2;
@@ -139,5 +142,27 @@ public class GridLayer : MonoBehaviour
         int dstX = Mathf.Abs(gridNodeA.gridPosition.x - gridNodeB.gridPosition.x);
         int dstY = Mathf.Abs(gridNodeA.gridPosition.y - gridNodeB.gridPosition.y);
         return dstX + dstY;
+    }
+
+    [Button("Generate Floor")]
+    public void GenerateFloor()
+    {
+        if (!floor) return;
+        
+        foreach(Transform child in floor) {
+            DestroyImmediate(child);
+        }
+        
+        nodes = new GridNode[numRows, numCols];
+
+        var origin = transform.position;
+        for (int i = 0; i < numCols; i++)
+        {
+            for (int j = 0; j < numRows; j++)
+            {
+                var offset = Vector3.forward * cellSize * j + Vector3.right * cellSize * i;
+                var node = Instantiate(floorBlocks.metal, origin + offset, Quaternion.identity, floor);
+            }
+        }
     }
 }

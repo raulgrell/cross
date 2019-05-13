@@ -7,7 +7,7 @@ namespace NaughtyAttributes.Editor
     [MethodDrawer(typeof(ButtonAttribute))]
     public class ButtonMethodDrawer : MethodDrawer
     {
-        public override void DrawMethod(Object target, MethodInfo methodInfo)
+        public override void DrawMethod(UnityEngine.Object target, MethodInfo methodInfo)
         {
             if (methodInfo.GetParameters().Length == 0)
             {
@@ -22,7 +22,7 @@ namespace NaughtyAttributes.Editor
             else
             {
                 string warning = typeof(ButtonAttribute).Name + " works only on methods with no parameters";
-                EditorDrawUtility.DrawHelpBox(warning, MessageType.Warning, logToConsole: true, context: target);
+                EditorDrawUtility.DrawHelpBox(warning, MessageType.Warning, context: target);
             }
         }
     }

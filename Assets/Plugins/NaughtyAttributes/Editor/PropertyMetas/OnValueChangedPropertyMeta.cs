@@ -10,7 +10,7 @@ namespace NaughtyAttributes.Editor
         public override void ApplyPropertyMeta(SerializedProperty property, MetaAttribute metaAttribute)
         {
             OnValueChangedAttribute onValueChangedAttribute = (OnValueChangedAttribute)metaAttribute;
-            Object target = PropertyUtility.GetTargetObject(property);
+            UnityEngine.Object target = PropertyUtility.GetTargetObject(property);
 
             MethodInfo callbackMethod = ReflectionUtility.GetMethod(target, onValueChangedAttribute.CallbackName);
             if (callbackMethod != null &&

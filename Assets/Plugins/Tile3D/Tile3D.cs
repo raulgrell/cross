@@ -46,9 +46,8 @@ public class Tile3D : MonoBehaviour
 
         public override bool Equals(object obj)
         {
-            if (obj is Face)
+            if (obj is Face other)
             {
-                var other = (Face) obj;
                 return Tile == other.Tile && Rotation == other.Rotation && FlipX == other.FlipX &&
                        FlipY == other.FlipY && Hidden == other.Hidden;
             }

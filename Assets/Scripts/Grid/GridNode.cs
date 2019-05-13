@@ -34,11 +34,11 @@ public class GridNode : MonoBehaviour, IHeapItem<GridNode>
         node.walkable = true;
         node.gridPosition = gridPos;
 
-        if (Physics.Raycast(worldPos + Vector3.up * 2, Vector3.down, out RaycastHit hitInfo))
-        {
-            node.height = hitInfo.point.y;
-            obj.transform.position = obj.transform.position.SetY(node.height);
-        }
+        if (!Physics.Raycast(worldPos + Vector3.up * 2, Vector3.down, out RaycastHit hitInfo))
+            return node;
+        
+        node.height = hitInfo.point.y;
+        obj.transform.position = obj.transform.position.SetY(node.height);
 
         return node;
     }

@@ -9,271 +9,10 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="EnemyHealthBar.cs" t="Include" />
         <e p="Plugins" t="Include">
-          <e p="Atoms" t="Include">
-            <e p="AtomicTags" t="Include">
-              <e p="AtomicTags.cs" t="Include" />
-              <e p="ReadOnlyList.cs" t="Include" />
-            </e>
-            <e p="AtomicUI" t="Include">
-              <e p="UIContainer.cs" t="Include" />
-            </e>
-            <e p="Base" t="Include">
-              <e p="ConditionalGameActionHelper.cs" t="Include" />
-              <e p="CreateOnAwake" t="Include">
-                <e p="CreateEventOnAwake.cs" t="Include" />
-                <e p="CreateListOnAwake.cs" t="Include" />
-                <e p="CreateVariableOnAwake.cs" t="Include" />
-              </e>
-              <e p="GameEvent.cs" t="Include" />
-              <e p="GameEventListener.cs" t="Include" />
-              <e p="IGameEventListener.cs" t="Include" />
-              <e p="ScriptableObjectGameAction.cs" t="Include" />
-              <e p="ScriptableObjectList.cs" t="Include" />
-              <e p="ScriptableObjectReference.cs" t="Include" />
-              <e p="SetVariableValue.cs" t="Include" />
-              <e p="Variable" t="Include">
-                <e p="EquatableScriptableObjectVariable.cs" t="Include" />
-                <e p="IWithApplyChange.cs" t="Include" />
-                <e p="IWithOldValue.cs" t="Include" />
-                <e p="IWithValue.cs" t="Include" />
-                <e p="ScriptableObjectVariable.cs" t="Include" />
-                <e p="ScriptableObjectVariableBase.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Bool" t="Include">
-              <e p="BoolAction.cs" t="Include" />
-              <e p="BoolBoolEvent.cs" t="Include" />
-              <e p="BoolConstant.cs" t="Include" />
-              <e p="BoolEvent.cs" t="Include" />
-              <e p="BoolList.cs" t="Include" />
-              <e p="BoolListener.cs" t="Include" />
-              <e p="BoolReference.cs" t="Include" />
-              <e p="BoolVariable.cs" t="Include" />
-              <e p="ConditionalBoolAction.cs" t="Include" />
-              <e p="SetBoolVariableValue.cs" t="Include" />
-              <e p="UnityBoolEvent.cs" t="Include" />
-            </e>
-            <e p="Collider" t="Include">
-              <e p="ColliderEvent.cs" t="Include" />
-              <e p="ColliderGameObjectAction.cs" t="Include" />
-              <e p="ColliderGameObjectEvent.cs" t="Include" />
-              <e p="ColliderGameObjectListener.cs" t="Include" />
-              <e p="UnityColliderGameObjectEvent.cs" t="Include" />
-            </e>
-            <e p="Collider2D" t="Include">
-              <e p="Collider2DAction.cs" t="Include" />
-              <e p="Collider2DEvent.cs" t="Include" />
-              <e p="Collider2DEventAction.cs" t="Include" />
-              <e p="Collider2DGameObjectAction.cs" t="Include" />
-              <e p="Collider2DGameObjectEvent.cs" t="Include" />
-              <e p="Collider2DGameObjectListener.cs" t="Include" />
-              <e p="Collider2DList.cs" t="Include" />
-              <e p="Collider2DListAction.cs" t="Include" />
-              <e p="Collider2DListener.cs" t="Include" />
-              <e p="Collider2DListGameObjectAction.cs" t="Include" />
-              <e p="CreateCollider2DEventOnAwake.cs" t="Include" />
-              <e p="CreateCollider2DListOnAwake.cs" t="Include" />
-              <e p="UnityCollider2DEvent.cs" t="Include" />
-              <e p="UnityCollider2DGameObjectEvent.cs" t="Include" />
-            </e>
-            <e p="Color" t="Include">
-              <e p="ColorAction.cs" t="Include" />
-              <e p="ColorColorEvent.cs" t="Include" />
-              <e p="ColorConstant.cs" t="Include" />
-              <e p="ColorEvent.cs" t="Include" />
-              <e p="ColorList.cs" t="Include" />
-              <e p="ColorListener.cs" t="Include" />
-              <e p="ColorReference.cs" t="Include" />
-              <e p="ColorVariable.cs" t="Include" />
-              <e p="ConditionalColorAction.cs" t="Include" />
-              <e p="SetColorVariableValue.cs" t="Include" />
-              <e p="UnityColorEvent.cs" t="Include" />
-            </e>
-            <e p="Editor" t="Include">
-              <e p="GameEventEditor.cs" t="Include" />
-              <e p="ReferenceDrawer.cs" t="Include" />
-              <e p="UnityAtomsEditor.asmdef" t="Include" />
-            </e>
-            <e p="Extensions" t="Include">
-              <e p="ArrayExtensions.cs" t="Include" />
-              <e p="CameraExtensions.cs" t="Include" />
-              <e p="GameObjectExtensions.cs" t="Include" />
-              <e p="ListExtensions.cs" t="Include" />
-              <e p="MonoBehaviourExtensions.cs" t="Include" />
-              <e p="TransformExtensions.cs" t="Include" />
-              <e p="Vector2Extensions.cs" t="Include" />
-              <e p="Vector3Extensions.cs" t="Include" />
-            </e>
-            <e p="Float" t="Include">
-              <e p="ConditionalFloatAction.cs" t="Include" />
-              <e p="FloatAction.cs" t="Include" />
-              <e p="FloatConstant.cs" t="Include" />
-              <e p="FloatEvent.cs" t="Include" />
-              <e p="FloatFloatEvent.cs" t="Include" />
-              <e p="FloatList.cs" t="Include" />
-              <e p="FloatListener.cs" t="Include" />
-              <e p="FloatReference.cs" t="Include" />
-              <e p="FloatVariable.cs" t="Include" />
-              <e p="SetFloatVariableValue.cs" t="Include" />
-              <e p="UnityFloatEvent.cs" t="Include" />
-            </e>
-            <e p="GameFunctions" t="Include">
-              <e p="BoolBoolFunction.cs" t="Include" />
-              <e p="BoolColorFunction.cs" t="Include" />
-              <e p="BoolFloatFunction.cs" t="Include" />
-              <e p="BoolFunction.cs" t="Include" />
-              <e p="BoolGameObjectFunction.cs" t="Include" />
-              <e p="BoolIntFunction.cs" t="Include" />
-              <e p="BoolVector2Function.cs" t="Include" />
-              <e p="BoolVector3Function.cs" t="Include" />
-              <e p="BoolVoidFunction.cs" t="Include" />
-              <e p="GameObjectFunction.cs" t="Include" />
-              <e p="GameObjectGameObjectFunction.cs" t="Include" />
-              <e p="GameObjectVector3QuaternionFunction.cs" t="Include" />
-              <e p="IntFunction.cs" t="Include" />
-              <e p="ScriptableObjectFunction.cs" t="Include" />
-            </e>
-            <e p="GameObject" t="Include">
-              <e p="GameObjectAction.cs" t="Include" />
-              <e p="GameObjectEvent.cs" t="Include" />
-              <e p="GameObjectGameObjectEvent.cs" t="Include" />
-              <e p="GameObjectList.cs" t="Include" />
-              <e p="GameObjectListAction.cs" t="Include" />
-              <e p="GameObjectListener.cs" t="Include" />
-              <e p="GameObjectReference.cs" t="Include" />
-              <e p="GameObjectVariable.cs" t="Include" />
-              <e p="GetUnusedGameObject.cs" t="Include" />
-              <e p="SetGameObjectVariableValue.cs" t="Include" />
-              <e p="UnityGameObjectEvent.cs" t="Include" />
-            </e>
-            <e p="Int" t="Include">
-              <e p="ConditionalIntAction.cs" t="Include" />
-              <e p="IntAction.cs" t="Include" />
-              <e p="IntConstant.cs" t="Include" />
-              <e p="IntEvent.cs" t="Include" />
-              <e p="IntIntEvent.cs" t="Include" />
-              <e p="IntList.cs" t="Include" />
-              <e p="IntListener.cs" t="Include" />
-              <e p="IntReference.cs" t="Include" />
-              <e p="IntVariable.cs" t="Include" />
-              <e p="SetIntVariableValue.cs" t="Include" />
-              <e p="UnityIntEvent.cs" t="Include" />
-            </e>
-            <e p="Mobile" t="Include">
-              <e p="TouchUserInput" t="Include">
-                <e p="BoolTouchUserInputFunction.cs" t="Include" />
-                <e p="ConditionalTouchUserInputAction.cs" t="Include" />
-                <e p="DetectTap.cs" t="Include" />
-                <e p="TouchUserInput.cs" t="Include" />
-                <e p="TouchUserInputAction.cs" t="Include" />
-                <e p="TouchUserInputGameEvent.cs" t="Include" />
-                <e p="TouchUserInputListener.cs" t="Include" />
-                <e p="TouchUserInputTouchUserInputAction.cs" t="Include" />
-                <e p="TouchUserInputTouchUserInputGameEvent.cs" t="Include" />
-                <e p="TouchUserInputTouchUserInputListener.cs" t="Include" />
-                <e p="TouchUserInputVariable.cs" t="Include" />
-                <e p="UnityTouchUserInputEvent.cs" t="Include" />
-                <e p="UpdateTouchUserInput.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Molecules" t="Include">
-              <e p="Timer" t="Include">
-                <e p="StartTimer.cs" t="Include" />
-                <e p="StopTimer.cs" t="Include" />
-                <e p="Timer.cs" t="Include" />
-                <e p="UpdateTimer.cs" t="Include" />
-              </e>
-            </e>
-            <e p="MonoHooks" t="Include">
-              <e p="Collider2DHook.cs" t="Include" />
-              <e p="ColliderHook.cs" t="Include" />
-              <e p="MonoHook.cs" t="Include" />
-              <e p="OnAwakeHook.cs" t="Include" />
-              <e p="OnButtonClickHook.cs" t="Include" />
-              <e p="OnDestroyHook.cs" t="Include" />
-              <e p="OnFixedUpdateHook.cs" t="Include" />
-              <e p="OnLateUpdateHook.cs" t="Include" />
-              <e p="OnPointerDownHook.cs" t="Include" />
-              <e p="OnStartHook.cs" t="Include" />
-              <e p="OnTriggerEnter2DHook.cs" t="Include" />
-              <e p="OnTriggerEnterHook.cs" t="Include" />
-              <e p="OnTriggerExit2DHook.cs" t="Include" />
-              <e p="OnTriggerStay2DHook.cs" t="Include" />
-              <e p="OnTriggerStayHook.cs" t="Include" />
-              <e p="OnUpdateHook.cs" t="Include" />
-              <e p="VoidHook.cs" t="Include" />
-            </e>
-            <e p="SceneManagement" t="Include">
-              <e p="ChangeScene.cs" t="Include" />
-            </e>
-            <e p="String" t="Include">
-              <e p="CreateStringVariableOnAwake.cs" t="Include" />
-              <e p="SetStringVariableValue.cs" t="Include" />
-              <e p="StringAction.cs" t="Include" />
-              <e p="StringConstant.cs" t="Include" />
-              <e p="StringEvent.cs" t="Include" />
-              <e p="StringList.cs" t="Include" />
-              <e p="StringListener.cs" t="Include" />
-              <e p="StringReference.cs" t="Include" />
-              <e p="StringStringAction.cs" t="Include" />
-              <e p="StringStringEvent.cs" t="Include" />
-              <e p="StringStringListener.cs" t="Include" />
-              <e p="StringVariable.cs" t="Include" />
-              <e p="StringVariableAction.cs" t="Include" />
-              <e p="StringVariableGameObjectAction.cs" t="Include" />
-              <e p="UnityStringEvent.cs" t="Include" />
-            </e>
-            <e p="UnityAtoms.asmdef" t="Include" />
-            <e p="Utils" t="Include">
-              <e p="CreateAssetMenuUtils.cs" t="Include" />
-              <e p="DynamicAtoms.cs" t="Include" />
-              <e p="Vector2Utils.cs" t="Include" />
-            </e>
-            <e p="Vector2" t="Include">
-              <e p="ConditionalVector2Action.cs" t="Include" />
-              <e p="SetVector2VariableValue.cs" t="Include" />
-              <e p="UnityVector2Event.cs" t="Include" />
-              <e p="Vector2Action.cs" t="Include" />
-              <e p="Vector2Constant.cs" t="Include" />
-              <e p="Vector2Event.cs" t="Include" />
-              <e p="Vector2List.cs" t="Include" />
-              <e p="Vector2Listener.cs" t="Include" />
-              <e p="Vector2Reference.cs" t="Include" />
-              <e p="Vector2Variable.cs" t="Include" />
-              <e p="Vector2Vector2Event.cs" t="Include" />
-            </e>
-            <e p="Vector3" t="Include">
-              <e p="ConditionalVector3Action.cs" t="Include" />
-              <e p="SetVector3VariableValue.cs" t="Include" />
-              <e p="UnityVector3Event.cs" t="Include" />
-              <e p="Vector3Action.cs" t="Include" />
-              <e p="Vector3Constant.cs" t="Include" />
-              <e p="Vector3Event.cs" t="Include" />
-              <e p="Vector3List.cs" t="Include" />
-              <e p="Vector3Listener.cs" t="Include" />
-              <e p="Vector3Reference.cs" t="Include" />
-              <e p="Vector3Variable.cs" t="Include" />
-              <e p="Vector3Vector3Event.cs" t="Include" />
-            </e>
-            <e p="Void" t="Include">
-              <e p="ConditionalVoidAction.cs" t="Include" />
-              <e p="UnityVoidEvent.cs" t="Include" />
-              <e p="UnityVoidGameObjectEvent.cs" t="Include" />
-              <e p="Void.cs" t="Include" />
-              <e p="VoidAction.cs" t="Include" />
-              <e p="VoidEvent.cs" t="Include" />
-              <e p="VoidGameObjectAction.cs" t="Include" />
-              <e p="VoidGameObjectEvent.cs" t="Include" />
-              <e p="VoidGameObjectListener.cs" t="Include" />
-              <e p="VoidListener.cs" t="Include" />
-            </e>
-          </e>
           <e p="Attributes" t="Include">
             <e p="ExpandableAttribute.cs" t="Include" />
-            <e p="NonNull" t="Include">
-              <e p="NonNullAttribute.cs" t="Include" />
-            </e>
             <e p="ReadOnlyAttribute.cs" t="Include" />
           </e>
           <e p="Components" t="Include">
@@ -314,6 +53,7 @@
           </e>
           <e p="NaughtyAttributes" t="Include">
             <e p="Core" t="Include">
+              <e p="ConditionOperator.cs" t="Include" />
               <e p="DrawConditionAttributes" t="Include">
                 <e p="DrawConditionAttribute.cs" t="Include" />
                 <e p="HideIfAttribute.cs" t="Include" />
@@ -325,6 +65,7 @@
                 <e p="DrawerAttribute.cs" t="Include" />
                 <e p="DropdownAttribute.cs" t="Include" />
                 <e p="EnableIfAttribute.cs" t="Include" />
+                <e p="LabelAttribute.cs" t="Include" />
                 <e p="MinMaxSliderAttribute.cs" t="Include" />
                 <e p="ProgressBarAttribute.cs" t="Include" />
                 <e p="ReadOnlyAttribute.cs" t="Include" />
@@ -334,6 +75,7 @@
                 <e p="ShowNativePropertyAttribute.cs" t="Include" />
                 <e p="ShowNonSerializedFieldAttribute.cs" t="Include" />
                 <e p="SliderAttribute.cs" t="Include" />
+                <e p="TagAttribute.cs" t="Include" />
               </e>
               <e p="GroupAttributes" t="Include">
                 <e p="BoxGroupAttribute.cs" t="Include" />
@@ -345,6 +87,7 @@
                 <e p="OnValueChangedAttribute.cs" t="Include" />
               </e>
               <e p="NaughtyAttribute.cs" t="Include" />
+              <e p="NaughtyAttributes.Core.asmdef" t="Include" />
               <e p="ValidatorAttributes" t="Include">
                 <e p="MaxValueAttribute.cs" t="Include" />
                 <e p="MinValueAttribute.cs" t="Include" />
@@ -402,6 +145,7 @@
                 <e p="NativePropertyDrawer.cs" t="Include" />
                 <e p="ShowNativePropertyNativePropertyDrawer.cs" t="Include" />
               </e>
+              <e p="NaughtyAttributes.Editor.asmdef" t="Include" />
               <e p="PropertyDrawConditions" t="Include">
                 <e p="HideIfPropertyDrawCondition.cs" t="Include" />
                 <e p="PropertyDrawCondition.cs" t="Include" />
@@ -411,6 +155,7 @@
                 <e p="DisableIfPropertyDrawer.cs" t="Include" />
                 <e p="DropdownPropertyDrawer.cs" t="Include" />
                 <e p="EnableIfPropertyDrawer.cs" t="Include" />
+                <e p="LabelPropertyDrawer.cs" t="Include" />
                 <e p="MinMaxSliderPropertyDrawer.cs" t="Include" />
                 <e p="ProgressBarPropertyDrawer.cs" t="Include" />
                 <e p="PropertyDrawer.cs" t="Include" />
@@ -419,6 +164,7 @@
                 <e p="ResizableTextAreaPropertyDrawer.cs" t="Include" />
                 <e p="ShowAssetPreviewPropertyDrawer.cs" t="Include" />
                 <e p="SliderPropertyDrawer.cs" t="Include" />
+                <e p="TagPropertyDrawer.cs" t="Include" />
               </e>
               <e p="PropertyGroupers" t="Include">
                 <e p="BoxGroupPropertyGrouper.cs" t="Include" />
@@ -508,53 +254,6 @@
               </e>
             </e>
           </e>
-          <e p="UnityTools" t="Include">
-            <e p="EditorTools" t="Include">
-              <e p="Editor" t="Include">
-                <e p="ComponentContextMenu.cs" t="Include" />
-                <e p="ComponentList.cs" t="Include" />
-                <e p="RecordVideoWindow.cs" t="Include" />
-              </e>
-              <e p="Scripts" t="Include">
-                <e p="RecordVideo.cs" t="Include" />
-              </e>
-            </e>
-            <e p="GUIWrapper" t="Include">
-              <e p="Editor" t="Include">
-                <e p="GUIBase.cs" t="Include" />
-                <e p="GUIBaseContainer.cs" t="Include" />
-                <e p="GUIButton.cs" t="Include" />
-                <e p="GUIColorField.cs" t="Include" />
-                <e p="GUIDefaultInspector.cs" t="Include" />
-                <e p="GUIDelayedIntField.cs" t="Include" />
-                <e p="GUIEnumPopup.cs" t="Include" />
-                <e p="GUIFoldout.cs" t="Include" />
-                <e p="GUIHorizontal.cs" t="Include" />
-                <e p="GUIIntSlider.cs" t="Include" />
-                <e p="GUILabel.cs" t="Include" />
-                <e p="GUIObjectField.cs" t="Include" />
-                <e p="GUIPopup.cs" t="Include" />
-                <e p="GUIScrollView.cs" t="Include" />
-                <e p="GUISlider.cs" t="Include" />
-                <e p="GUISpace.cs" t="Include" />
-                <e p="GUITextField.cs" t="Include" />
-                <e p="GUITextureField.cs" t="Include" />
-                <e p="GUIToggle.cs" t="Include" />
-                <e p="GUIToolbar.cs" t="Include" />
-                <e p="GUIVector3Field.cs" t="Include" />
-                <e p="GUIVertical.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Versioning" t="Include">
-              <e p="Editor" t="Include">
-                <e p="AssetUpdater.cs" t="Include" />
-                <e p="AssetUpdateWindow.cs" t="Include" />
-                <e p="AssetVersion.cs" t="Include" />
-                <e p="AssetVersionDownloader.cs" t="Include" />
-                <e p="SemanticVersion.cs" t="Include" />
-              </e>
-            </e>
-          </e>
           <e p="xNode-master" t="Include">
             <e p="Scripts" t="Include">
               <e p="Attributes" t="Include">
@@ -608,17 +307,25 @@
               <e p="UnitState.cs" t="Include" />
             </e>
             <e p="BT" t="Include">
+              <e p="Actions" t="Include">
+                <e p="MoveAction.cs" t="Include" />
+                <e p="OpenDoorAction.cs" t="Include" />
+              </e>
               <e p="Agent.cs" t="Include" />
-              <e p="Decorator.cs" t="Include" />
-              <e p="DoorOpenCondition.cs" t="Include" />
-              <e p="MoveAction.cs" t="Include" />
-              <e p="NonDeterministicSequence.cs" t="Include" />
-              <e p="OpenDoorAction.cs" t="Include" />
-              <e p="Parallel.cs" t="Include" />
-              <e p="Selector.cs" t="Include" />
-              <e p="Sequence.cs" t="Include" />
-              <e p="Task.cs" t="Include" />
-              <e p="UntilFailDecorator.cs" t="Include" />
+              <e p="Conditions" t="Include">
+                <e p="DoorOpenCondition.cs" t="Include" />
+              </e>
+              <e p="Control" t="Include">
+                <e p="NonDeterministicSequence.cs" t="Include" />
+                <e p="Parallel.cs" t="Include" />
+                <e p="Selector.cs" t="Include" />
+                <e p="Sequence.cs" t="Include" />
+                <e p="Task.cs" t="Include" />
+              </e>
+              <e p="Decorators" t="Include">
+                <e p="Decorator.cs" t="Include" />
+                <e p="UntilFailDecorator.cs" t="Include" />
+              </e>
               <e p="World.cs" t="Include" />
             </e>
             <e p="Conditions" t="Include">
@@ -632,6 +339,11 @@
             <e p="EnemyBehaviour.cs" t="Include" />
             <e p="HeroBehaviour.cs" t="Include" />
             <e p="SquadController.cs" t="Include" />
+          </e>
+          <e p="Animation" t="Include">
+            <e p="ButtonScripted.cs" t="Include" />
+            <e p="EnemyAniamtion.cs" t="Include" />
+            <e p="PlayerAnimation.cs" t="Include" />
           </e>
           <e p="Camera" t="Include">
             <e p="CameraController.cs" t="Include" />
@@ -686,13 +398,26 @@
           </e>
           <e p="Grid" t="Include">
             <e p="GridCombat.cs" t="Include" />
+            <e p="GridFloor.cs" t="Include" />
             <e p="GridInput.cs" t="Include" />
             <e p="GridLayer.cs" t="Include" />
             <e p="GridNode.cs" t="Include" />
             <e p="GridPathfinding.cs" t="Include" />
             <e p="GridUnit.cs" t="Include" />
           </e>
+          <e p="MainMenu" t="Include">
+            <e p="Buttons" t="Include">
+              <e p="ExitButton.cs" t="Include" />
+              <e p="ExitSettingsButton.cs" t="Include" />
+              <e p="ResetButton.cs" t="Include" />
+              <e p="SettingsButton.cs" t="Include" />
+              <e p="StartButton.cs" t="Include" />
+            </e>
+            <e p="RotateMenuCamera.cs" t="Include" />
+            <e p="RotateMenuPlanet.cs" t="Include" />
+          </e>
           <e p="Session.cs" t="Include" />
+          <e p="SettingsManager.cs" t="Include" />
           <e p="State" t="Include">
             <e p="Editor" t="Include">
               <e p="AIGraphEditor.cs" t="Include" />
@@ -771,13 +496,13 @@
       </e>
       <e p="Cross.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
+      <e p="NaughtyAttributes.Core.csproj" t="IncludeRecursive" />
+      <e p="NaughtyAttributes.Editor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Temp" t="ExcludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
       </e>
-      <e p="UnityAtoms.csproj" t="IncludeRecursive" />
-      <e p="UnityAtomsEditor.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>
