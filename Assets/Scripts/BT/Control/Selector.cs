@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Selector : Task
 {
-    public override TaskStatus Run(Agent agent, World wm)
+    public override TaskStatus Run(UnitController unit, World wm)
     {
         int failureCount = 0;
         foreach (Task task in children)
         {
             if (task.status != TaskStatus.Failure)
             {
-                TaskStatus childrenStatus = task.Run(agent, wm);
+                TaskStatus childrenStatus = task.Run(unit, wm);
                 if (childrenStatus == TaskStatus.Success)
                 {
                     status = TaskStatus.Success;

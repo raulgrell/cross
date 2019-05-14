@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 79ede028bb148ee4b9ae7ffd19b74818, type: 3}
   m_Name: Models
-  m_EditorClassIdentifier: Assembly-CSharp::GridModels
+  m_EditorClassIdentifier: 
   stones: {fileID: -927199367670048503, guid: fb8f9a54f4ed0d84ca968b203194f343, type: 3}
   rock: {fileID: -927199367670048503, guid: b5ef5cd17d020b94b95adbf8b32afaca, type: 3}
   redRock: {fileID: -927199367670048503, guid: 33b975a2faf9068459a8d9cafdf7972e, type: 3}

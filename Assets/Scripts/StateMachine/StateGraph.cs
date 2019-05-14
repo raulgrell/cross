@@ -73,6 +73,7 @@ public class StateNode : StateGraphNode
 
     public virtual void Run()
     {
+        Debug.Log("Default");
     }
     
     public void Trigger()

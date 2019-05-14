@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(HeroController))]
-public class HeroBehaviour : StateMachine<HeroController>
+[RequireComponent(typeof(BehaviourController))]
+public class HeroBehaviour : StateMachine<BehaviourController>
 {
 }

@@ -11,7 +11,7 @@ public class NonDeterministicSequence : Task
         shuffledOrder = false;
     }
 
-    public override TaskStatus Run(Agent agent, World wm)
+    public override TaskStatus Run(UnitController unit, World wm)
     {
         if (!shuffledOrder)
         {
@@ -24,7 +24,7 @@ public class NonDeterministicSequence : Task
         {
             if (task.status != TaskStatus.Success)
             {
-                TaskStatus childrenStatus = task.Run(agent, wm);
+                TaskStatus childrenStatus = task.Run(unit, wm);
                 if (childrenStatus == TaskStatus.Failure)
                 {
                     status = TaskStatus.Failure;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class CombatHealth : MonoBehaviour
 {
     public int health;
-    public healthUI healthUI;
+    public HealthUI healthUI;
     public EnemyHealthBar enemyBar;
 
     public bool Damage(int amount)

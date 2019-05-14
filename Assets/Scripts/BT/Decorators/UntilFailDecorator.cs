@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class UntilFailDecorator : Decorator
 {
-    public override TaskStatus Run(Agent agent, World wm)
+    public override TaskStatus Run(UnitController unit, World wm)
     {
         if (status == TaskStatus.None) status = TaskStatus.Running;
-        if (child.Run(agent, wm) == TaskStatus.Failure) status = TaskStatus.Success;
+        if (child.Run(unit, wm) == TaskStatus.Failure) status = TaskStatus.Success;
         return status;
     }
 }

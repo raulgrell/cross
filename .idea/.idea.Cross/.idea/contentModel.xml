@@ -189,9 +189,6 @@
               </e>
             </e>
           </e>
-          <e p="Observables" t="Include">
-            <e p="IntTextObservable.cs" t="Include" />
-          </e>
           <e p="SaveManager" t="Include">
             <e p="EncryptionUtil.cs" t="Include" />
             <e p="SaveableBase.cs" t="Include" />
@@ -292,7 +289,6 @@
         <e p="Scripts" t="Include">
           <e p="AI" t="Include">
             <e p="Actions" t="Include">
-              <e p="ActionAim.cs" t="Include" />
               <e p="ActionAttack.cs" t="Include" />
               <e p="ActionFollow.cs" t="Include" />
               <e p="ActionGrab.cs" t="Include" />
@@ -315,7 +311,20 @@
             </e>
             <e p="EnemyBehaviour.cs" t="Include" />
             <e p="HeroBehaviour.cs" t="Include" />
-            <e p="SquadController.cs" t="Include" />
+            <e p="Tasks" t="Include">
+              <e p="Actions" t="Include">
+                <e p="AimAction.cs" t="Include" />
+                <e p="AttackAction.cs" t="Include" />
+                <e p="EvadeAction.cs" t="Include" />
+                <e p="FollowAction.cs" t="Include" />
+                <e p="RunAction.cs" t="Include" />
+                <e p="TauntAction.cs" t="Include" />
+              </e>
+              <e p="Conditions" t="Include">
+                <e p="AdjacentCondition.cs" t="Include" />
+                <e p="DoorOpenCondition.cs" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="Animation" t="Include">
             <e p="ButtonScripted.cs" t="Include" />
@@ -323,28 +332,17 @@
             <e p="PlayerAnimation.cs" t="Include" />
           </e>
           <e p="BT" t="Include">
-            <e p="Actions" t="Include">
-              <e p="AttackAction.cs" t="Include" />
-              <e p="FollowAction.cs" t="Include" />
-              <e p="RunAction.cs" t="Include" />
-            </e>
-            <e p="Agent.cs" t="Include" />
-            <e p="Conditions" t="Include">
-              <e p="AdjacentCondition.cs" t="Include" />
-              <e p="DoorOpenCondition.cs" t="Include" />
-            </e>
             <e p="Control" t="Include">
               <e p="NonDeterministicSequence.cs" t="Include" />
               <e p="Parallel.cs" t="Include" />
               <e p="Selector.cs" t="Include" />
               <e p="Sequence.cs" t="Include" />
-              <e p="Task.cs" t="Include" />
             </e>
             <e p="Decorators" t="Include">
               <e p="Decorator.cs" t="Include" />
               <e p="UntilFailDecorator.cs" t="Include" />
             </e>
-            <e p="World.cs" t="Include" />
+            <e p="Task.cs" t="Include" />
           </e>
           <e p="Camera" t="Include">
             <e p="CameraController.cs" t="Include" />
@@ -400,9 +398,9 @@
           </e>
           <e p="Grid" t="Include">
             <e p="GridCombat.cs" t="Include" />
-            <e p="GridFloor.cs" t="Include" />
             <e p="GridInput.cs" t="Include" />
             <e p="GridLayer.cs" t="Include" />
+            <e p="GridModels.cs" t="Include" />
             <e p="GridNode.cs" t="Include" />
             <e p="GridPathfinding.cs" t="Include" />
             <e p="GridUnit.cs" t="Include" />
@@ -472,11 +470,13 @@
             <e p="PauseMenu.cs" t="Include" />
           </e>
           <e p="Units" t="Include">
+            <e p="BehaviourController.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />
-            <e p="HeroController.cs" t="Include" />
+            <e p="SquadController.cs" t="Include" />
             <e p="UnitController.cs" t="Include" />
           </e>
           <e p="World" t="Include">
+            <e p="World.cs" t="Include" />
             <e p="WorldInfo.cs" t="Include" />
           </e>
         </e>
