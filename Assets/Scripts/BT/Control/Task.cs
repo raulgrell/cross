@@ -1,0 +1,29 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public enum TaskStatus
+{
+    None,
+    Success,
+    Failure,
+    Running
+};
+
+public abstract class Task
+{
+    protected readonly List<Task> children;
+    public TaskStatus status;
+    public abstract TaskStatus Run(Agent agent, World wm);
+
+    protected Task()
+    {
+        children = new List<Task>();
+        status = TaskStatus.None;
+    }
+
+    public void AddChildren(Task task)
+    {
+        children.Add(task);
+    }
+}

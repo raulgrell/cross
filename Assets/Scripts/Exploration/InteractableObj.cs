@@ -12,25 +12,27 @@ public class InteractableObj : MonoBehaviour
     private PlayerInteraction player;
     private Transform target;
 
+    private new Camera camera;
+    
     public float getGroundedY => groundedY;
     public Vector2Int getGridPos { get; set; }
 
     private void Start()
     {
+        camera = Camera.main;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteraction>();
         Vector3 actualWorldPosition = new Vector3(transform.position.x, grid.transform.position.y, transform.position.z);
         getGridPos = grid.WorldToCell(actualWorldPosition);
-        grid.nodes[getGridPos.x, getGridPos.y].walkable = false;
+        grid.Nodes[getGridPos.x, getGridPos.y].walkable = false;
     }
 
     private void Update()
     {
-
         switch (state)
         {
             case 0:
                 Vector3 pos = new Vector3();
-                if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit info))
+                if (Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out RaycastHit info))
                 {
                     target = info.transform;
                     pos = info.transform.position;
@@ -44,7 +46,7 @@ public class InteractableObj : MonoBehaviour
                     else
                         transform.position = Vector3.MoveTowards(transform.position, pos, 0.5f);
 
-                    grid.nodes[getGridPos.x, getGridPos.y].walkable = false;
+                    grid.Nodes[getGridPos.x, getGridPos.y].walkable = false;
                     player.gridUnit.speed = 16;
                 }
                 if (transform.position == pos)

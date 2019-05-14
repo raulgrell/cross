@@ -4,589 +4,76 @@
     <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/AtomicTags.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/AtomicTags/AtomicTags.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/AtomicTags/AtomicTags.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/AtomicTags/ReadOnlyList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/AtomicTags/ReadOnlyList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/AtomicUI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/AtomicUI/UIContainer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/AtomicUI/UIContainer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/ConditionalGameActionHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/ConditionalGameActionHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/CreateOnAwake.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/CreateOnAwake/CreateEventOnAwake.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/CreateOnAwake/CreateEventOnAwake.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/CreateOnAwake/CreateListOnAwake.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/CreateOnAwake/CreateListOnAwake.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/CreateOnAwake/CreateVariableOnAwake.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/CreateOnAwake/CreateVariableOnAwake.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/GameEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/GameEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/GameEventListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/GameEventListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/IGameEventListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/IGameEventListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/ScriptableObjectGameAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/ScriptableObjectGameAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/ScriptableObjectList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/ScriptableObjectList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/ScriptableObjectReference.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/ScriptableObjectReference.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/SetVariableValue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/SetVariableValue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable/EquatableScriptableObjectVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable/EquatableScriptableObjectVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable/IWithApplyChange.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable/IWithApplyChange.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable/IWithOldValue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable/IWithOldValue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable/IWithValue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable/IWithValue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable/ScriptableObjectVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable/ScriptableObjectVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable/ScriptableObjectVariableBase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Base/Variable/ScriptableObjectVariableBase.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolBoolEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolBoolEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolConstant.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolConstant.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolReference.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolReference.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/BoolVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/ConditionalBoolAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/ConditionalBoolAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/SetBoolVariableValue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/SetBoolVariableValue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/UnityBoolEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Bool/UnityBoolEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider/ColliderEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider/ColliderEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider/ColliderGameObjectAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider/ColliderGameObjectAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider/ColliderGameObjectEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider/ColliderGameObjectEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider/ColliderGameObjectListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider/ColliderGameObjectListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider/UnityColliderGameObjectEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider/UnityColliderGameObjectEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DEventAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DEventAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DGameObjectAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DGameObjectAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DGameObjectEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DGameObjectEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DGameObjectListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DGameObjectListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DListAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DListAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DListGameObjectAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DListGameObjectAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/Collider2DListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/CreateCollider2DEventOnAwake.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/CreateCollider2DEventOnAwake.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/CreateCollider2DListOnAwake.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/CreateCollider2DListOnAwake.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/UnityCollider2DEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/UnityCollider2DEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/UnityCollider2DGameObjectEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Collider2D/UnityCollider2DGameObjectEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorColorEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorColorEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorConstant.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorConstant.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorReference.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorReference.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ColorVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ConditionalColorAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/ConditionalColorAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/SetColorVariableValue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/SetColorVariableValue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/UnityColorEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Color/UnityColorEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Editor/GameEventEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Editor/GameEventEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Editor/ReferenceDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Editor/ReferenceDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Editor/UnityAtomsEditor.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Editor/UnityAtomsEditor.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/ArrayExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/ArrayExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/CameraExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/CameraExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/GameObjectExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/GameObjectExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/ListExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/ListExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/MonoBehaviourExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/MonoBehaviourExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/TransformExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/TransformExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/Vector2Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/Vector2Extensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/Vector3Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Extensions/Vector3Extensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/ConditionalFloatAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/ConditionalFloatAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatConstant.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatConstant.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatFloatEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatFloatEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatReference.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatReference.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/FloatVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/SetFloatVariableValue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/SetFloatVariableValue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/UnityFloatEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Float/UnityFloatEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolBoolFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolBoolFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolColorFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolColorFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolFloatFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolFloatFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolGameObjectFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolGameObjectFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolIntFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolIntFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolVector2Function.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolVector2Function.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolVector3Function.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolVector3Function.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolVoidFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/BoolVoidFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/GameObjectFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/GameObjectFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/GameObjectGameObjectFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/GameObjectGameObjectFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/GameObjectVector3QuaternionFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/GameObjectVector3QuaternionFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/IntFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/IntFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/ScriptableObjectFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameFunctions/ScriptableObjectFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectGameObjectEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectGameObjectEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectListAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectListAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectReference.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectReference.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GameObjectVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GetUnusedGameObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/GetUnusedGameObject.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/SetGameObjectVariableValue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/SetGameObjectVariableValue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/UnityGameObjectEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/GameObject/UnityGameObjectEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/ConditionalIntAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/ConditionalIntAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntConstant.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntConstant.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntIntEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntIntEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntReference.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntReference.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/IntVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/SetIntVariableValue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/SetIntVariableValue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/UnityIntEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Int/UnityIntEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/BoolTouchUserInputFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/BoolTouchUserInputFunction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/ConditionalTouchUserInputAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/ConditionalTouchUserInputAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/DetectTap.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/DetectTap.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInput.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputGameEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputGameEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputTouchUserInputAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputTouchUserInputAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputTouchUserInputGameEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputTouchUserInputGameEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputTouchUserInputListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputTouchUserInputListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/TouchUserInputVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/UnityTouchUserInputEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/UnityTouchUserInputEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/UpdateTouchUserInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Mobile/TouchUserInput/UpdateTouchUserInput.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Molecules.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Molecules/Timer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Molecules/Timer/StartTimer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Molecules/Timer/StartTimer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Molecules/Timer/StopTimer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Molecules/Timer/StopTimer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Molecules/Timer/Timer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Molecules/Timer/Timer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Molecules/Timer/UpdateTimer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Molecules/Timer/UpdateTimer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/Collider2DHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/Collider2DHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/ColliderHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/ColliderHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/MonoHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/MonoHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnAwakeHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnAwakeHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnButtonClickHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnButtonClickHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnDestroyHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnDestroyHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnFixedUpdateHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnFixedUpdateHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnLateUpdateHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnLateUpdateHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnPointerDownHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnPointerDownHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnStartHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnStartHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnTriggerEnter2DHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnTriggerEnter2DHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnTriggerEnterHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnTriggerEnterHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnTriggerExit2DHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnTriggerExit2DHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnTriggerStay2DHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnTriggerStay2DHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnTriggerStayHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnTriggerStayHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnUpdateHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/OnUpdateHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/VoidHook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/MonoHooks/VoidHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/SceneManagement.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/SceneManagement/ChangeScene.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/SceneManagement/ChangeScene.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/CreateStringVariableOnAwake.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/CreateStringVariableOnAwake.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/SetStringVariableValue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/SetStringVariableValue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringConstant.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringConstant.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringReference.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringReference.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringStringAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringStringAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringStringEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringStringEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringStringListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringStringListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringVariableAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringVariableAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringVariableGameObjectAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/StringVariableGameObjectAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/UnityStringEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/String/UnityStringEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/UnityAtoms.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/UnityAtoms.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Utils.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Utils/CreateAssetMenuUtils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Utils/CreateAssetMenuUtils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Utils/DynamicAtoms.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Utils/DynamicAtoms.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Utils/Vector2Utils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Utils/Vector2Utils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/ConditionalVector2Action.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/ConditionalVector2Action.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/SetVector2VariableValue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/SetVector2VariableValue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/UnityVector2Event.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/UnityVector2Event.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Action.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Action.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Constant.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Constant.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Event.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Event.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2List.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2List.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Listener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Listener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Reference.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Reference.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Variable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Variable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Vector2Event.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector2/Vector2Vector2Event.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/ConditionalVector3Action.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/ConditionalVector3Action.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/SetVector3VariableValue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/SetVector3VariableValue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/UnityVector3Event.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/UnityVector3Event.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Action.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Action.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Constant.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Constant.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Event.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Event.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3List.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3List.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Listener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Listener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Reference.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Reference.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Variable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Variable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Vector3Event.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Vector3/Vector3Vector3Event.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/ConditionalVoidAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/ConditionalVoidAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/UnityVoidEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/UnityVoidEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/UnityVoidGameObjectEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/UnityVoidGameObjectEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/Void.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/Void.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/VoidAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/VoidAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/VoidEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/VoidEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/VoidGameObjectAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/VoidGameObjectAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/VoidGameObjectEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/VoidGameObjectEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/VoidGameObjectListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/VoidGameObjectListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/VoidListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/Void/VoidListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Atoms/package.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Attributes/NonNull.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Attributes/NonNull/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Attributes/NonNull/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Attributes/NonNull/LICENSE.md.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Attributes/NonNull/NonNullAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Attributes/NonNull/NonNullAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Attributes/NonNull/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Attributes/NonNull/README.md.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Core/DrawConditionAttributes/HideIfAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Core/DrawConditionAttributes/HideIfAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Core/DrawConditionAttributes/ShowIfAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Core/DrawConditionAttributes/ShowIfAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Core/DrawerAttributes/DisableIfAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Core/DrawerAttributes/DisableIfAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Core/DrawerAttributes/EnableIfAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Core/DrawerAttributes/EnableIfAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/Attributes/BaseAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/Attributes/BaseAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/CodeGeneration/PropertyDrawerDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/CodeGeneration/PropertyDrawerDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/Editors/InspectorEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/Editors/InspectorEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/FieldDrawers/ShowNonSerializedFieldFieldDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/FieldDrawers/ShowNonSerializedFieldFieldDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/MethodDrawers/ButtonMethodDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/MethodDrawers/ButtonMethodDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/NativePropertyDrawers/ShowNativePropertyNativePropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/NativePropertyDrawers/ShowNativePropertyNativePropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawConditions/HideIfPropertyDrawCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawConditions/HideIfPropertyDrawCondition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawConditions/ShowIfPropertyDrawCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawConditions/ShowIfPropertyDrawCondition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/DisableIfPropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/DisableIfPropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/DropdownPropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/DropdownPropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/EnableIfPropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/EnableIfPropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/MinMaxSliderPropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/MinMaxSliderPropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/ProgressBarPropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/ProgressBarPropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/ReorderableListPropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/ReorderableListPropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/ResizableTextAreaPropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/ResizableTextAreaPropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/ShowAssetPreviewPropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/ShowAssetPreviewPropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/SliderPropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyDrawers/SliderPropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyMetas/InfoBoxPropertyMeta.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyMetas/InfoBoxPropertyMeta.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyMetas/OnValueChangedPropertyMeta.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyMetas/OnValueChangedPropertyMeta.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyValidators/MaxValuePropertyValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyValidators/MaxValuePropertyValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyValidators/MinValuePropertyValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyValidators/MinValuePropertyValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyValidators/RequiredPropertyValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyValidators/RequiredPropertyValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyValidators/ValidateInputPropertyValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/PropertyValidators/ValidateInputPropertyValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/Utility/EditorDrawUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NaughtyAttributes/Editor/Utility/EditorDrawUtility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Tile3D/Tile3D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Tile3D/Tile3D.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/EditorTools.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/EditorTools/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/EditorTools/Editor/ComponentContextMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/EditorTools/Editor/ComponentContextMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/EditorTools/Editor/ComponentList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/EditorTools/Editor/ComponentList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/EditorTools/Editor/RecordVideoWindow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/EditorTools/Editor/RecordVideoWindow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/EditorTools/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/EditorTools/Scripts/RecordVideo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/EditorTools/Scripts/RecordVideo.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIBase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIBase.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIBaseContainer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIBaseContainer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIButton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIButton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIColorField.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIColorField.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIDefaultInspector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIDefaultInspector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIDelayedIntField.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIDelayedIntField.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIEnumPopup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIEnumPopup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIFoldout.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIFoldout.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIHorizontal.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIHorizontal.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIIntSlider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIIntSlider.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUILabel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUILabel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIObjectField.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIObjectField.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIPopup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIPopup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIScrollView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIScrollView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUISlider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUISlider.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUISpace.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUISpace.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUITextField.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUITextField.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUITextureField.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUITextureField.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIToggle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIToggle.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIToolbar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIToolbar.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIVector3Field.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIVector3Field.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIVertical.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/GUIWrapper/Editor/GUIVertical.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/README.md.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/Versioning.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/Versioning/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/Versioning/Editor/AssetUpdateWindow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/Versioning/Editor/AssetUpdateWindow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/Versioning/Editor/AssetUpdater.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/Versioning/Editor/AssetUpdater.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/Versioning/Editor/AssetVersion.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/Versioning/Editor/AssetVersion.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/Versioning/Editor/AssetVersionDownloader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/Versioning/Editor/AssetVersionDownloader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/Versioning/Editor/SemanticVersion.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityTools/Versioning/Editor/SemanticVersion.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Melee.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Combat/Melee.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Melee.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Combat/Melee.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Ranged.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Combat/Ranged.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Special.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Combat/Special.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AnimationScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Decorator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Decorator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/DoorOpenCondition.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/DoorOpenCondition.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/MoveAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/MoveAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/NonDeterministicSequence.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/NonDeterministicSequence.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/OpenDoorAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/OpenDoorAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Parallel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Parallel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Selector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Selector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Sequence.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Sequence.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Task.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Task.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/UntilFailDecorator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/UntilFailDecorator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EnemyHealthBar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EnemyHealthBar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grid/Floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Grid/Floor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions/FollowAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions/MoveAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions/OpenDoorAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions/OpenDoorAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Agent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Agent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Conditions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Conditions/DoorOpenCondition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Conditions/DoorOpenCondition.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Control.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/NonDeterministicSequence.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/NonDeterministicSequence.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/Parallel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/Parallel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/Selector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/Selector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/Sequence.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/Sequence.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/Task.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/Task.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Decorators.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Decorators/Decorator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Decorators/Decorator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Decorators/UntilFailDecorator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/Decorators/UntilFailDecorator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/World.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BT/World.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Exploration/InteractableObj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Exploration/InteractableObj.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Exploration/Player/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Exploration/Player/PlayerInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Attacks/Melee/BasicAttack.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Attacks/Melee/BasicAttack.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Attacks/Melee/BlockAttack.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Attacks/Melee/BlockAttack.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Attacks/Melee/LongAttack.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Attacks/Melee/LongAttack.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Attacks/Melee/SlashAttack.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Attacks/Melee/SlashAttack.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Attacks/Melee/SpinAttack.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Attacks/Melee/SpinAttack.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/Editor/AIGraphEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/Editor/AIGraphEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/Editor/StateGraphEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/Editor/StateGraphEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericVariable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericVariable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Branch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Branch.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Chat.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Chat.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/DialogueBaseNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/DialogueBaseNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Editor/BranchEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Editor/BranchEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Editor/ChatEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Editor/ChatEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Editor/EventEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Editor/EventEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Event.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Event.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/StateGraph.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/StateGraph.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/StateMachine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/StateMachine.cs.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -597,222 +84,193 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitCondition.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/EnemyBehaviour.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="96">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <marker date="1554216296358" expanded="false" signature="6:78" ph="..." />
-                <marker date="1554216296358" expanded="true" signature="106:145" ph="{...}" />
-                <marker date="1554216296358" expanded="true" signature="199:373" ph="{...}" />
-                <marker date="1554216296358" expanded="true" signature="256:319" ph="{...}" />
+                <marker date="1557597479330" expanded="false" signature="6:78" ph="..." />
+                <marker date="1557597479330" expanded="true" signature="183:187" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitState.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="32">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
-                <marker date="1557764812971" expanded="false" signature="6:78" ph="..." />
-                <marker date="1557764812971" expanded="true" signature="165:174" ph="{...}" />
+                <marker date="1557796798673" expanded="false" signature="6:160" ph="..." />
+                <marker date="1557796798673" expanded="true" signature="200:5243" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="569:611" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="629:1100" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="767:1094" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="823:1084" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="1133:1600" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="1303:1594" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="1359:1584" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="1644:1721" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="1764:1817" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="1859:1943" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="1996:2159" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="2217:2672" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="2732:2829" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="2904:3448" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="3004:3414" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="3064:3404" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="3508:3807" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="3615:3780" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="3868:4363" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="3922:4335" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="4438:4644" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="4708:5241" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="4794:4853" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="4945:5235" ph="{...}" />
+                <marker date="1557796798673" expanded="true" signature="5001:5225" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Observables/IntTextObservable.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="144">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
-                <marker date="1553596766734" expanded="false" signature="6:40" ph="..." />
-                <marker date="1553596766734" expanded="true" signature="60:725" ph="{...}" />
-                <marker date="1553596766734" expanded="true" signature="67:230" ph="/// Int implementation of the SerializableCallback class. Changes the text dynamically using passed-in int-return ... " />
-                <marker date="1553596766734" expanded="true" signature="318:625" ph="{...}" />
-                <marker date="1553596766734" expanded="true" signature="429:619" ph="{...}" />
-                <marker date="1553596766734" expanded="true" signature="471:546" ph="{...}" />
-                <marker date="1553596766734" expanded="true" signature="711:723" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridFloor.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding>
-                <marker date="1557765372262" expanded="true" signature="6:78" ph="..." />
-                <marker date="1557765372262" expanded="true" signature="190:380" ph="{...}" />
+                <marker date="1557796946999" expanded="false" signature="6:124" ph="..." />
+                <marker date="1557796946999" expanded="true" signature="151:192" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="231:3765" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="532:705" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="748:918" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="960:1069" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="1123:1462" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="1510:1592" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="1643:2007" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="2065:2161" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="2180:3211" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="2258:3205" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="2796:2956" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="3244:3365" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="3413:3611" ph="{...}" />
+                <marker date="1557796946999" expanded="true" signature="3661:3763" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/Models.asset">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/InteractableObj.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1986">
-              <caret line="163" selection-start-line="163" selection-end-line="163" />
+            <state relative-caret-position="144">
+              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
               <folding>
-                <marker date="1557765689414" expanded="false" signature="6:160" ph="..." />
-                <marker date="1557765689414" expanded="true" signature="200:5204" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="552:1023" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="690:1017" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="746:1007" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="1056:1523" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="1226:1517" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="1282:1507" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="1567:1644" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="1687:1740" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="1782:1866" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="1919:2082" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="2140:2595" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="2655:2752" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="2827:3371" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="2927:3337" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="2987:3327" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="3431:3730" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="3538:3703" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="3791:4286" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="3845:4258" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="4361:4567" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="4631:5202" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="4717:4765" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="4906:5196" ph="{...}" />
-                <marker date="1557765689414" expanded="true" signature="4962:5186" ph="{...}" />
+                <marker date="1557796946181" expanded="false" signature="6:78" ph="..." />
+                <marker date="1557796946181" expanded="true" signature="124:2924" ph="{...}" />
+                <marker date="1557796946181" expanded="true" signature="483:867" ph="{...}" />
+                <marker date="1557796946181" expanded="true" signature="894:2922" ph="{...}" />
+                <marker date="1557796946181" expanded="true" signature="923:2907" ph="{...}" />
+                <marker date="1557796946181" expanded="true" signature="1102:1817" ph="{...}" />
+                <marker date="1557796946181" expanded="true" signature="1371:1551" ph="{...}" />
+                <marker date="1557796946181" expanded="true" signature="1898:1977" ph="{...}" />
+                <marker date="1557796946181" expanded="true" signature="2472:2752" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionAim.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/Player/PlayerInteraction.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="5" selection-start-line="5" selection-end-line="6" />
+            <state relative-caret-position="144">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
               <folding>
-                <marker date="1554911997641" expanded="false" signature="6:102" ph="..." />
-                <marker date="1554911997641" expanded="true" signature="210:325" ph="{...}" />
-                <marker date="1554911997641" expanded="true" signature="263:323" ph="{...}" />
+                <marker date="1557796947009" expanded="false" signature="6:126" ph="..." />
+                <marker date="1557796947009" expanded="true" signature="174:4447" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="638:744" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="767:3669" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="825:2022" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="944:2011" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="1029:1997" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="1221:1407" ph="/* Debug.Log(Vector2.Distance(gridUnit.position, currentObj.getGridPos)); ... */" />
+                <marker date="1557796947009" expanded="true" signature="1503:1979" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="2076:2647" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="2099:2332" ph="/* currentObj.transform.position = new Vector3(currentObj.transform.position.x, currentObj.getGroundedY, currentO ... */" />
+                <marker date="1557796947009" expanded="true" signature="2413:2624" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="2701:3286" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="2819:3276" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="2992:3262" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="3344:3602" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="3713:3860" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="3889:4212" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="3921:4151" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="4237:4445" ph="{...}" />
+                <marker date="1557796947009" expanded="true" signature="4280:4413" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Tile3D/Tile3D.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144">
-              <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+            <state relative-caret-position="299">
+              <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
               <folding>
-                <marker date="1557765030947" expanded="false" signature="6:78" ph="..." />
-                <marker date="1557765030947" expanded="true" signature="256:9265" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="337:453" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="563:650" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="723:1534" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="930:984" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="1042:1097" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="1146:1426" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="1191:1389" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="1469:1528" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="1540:1689" ph="/* used to build the meshes ... */" />
-                <marker date="1557765030947" expanded="true" signature="1719:4850" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="2155:2336" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="2402:2595" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="2676:4559" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="3047:4041" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="4062:4156" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="4586:4844" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="5029:5233" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="5047:5227" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="5264:5479" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="5282:5473" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="5757:6625" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="5988:6245" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="6298:6349" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="6408:6599" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="6690:7193" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="6762:7164" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="6928:7154" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="7233:7392" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="7304:7386" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="7428:7552" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="7587:7761" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="7788:8636" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="7982:8405" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="8145:8395" ph="{...}" />
-                <marker date="1557765030947" expanded="true" signature="8720:9263" ph="{...}" />
+                <marker date="1557796947018" expanded="false" signature="6:125" ph="..." />
+                <marker date="1557796947018" expanded="true" signature="150:237" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="278:5076" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="661:727" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="757:878" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="797:872" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="896:1148" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="1167:2113" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="1205:2060" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="2194:2572" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="2308:2486" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="2602:4669" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="2721:4663" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="2887:4653" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="3293:4639" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="3470:4476" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="3691:4186" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="3767:4054" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="4260:4454" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="4522:4621" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="4702:4930" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="4955:5002" ph="{...}" />
+                <marker date="1557796947018" expanded="true" signature="5027:5074" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Tile3D/TestTiles.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/SquadController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <marker date="1557597480250" expanded="false" signature="6:78" ph="..." />
+                <marker date="1557597480250" expanded="true" signature="102:142" ph="{...}" />
+                <marker date="1557597480250" expanded="true" signature="167:201" ph="{...}" />
+                <marker date="1557597480250" expanded="true" signature="247:427" ph="{...}" />
+                <marker date="1557597480250" expanded="true" signature="378:425" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Plugins/SerializableDictionary/SerializableHashSet.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/HeroBehaviour.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="48">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
-                <marker date="1553295359808" expanded="false" signature="38:160" ph="..." />
-                <marker date="1553295359808" expanded="true" signature="207:586" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="243:255" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="337:584" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="368:388" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="442:462" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="558:578" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="759:4465" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="854:904" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="949:1002" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="1041:1169" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="1109:1163" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="1207:1471" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="1241:1465" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="1357:1427" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="1508:1709" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="1635:1703" ph="{...}" />
-                <marker date="1553295359808" expanded="false" signature="1715:3923" ph="ISet&lt;TValue&gt;" />
-                <marker date="1553295359808" expanded="true" signature="1757:1821" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="1849:1918" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="1947:2007" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="2057:2118" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="2171:2235" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="2291:2365" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="2423:2499" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="2549:2617" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="2669:2739" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="2787:2853" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="2902:2969" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="3028:3098" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="3147:3207" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="3244:3297" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="3322:3373" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="3407:3472" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="3523:3592" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="3624:3687" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="3730:3796" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="3841:3907" ph="{...}" />
-                <marker date="1553295359808" expanded="false" signature="3929:4113" ph="IDeserializationCallback" />
-                <marker date="1553295359808" expanded="true" signature="4011:4097" ph="{...}" />
-                <marker date="1553295359808" expanded="false" signature="4119:4463" ph="ISerializable" />
-                <marker date="1553295359808" expanded="true" signature="4225:4288" ph="{...}" />
-                <marker date="1553295359808" expanded="true" signature="4369:4447" ph="{...}" />
+                <marker date="1553596766797" expanded="false" signature="6:78" ph="..." />
+                <marker date="1553596766797" expanded="true" signature="180:184" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -846,6 +304,7 @@
       <find>newSize =</find>
       <find>class GameEvent</find>
       <find>CreateAssetMenu</find>
+      <find>FollowAction</find>
     </findStrings>
     <replaceStrings>
       <replace>panels</replace>
@@ -860,6 +319,8 @@
       <replace>targets</replace>
       <replace>show</replace>
       <replace>return</replace>
+      <replace>AttackAction</replace>
+      <replace>RunAction</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -869,21 +330,62 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Cutscene/Panel.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/SaveManager/SaveManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Editor/StateGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Components/UpdateRegistry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/Hierarchy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridFloor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionGrab.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/UnitController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Containers/Heap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Attributes/ReadOnlyAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SettingsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Editor/TargetDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/HeroController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Editor/ReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C7033418-969C-409C-8CD1-4950555A0E6C/0c/033e3f42/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Extensions/VectorExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionAttack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionRun.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionStop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Editor/RangedAttackEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableDictionary/SerializableHashSet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/EnemyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableDictionary/SerializableDictionary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionDistance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionManhattan.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionVisibility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableDictionary/Editor/SerializableDictionaryPropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Editor/TargetFrameDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/HeroBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/QuickToggle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableCallback/Attributes/TargetConstraintAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableCallback/Editor/SerializableCallbackDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/c3/c9bab14c/Type.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableCallback/SerializableCallback.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/c9/11295b8a/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableCallback/SerializableCallbackBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraObstacleFade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableCallback/SerializableEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/Models.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Tree/Editor/TreeDataModel/TreeElement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/12/8b2c7bf0/Type.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Tree/Editor/TreeDataModel/TreeElementUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Editor/SpecialAttackEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Attributes/ExpandableAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/SpecificObjects/DoorScripts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/Player/PlayerInteraction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionWait.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/Effects/Effect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/healthUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/World/WorldInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/InteractableObj.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Editor/VariableDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/SquadController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Components/UpdateRegistry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Containers/Heap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Editor/ReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Types/StateVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Types/ColorVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/ExpandableAttributeDrawer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -891,17 +393,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB479E42-A47D-4894-81FE-8B563C27CBB3/01/47dc993f/EditorGUILayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Types/BoolVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Types/PrefabVariable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Extensions/VectorExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Types/PrefabsVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Types/Vector2Variable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionAim.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionAttack.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Types/ConditionVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/ObjectTableWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionRun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Types/IntVariable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionStop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Session.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Types/FloatVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -910,103 +407,42 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Types/StringVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/Effects/MovementEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/Effects/RotationEffect.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Editor/RangedAttackEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/Effects/ScaleEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../AI/Assets/Genetic/GeneticAlgorithm.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableDictionary/SerializableHashSet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/EnemyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableDictionary/SerializableDictionary.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericVariable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionDistance.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionHealth.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionManhattan.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionVisibility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Editor/ChatEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Editor/EventEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Editor/BranchEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableDictionary/Editor/SerializableDictionaryPropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Editor/TargetFrameDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/StateGraph.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/HeroBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Editor/AttackEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Event.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/DialogueBaseNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Branch.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Nodes/Chat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Variable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Units/Conditions/VisibilityNone.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/QuickToggle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Reference.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableCallback/Attributes/TargetConstraintAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Units/Conditions/CanSeeTarget.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableCallback/Editor/SerializableCallbackDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/c3/c9bab14c/Type.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableCallback/SerializableCallback.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Attacks/RangedAttack.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/c9/11295b8a/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableCallback/SerializableCallbackBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Attacks/UnitAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Attacks/SpecialAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Attacks/MeleeAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionPath.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraObstacleFade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C7033418-969C-409C-8CD1-4950555A0E6C/ef/04ecca43/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/DockableSnapWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SerializableCallback/SerializableEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Components/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Tile3D/Tile3D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatThreat.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/Models.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Agent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatProjectile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/World.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Tree/Editor/TreeDataModel/TreeElement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/12/8b2c7bf0/Type.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Tile3D/Editor/Tile3DEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Tree/Editor/TreeDataModel/TreeElementUtility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Editor/SpecialAttackEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Attributes/ExpandableAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4641B023-C240-46AB-8991-0597E580442A/71/8845b67b/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Editor/AIGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/SpecificObjects/DoorScripts.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Components/ScriptableSingleton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/Player/PlayerInteraction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Conditions/ConditionTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Containers/RingBuffer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Components/DontDestroyOnLoad.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionWait.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneSystem/Effects/Effect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C7033418-969C-409C-8CD1-4950555A0E6C/7d/4450861b/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/healthUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/World/WorldInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/InteractableObj.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridPathfinding.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/State/Editor/VariableDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/SquadController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Observables/IntTextObservable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericVariable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/State/Types/Vector3Variable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/State/Variable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/State/Types/ColorVariable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/State/Types/ConditionVariable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/State/Types/FloatVariable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/State/Types/IntVariable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/State/Types/PrefabsVariable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/State/Types/PrefabVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/State/Types/StateVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/State/Types/StringVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/State/Types/TransitionVariable.cs" />
@@ -1024,7 +460,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Combat/CombatThreat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/State/StateMachine/Generic/GenericAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Exploration/InteractableObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/SquadController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Task.cs" />
@@ -1033,7 +468,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/OpenDoorAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Selector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Sequence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Agent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Decorator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/UntilFailDecorator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Agent1.cs" />
@@ -1048,7 +482,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Base/UnitState.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Tile3D/Tile3D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridFloor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions/MoveAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Agent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Conditions/DoorOpenCondition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions/FollowAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions/AttackAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions/RunAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BT/Conditions/AdjacentCondition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Exploration/Player/PlayerInteraction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Exploration/InteractableObj.cs" />
       </list>
     </option>
   </component>
@@ -1112,7 +557,7 @@
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="AI" type="1045f7f1:UnityExplorerNode" />
-              <item name="BT" type="1045f7f1:UnityExplorerNode" />
+              <item name="Conditions" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -1201,12 +646,12 @@
       <workItem from="1557315964089" duration="7083000" />
       <workItem from="1557600648260" duration="1198000" />
       <workItem from="1557754586213" duration="901000" />
-      <workItem from="1557763974515" duration="2350000" />
+      <workItem from="1557763974515" duration="6695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363154000" />
+    <option name="totallyTimeSpent" value="367499000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1219,6 +664,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14925373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1347,167 +793,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/State/StateMachine/StateGraph.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <marker date="1557317403507" expanded="false" signature="6:79" ph="..." />
-            <marker date="1557317403507" expanded="true" signature="123:289" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="332:828" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="457:717" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="872:906" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="968:1027" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="1146:1284" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="1192:1204" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="1248:1282" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="1362:1957" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="1854:1866" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="1897:1955" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="2054:2413" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="2364:2411" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="2492:2545" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="2628:2726" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="2784:2817" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="2864:3330" ph="{...}" />
-            <marker date="1557317403507" expanded="true" signature="2920:3328" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/InteractableObj.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-          <folding>
-            <marker date="1557317402189" expanded="false" signature="6:78" ph="..." />
-            <marker date="1557317402189" expanded="true" signature="124:1697" ph="{...}" />
-            <marker date="1557317402189" expanded="true" signature="389:743" ph="{...}" />
-            <marker date="1557317402189" expanded="true" signature="770:1695" ph="{...}" />
-            <marker date="1557317402189" expanded="true" signature="808:1689" ph="{...}" />
-            <marker date="1557317402189" expanded="true" signature="990:1656" ph="{...}" />
-            <marker date="1557317402189" expanded="true" signature="1067:1638" ph="{...}" />
-            <marker date="1557317402189" expanded="true" signature="1269:1616" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1264">
-          <caret line="86" selection-start-line="86" selection-end-line="87" selection-end-column="23" />
-          <folding>
-            <marker date="1554929855420" expanded="false" signature="6:125" ph="..." />
-            <marker date="1554929855420" expanded="true" signature="150:210" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="251:3403" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="603:669" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="699:820" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="739:814" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="838:951" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="970:1795" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="1008:1742" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="1838:2996" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="2019:2990" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="2197:2980" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="2582:2966" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="2685:2948" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="3029:3257" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="3282:3329" ph="{...}" />
-            <marker date="1554929855420" expanded="true" signature="3354:3401" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <marker date="1557317403504" expanded="true" signature="6:32" ph="..." />
-            <marker date="1557317403504" expanded="true" signature="57:97" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="174:3229" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="314:412" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="431:2969" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="467:1609" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="569:731" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="752:965" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="1633:2963" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="1732:2240" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="1902:2057" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="2082:2222" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="2481:2611" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="2721:2851" ph="{...}" />
-            <marker date="1557317403504" expanded="true" signature="3012:3227" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/SquadController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding>
-            <marker date="1557319806589" expanded="false" signature="6:78" ph="..." />
-            <marker date="1557319806589" expanded="true" signature="102:142" ph="{...}" />
-            <marker date="1557319806589" expanded="true" signature="167:201" ph="{...}" />
-            <marker date="1557319806589" expanded="true" signature="247:427" ph="{...}" />
-            <marker date="1557319806589" expanded="true" signature="378:425" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/DoorOpenCondition.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/MoveAction.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/OpenDoorAction.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Task.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Selector.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/World/WaypointInfo.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/World/DoorInfo.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Agent.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#78#0" expanded="true" />
-            <marker date="1557597480213" expanded="true" signature="274:909" ph="{...}" />
-            <marker date="1557597480213" expanded="true" signature="928:1129" ph="{...}" />
-            <marker date="1557597480213" expanded="true" signature="1033:1123" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Parallel.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Sequence.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/NonDeterministicSequence.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Decorator.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/UntilFailDecorator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/World.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <marker date="1557597480248" expanded="false" signature="6:78" ph="..." />
-            <marker date="1557597480248" expanded="true" signature="114:1148" ph="{...}" />
-            <marker date="1557597480248" expanded="true" signature="261:478" ph="{...}" />
-            <marker date="1557597480248" expanded="true" signature="305:472" ph="{...}" />
-            <marker date="1557597480248" expanded="true" signature="522:739" ph="{...}" />
-            <marker date="1557597480248" expanded="true" signature="566:733" ph="{...}" />
-            <marker date="1557597480248" expanded="true" signature="784:944" ph="{...}" />
-            <marker date="1557597480248" expanded="true" signature="828:915" ph="{...}" />
-            <marker date="1557597480248" expanded="true" signature="991:1146" ph="{...}" />
-            <marker date="1557597480248" expanded="true" signature="1044:1118" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/EnemyBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <marker date="1557597479330" expanded="false" signature="6:78" ph="..." />
-            <marker date="1557597479330" expanded="true" signature="183:187" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1521,21 +810,6 @@
             <marker date="1557757000771" expanded="true" signature="209:1402" ph="{...}" />
             <marker date="1557757000771" expanded="true" signature="609:1133" ph="{...}" />
             <marker date="1557757000771" expanded="true" signature="1191:1400" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionAttack.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <marker date="1554911997643" expanded="false" signature="6:173" ph="..." />
-            <marker date="1554911997643" expanded="true" signature="299:863" ph="{...}" />
-            <marker date="1554911997643" expanded="true" signature="441:475" ph="{...}" />
-            <marker date="1554911997643" expanded="true" signature="527:727" ph="{...}" />
-            <marker date="1554911997643" expanded="true" signature="556:664" ph="{...}" />
-            <marker date="1554911997643" expanded="true" signature="761:861" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1674,17 +948,6 @@
             <marker date="1557597475519" expanded="true" signature="146:379" ph="{...}" />
             <marker date="1557597475519" expanded="true" signature="234:291" ph="{...}" />
             <marker date="1557597475519" expanded="true" signature="324:377" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/HeroBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <marker date="1553596766797" expanded="false" signature="6:78" ph="..." />
-            <marker date="1553596766797" expanded="true" signature="180:184" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1892,6 +1155,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridFloor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <marker date="1557765372262" expanded="true" signature="6:78" ph="..." />
+            <marker date="1557765372262" expanded="true" signature="190:380" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/Models.asset">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions/OpenDoorAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionAim.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -1904,54 +1188,281 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridFloor.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionAttack.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="64">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
-            <marker date="1557765372262" expanded="true" signature="6:78" ph="..." />
-            <marker date="1557765372262" expanded="true" signature="190:380" ph="{...}" />
+            <marker date="1554911997643" expanded="false" signature="6:173" ph="..." />
+            <marker date="1554911997643" expanded="true" signature="299:863" ph="{...}" />
+            <marker date="1554911997643" expanded="true" signature="441:475" ph="{...}" />
+            <marker date="1554911997643" expanded="true" signature="527:727" ph="{...}" />
+            <marker date="1554911997643" expanded="true" signature="556:664" ph="{...}" />
+            <marker date="1554911997643" expanded="true" signature="761:861" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions/AttackAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions/FollowAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Actions/RunAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Conditions/DoorOpenCondition.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/Task.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="4" selection-start-line="4" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Conditions/AdjacentCondition.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/NonDeterministicSequence.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/Parallel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Control/Selector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Decorators/Decorator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Decorators/UntilFailDecorator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/BT/Agent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/HeroBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <marker date="1553596766797" expanded="false" signature="6:78" ph="..." />
+            <marker date="1553596766797" expanded="true" signature="180:184" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/SquadController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <marker date="1557597480250" expanded="false" signature="6:78" ph="..." />
+            <marker date="1557597480250" expanded="true" signature="102:142" ph="{...}" />
+            <marker date="1557597480250" expanded="true" signature="167:201" ph="{...}" />
+            <marker date="1557597480250" expanded="true" signature="247:427" ph="{...}" />
+            <marker date="1557597480250" expanded="true" signature="378:425" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
+          <folding>
+            <marker date="1557796947018" expanded="false" signature="6:125" ph="..." />
+            <marker date="1557796947018" expanded="true" signature="150:237" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="278:5076" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="661:727" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="757:878" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="797:872" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="896:1148" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="1167:2113" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="1205:2060" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="2194:2572" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="2308:2486" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="2602:4669" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="2721:4663" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="2887:4653" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="3293:4639" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="3470:4476" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="3691:4186" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="3767:4054" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="4260:4454" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="4522:4621" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="4702:4930" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="4955:5002" ph="{...}" />
+            <marker date="1557796947018" expanded="true" signature="5027:5074" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/Player/PlayerInteraction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <marker date="1557796947009" expanded="false" signature="6:126" ph="..." />
+            <marker date="1557796947009" expanded="true" signature="174:4447" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="638:744" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="767:3669" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="825:2022" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="944:2011" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="1029:1997" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="1221:1407" ph="/* Debug.Log(Vector2.Distance(gridUnit.position, currentObj.getGridPos)); ... */" />
+            <marker date="1557796947009" expanded="true" signature="1503:1979" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="2076:2647" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="2099:2332" ph="/* currentObj.transform.position = new Vector3(currentObj.transform.position.x, currentObj.getGroundedY, currentO ... */" />
+            <marker date="1557796947009" expanded="true" signature="2413:2624" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="2701:3286" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="2819:3276" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="2992:3262" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="3344:3602" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="3713:3860" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="3889:4212" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="3921:4151" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="4237:4445" ph="{...}" />
+            <marker date="1557796947009" expanded="true" signature="4280:4413" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <marker date="1557796946999" expanded="false" signature="6:124" ph="..." />
+            <marker date="1557796946999" expanded="true" signature="151:192" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="231:3765" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="532:705" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="748:918" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="960:1069" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="1123:1462" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="1510:1592" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="1643:2007" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="2065:2161" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="2180:3211" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="2258:3205" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="2796:2956" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="3244:3365" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="3413:3611" ph="{...}" />
+            <marker date="1557796946999" expanded="true" signature="3661:3763" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/EnemyBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <marker date="1557597479330" expanded="false" signature="6:78" ph="..." />
+            <marker date="1557597479330" expanded="true" signature="183:187" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1986">
-          <caret line="163" selection-start-line="163" selection-end-line="163" />
+        <state relative-caret-position="32">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
-            <marker date="1557765689414" expanded="false" signature="6:160" ph="..." />
-            <marker date="1557765689414" expanded="true" signature="200:5204" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="552:1023" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="690:1017" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="746:1007" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="1056:1523" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="1226:1517" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="1282:1507" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="1567:1644" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="1687:1740" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="1782:1866" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="1919:2082" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="2140:2595" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="2655:2752" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="2827:3371" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="2927:3337" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="2987:3327" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="3431:3730" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="3538:3703" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="3791:4286" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="3845:4258" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="4361:4567" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="4631:5202" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="4717:4765" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="4906:5196" ph="{...}" />
-            <marker date="1557765689414" expanded="true" signature="4962:5186" ph="{...}" />
+            <marker date="1557796798673" expanded="false" signature="6:160" ph="..." />
+            <marker date="1557796798673" expanded="true" signature="200:5243" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="569:611" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="629:1100" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="767:1094" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="823:1084" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="1133:1600" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="1303:1594" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="1359:1584" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="1644:1721" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="1764:1817" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="1859:1943" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="1996:2159" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="2217:2672" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="2732:2829" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="2904:3448" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="3004:3414" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="3064:3404" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="3508:3807" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="3615:3780" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="3868:4363" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="3922:4335" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="4438:4644" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="4708:5241" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="4794:4853" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="4945:5235" ph="{...}" />
+            <marker date="1557796798673" expanded="true" signature="5001:5225" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/Models.asset">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/InteractableObj.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <marker date="1557796946181" expanded="false" signature="6:78" ph="..." />
+            <marker date="1557796946181" expanded="true" signature="124:2924" ph="{...}" />
+            <marker date="1557796946181" expanded="true" signature="483:867" ph="{...}" />
+            <marker date="1557796946181" expanded="true" signature="894:2922" ph="{...}" />
+            <marker date="1557796946181" expanded="true" signature="923:2907" ph="{...}" />
+            <marker date="1557796946181" expanded="true" signature="1102:1817" ph="{...}" />
+            <marker date="1557796946181" expanded="true" signature="1371:1551" ph="{...}" />
+            <marker date="1557796946181" expanded="true" signature="1898:1977" ph="{...}" />
+            <marker date="1557796946181" expanded="true" signature="2472:2752" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

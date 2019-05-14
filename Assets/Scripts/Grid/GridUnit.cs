@@ -79,7 +79,7 @@ public class GridUnit : MonoBehaviour
         prevPosition = position;
         position = newPos;
         state = GridUnitState.Moving;
-        grid.nodes[newPos.y, newPos.x].unit = this;
+        grid.Nodes[newPos.y, newPos.x].unit = this;
     }
 
     public void MoveToWorldPosition(Vector3 newWorldPos)
@@ -104,7 +104,7 @@ public class GridUnit : MonoBehaviour
                 if (Vector3.Distance(transform.position, cellPosition) < 0.1f)
                 {
                     state = GridUnitState.Idle;
-                    grid.nodes[prevPosition.y, prevPosition.x].unit = null;
+                    grid.Nodes[prevPosition.y, prevPosition.x].unit = null;
                 }
                 break;
             case GridUnitState.Attacking:
@@ -129,5 +129,12 @@ public class GridUnit : MonoBehaviour
         var cellPosition = grid.CellToWorld(position);
         cellPosition.y = unitPosition.y;
         transform.position = cellPosition;
+    }
+    
+    [Button("Sync")]
+    private void Sync()
+    {
+        position = grid.WorldToCell(transform.position);
+        prevPosition = position;
     }
 }

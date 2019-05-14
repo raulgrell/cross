@@ -15,9 +15,14 @@ public class GridLayer : MonoBehaviour
     public int numRows = 8;
     public float cellSize = 2;
     public float gutterSize = 0.5f;
-    public GridNode[,] nodes;
-
+    private GridNode[,] nodes;
+    
     public int Count => numCols * numRows;
+
+    public GridNode[,] Nodes
+    {
+        get { return nodes; }
+    }
 
     void Awake()
     {
@@ -30,7 +35,7 @@ public class GridLayer : MonoBehaviour
             {
                 var offset = Vector3.forward * cellSize * j + Vector3.right * cellSize * i;
                 var node = GridNode.Spawn(nodePrefab, origin + offset, new Vector2Int(i, j), transform);
-                nodes[j, i] = node;
+                Nodes[j, i] = node;
             }
         }
     }
@@ -57,12 +62,12 @@ public class GridLayer : MonoBehaviour
     
     public bool IsEmpty(int x, int y)
     {
-        return nodes[y, x].unit == null;
+        return Nodes[y, x].unit == null;
     }
 
     public bool IsWalkable(int x, int y)
     {
-        return InBounds(x, y) && IsEmpty(x, y) && nodes[y, x].walkable;
+        return InBounds(x, y) && IsEmpty(x, y) && Nodes[y, x].walkable;
     }
 
     public Vector3 CellToWorld(Vector2Int position)
@@ -85,7 +90,7 @@ public class GridLayer : MonoBehaviour
     public GridNode WorldToNode(Vector3 worldPosition)
     {
         var cell = WorldToCell(worldPosition);
-        return nodes[cell.y, cell.x];
+        return Nodes[cell.y, cell.x];
     }
 
     public List<GridNode> GetNeighbours(GridNode gridNode, int depth = 1)
@@ -101,7 +106,7 @@ public class GridLayer : MonoBehaviour
                 int checkY = gridNode.gridPosition.y + y;
 
                 if (0 <= checkX && checkX < numCols && 0 <= checkY && checkY < numRows)
-                    neighbours.Add(nodes[checkY, checkX]);
+                    neighbours.Add(Nodes[checkY, checkX]);
             }
         }
 
@@ -128,10 +133,10 @@ public class GridLayer : MonoBehaviour
             int hy = i + y;
 
             // top, right, bottom, left
-            if (IsWalkable(vx, y + radius)) return nodes[y + radius, vx];
-            if (IsWalkable(x + radius, hy)) return nodes[hy, x + radius];
-            if (IsWalkable(vx, y - radius)) return nodes[y - radius, vx];
-            if (IsWalkable(x - radius, hy)) return nodes[hy, x - radius];
+            if (IsWalkable(vx, y + radius)) return Nodes[y + radius, vx];
+            if (IsWalkable(x + radius, hy)) return Nodes[hy, x + radius];
+            if (IsWalkable(vx, y - radius)) return Nodes[y - radius, vx];
+            if (IsWalkable(x - radius, hy)) return Nodes[hy, x - radius];
         }
 
         return null;
@@ -150,11 +155,9 @@ public class GridLayer : MonoBehaviour
         if (!floor) return;
         
         foreach(Transform child in floor) {
-            DestroyImmediate(child);
+            DestroyImmediate(child.gameObject);
         }
         
-        nodes = new GridNode[numRows, numCols];
-
         var origin = transform.position;
         for (int i = 0; i < numCols; i++)
         {

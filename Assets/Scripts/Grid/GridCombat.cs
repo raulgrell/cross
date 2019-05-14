@@ -138,7 +138,7 @@ public class GridCombat : MonoBehaviour
 
             if (grid.InBounds(gridPosition.x, gridPosition.y))
             {
-                GridNode node = grid.nodes[gridPosition.y, gridPosition.x];
+                GridNode node = grid.Nodes[gridPosition.y, gridPosition.x];
                 Vector3 worldPosition = grid.CellToWorld(node.gridPosition);
                 worldPosition.y = transform.position.y;
 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: bf46af77192a7b847b50d28782a63757
+=======
+guid: fc8dde0f66208454ca0c24ec5e22752a
+>>>>>>> lighting and organizaiton
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
