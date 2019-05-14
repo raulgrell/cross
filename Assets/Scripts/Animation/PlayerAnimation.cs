@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
+    public CameraProcessing cameraAnimator;
+
     internal Animator playerAnimator;
     private GridUnit input;
     private GridCombat combatInput;
@@ -25,13 +27,14 @@ public class PlayerAnimation : MonoBehaviour
 
     public void HurtAnimation()
     {
-        playerAnimator.Play("Hurt");
-        combatInput.State = CombatState.Hurt;
+        cameraAnimator.DoHurtAnimatio();
     }
-    public void EndHurtAnimation()
-    {
-        combatInput.State = CombatState.Idle;
-    }
+    //    combatInput.State = CombatState.Hurt;
+    //}
+    //public void EndHurtAnimation()
+    //{
+    //    combatInput.State = CombatState.Idle;
+    //}
     public void EndAttackAnimation()
     {
 
@@ -53,7 +56,6 @@ public class PlayerAnimation : MonoBehaviour
     public void AttackAnimation()
     {
         playerAnimator.Play("Attack3");
-
     }
 
     public void BasicAttackAnimation()

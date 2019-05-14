@@ -13,7 +13,7 @@ public class GridInput : MonoBehaviour
 {
     private GridUnit unit;
     private GridCombat combat;
-    private PlayerAnimation animation;
+    private new PlayerAnimation animation;
     public new Camera camera;
 
     private TargetState state;

@@ -11,7 +11,7 @@ public class ResetButton : MonoBehaviour
         childs = new Transform[transform.childCount];
         for(int i = 0; i < childs.Length; i++) 
         {
-            childs[i] = transform.GetChild(1).GetChild(i);
+            childs[i] = transform.GetChild(0).GetChild(i);
         }
     }
 

@@ -39,6 +39,8 @@ public class GridUnit : MonoBehaviour
         var world = grid.CellToWorld(target);
         world.y = transform.position.y;
         transform.LookAt(world);
+        if (transform.CompareTag("Enemy"))
+            transform.GetChild(0).GetComponent<EnemyHealthBar>().FixRotation();
     }
 
     public void Move(Vector2Int moveDir)
@@ -46,6 +48,7 @@ public class GridUnit : MonoBehaviour
         var target = position + moveDir;
         LookAt(target);
         MoveToPosition(target);
+;
     }
 
     public Vector2Int DirectionTo(Vector2Int target)
@@ -92,7 +95,6 @@ public class GridUnit : MonoBehaviour
         switch (state)
         {
             case GridUnitState.Idle:
-                transform.localEulerAngles = new Vector3(0, local.y, 0);
                 break;
             case GridUnitState.Moving:
                 var unitPosition = transform.position;
@@ -104,7 +106,6 @@ public class GridUnit : MonoBehaviour
                     state = GridUnitState.Idle;
                     grid.nodes[prevPosition.y, prevPosition.x].unit = null;
                 }
-                transform.localEulerAngles = new Vector3(5, local.y, 0);
                 break;
             case GridUnitState.Attacking:
                 break;

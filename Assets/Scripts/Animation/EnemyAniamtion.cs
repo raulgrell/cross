@@ -39,4 +39,9 @@ public class EnemyAniamtion : MonoBehaviour
             timer = 0;
         }
     }
+    public void AttackAnimation()
+    {
+        enemyAnimator.Play("Attack");
+
+    }
 }

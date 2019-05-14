@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyHealthBar : MonoBehaviour
 {
     public List<Transform> healthHearts = new List<Transform>();
-    public Quaternion fixedRotation;
+    public  Quaternion fixedRotation;
 
     public void UpdateHealth(int Damage)
     {
@@ -14,12 +14,14 @@ public class EnemyHealthBar : MonoBehaviour
             healthHearts[i].gameObject.SetActive(false);
             healthHearts.RemoveAt(i);
         }
+        transform.rotation = fixedRotation;
+
     }
 
-
-    // Update is called once per frame
-    void Update()
+    public void FixRotation()
     {
         transform.rotation = fixedRotation;
     }
+
+
 }

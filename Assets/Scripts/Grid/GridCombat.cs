@@ -20,6 +20,7 @@ public class GridCombat : MonoBehaviour
     public UnitAttack meleeAttack;
     public UnitAttack rangedAttack;
     public UnitAttack specialAttack;
+    public MeleeIcon icon;
 
     private CombatState state;
     private Transform target;
@@ -30,6 +31,8 @@ public class GridCombat : MonoBehaviour
 
     private float stateTimer;
     private PlayerAnimation animation;
+    private EnemyAniamtion enemyAnimation;
+    private EnemySound enemySoundEffect;
 
     public Transform Target
     {
@@ -53,6 +56,11 @@ public class GridCombat : MonoBehaviour
         unit = GetComponent<GridUnit>();
         if (transform.CompareTag("Player"))
             animation = GetComponent<PlayerAnimation>();
+        else if (transform.CompareTag("Enemy"))
+        {
+            enemySoundEffect = GetComponent<EnemySound>();
+            enemyAnimation = GetComponent<EnemyAniamtion>();
+        }
         grid = unit.grid;
         state = CombatState.Idle;
     }
@@ -104,8 +112,16 @@ public class GridCombat : MonoBehaviour
             else
                 animation.AttackAnimation();
         }
-        else
-            DamageTile();       
+        else if (unit.CompareTag("Enemy"))
+        {
+            enemySoundEffect.onAttack();
+            if(attack.name == "SlashAttack")
+            {
+                enemyAnimation.AttackAnimation();
+            }
+            else
+            DamageTile();
+        }
         stateTimer = 0;
         
 
@@ -148,12 +164,15 @@ public class GridCombat : MonoBehaviour
                         }
                         else if (playerCombat.state == CombatState.Block)
                         {
+                            playerCombat.icon.onChangeWeapon(meleeAttack);
                             playerCombat.meleeAttack = meleeAttack;
                             //if(node.unit.transform.CompareTag("Enemy"))
                         }
                     }
-                    else if(health.Damage(1))
+                    else if(node.unit.transform.CompareTag("Enemy"))
                     {
+                        node.unit.transform.GetComponent<GridCombat>().enemySoundEffect.onHurt();
+                        if(health.Damage(1))
                         Destroy(node.unit.gameObject);
                     }
                 }
