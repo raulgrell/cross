@@ -253,7 +253,7 @@
               </e>
             </e>
           </e>
-          <e p="xNode-master" t="Include">
+          <e p="xNode" t="Include">
             <e p="Scripts" t="Include">
               <e p="Attributes" t="Include">
                 <e p="NodeEnum.cs" t="Include" />
@@ -349,6 +349,7 @@
           <e p="Camera" t="Include">
             <e p="CameraController.cs" t="Include" />
             <e p="CameraObstacleFade.cs" t="Include" />
+            <e p="EnemyHealthBar.cs" t="Include" />
             <e p="healthUI.cs" t="Include" />
           </e>
           <e p="Combat" t="Include">
@@ -416,9 +417,12 @@
             </e>
             <e p="RotateMenuCamera.cs" t="Include" />
             <e p="RotateMenuPlanet.cs" t="Include" />
+            <e p="SettingsManager.cs" t="Include" />
           </e>
           <e p="Session.cs" t="Include" />
-          <e p="SettingsManager.cs" t="Include" />
+          <e p="Sound" t="Include">
+            <e p="EnemySound.cs" t="Include" />
+          </e>
           <e p="State" t="Include">
             <e p="Editor" t="Include">
               <e p="ReferenceDrawer.cs" t="Include" />
@@ -463,15 +467,22 @@
             <e p="StateGraph.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
           </e>
+          <e p="UI" t="Include">
+            <e p="MeleeIcon.cs" t="Include" />
+            <e p="PauseMenu.cs" t="Include" />
+          </e>
           <e p="Units" t="Include">
             <e p="EnemyController.cs" t="Include" />
-            <e p="EnemyHealthBar.cs" t="Include" />
             <e p="HeroController.cs" t="Include" />
             <e p="UnitController.cs" t="Include" />
           </e>
           <e p="World" t="Include">
             <e p="WorldInfo.cs" t="Include" />
           </e>
+        </e>
+        <e p="Shader" t="Include">
+          <e p="BlurShader.shader" t="Include" />
+          <e p="CameraProcessing.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Resources" t="Include">
