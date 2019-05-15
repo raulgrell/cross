@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using Dialogue;
 using UnityEngine;
 
 [RequireComponent(typeof(GridUnit))]
 public abstract class UnitController : MonoBehaviour
 {
     public Transform target;
-
     internal GridUnit unit;
     internal GridCombat combat;
     internal GridNode[] path;
     internal int nodeIndex;
-    internal Vector2Int gridWaypoint;
+    internal GridNode gridWaypoint;
+    internal float actionTimer;
     
     [Range(0.01f, 1f)] public float refreshInterval = 0.2f;
 
@@ -26,8 +28,8 @@ public abstract class UnitController : MonoBehaviour
         if (path == null || path.Length == 0 || nodeIndex >= path.Length)
             return;
 
-        gridWaypoint = path[nodeIndex].gridPosition;
-        unit.MoveTowards(gridWaypoint);
+        gridWaypoint = path[nodeIndex];
+        unit.MoveTowards(gridWaypoint.gridPosition);
         nodeIndex += 1;
     }
 
@@ -67,7 +69,7 @@ public abstract class UnitController : MonoBehaviour
                 path = GridPathfinding.RequestPath(transform.position, targetPos);
                 nodeIndex = 0;
                 if (path.Length > 0)
-                    gridWaypoint = path[0].gridPosition;
+                    gridWaypoint = path[0];
             }
 
             if (refreshInterval != 0)
@@ -84,6 +86,11 @@ public abstract class UnitController : MonoBehaviour
 
     public void GrabTarget()
     {
-        throw new System.NotImplementedException();
+        target.gameObject.GetComponent<GridUnit>().SetGrabbed();
+    }
+
+    public void ResetTimer(float seconds = 0)
+    {
+        actionTimer = seconds;
     }
 }

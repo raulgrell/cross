@@ -7,33 +7,20 @@ using UnityEngine;
 public class ActionFollow : UnitAction
 {
     public float actionTime;
-    
     [Range(0.1f, 0.9f)] public float variance;
     
-    private float timer;
-
-    private void OnEnable()
-    {
-        ResetTimer();
-    }
-
-    public void ResetTimer()
-    {
-        timer = Random.Range(actionTime * (1 - variance), actionTime * (1 + variance));
-    }
-
     public override bool Act(UnitController agent)
     {
-        if (timer < 0)
+        if (agent.actionTimer < 0)
         {
             if (agent.AtCurrentWaypoint())
             {
                 agent.GoToNextWaypoint();
-                ResetTimer();
+                agent.ResetTimer(Random.Range(actionTime * (1 - variance), actionTime * (1 + variance)));
             }
         }
 
-        timer -= Time.deltaTime;
+        agent.actionTimer -= Time.deltaTime;
 
         return false;
     }

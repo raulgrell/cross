@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    public CameraProcessing cameraAnimator;
-
+   
     internal Animator playerAnimator;
+    private new Camera camera;
     private GridUnit input;
     private GridCombat combatInput;
     private bool playing;
@@ -14,6 +14,7 @@ public class PlayerAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        camera = Camera.main;
         input = GetComponent<GridUnit>();
         combatInput = GetComponent<GridCombat>();
         playerAnimator = GetComponent<Animator>();
@@ -27,14 +28,9 @@ public class PlayerAnimation : MonoBehaviour
 
     public void HurtAnimation()
     {
-        cameraAnimator.DoHurtAnimatio();
+        camera.GetComponent<CameraProcessing>().active = true;
     }
-    //    combatInput.State = CombatState.Hurt;
-    //}
-    //public void EndHurtAnimation()
-    //{
-    //    combatInput.State = CombatState.Idle;
-    //}
+
     public void EndAttackAnimation()
     {
 
@@ -73,7 +69,7 @@ public class PlayerAnimation : MonoBehaviour
         if (playing)
             timer += 0.1f;
 
-        if (timer > 1.5f)
+        if (timer > 2f)
         {
             playerAnimator.SetBool("Walking", false);
             playing = false;

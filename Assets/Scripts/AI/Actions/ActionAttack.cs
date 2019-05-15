@@ -11,32 +11,19 @@ using Random = UnityEngine.Random;
 public class ActionAttack : UnitAction
 {
     public float actionTime;
-    
     [Range(0.1f, 0.9f)] public float variance;
-    
-    private float timer;
-
-    private void OnEnable()
-    {
-        ResetTimer();
-    }
 
     public override bool Act(UnitController agent)
     {
-        if (timer < 0)
+        if (agent.actionTimer < 0)
         {
             agent.LookAtTarget();
             agent.Attack();
-            ResetTimer();
+            agent.ResetTimer(Random.Range(actionTime * (1 - variance), actionTime * (1 + variance)));
         }
 
-        timer -= Time.deltaTime;
+        agent.actionTimer -= Time.deltaTime;
 
         return false;
-    }
-    
-    public void ResetTimer()
-    {
-        timer = Random.Range(actionTime * (1 - variance), actionTime * (1 + variance));
     }
 }

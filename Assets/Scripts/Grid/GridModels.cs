@@ -5,10 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "GridFloor", menuName = "Grid/Models")]
 public class GridModels : ScriptableObject
 {
+    public GameObject plates;
     public GameObject stones;
     public GameObject rock;
     public GameObject redRock;
-    public GameObject metal;
-    public GameObject dirtyMetal;
-    public GameObject rustyMetal;
+    public GameObject[] metals;
+    public GameObject[] walkways;
 }

@@ -301,6 +301,21 @@
               <e p="UnitCondition.cs" t="Include" />
               <e p="UnitState.cs" t="Include" />
             </e>
+            <e p="BT" t="Include">
+              <e p="BehaviourTree.cs" t="Include" />
+              <e p="Control" t="Include">
+                <e p="NonDeterministicSequence.cs" t="Include" />
+                <e p="Parallel.cs" t="Include" />
+                <e p="Selector.cs" t="Include" />
+                <e p="Sequence.cs" t="Include" />
+              </e>
+              <e p="Decorators" t="Include">
+                <e p="Decorator.cs" t="Include" />
+                <e p="UntilFailDecorator.cs" t="Include" />
+              </e>
+              <e p="Task.cs" t="Include" />
+            </e>
+            <e p="ComplexBehaviour.cs" t="Include" />
             <e p="Conditions" t="Include">
               <e p="ConditionDistance.cs" t="Include" />
               <e p="ConditionHealth.cs" t="Include" />
@@ -310,39 +325,57 @@
               <e p="ConditionVisibility.cs" t="Include" />
             </e>
             <e p="EnemyBehaviour.cs" t="Include" />
-            <e p="HeroBehaviour.cs" t="Include" />
-            <e p="Tasks" t="Include">
-              <e p="Actions" t="Include">
-                <e p="AimAction.cs" t="Include" />
-                <e p="AttackAction.cs" t="Include" />
-                <e p="EvadeAction.cs" t="Include" />
-                <e p="FollowAction.cs" t="Include" />
-                <e p="RunAction.cs" t="Include" />
-                <e p="TauntAction.cs" t="Include" />
+            <e p="FSM" t="Include">
+              <e p="State.cs" t="Include" />
+              <e p="StateAction.cs" t="Include" />
+              <e p="StateCondition.cs" t="Include" />
+              <e p="StateMachine.cs" t="Include" />
+              <e p="StateTransition.cs" t="Include" />
+            </e>
+            <e p="Graph" t="Include">
+              <e p="AIGraph.cs" t="Include" />
+              <e p="Blackboard.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="AIGraphEditor.cs" t="Include" />
+                <e p="StateGraphEditor.cs" t="Include" />
               </e>
+              <e p="Nodes" t="Include">
+                <e p="ActionNode.cs" t="Include" />
+                <e p="Branch.cs" t="Include" />
+                <e p="Chat.cs" t="Include" />
+                <e p="DialogueBaseNode.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="BranchEditor.cs" t="Include" />
+                  <e p="ChatEditor.cs" t="Include" />
+                  <e p="EventEditor.cs" t="Include" />
+                </e>
+                <e p="Event.cs" t="Include" />
+                <e p="GenericState.cs" t="Include" />
+                <e p="GenericVariable.cs" t="Include" />
+                <e p="StateSubGraph.cs" t="Include" />
+              </e>
+              <e p="StateGraphNode.cs" t="Include" />
+              <e p="StateGraphTransitionNode.cs" t="Include" />
+              <e p="StateNode.cs" t="Include" />
+            </e>
+            <e p="Tasks" t="Include">
+              <e p="AimTask.cs" t="Include" />
+              <e p="AttackTask.cs" t="Include" />
               <e p="Conditions" t="Include">
                 <e p="AdjacentCondition.cs" t="Include" />
                 <e p="DoorOpenCondition.cs" t="Include" />
               </e>
+              <e p="EvadeTask.cs" t="Include" />
+              <e p="FollowTask.cs" t="Include" />
+              <e p="RunTask.cs" t="Include" />
+              <e p="TauntTask.cs" t="Include" />
             </e>
           </e>
           <e p="Animation" t="Include">
             <e p="ButtonScripted.cs" t="Include" />
             <e p="EnemyAniamtion.cs" t="Include" />
+            <e p="EnemyAnimation.cs" t="Include" />
             <e p="PlayerAnimation.cs" t="Include" />
-          </e>
-          <e p="BT" t="Include">
-            <e p="Control" t="Include">
-              <e p="NonDeterministicSequence.cs" t="Include" />
-              <e p="Parallel.cs" t="Include" />
-              <e p="Selector.cs" t="Include" />
-              <e p="Sequence.cs" t="Include" />
-            </e>
-            <e p="Decorators" t="Include">
-              <e p="Decorator.cs" t="Include" />
-              <e p="UntilFailDecorator.cs" t="Include" />
-            </e>
-            <e p="Task.cs" t="Include" />
           </e>
           <e p="Camera" t="Include">
             <e p="CameraController.cs" t="Include" />
@@ -443,34 +476,11 @@
             </e>
             <e p="Variable.cs" t="Include" />
           </e>
-          <e p="StateMachine" t="Include">
-            <e p="Generic" t="Include">
-              <e p="GenericAction.cs" t="Include" />
-              <e p="GenericState.cs" t="Include" />
-              <e p="GenericVariable.cs" t="Include" />
-            </e>
-            <e p="Nodes" t="Include">
-              <e p="Branch.cs" t="Include" />
-              <e p="Chat.cs" t="Include" />
-              <e p="DialogueBaseNode.cs" t="Include" />
-              <e p="Editor" t="Include">
-                <e p="AIGraphEditor.cs" t="Include" />
-                <e p="BranchEditor.cs" t="Include" />
-                <e p="ChatEditor.cs" t="Include" />
-                <e p="EventEditor.cs" t="Include" />
-                <e p="StateGraphEditor.cs" t="Include" />
-              </e>
-              <e p="Event.cs" t="Include" />
-            </e>
-            <e p="StateGraph.cs" t="Include" />
-            <e p="StateMachine.cs" t="Include" />
-          </e>
           <e p="UI" t="Include">
             <e p="MeleeIcon.cs" t="Include" />
             <e p="PauseMenu.cs" t="Include" />
           </e>
           <e p="Units" t="Include">
-            <e p="BehaviourController.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />
             <e p="SquadController.cs" t="Include" />
             <e p="UnitController.cs" t="Include" />

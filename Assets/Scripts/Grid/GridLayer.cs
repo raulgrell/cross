@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
+using UnityEngine.SocialPlatforms;
+using Random = UnityEngine.Random;
 
 public class GridLayer : MonoBehaviour
 {
@@ -19,10 +21,7 @@ public class GridLayer : MonoBehaviour
     
     public int Count => numCols * numRows;
 
-    public GridNode[,] Nodes
-    {
-        get { return nodes; }
-    }
+    public GridNode[,] Nodes => nodes;
 
     void Awake()
     {
@@ -153,18 +152,23 @@ public class GridLayer : MonoBehaviour
     public void GenerateFloor()
     {
         if (!floor) return;
-        
-        foreach(Transform child in floor) {
-            DestroyImmediate(child.gameObject);
-        }
-        
+
+        var children = new List<GameObject>();
+        foreach(Transform child in floor) children.Add(child.gameObject);
+        foreach (GameObject child in children) DestroyImmediate(child);
+
+        if (floor.childCount != 0) return;
+
+        var noiseOffset = Random.Range(0f, 100f);
         var origin = transform.position;
         for (int i = 0; i < numCols; i++)
         {
             for (int j = 0; j < numRows; j++)
             {
-                var offset = Vector3.forward * cellSize * j + Vector3.right * cellSize * i;
-                var node = Instantiate(floorBlocks.metal, origin + offset, Quaternion.identity, floor);
+                var randomIndex = Random.Range(0, floorBlocks.metals.Length);
+//                var randomIndex = Mathf.FloorToInt(Mathf.PerlinNoise(i*0.1f, j*0.1f) * floorBlocks.metals.Length);
+                var offset = new Vector3(cellSize * i, Random.Range(0f, 0.2f), cellSize * j);
+                var node = Instantiate(floorBlocks.metals[randomIndex], origin + offset, Quaternion.identity, floor);
             }
         }
     }

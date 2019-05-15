@@ -22,11 +22,13 @@ public class EnemyController : UnitController
 
     private void OnDrawGizmos()
     {
-        if (unit == null || unit.grid == null)
+        if (unit == null || unit.grid == null || gridWaypoint == null)
             return;
 
+        var pos = unit.grid.CellToWorld(gridWaypoint.gridPosition);
+        
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(unit.grid.CellToWorld(gridWaypoint), Vector3.one);
+        Gizmos.DrawWireCube(pos, Vector3.one);
         
         if (path == null)
             return;

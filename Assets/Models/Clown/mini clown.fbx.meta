@@ -1,201 +1,665 @@
 fileFormatVersion: 2
-guid: 6422ebfd0cbdabb4990ced272846046a
+guid: 7e51e13df9332e74bbb73c91ad525f30
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: ankles
-    100002: arms
-    100004: arms2
-    100006: body
-    100008: Default
-    100010: ears
-    100012: eyes1
-    100014: eyes2
-    100016: feet
-    100018: hands
-    100020: hat
-    100022: head
-    100024: //RootNode
-    100026: mouth
-    100028: mouth2
-    100030: neck
-    100032: neck2
-    100034: Object_1
-    100036: Object_10
-    100038: Object_11
-    100040: Object_13
-    100042: Object_14
-    100044: Object_15
-    100046: Object_16
-    100048: Object_17
-    100050: Object_18
-    100052: Object_19
-    100054: Object_2
-    100056: Object_20
-    100058: Object_21
-    100060: Object_22
-    100062: Object_23
-    100064: Object_25
-    100066: Object_26
-    100068: Object_27
-    100070: Object_28
-    100072: Object_29
-    100074: Object_3
-    100076: Object_31
-    100078: Object_32
-    100080: Object_4
-    100082: Object_6
-    100084: Object_7
-    100086: Object_8
-    100088: Object_9
-    100090: triangles
-    400000: ankles
-    400002: arms
-    400004: arms2
-    400006: body
-    400008: Default
-    400010: ears
-    400012: eyes1
-    400014: eyes2
-    400016: feet
-    400018: hands
-    400020: hat
-    400022: head
-    400024: //RootNode
-    400026: mouth
-    400028: mouth2
-    400030: neck
-    400032: neck2
-    400034: Object_1
-    400036: Object_10
-    400038: Object_11
-    400040: Object_13
-    400042: Object_14
-    400044: Object_15
-    400046: Object_16
-    400048: Object_17
-    400050: Object_18
-    400052: Object_19
-    400054: Object_2
-    400056: Object_20
-    400058: Object_21
-    400060: Object_22
-    400062: Object_23
-    400064: Object_25
-    400066: Object_26
-    400068: Object_27
-    400070: Object_28
-    400072: Object_29
-    400074: Object_3
-    400076: Object_31
-    400078: Object_32
-    400080: Object_4
-    400082: Object_6
-    400084: Object_7
-    400086: Object_8
-    400088: Object_9
-    400090: triangles
-    2100000: New material 014_3
-    2100002: New material 007_4
-    2100004: New material 007_2
-    2100006: New material 014
-    2100008: Material_30
-    2100010: New material 007_3
-    2100012: New material 002_2
-    2100014: Material_5
-    2100016: Material_24
-    2100018: New material 002_3
-    2100020: New material 007
-    2100022: Material_12
-    2100024: New material 014_4
-    2100026: New material 014_2
-    2100028: New material 002
-    2100030: Basic Material 002
-    2300000: Object_1
-    2300002: Object_10
-    2300004: Object_11
-    2300006: Object_13
-    2300008: Object_14
-    2300010: Object_15
-    2300012: Object_16
-    2300014: Object_17
-    2300016: Object_18
-    2300018: Object_19
-    2300020: Object_2
-    2300022: Object_20
-    2300024: Object_21
-    2300026: Object_22
-    2300028: Object_23
-    2300030: Object_25
-    2300032: Object_26
-    2300034: Object_27
-    2300036: Object_28
-    2300038: Object_29
-    2300040: Object_3
-    2300042: Object_31
-    2300044: Object_32
-    2300046: Object_4
-    2300048: Object_6
-    2300050: Object_7
-    2300052: Object_8
-    2300054: Object_9
-    3300000: Object_1
-    3300002: Object_10
-    3300004: Object_11
-    3300006: Object_13
-    3300008: Object_14
-    3300010: Object_15
-    3300012: Object_16
-    3300014: Object_17
-    3300016: Object_18
-    3300018: Object_19
-    3300020: Object_2
-    3300022: Object_20
-    3300024: Object_21
-    3300026: Object_22
-    3300028: Object_23
-    3300030: Object_25
-    3300032: Object_26
-    3300034: Object_27
-    3300036: Object_28
-    3300038: Object_29
-    3300040: Object_3
-    3300042: Object_31
-    3300044: Object_32
-    3300046: Object_4
-    3300048: Object_6
-    3300050: Object_7
-    3300052: Object_8
-    3300054: Object_9
-    4300000: Object_20
-    4300002: Object_26
-    4300004: Object_21
-    4300006: Object_22
-    4300008: Object_6
-    4300010: Object_7
-    4300012: Object_8
-    4300014: Object_9
-    4300016: Object_29
-    4300018: Object_25
-    4300020: Object_15
-    4300022: Object_4
-    4300024: Object_23
-    4300026: Object_16
-    4300028: Object_17
-    4300030: Object_18
-    4300032: Object_19
-    4300034: Object_27
-    4300036: Object_28
-    4300038: Object_31
-    4300040: Object_32
-    4300042: Object_11
-    4300044: Object_13
-    4300046: Object_10
-    4300048: Object_14
-    4300050: Object_2
-    4300052: Object_3
-    4300054: Object_1
-  externalObjects: {}
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: ankles
+  - first:
+      1: 100002
+    second: arms
+  - first:
+      1: 100004
+    second: arms2
+  - first:
+      1: 100006
+    second: body
+  - first:
+      1: 100008
+    second: Default
+  - first:
+      1: 100010
+    second: ears
+  - first:
+      1: 100012
+    second: eyes1
+  - first:
+      1: 100014
+    second: eyes2
+  - first:
+      1: 100016
+    second: feet
+  - first:
+      1: 100018
+    second: hands
+  - first:
+      1: 100020
+    second: hat
+  - first:
+      1: 100022
+    second: head
+  - first:
+      1: 100024
+    second: //RootNode
+  - first:
+      1: 100026
+    second: mouth
+  - first:
+      1: 100028
+    second: mouth2
+  - first:
+      1: 100030
+    second: neck
+  - first:
+      1: 100032
+    second: neck2
+  - first:
+      1: 100034
+    second: Object_1
+  - first:
+      1: 100036
+    second: Object_10
+  - first:
+      1: 100038
+    second: Object_11
+  - first:
+      1: 100040
+    second: Object_13
+  - first:
+      1: 100042
+    second: Object_14
+  - first:
+      1: 100044
+    second: Object_15
+  - first:
+      1: 100046
+    second: Object_16
+  - first:
+      1: 100048
+    second: Object_17
+  - first:
+      1: 100050
+    second: Object_18
+  - first:
+      1: 100052
+    second: Object_19
+  - first:
+      1: 100054
+    second: Object_2
+  - first:
+      1: 100056
+    second: Object_20
+  - first:
+      1: 100058
+    second: Object_21
+  - first:
+      1: 100060
+    second: Object_22
+  - first:
+      1: 100062
+    second: Object_23
+  - first:
+      1: 100064
+    second: Object_25
+  - first:
+      1: 100066
+    second: Object_26
+  - first:
+      1: 100068
+    second: Object_27
+  - first:
+      1: 100070
+    second: Object_28
+  - first:
+      1: 100072
+    second: Object_29
+  - first:
+      1: 100074
+    second: Object_3
+  - first:
+      1: 100076
+    second: Object_31
+  - first:
+      1: 100078
+    second: Object_32
+  - first:
+      1: 100080
+    second: Object_4
+  - first:
+      1: 100082
+    second: Object_6
+  - first:
+      1: 100084
+    second: Object_7
+  - first:
+      1: 100086
+    second: Object_8
+  - first:
+      1: 100088
+    second: Object_9
+  - first:
+      1: 100090
+    second: triangles
+  - first:
+      4: 400000
+    second: ankles
+  - first:
+      4: 400002
+    second: arms
+  - first:
+      4: 400004
+    second: arms2
+  - first:
+      4: 400006
+    second: body
+  - first:
+      4: 400008
+    second: Default
+  - first:
+      4: 400010
+    second: ears
+  - first:
+      4: 400012
+    second: eyes1
+  - first:
+      4: 400014
+    second: eyes2
+  - first:
+      4: 400016
+    second: feet
+  - first:
+      4: 400018
+    second: hands
+  - first:
+      4: 400020
+    second: hat
+  - first:
+      4: 400022
+    second: head
+  - first:
+      4: 400024
+    second: //RootNode
+  - first:
+      4: 400026
+    second: mouth
+  - first:
+      4: 400028
+    second: mouth2
+  - first:
+      4: 400030
+    second: neck
+  - first:
+      4: 400032
+    second: neck2
+  - first:
+      4: 400034
+    second: Object_1
+  - first:
+      4: 400036
+    second: Object_10
+  - first:
+      4: 400038
+    second: Object_11
+  - first:
+      4: 400040
+    second: Object_13
+  - first:
+      4: 400042
+    second: Object_14
+  - first:
+      4: 400044
+    second: Object_15
+  - first:
+      4: 400046
+    second: Object_16
+  - first:
+      4: 400048
+    second: Object_17
+  - first:
+      4: 400050
+    second: Object_18
+  - first:
+      4: 400052
+    second: Object_19
+  - first:
+      4: 400054
+    second: Object_2
+  - first:
+      4: 400056
+    second: Object_20
+  - first:
+      4: 400058
+    second: Object_21
+  - first:
+      4: 400060
+    second: Object_22
+  - first:
+      4: 400062
+    second: Object_23
+  - first:
+      4: 400064
+    second: Object_25
+  - first:
+      4: 400066
+    second: Object_26
+  - first:
+      4: 400068
+    second: Object_27
+  - first:
+      4: 400070
+    second: Object_28
+  - first:
+      4: 400072
+    second: Object_29
+  - first:
+      4: 400074
+    second: Object_3
+  - first:
+      4: 400076
+    second: Object_31
+  - first:
+      4: 400078
+    second: Object_32
+  - first:
+      4: 400080
+    second: Object_4
+  - first:
+      4: 400082
+    second: Object_6
+  - first:
+      4: 400084
+    second: Object_7
+  - first:
+      4: 400086
+    second: Object_8
+  - first:
+      4: 400088
+    second: Object_9
+  - first:
+      4: 400090
+    second: triangles
+  - first:
+      21: 2100000
+    second: New material 014_3
+  - first:
+      21: 2100002
+    second: New material 007_4
+  - first:
+      21: 2100004
+    second: New material 007_2
+  - first:
+      21: 2100006
+    second: New material 014
+  - first:
+      21: 2100008
+    second: Material_30
+  - first:
+      21: 2100010
+    second: New material 007_3
+  - first:
+      21: 2100012
+    second: New material 002_2
+  - first:
+      21: 2100014
+    second: Material_5
+  - first:
+      21: 2100016
+    second: Material_24
+  - first:
+      21: 2100018
+    second: New material 002_3
+  - first:
+      21: 2100020
+    second: New material 007
+  - first:
+      21: 2100022
+    second: Material_12
+  - first:
+      21: 2100024
+    second: New material 014_4
+  - first:
+      21: 2100026
+    second: New material 014_2
+  - first:
+      21: 2100028
+    second: New material 002
+  - first:
+      21: 2100030
+    second: Basic Material 002
+  - first:
+      23: 2300000
+    second: Object_1
+  - first:
+      23: 2300002
+    second: Object_10
+  - first:
+      23: 2300004
+    second: Object_11
+  - first:
+      23: 2300006
+    second: Object_13
+  - first:
+      23: 2300008
+    second: Object_14
+  - first:
+      23: 2300010
+    second: Object_15
+  - first:
+      23: 2300012
+    second: Object_16
+  - first:
+      23: 2300014
+    second: Object_17
+  - first:
+      23: 2300016
+    second: Object_18
+  - first:
+      23: 2300018
+    second: Object_19
+  - first:
+      23: 2300020
+    second: Object_2
+  - first:
+      23: 2300022
+    second: Object_20
+  - first:
+      23: 2300024
+    second: Object_21
+  - first:
+      23: 2300026
+    second: Object_22
+  - first:
+      23: 2300028
+    second: Object_23
+  - first:
+      23: 2300030
+    second: Object_25
+  - first:
+      23: 2300032
+    second: Object_26
+  - first:
+      23: 2300034
+    second: Object_27
+  - first:
+      23: 2300036
+    second: Object_28
+  - first:
+      23: 2300038
+    second: Object_29
+  - first:
+      23: 2300040
+    second: Object_3
+  - first:
+      23: 2300042
+    second: Object_31
+  - first:
+      23: 2300044
+    second: Object_32
+  - first:
+      23: 2300046
+    second: Object_4
+  - first:
+      23: 2300048
+    second: Object_6
+  - first:
+      23: 2300050
+    second: Object_7
+  - first:
+      23: 2300052
+    second: Object_8
+  - first:
+      23: 2300054
+    second: Object_9
+  - first:
+      33: 3300000
+    second: Object_1
+  - first:
+      33: 3300002
+    second: Object_10
+  - first:
+      33: 3300004
+    second: Object_11
+  - first:
+      33: 3300006
+    second: Object_13
+  - first:
+      33: 3300008
+    second: Object_14
+  - first:
+      33: 3300010
+    second: Object_15
+  - first:
+      33: 3300012
+    second: Object_16
+  - first:
+      33: 3300014
+    second: Object_17
+  - first:
+      33: 3300016
+    second: Object_18
+  - first:
+      33: 3300018
+    second: Object_19
+  - first:
+      33: 3300020
+    second: Object_2
+  - first:
+      33: 3300022
+    second: Object_20
+  - first:
+      33: 3300024
+    second: Object_21
+  - first:
+      33: 3300026
+    second: Object_22
+  - first:
+      33: 3300028
+    second: Object_23
+  - first:
+      33: 3300030
+    second: Object_25
+  - first:
+      33: 3300032
+    second: Object_26
+  - first:
+      33: 3300034
+    second: Object_27
+  - first:
+      33: 3300036
+    second: Object_28
+  - first:
+      33: 3300038
+    second: Object_29
+  - first:
+      33: 3300040
+    second: Object_3
+  - first:
+      33: 3300042
+    second: Object_31
+  - first:
+      33: 3300044
+    second: Object_32
+  - first:
+      33: 3300046
+    second: Object_4
+  - first:
+      33: 3300048
+    second: Object_6
+  - first:
+      33: 3300050
+    second: Object_7
+  - first:
+      33: 3300052
+    second: Object_8
+  - first:
+      33: 3300054
+    second: Object_9
+  - first:
+      43: 4300000
+    second: Object_20
+  - first:
+      43: 4300002
+    second: Object_26
+  - first:
+      43: 4300004
+    second: Object_21
+  - first:
+      43: 4300006
+    second: Object_22
+  - first:
+      43: 4300008
+    second: Object_6
+  - first:
+      43: 4300010
+    second: Object_7
+  - first:
+      43: 4300012
+    second: Object_8
+  - first:
+      43: 4300014
+    second: Object_9
+  - first:
+      43: 4300016
+    second: Object_29
+  - first:
+      43: 4300018
+    second: Object_25
+  - first:
+      43: 4300020
+    second: Object_15
+  - first:
+      43: 4300022
+    second: Object_4
+  - first:
+      43: 4300024
+    second: Object_23
+  - first:
+      43: 4300026
+    second: Object_16
+  - first:
+      43: 4300028
+    second: Object_17
+  - first:
+      43: 4300030
+    second: Object_18
+  - first:
+      43: 4300032
+    second: Object_19
+  - first:
+      43: 4300034
+    second: Object_27
+  - first:
+      43: 4300036
+    second: Object_28
+  - first:
+      43: 4300038
+    second: Object_31
+  - first:
+      43: 4300040
+    second: Object_32
+  - first:
+      43: 4300042
+    second: Object_11
+  - first:
+      43: 4300044
+    second: Object_13
+  - first:
+      43: 4300046
+    second: Object_10
+  - first:
+      43: 4300048
+    second: Object_14
+  - first:
+      43: 4300050
+    second: Object_2
+  - first:
+      43: 4300052
+    second: Object_3
+  - first:
+      43: 4300054
+    second: Object_1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basic Material 002
+    second: {fileID: 2100000, guid: 45a754e4b8ecf4f4eaab50c2402e2407, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_12
+    second: {fileID: 2100000, guid: 703de2f8a0b5cb442bcb152a10f9b549, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_24
+    second: {fileID: 2100000, guid: 81c1f6f9e61a364429f84cce4319b85a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_30
+    second: {fileID: 2100000, guid: 75a0693e18643874b9e5cae846325824, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_5
+    second: {fileID: 2100000, guid: 4ade046a39917b8419bdad601d40aa04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: New material 002
+    second: {fileID: 2100000, guid: e349a0f28a5c8904788df180b0ad0f21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: New material 002_2
+    second: {fileID: 2100000, guid: b0cb2b29db2b83a4a878f9bd71bf7088, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: New material 002_3
+    second: {fileID: 2100000, guid: 2c8baa1ea0b480d4da4747dcc0dd0529, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: New material 007
+    second: {fileID: 2100000, guid: 227f1877873efcd45802bed09760d0f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: New material 007_2
+    second: {fileID: 2100000, guid: bb4e862c9f1f19244881000dbf90cd0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: New material 007_3
+    second: {fileID: 2100000, guid: d4ef1f01eac401b4b90fa69ae4ba377a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: New material 007_4
+    second: {fileID: 2100000, guid: 5539d26986d58a1408c6cc2e45e23f6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: New material 014
+    second: {fileID: 2100000, guid: 0ddc39c824725744ba705278103fe784, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: New material 014_2
+    second: {fileID: 2100000, guid: 19292f36d6ffa5346b9949e3a296770a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: New material 014_3
+    second: {fileID: 2100000, guid: 4e2d479bf7d213548992926616960c80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: New material 014_4
+    second: {fileID: 2100000, guid: 8daeed4aa271f224fbc065d8fb619426, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
@@ -237,18 +701,19 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -257,10 +722,11 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -270,6 +736,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

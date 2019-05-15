@@ -23,7 +23,7 @@ public class InteractableObj : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteraction>();
         Vector3 actualWorldPosition = new Vector3(transform.position.x, grid.transform.position.y, transform.position.z);
         getGridPos = grid.WorldToCell(actualWorldPosition);
-        grid.Nodes[getGridPos.x, getGridPos.y].walkable = false;
+        grid.Nodes[getGridPos.y, getGridPos.x].walkable = false;
     }
 
     private void Update()
@@ -46,7 +46,7 @@ public class InteractableObj : MonoBehaviour
                     else
                         transform.position = Vector3.MoveTowards(transform.position, pos, 0.5f);
 
-                    grid.Nodes[getGridPos.x, getGridPos.y].walkable = false;
+                    grid.Nodes[getGridPos.y, getGridPos.x].walkable = false;
                     player.gridUnit.speed = 16;
                 }
                 if (transform.position == pos)

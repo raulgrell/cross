@@ -9,6 +9,8 @@ public enum GridUnitState
     Idle,
     Moving,
     Attacking,
+    Grabbed,
+    Stunned,
 }
 
 public class GridUnit : MonoBehaviour
@@ -108,6 +110,8 @@ public class GridUnit : MonoBehaviour
                 }
                 break;
             case GridUnitState.Attacking:
+            case GridUnitState.Grabbed:
+            case GridUnitState.Stunned:
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -136,5 +140,15 @@ public class GridUnit : MonoBehaviour
     {
         position = grid.WorldToCell(transform.position);
         prevPosition = position;
+    }
+
+    public void SetGrabbed()
+    {
+        state = GridUnitState.Grabbed;
+    }
+    
+    public void SetStunned()
+    {
+        state = GridUnitState.Stunned;
     }
 }

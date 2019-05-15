@@ -19,7 +19,7 @@ public abstract class VariableNode<T> : VariableNode
         if (port.fieldName != "_value")
             return null;
  
-        T value = (graph as AIGraph).GetValue<T>(name);
+        T value = (graph as AIGraph).Blackboard.GetValue<T>(name);
         return value;
     }
  
@@ -40,13 +40,13 @@ public abstract class Variable<T> : Variable
 {
     public T Value;
 
-    public void SetValue(T value)
+    public void SetValue(T val)
     {
-        Value = value;
+        Value = val;
     }
 
-    public void SetValue(Variable<T> value)
+    public void SetValue(Variable<T> val)
     {
-        Value = value.Value;
+        Value = val.Value;
     }
 }

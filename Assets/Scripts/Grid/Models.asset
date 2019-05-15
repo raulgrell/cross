@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ede028bb148ee4b9ae7ffd19b74818, type: 3}
   m_Name: Models
   m_EditorClassIdentifier: 
+  plates: {fileID: 8948666672156658831, guid: a6de4272a6b90c342b525369c2e98e90, type: 3}
   stones: {fileID: -927199367670048503, guid: fb8f9a54f4ed0d84ca968b203194f343, type: 3}
   rock: {fileID: -927199367670048503, guid: b5ef5cd17d020b94b95adbf8b32afaca, type: 3}
   redRock: {fileID: -927199367670048503, guid: 33b975a2faf9068459a8d9cafdf7972e, type: 3}
-  metal: {fileID: 100000, guid: e779834dd7304784dbc5356d24f2b0c5, type: 3}
-  dirtyMetal: {fileID: 100000, guid: e779834dd7304784dbc5356d24f2b0c5, type: 3}
-  rustyMetal: {fileID: 100000, guid: e779834dd7304784dbc5356d24f2b0c5, type: 3}
+  metals:
+  - {fileID: 5465520608210891348, guid: bc1d82aa57890ac40854161a99f19f36, type: 3}
+  - {fileID: 4600187538569950258, guid: f3cdea53fffb0e5448f4893f07b27236, type: 3}
+  - {fileID: 3206425184067355429, guid: 36d2b36726db04947a2bd2b6e47d849b, type: 3}
+  walkways:
+  - {fileID: 3266686781151605913, guid: 16ff0c42562e43342891cc3b45c8c676, type: 3}
+  - {fileID: 3698865055007430037, guid: 126c9206cfaae5d409e986830f525cb0, type: 3}
+  - {fileID: 7852048148803811146, guid: cbd1347575330ce48abbcbbfb2dfc78b, type: 3}

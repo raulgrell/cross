@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum SquadState
 {
@@ -13,19 +16,31 @@ public enum SquadState
 
 public class SquadController : MonoBehaviour
 {
+    public GridUnit target;
     public GridLayer grid;
     public GridUnit leader;
     public List<GridUnit> units;
     private SquadState state;
 
-    Vector2Int[] GetNodesAroundTarget()
+    List<GridNode> GetNodesAroundTarget()
     {
-        return new Vector2Int[]{};
+        if (!target) return null;
+        var pos = target.position;
+        var targetNode = grid.Nodes[pos.y, pos.x];
+        return grid.GetNeighbours(targetNode, 1);
     }
 
     private void Start()
     {
         state = SquadState.None;
-        
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        foreach (GridUnit gridUnit in units)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(gridUnit.transform.position, 0.1f);
+        }
     }
 }

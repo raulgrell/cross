@@ -10,9 +10,9 @@ public enum ConditionType {
 
 public abstract class UnitCondition : StateCondition
 {
-    public override bool Test<T>(StateMachine<T> unit)
+    public override bool Test(StateMachine unit)
     {
-        return Test(unit.Agent as UnitController);
+        return Test(unit.Agent);
     }
 
     public abstract bool Test(UnitController fsm);
