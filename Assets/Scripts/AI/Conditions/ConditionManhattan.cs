@@ -13,7 +13,7 @@ public class ConditionManhattan : UnitCondition
     
     public override bool Test(UnitController unit)
     {
-        var distVec = unit.unit.grid.WorldToCell(unit.target.position) - unit.unit.position;
+        var distVec = unit.unit.grid.WorldToCell(unit.target.position) - unit.unit.Position;
         var dist = Mathf.Abs(distVec.x) + Mathf.Abs(distVec.y);
         
         switch (type)

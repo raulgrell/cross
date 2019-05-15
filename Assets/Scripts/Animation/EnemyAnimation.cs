@@ -23,7 +23,7 @@ public class EnemyAnimation : MonoBehaviour
     }
     void WalkingAnimation()
     {
-        if (input.state == GridUnitState.Moving)
+        if (input.State == GridUnitState.Moving)
         {
             enemyAnimator.SetBool("Walking", true);
             playing = true;

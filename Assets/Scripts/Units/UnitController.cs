@@ -35,7 +35,7 @@ public abstract class UnitController : MonoBehaviour
 
     public bool AtCurrentWaypoint()
     {
-        if (unit.state == GridUnitState.Moving)
+        if (unit.State == GridUnitState.Moving)
             return false;
 
         if (path == null || nodeIndex >= path.Length)
@@ -52,7 +52,7 @@ public abstract class UnitController : MonoBehaviour
     public void MoveAwayFromTarget()
     {
         var targetPos = unit.grid.WorldToCell(target.position);
-        var d = targetPos - unit.position;
+        var d = targetPos - unit.Position;
     }
 
     protected IEnumerator RequestPath()

@@ -35,10 +35,10 @@ public class PlayerInteraction : MonoBehaviour
                     currentObj = info.transform.GetComponent<InteractableObj>();
                         //Debug.Log(Vector2.Distance(gridUnit.position, currentObj.getGridPos));
                         //Debug.Log("Unit Pos" + gridUnit.position + " Object Position" + currentObj.getGridPos);
-                        if (Vector2.Distance(gridUnit.position, currentObj.getGridPos) <= 1.5f)
+                        if (Vector2.Distance(gridUnit.Position, currentObj.getGridPos) <= 1.5f)
                         {
                         gridUnit.grid.Nodes[currentObj.getGridPos.y, currentObj.getGridPos.x].walkable = true;
-                        Vector3 newPos = gridUnit.grid.CellToWorld(gridUnit.position);
+                        Vector3 newPos = gridUnit.grid.CellToWorld(gridUnit.Position);
                         newPos.y = interactableY + currentObj.getGroundedY;
                         currentObj.transform.position = newPos;
                         currentObj.state = 1;
@@ -52,7 +52,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             //currentObj.transform.position = new Vector3(currentObj.transform.position.x, currentObj.getGroundedY, currentObj.transform.position.z);
             //currentObj.getGridPos = gridUnit.grid.WorldToCell(currentObj.transform.position);
-            if (Vector2.Distance(gridUnit.position, currentObj.getGridPos) <= 3)
+            if (Vector2.Distance(gridUnit.Position, currentObj.getGridPos) <= 3)
                 {
                     gridCombat.State = CombatState.Idle;
                     currentObj.state = 0;

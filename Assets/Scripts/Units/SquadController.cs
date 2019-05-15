@@ -25,7 +25,7 @@ public class SquadController : MonoBehaviour
     List<GridNode> GetNodesAroundTarget()
     {
         if (!target) return null;
-        var pos = target.position;
+        var pos = target.Position;
         var targetNode = grid.Nodes[pos.y, pos.x];
         return grid.GetNeighbours(targetNode, 1);
     }

@@ -62,7 +62,7 @@ public class GridCombat : MonoBehaviour
         if (transform.CompareTag("Player"))
         {
             animation = GetComponent<PlayerAnimation>();
-            gridOrigPos = unit.position;
+            gridOrigPos = unit.Position;
             playerOrigPos = transform.position;
         }
         else if (transform.CompareTag("Enemy"))

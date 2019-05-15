@@ -60,7 +60,7 @@ public class PlayerAnimation : MonoBehaviour
     }
     void WalkingAnimation()
     {
-        if (input.state == GridUnitState.Moving)
+        if (input.State == GridUnitState.Moving)
         {
             playerAnimator.SetBool("Walking", true);
             playing = true;

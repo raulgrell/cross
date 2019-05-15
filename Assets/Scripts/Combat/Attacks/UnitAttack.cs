@@ -34,7 +34,7 @@ public abstract class UnitAttack : ScriptableObject
             var p = targets[i];
             t[i] = new Target
             {
-                position = unit.position + unit.right * p.position.x + unit.forward * p.position.y,
+                position = unit.Position + unit.Right * p.position.x + unit.Forward * p.position.y,
                 effect = p.effect,
                 damage = p.damage
             };
