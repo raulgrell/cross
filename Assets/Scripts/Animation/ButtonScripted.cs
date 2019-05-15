@@ -23,6 +23,8 @@ public class ButtonScripted : MonoBehaviour
             GetComponent<SettingsButton>().GoSettings();
         if (gameObject.HasComponent<StartButton>())
             GetComponent<StartButton>().StartScene();
+        if (gameObject.HasComponent<ExittoMenuButton>())
+            GetComponent<ExittoMenuButton>().GoBacktoMenu();
 
     }
 }

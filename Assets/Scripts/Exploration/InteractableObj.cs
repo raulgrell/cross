@@ -59,8 +59,7 @@ public class InteractableObj : MonoBehaviour
                 break;
             case 1:
                 player.gridUnit.speed = 8;
-                getGridPos = player.gridUnit.Position;
-                Vector3 newPos = grid.CellToWorld(getGridPos);
+                Vector3 newPos = player.transform.position;
                 newPos.y = transform.position.y;
                 transform.position = newPos;
                 break;
