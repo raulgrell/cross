@@ -68,9 +68,11 @@ public class CutsceneSystem : MonoBehaviour
             }
 
         }
-        else if(!currentPanel && timer > maxTimer)
+        else if(!currentPanel && timer > maxTimer || Input.GetKeyDown(KeyCode.E))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
+
+    
 }
