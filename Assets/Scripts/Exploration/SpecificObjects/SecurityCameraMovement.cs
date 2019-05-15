@@ -5,8 +5,10 @@ using UnityEngine;
 public class SecurityCameraMovement : MonoBehaviour
 {
     public Transform model;
+    public float CameraAngle = 180;
     private Transform target;
     Vector3 angle;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,7 @@ public class SecurityCameraMovement : MonoBehaviour
             float current = Mathf.Atan2(xDistance, zDistance) * Mathf.Rad2Deg;
             var targetAngle = target.eulerAngles.z;
             var result = (current - targetAngle);
-            angle.y = result + 180;
+            angle.y = result + CameraAngle;
         }
         model.localEulerAngles = angle;
     }

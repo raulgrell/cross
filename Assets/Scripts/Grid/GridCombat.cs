@@ -27,10 +27,14 @@ public class GridCombat : MonoBehaviour
     private GridLayer grid;
     private GridUnit unit;
     private bool targeting;
-    private Vector3 origPos;
+
+    //Player Death
+    private Vector3 playerOrigPos;
+    private Vector3 cameraOrigPos;
+    private Vector2Int gridOrigPos;
 
     private float stateTimer;
-    private PlayerAnimation animation;
+    private new PlayerAnimation animation;
     private EnemyAniamtion enemyAnimation;
     private EnemySound enemySoundEffect;
 
@@ -52,10 +56,15 @@ public class GridCombat : MonoBehaviour
 
     void Start()
     {
-        origPos = transform.position;
+        cameraOrigPos = Camera.main.transform.position;
         unit = GetComponent<GridUnit>();
+        grid = unit.grid;
         if (transform.CompareTag("Player"))
+        {
             animation = GetComponent<PlayerAnimation>();
+            gridOrigPos = unit.position;
+            playerOrigPos = transform.position;
+        }
         else if (transform.CompareTag("Enemy"))
         {
             enemySoundEffect = GetComponent<EnemySound>();
@@ -114,13 +123,8 @@ public class GridCombat : MonoBehaviour
         }
         else if (unit.CompareTag("Enemy"))
         {
-            enemySoundEffect.onAttack();
-            if(attack.name == "SlashAttack")
-            {
-                enemyAnimation.AttackAnimation();
-            }
-            else
-            DamageTile();
+            //enemySoundEffect.onAttack();
+            enemyAnimation.AttackAnimation();
         }
         stateTimer = 0;
         
@@ -154,9 +158,11 @@ public class GridCombat : MonoBehaviour
                         {
                             if (health.Damage(1))
                             {
-                                Vector3.Lerp(transform.position, origPos, 1);
+                                Camera.main.transform.position = playerCombat.cameraOrigPos;
+                                node.unit.position = playerCombat.gridOrigPos;
+                                node.unit.transform.position = playerCombat.playerOrigPos;
+                                health.healthUI.ResetHearts();
                                 health.health = 5;
-                                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                             }
                             else
                                 playerCombat.animation.HurtAnimation();
@@ -171,7 +177,8 @@ public class GridCombat : MonoBehaviour
                     }
                     else if(node.unit.transform.CompareTag("Enemy"))
                     {
-                        node.unit.transform.GetComponent<GridCombat>().enemySoundEffect.onHurt();
+                        // node.unit.transform.GetComponent<GridCombat>().enemySoundEffect.onHurt();
+                        node.unit.transform.GetComponent<EnemyAniamtion>().HurtAnimation();
                         if(health.Damage(1))
                         Destroy(node.unit.gameObject);
                     }

@@ -4257,7 +4257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   healthUI: {fileID: 0}
-  enemyBar: {fileID: 0}
+  enemyBar: {fileID: 181809725982776203}
 --- !u!114 &8128761719107388531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4316,6 +4316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e7563a0e477344583801fc898874ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: {fileID: 0}
   graph: {fileID: 0}
   initialState: {fileID: 0}
 --- !u!65 &4556772415057345892
@@ -4546,6 +4547,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee5435bb39ed112459f7121cf1200d01, type: 3}
+--- !u!114 &181809725982776203 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2948681525529878014, guid: ee5435bb39ed112459f7121cf1200d01,
+    type: 3}
+  m_PrefabInstance: {fileID: 3057443602924635765}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e1fea038d8a4846a5b2f0af30118de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8921615151756784757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5882204089284669952, guid: ee5435bb39ed112459f7121cf1200d01,

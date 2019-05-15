@@ -39,6 +39,16 @@ public class EnemyAniamtion : MonoBehaviour
             timer = 0;
         }
     }
+    public void HurtAnimation()
+    {
+        combatInput.State = CombatState.Hurt;
+        enemyAnimator.Play("Hurt");
+    }
+    public void EndHurtAnimation()
+    {
+        combatInput.State = CombatState.Idle;        
+    }
+
     public void AttackAnimation()
     {
         enemyAnimator.Play("Attack");

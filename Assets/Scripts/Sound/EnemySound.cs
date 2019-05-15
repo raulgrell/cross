@@ -21,7 +21,6 @@ public class EnemySound : MonoBehaviour
     public void onAttack()
     {
         if (!source.isPlaying) {
-        Debug.Log("hereAttack");
             int r = Random.Range(0, AttackClips.Length);
             source.clip = AttackClips[r];
             source.Play();
