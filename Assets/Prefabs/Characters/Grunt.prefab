@@ -4357,12 +4357,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackClips:
-  - {fileID: 8300000, guid: 4e69a4b1a9915fb4faa3a18e35b353a2, type: 3}
-  - {fileID: 8300000, guid: ef02855dab575a645bbae75139cb0dc5, type: 3}
-  - {fileID: 8300000, guid: 1be350462567de44eb7955a229011f24, type: 3}
+  - {fileID: 8300000, guid: d549ee314b39845439c1d9062ddd2f1c, type: 3}
+  - {fileID: 8300000, guid: 51c72cd8a81042849abf40d77e474db6, type: 3}
+  - {fileID: 8300000, guid: 7cf1a631e5e19b94197c42e71c3a6aa7, type: 3}
   HurtClips:
-  - {fileID: 8300000, guid: 7e361b042e31b6c45be5b38fa408f8b3, type: 3}
-  - {fileID: 8300000, guid: 9c961142f5b56594a9e016a52e0a1cb1, type: 3}
+  - {fileID: 8300000, guid: c24aa308536766244a5825ae541c9b5e, type: 3}
+  - {fileID: 8300000, guid: 4ed83e91bb1970b4cbe6353a4ce97074, type: 3}
 --- !u!95 &4433857010112071683
 Animator:
   serializedVersion: 3

@@ -123,7 +123,7 @@ public class GridCombat : MonoBehaviour
         }
         else if (unit.CompareTag("Enemy"))
         {
-            //enemySoundEffect.onAttack();
+            enemySoundEffect.onAttack();
             enemyAnimation.AttackAnimation();
         }
         stateTimer = 0;
@@ -177,7 +177,7 @@ public class GridCombat : MonoBehaviour
                     }
                     else if(node.unit.transform.CompareTag("Enemy"))
                     {
-                        // node.unit.transform.GetComponent<GridCombat>().enemySoundEffect.onHurt();
+                        node.unit.transform.GetComponent<GridCombat>().enemySoundEffect.onHurt();
                         node.unit.transform.GetComponent<EnemyAniamtion>().HurtAnimation();
                         if(health.Damage(1))
                         Destroy(node.unit.gameObject);

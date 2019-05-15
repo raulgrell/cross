@@ -13,30 +13,30 @@ public class EnemySound : MonoBehaviour
     private void Start()
     {
         source = GetComponent<AudioSource>();
-        source.SetScheduledEndTime(0.1f);
 
     }
 
 
     public void onAttack()
     {
-        if (!source.isPlaying) {
-            int r = Random.Range(0, AttackClips.Length);
-            source.clip = AttackClips[r];
-            source.Play();
+        if (source.isPlaying)
+        {
+            source.Stop();
         }
+            int r = Random.Range(0, AttackClips.Length);
+        source.PlayOneShot(AttackClips[r]);
 
     }
 
     public void onHurt()
     {
-        if (!source.isPlaying)
+        if (source.isPlaying)
         {
-        Debug.Log("hereHurt");
-            int r = Random.Range(0, HurtClips.Length);
-            source.clip = HurtClips[r];
-            source.Play();
+            source.Stop();
         }
+            int r = Random.Range(0, HurtClips.Length);
+        source.PlayOneShot(HurtClips[r]);
+        
     }
 }
 
