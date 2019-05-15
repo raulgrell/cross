@@ -1081,10 +1081,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c39b782a9c96d44dabc0780652c9a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 22, y: 4}
   grid: {fileID: 0}
   speed: 16
-  forward: {x: 0, y: 0}
 --- !u!114 &5566246928307940487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1185,7 +1183,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4754,12 +4752,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1857656363483744973, guid: ee5435bb39ed112459f7121cf1200d01,
+    - target: {fileID: 369790994242861797, guid: ee5435bb39ed112459f7121cf1200d01,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 369790994242861797, guid: ee5435bb39ed112459f7121cf1200d01,
+    - target: {fileID: 1857656363483744973, guid: ee5435bb39ed112459f7121cf1200d01,
         type: 3}
       propertyPath: m_IsActive
       value: 0

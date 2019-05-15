@@ -62,7 +62,7 @@ public class GridCombat : MonoBehaviour
         if (transform.CompareTag("Player"))
         {
             animation = GetComponent<PlayerAnimation>();
-            gridOrigPos = unit.Position;
+            gridOrigPos = grid.WorldToCell(transform.position);
             playerOrigPos = transform.position;
         }
         else if (transform.CompareTag("Enemy"))
@@ -82,7 +82,7 @@ public class GridCombat : MonoBehaviour
             case CombatState.Idle:
                 break;
             case CombatState.Block:
-                if (stateTimer > 1f)
+                if (stateTimer > 0.5f)
                     State = CombatState.Idle;
                 break;
             case CombatState.Parry:
