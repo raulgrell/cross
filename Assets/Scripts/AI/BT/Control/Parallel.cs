@@ -17,7 +17,9 @@ public class Parallel : Task
                     status = TaskStatus.Failure;
                     return status;
                 }
-                else if (childrenStatus == TaskStatus.Success) successCount++;
+                
+                if (childrenStatus == TaskStatus.Success)
+                    successCount++;
             }
             else
                 successCount++;

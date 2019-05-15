@@ -17,10 +17,9 @@ public class Selector : Task
                     status = TaskStatus.Success;
                     return status;
                 }
-                else if (childrenStatus == TaskStatus.Failure)
-                {
+                
+                if (childrenStatus == TaskStatus.Failure)
                     failureCount++;
-                }
             }
             else
             {

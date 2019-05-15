@@ -17,14 +17,11 @@ public class Sequence : Task
                     status = TaskStatus.Failure;
                     return status;
                 }
-                else if (childrenStatus == TaskStatus.Success)
-                {
+                
+                if (childrenStatus == TaskStatus.Success)
                     successCount++;
-                }
                 else
-                {
                     break;
-                }
             }
             else
             {

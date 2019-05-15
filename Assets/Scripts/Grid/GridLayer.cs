@@ -166,9 +166,10 @@ public class GridLayer : MonoBehaviour
             for (int j = 0; j < numRows; j++)
             {
                 var randomIndex = Random.Range(0, floorBlocks.metals.Length);
+                var randomRotation = Random.Range(0, 4);
 //                var randomIndex = Mathf.FloorToInt(Mathf.PerlinNoise(i*0.1f, j*0.1f) * floorBlocks.metals.Length);
                 var offset = new Vector3(cellSize * i, Random.Range(0f, 0.2f), cellSize * j);
-                var node = Instantiate(floorBlocks.metals[randomIndex], origin + offset, Quaternion.identity, floor);
+                var node = Instantiate(floorBlocks.metals[randomIndex], origin + offset, Quaternion.Euler(0, 90 * randomRotation, 0), floor);
             }
         }
     }

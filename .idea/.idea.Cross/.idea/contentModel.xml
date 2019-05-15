@@ -361,7 +361,7 @@
             <e p="Tasks" t="Include">
               <e p="AimTask.cs" t="Include" />
               <e p="AttackTask.cs" t="Include" />
-              <e p="Conditions" t="Include">
+              <e p="Check" t="Include">
                 <e p="AdjacentCondition.cs" t="Include" />
                 <e p="DoorOpenCondition.cs" t="Include" />
               </e>
