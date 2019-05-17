@@ -8,19 +8,31 @@ using UnityEngine;
 public abstract class UnitController : MonoBehaviour
 {
     public Transform target;
-    internal GridUnit unit;
-    internal GridCombat combat;
-    internal GridNode[] path;
-    internal int nodeIndex;
-    internal GridNode gridWaypoint;
-    internal float actionTimer;
     
+    protected GridNode gridWaypoint;
+    protected GridUnit unit;
+    protected GridCombat combat;
+    protected GridNode[] path;
+    protected int nodeIndex;
+    protected float actionTimer;
+
+    public GridCombat Combat => combat;
+    public GridUnit Unit => unit;
+    public GridNode[] Path => path;
+    
+    public bool Ready => actionTimer < 0;
+
     [Range(0.01f, 1f)] public float refreshInterval = 0.2f;
 
     protected virtual void Start()
     {
         unit = GetComponent<GridUnit>();
         combat = GetComponent<GridCombat>();
+    }
+
+    private void Update()
+    {
+        actionTimer -= Time.deltaTime;
     }
 
     public void GoToNextWaypoint()
@@ -38,10 +50,7 @@ public abstract class UnitController : MonoBehaviour
         if (unit.State == GridUnitState.Moving)
             return false;
 
-        if (path == null || nodeIndex >= path.Length)
-            return false;
-
-        return true;
+        return path != null && nodeIndex <= path.Length;
     }
 
     public void Attack()
@@ -52,7 +61,15 @@ public abstract class UnitController : MonoBehaviour
     public void MoveAwayFromTarget()
     {
         var targetPos = unit.grid.WorldToCell(target.position);
+        var d = unit.Position - targetPos;
+        unit.MoveTowards(d);
+    }
+    
+    public void MoveTowardsTarget()
+    {
+        var targetPos = unit.grid.WorldToCell(target.position);
         var d = targetPos - unit.Position;
+        unit.MoveTowards(d);
     }
 
     protected IEnumerator RequestPath()

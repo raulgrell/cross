@@ -13,21 +13,18 @@ public class MeleeIcon : MonoBehaviour
     {
         icon = GetComponent<Image>();
     }
-    // Start is called before the first frame update
+
     public void onChangeWeapon(UnitAttack attack)
     {
         currentAttack = attack;
+    
         if(currentAttack.name == "BasicAttack")
-        {
             icon.sprite = iconImages[0];
-        }
+        
         if (currentAttack.name == "SlashAttack")
-        {
             icon.sprite = iconImages[1];
-        }
+
         if (currentAttack.name == "KnifeAttack")
-        {
             icon.sprite = iconImages[2];
-        }
     }
 }

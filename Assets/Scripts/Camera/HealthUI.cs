@@ -19,6 +19,7 @@ public class HealthUI : MonoBehaviour
             healthHearts.RemoveAt(i);
         }
     }
+    
     public void ResetHearts()
     {
         healthHearts.Clear();

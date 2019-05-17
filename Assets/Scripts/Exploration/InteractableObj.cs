@@ -2,86 +2,85 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum ObjectState
+{
+    None,
+    Fixed,
+    Held,
+    Thrown
+}
+
 public class InteractableObj : MonoBehaviour
 {
     public GridLayer grid;
+    
+    [Multiline]
     public string text;
+    
     public float groundedY;
-    internal int state = 2;
-    internal bool throwing;
+    public ObjectState state;
+    private bool throwing;
     private PlayerInteraction player;
     private Transform target;
+    private Vector2Int gridPos;
 
     private new Camera camera;
     
     public float getGroundedY => groundedY;
-    public Vector2Int getGridPos { get; set; }
+    public Vector2Int Position => gridPos;
 
     private void Start()
     {
         camera = Camera.main;
+        state = ObjectState.None;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteraction>();
         Vector3 actualWorldPosition = new Vector3(transform.position.x, grid.transform.position.y, transform.position.z);
-        getGridPos = grid.WorldToCell(actualWorldPosition);
-        grid.Nodes[getGridPos.y, getGridPos.x].walkable = false;
+        gridPos = grid.WorldToCell(actualWorldPosition);
+        grid.Nodes[gridPos.y, gridPos.x].walkable = false;
     }
 
     private void Update()
     {
         switch (state)
         {
-            case 0:
-                Vector3 pos = new Vector3();
+            case ObjectState.Fixed:
                 if (Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out RaycastHit info))
                 {
                     target = info.transform;
-                    pos = info.transform.position;
+                    Vector3 pos = info.transform.position;
                     pos.y = getGroundedY;
-                    getGridPos = grid.WorldToCell(pos);
+                    gridPos = grid.WorldToCell(pos);
+                    
                     if (Input.GetKey(KeyCode.LeftShift))
                     {
                         transform.position = Vector3.MoveTowards(transform.position, pos, 1f);
-                        throwing = true;
+                        state = ObjectState.Thrown;
                     }
                     else
-                        transform.position = Vector3.MoveTowards(transform.position, pos, 0.5f);
-
-                    grid.Nodes[getGridPos.y, getGridPos.x].walkable = false;
-                    player.gridUnit.speed = 16;
-                }
-                if (transform.position == pos)
-                    if (throwing)
                     {
-                        state = 3;
+                        transform.position = Vector3.MoveTowards(transform.position, pos, 0.5f);
+                        state = ObjectState.Thrown;
                     }
-                    else
-                        state = 2;
+
+                    grid.Nodes[gridPos.y, gridPos.x].walkable = false;
+                    player.Unit.speed = 16;
+                }
                 break;
-            case 1:
-                player.gridUnit.speed = 8;
+            case ObjectState.Held:
+                player.Unit.speed = 8;
                 Vector3 newPos = player.transform.position;
                 newPos.y = transform.position.y;
                 transform.position = newPos;
                 break;
-            case 2:
-
+            case ObjectState.None:
                 break;
-
-            case 3:
-
-                if (target.CompareTag("Enemy"))
-                {
-                    if (target.gameObject.HasComponent<CombatHealth>())
-                        if (target.GetComponent<CombatHealth>().Damage(5))
-                            Destroy(target.gameObject);
-                    Destroy(gameObject);
-                }
-                else
-                   Destroy(gameObject);
-                throwing = false;
-                state = 2;
+            case ObjectState.Thrown:
+                if (target.gameObject.HasComponent<CombatHealth>() && target.GetComponent<CombatHealth>().Damage(5))
+                    Destroy(target.gameObject);
+                
+                Destroy(gameObject);
+                state = ObjectState.None;
                 break;
         }
-        
     }
 }

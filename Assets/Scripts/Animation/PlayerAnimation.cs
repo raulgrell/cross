@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-   
     internal Animator playerAnimator;
     private new Camera camera;
     private GridUnit input;
     private GridCombat combatInput;
     private bool playing;
     private float timer;
-    // Start is called before the first frame update
+
     void Start()
     {
         camera = Camera.main;
@@ -20,7 +19,6 @@ public class PlayerAnimation : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         WalkingAnimation();
@@ -35,15 +33,17 @@ public class PlayerAnimation : MonoBehaviour
     {
 
     }
+
     public void Dance()
     {
         playerAnimator.SetBool("Dancing", true);
     }
+    
     public void StopDancing()
     {
         playerAnimator.SetBool("Dancing", false);
-
     }
+    
     public void BlockAnimation()
     {
         playerAnimator.Play("Blocking");
@@ -58,6 +58,7 @@ public class PlayerAnimation : MonoBehaviour
     {
         playerAnimator.Play("Attack2");
     }
+    
     void WalkingAnimation()
     {
         if (input.State == GridUnitState.Moving)
@@ -66,6 +67,7 @@ public class PlayerAnimation : MonoBehaviour
             playing = true;
             timer = 0;
         }
+        
         if (playing)
             timer += 0.1f;
 

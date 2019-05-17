@@ -9,10 +9,9 @@ using Random = UnityEngine.Random;
 
 public class GridLayer : MonoBehaviour
 {
-    public LayerMask unwalkableMask;
-    public GameObject nodePrefab;
+    public LayerMask customMask;
     public Transform floor;
-    public GridModels floorBlocks;
+    public GridBlocks floorBlocks;
     public int numCols = 12;
     public int numRows = 8;
     public float cellSize = 2;
@@ -25,17 +24,9 @@ public class GridLayer : MonoBehaviour
 
     void Awake()
     {
-        nodes = new GridNode[numRows, numCols];
-
-        var origin = transform.position;
-        for (int i = 0; i < numCols; i++)
+        if (nodes == null)
         {
-            for (int j = 0; j < numRows; j++)
-            {
-                var offset = Vector3.forward * cellSize * j + Vector3.right * cellSize * i;
-                var node = GridNode.Spawn(nodePrefab, origin + offset, new Vector2Int(i, j), transform);
-                Nodes[j, i] = node;
-            }
+            GenerateFloor();
         }
     }
 
@@ -148,28 +139,35 @@ public class GridLayer : MonoBehaviour
         return dstX + dstY;
     }
 
-    [Button("Generate Floor")]
-    public void GenerateFloor()
+    [Button("Clear Floor")]
+    public void ClearFloor()
     {
         if (!floor) return;
-
         var children = new List<GameObject>();
         foreach(Transform child in floor) children.Add(child.gameObject);
         foreach (GameObject child in children) DestroyImmediate(child);
-
-        if (floor.childCount != 0) return;
-
-        var noiseOffset = Random.Range(0f, 100f);
+        nodes = null;
+    }
+    
+    [Button("Generate Floor")]
+    public void GenerateFloor()
+    {
+        ClearFloor();
+        
+        if (!floor || floor.childCount != 0)
+            return;
+        
         var origin = transform.position;
+        var noiseOffset = Random.Range(0f, 100f);
+        
+        nodes = new GridNode[numRows, numCols];
         for (int i = 0; i < numCols; i++)
         {
             for (int j = 0; j < numRows; j++)
             {
-                var randomIndex = Random.Range(0, floorBlocks.metals.Length);
-                var randomRotation = Random.Range(0, 4);
-//                var randomIndex = Mathf.FloorToInt(Mathf.PerlinNoise(i*0.1f, j*0.1f) * floorBlocks.metals.Length);
                 var offset = new Vector3(cellSize * i, Random.Range(0f, 0.2f), cellSize * j);
-                var node = Instantiate(floorBlocks.metals[randomIndex], origin + offset, Quaternion.Euler(0, 90 * randomRotation, 0), floor);
+                var node = GridNode.Spawn(floorBlocks, origin + offset, new Vector2Int(i, j), floor, customMask);
+                nodes[j, i] = node;
             }
         }
     }

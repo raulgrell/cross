@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Attack
   m_EditorClassIdentifier: 
   Value:
-    entryAction: {fileID: 0}
+    entryAction: {fileID: 11400000, guid: 29cdc69191919ea468566569043b6c04, type: 2}
     exitAction: {fileID: 0}
     actions:
     - {fileID: 11400000, guid: a73fe57ccf179bd4aaf376bcdd9056fc, type: 2}

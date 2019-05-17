@@ -9,14 +9,14 @@ public class EnemyAnimation : MonoBehaviour
     private GridCombat combatInput;
     private bool playing;
     private float timer;
-    // Start is called before the first frame update
+
     void Start()
     {
         input = GetComponent<GridUnit>();
         combatInput = GetComponent<GridCombat>();
         enemyAnimator = GetComponent<Animator>();
     }
-    // Update is called once per frame
+
     void Update()
     {
         WalkingAnimation();
@@ -39,18 +39,19 @@ public class EnemyAnimation : MonoBehaviour
             timer = 0;
         }
     }
+    public void HurtAnimation()
+    {
+        combatInput.State = CombatState.Hurt;
+        enemyAnimator.Play("Hurt");
+    }
+    public void EndHurtAnimation()
+    {
+        combatInput.State = CombatState.Idle;        
+    }
+
     public void AttackAnimation()
     {
         enemyAnimator.Play("Attack");
-    }
-    public void HurtAnimation()
-    {
-        enemyAnimator.Play("Hurt");
-        combatInput.State = CombatState.Hurt;
-    }
-    
-    public void EndHurtAnimation()
-    {
-       combatInput.State = CombatState.Idle;
+
     }
 }

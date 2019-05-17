@@ -11,6 +11,9 @@ TagManager:
   - Tile
   - Walkway
   - Cinemachine
+  - Wall
+  - Exterior
+  - Hole
   layers:
   - Default
   - TransparentFX

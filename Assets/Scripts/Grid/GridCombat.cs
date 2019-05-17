@@ -35,7 +35,7 @@ public class GridCombat : MonoBehaviour
 
     private float stateTimer;
     private new PlayerAnimation animation;
-    private EnemyAniamtion enemyAnimation;
+    private EnemyAnimation enemyAnimation;
     private EnemySound enemySoundEffect;
 
     public Transform Target
@@ -68,7 +68,7 @@ public class GridCombat : MonoBehaviour
         else if (transform.CompareTag("Enemy"))
         {
             enemySoundEffect = GetComponent<EnemySound>();
-            enemyAnimation = GetComponent<EnemyAniamtion>();
+            enemyAnimation = GetComponent<EnemyAnimation>();
         }
         grid = unit.grid;
         state = CombatState.Idle;
@@ -178,7 +178,7 @@ public class GridCombat : MonoBehaviour
                     else if(node.unit.transform.CompareTag("Enemy"))
                     {
                         node.unit.transform.GetComponent<GridCombat>().enemySoundEffect.onHurt();
-                        node.unit.transform.GetComponent<EnemyAniamtion>().HurtAnimation();
+                        node.unit.transform.GetComponent<EnemyAnimation>().HurtAnimation();
                         if(health.Damage(1))
                         Destroy(node.unit.gameObject);
                     }

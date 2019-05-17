@@ -10,6 +10,7 @@ public class CombatEffect : MonoBehaviour
     {
         if (lifetime < 0)
             Destroy(gameObject);
+        
         lifetime -= Time.deltaTime;
     }
 }

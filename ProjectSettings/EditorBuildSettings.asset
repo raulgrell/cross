@@ -14,7 +14,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewScene.unity
     guid: d3cb57dbfcba87143ac350ac6a368228
-  - enabled: 0
-    path: Assets/Scenes/PresentationScene.unity
-    guid: f7e94c48f22acf944b2eb1ee3e892033
   m_configObjects: {}

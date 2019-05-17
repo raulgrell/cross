@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using Random = UnityEngine.Random;
+
 public enum NodeType
 {
     Slow,
@@ -16,6 +18,7 @@ public class GridNode : MonoBehaviour, IHeapItem<GridNode>
     public float height;    
     public bool walkable = true;
     public Vector2Int gridPosition;
+    public NodeType type;
 
     public int gCost;
     public int hCost;
@@ -25,21 +28,59 @@ public class GridNode : MonoBehaviour, IHeapItem<GridNode>
         
     public int HeapIndex { get; set; }
     
-    public static GridNode Spawn(GameObject prefab, Vector3 worldPos, Vector2Int gridPos, Transform parent)
+    public static GridNode Spawn(GridBlocks blocks, Vector3 worldPos, Vector2Int gridPos, Transform parent, LayerMask customMask)
     {
-        var obj = Instantiate(prefab, worldPos, Quaternion.identity, parent);
-        obj.transform.position = worldPos;
+        var blockIndex = Random.Range(0, blocks.metals.Length);
+        var perlinIndex = Mathf.FloorToInt(Mathf.PerlinNoise(gridPos.x*0.1f, gridPos.y*0.1f) * blocks.metals.Length);
+        var randomRotation = Random.Range(0, 4);
+
+        GameObject obj;
+        GridNode node;
+        if (Physics.Raycast(worldPos, Vector3.down, out RaycastHit hitInfo, customMask))
+        {
+            if (hitInfo.collider.CompareTag("Walkway"))
+            {
+                var walkwayIndex = Random.Range(0, blocks.walkways.Length);
+                obj = Instantiate(blocks.walkways[walkwayIndex], worldPos, Quaternion.Euler(0, 90 * randomRotation, 0), parent);
+                node = obj.GetComponent<GridNode>();
+                node.gridPosition = gridPos;
+                node.walkable = true;
+                return node;
+            } 
+
+            if (hitInfo.collider.CompareTag("Exterior"))
+            {
+                var exteriorIndex = Random.Range(0, blocks.exterior.Length);
+                obj = Instantiate(blocks.exterior[exteriorIndex], worldPos, Quaternion.Euler(0, 90 * randomRotation, 0), parent);
+                node = obj.GetComponent<GridNode>();
+                node.gridPosition = gridPos;
+                node.walkable = true;
+                return node;
+            }
+            
+            if (hitInfo.collider.CompareTag("Wall"))
+            {
+                obj = Instantiate(blocks.metals[blockIndex], worldPos, Quaternion.Euler(0, 90 * randomRotation, 0), parent);
+                node = obj.GetComponent<GridNode>();
+                node.gridPosition = gridPos;
+                node.walkable = false;
+                return node;
+            }
+            
+            if (hitInfo.collider.CompareTag("Hole"))
+            {
+                obj = Instantiate(blocks.empty, worldPos, Quaternion.Euler(0, 90 * randomRotation, 0), parent);
+                node = obj.GetComponent<GridNode>();
+                node.gridPosition = gridPos;
+                node.walkable = true;
+                return node;
+            }
+        }
         
-        var node = obj.GetComponent<GridNode>();
-        node.walkable = true;
+        obj = Instantiate(blocks.metals[blockIndex], worldPos, Quaternion.Euler(0, 90 * randomRotation, 0), parent);
+        node = obj.GetComponent<GridNode>();
         node.gridPosition = gridPos;
-
-        if (!Physics.Raycast(worldPos + Vector3.up * 2, Vector3.down, out RaycastHit hitInfo))
-            return node;
-        
-        node.height = hitInfo.point.y;
-        obj.transform.position = obj.transform.position.SetY(node.height);
-
+        node.walkable = true;
         return node;
     }
     

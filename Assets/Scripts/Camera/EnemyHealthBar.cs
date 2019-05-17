@@ -14,8 +14,8 @@ public class EnemyHealthBar : MonoBehaviour
             healthHearts[i].gameObject.SetActive(false);
             healthHearts.RemoveAt(i);
         }
+        
         transform.rotation = fixedRotation;
-
     }
 
     public void FixRotation()

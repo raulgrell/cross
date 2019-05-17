@@ -30,14 +30,14 @@ public class EnemyController : UnitController
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(pos, Vector3.one);
         
-        if (path == null)
+        if (Path == null)
             return;
         
-        for (int i = nodeIndex; i < path.Length; i++)
+        for (int i = nodeIndex; i < Path.Length; i++)
         {
             Vector3 lineStart = i == nodeIndex
-                ? transform.position : path[i - 1].transform.position + Vector3.up;
-            Vector3 lineEnd = path[i].transform.position + Vector3.up;
+                ? transform.position : Path[i - 1].transform.position + Vector3.up;
+            Vector3 lineEnd = Path[i].transform.position + Vector3.up;
             
             Gizmos.color = Color.blue;
             Gizmos.DrawSphere(lineEnd, 0.2f);

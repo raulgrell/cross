@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class ButtonScripted : MonoBehaviour
 {
-    private Animator buttonAnimatior;
+    private Animator buttonAnimator;
 
     public void Start()
     {
-        buttonAnimatior = GetComponent<Animator>();
+        buttonAnimator = GetComponent<Animator>();
     }
+    
     public void ClickedAniamtion()
     {
-        buttonAnimatior.Play("Clicked");
+        buttonAnimator.Play("Clicked");
     }
 
     public void EndAnimation()
@@ -25,6 +26,5 @@ public class ButtonScripted : MonoBehaviour
             GetComponent<StartButton>().StartScene();
         if (gameObject.HasComponent<ExittoMenuButton>())
             GetComponent<ExittoMenuButton>().GoBacktoMenu();
-
     }
 }

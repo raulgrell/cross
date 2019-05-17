@@ -18,13 +18,11 @@ public class CameraObstacleFade : MonoBehaviour
     private List<Transform> t = new List<Transform>();
     private Transform temp;
     
-    // Start is called before the first frame update
     void Start()
     {
         camera = GetComponent<Camera>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         centerPlayer = player.transform.position;
@@ -43,12 +41,9 @@ public class CameraObstacleFade : MonoBehaviour
                 {
                     for (int i = 0; i < temp.childCount; i++)
                         temp.GetChild(i).GetComponent<MeshRenderer>().enabled = false;
-                    //     FadeObj(true, temp.GetChild(i));
                 }
                 else
                     temp.GetComponent<MeshRenderer>().enabled = false;
-
-                //     FadeObj(true, temp);
             }
 
             if (t.Count > hits.Length - 1)
@@ -67,21 +62,6 @@ public class CameraObstacleFade : MonoBehaviour
                 t.Clear();
             }
         }
-
-        //else if (t.Count > 0 && hits.Length)
-        //{
-        //    foreach (Transform temporary in t)
-        //    {
-        //        if (!temporary.GetComponent<MeshRenderer>())
-        //        {
-        //            for (int i = 0; i < temporary.childCount; i++)
-        //                temporary.GetChild(i).GetComponent<MeshRenderer>().enabled = true;
-        //        }
-        //        else
-        //            temporary.GetComponent<MeshRenderer>().enabled = true;
-        //    }
-        //    t.Clear();
-        //}
     }
     
     private void FadeObj(bool inOut, Transform obj)
