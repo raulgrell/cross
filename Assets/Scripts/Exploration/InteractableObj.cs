@@ -38,6 +38,8 @@ public class InteractableObj : MonoBehaviour
         gridPos = grid.WorldToCell(actualWorldPosition);
         grid.Nodes[gridPos.y, gridPos.x].walkable = false;
     }
+    bool throwned;
+
 
     private void Update()
     {
@@ -54,12 +56,21 @@ public class InteractableObj : MonoBehaviour
                     if (Input.GetKey(KeyCode.LeftShift))
                     {
                         transform.position = Vector3.MoveTowards(transform.position, pos, 1f);
-                        state = ObjectState.Thrown;
+                        throwned = true;               
                     }
                     else
                     {
                         transform.position = Vector3.MoveTowards(transform.position, pos, 0.5f);
-                        state = ObjectState.Thrown;
+                        throwned = false;               
+                    }
+
+                    if(Vector3.Distance(transform.position,pos) < 2)
+                    {
+                        if (throwned)
+                            state = ObjectState.Thrown;
+                        else
+                            state = ObjectState.None;
+
                     }
 
                     grid.Nodes[gridPos.y, gridPos.x].walkable = false;

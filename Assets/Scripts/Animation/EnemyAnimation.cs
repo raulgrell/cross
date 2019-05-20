@@ -51,7 +51,16 @@ public class EnemyAnimation : MonoBehaviour
 
     public void AttackAnimation()
     {
-        enemyAnimator.Play("Attack");
+        if (transform.name.Contains("Psycho"))
+        {
+            enemyAnimator.Play(combatInput.meleeAttack.name);
+        }
+        else if (transform.name.Contains("Grunt"))
+        {
+            enemyAnimator.Play(combatInput.meleeAttack.name);
+        }
+        else
+            enemyAnimator.Play("Attack");
 
     }
 }

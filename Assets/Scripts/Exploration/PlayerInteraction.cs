@@ -54,14 +54,11 @@ public class PlayerInteraction : MonoBehaviour
             }
         }
         else if (Input.GetMouseButtonUp(1) && holding)
-        {
-            if (Vector2.Distance(gridUnit.Position, currentObj.Position) <= 3)
-            {
+        { 
                 gridCombat.State = CombatState.Idle;
                 currentObj.state = ObjectState.Fixed;
                 holding = false;
                 currentObj = null;
-            }
         }
 
         if (Input.GetMouseButtonDown(0) && !finished)
