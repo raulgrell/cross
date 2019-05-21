@@ -580,6 +580,7 @@ GameObject:
   - component: {fileID: 8497654677918710524}
   - component: {fileID: 5147648831467868022}
   - component: {fileID: 5549313411920175519}
+  - component: {fileID: -5523523324729101638}
   m_Layer: 0
   m_Name: SpaceCrate
   m_TagString: Interactable
@@ -629,6 +630,7 @@ MonoBehaviour:
   grid: {fileID: 0}
   text: Looks like it can contain loot
   groundedY: 3
+  state: 0
 --- !u!65 &5549313411920175519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -642,6 +644,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.85, y: 1.2, z: 1}
   m_Center: {x: 1.26, y: 0.16, z: 0.54}
+--- !u!114 &-5523523324729101638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8497654677918213660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c39b782a9c96d44dabc0780652c9a89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 0}
+  speed: 16
 --- !u!1 &8497654677918213760
 GameObject:
   m_ObjectHideFlags: 0

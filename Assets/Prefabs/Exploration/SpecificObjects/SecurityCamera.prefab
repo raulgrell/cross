@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 1184988818}
   - component: {fileID: 1184988815}
   - component: {fileID: 1184988819}
+  - component: {fileID: -7510135707216693332}
   m_Layer: 0
   m_Name: SecurityCamera
   m_TagString: Interactable
@@ -455,6 +456,21 @@ MonoBehaviour:
   grid: {fileID: 0}
   text: Someone is watching me
   groundedY: 0
+  state: 0
+--- !u!114 &-7510135707216693332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5654114691709257870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c39b782a9c96d44dabc0780652c9a89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 0}
+  speed: 16
 --- !u!1 &5654114691709257872
 GameObject:
   m_ObjectHideFlags: 0

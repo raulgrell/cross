@@ -14,6 +14,7 @@ public enum EffectType
     None,
     Damage,
     Condition,
+    Both,
 }
 
 public abstract class UnitAttack : ScriptableObject
@@ -49,6 +50,7 @@ public class Target
 {
     public Vector2Int position;
     public EffectType effect;
-    public int damage;
+    public int damage = 1;
+    public int knockback = 1;
 }
 

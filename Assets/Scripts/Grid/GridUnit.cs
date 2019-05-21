@@ -15,9 +15,9 @@ public enum GridUnitState
 
 public class GridUnit : MonoBehaviour
 {
-    public GridLayer grid;
     public int speed = 16;
 
+    internal GridLayer grid;
     internal Vector2Int position;
     private Vector2Int prevPosition;
     private Vector2Int forward = Vector2Int.up;
@@ -28,6 +28,11 @@ public class GridUnit : MonoBehaviour
     public Vector2Int Position => position;
     public Vector2Int Forward => forward;
     public Vector2Int Right => new Vector2Int(forward.y, -forward.x);
+
+    private void Awake()
+    {
+        grid = FindObjectOfType<GridLayer>();
+    }
 
     void Start()
     {

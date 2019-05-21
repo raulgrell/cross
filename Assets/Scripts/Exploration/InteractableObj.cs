@@ -12,25 +12,30 @@ public enum ObjectState
 
 public class InteractableObj : MonoBehaviour
 {
-    public GridLayer grid;
+    public float groundedY;
+    public ObjectState state;
     
     [Multiline]
     public string text;
     
-    public float groundedY;
-    public ObjectState state;
+    internal GridLayer grid;
     private bool throwing;
     private PlayerInteraction player;
     private Transform target;
     private Vector2Int gridPos;
+    private GridUnit unit;
+    private bool throwned;
 
     private new Camera camera;
     
     public float getGroundedY => groundedY;
     public Vector2Int Position => gridPos;
+    public Vector2Int SetPosition { set => gridPos = value; }
 
     private void Start()
     {
+        unit = GetComponent<GridUnit>();
+        grid = FindObjectOfType<GridLayer>();
         camera = Camera.main;
         state = ObjectState.None;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteraction>();
@@ -38,7 +43,6 @@ public class InteractableObj : MonoBehaviour
         gridPos = grid.WorldToCell(actualWorldPosition);
         grid.Nodes[gridPos.y, gridPos.x].walkable = false;
     }
-    bool throwned;
 
 
     private void Update()
@@ -50,7 +54,11 @@ public class InteractableObj : MonoBehaviour
                 {
                     target = info.transform;
                     Vector3 pos = info.transform.position;
+                    
                     pos.y = getGroundedY;
+                    grid.Nodes[gridPos.y, gridPos.x].walkable = true;
+                    grid.Nodes[gridPos.y, gridPos.x].unit = null;
+
                     gridPos = grid.WorldToCell(pos);
                     
                     if (Input.GetKey(KeyCode.LeftShift))
@@ -64,16 +72,16 @@ public class InteractableObj : MonoBehaviour
                         throwned = false;               
                     }
 
-                    if(Vector3.Distance(transform.position,pos) < 2)
+                    if(Vector3.Distance(transform.position,pos) < 0.1f)
                     {
                         if (throwned)
                             state = ObjectState.Thrown;
                         else
                             state = ObjectState.None;
-
                     }
 
                     grid.Nodes[gridPos.y, gridPos.x].walkable = false;
+                    grid.Nodes[gridPos.y, gridPos.x].unit = unit;
                     player.Unit.speed = 16;
                 }
                 break;
@@ -82,13 +90,17 @@ public class InteractableObj : MonoBehaviour
                 Vector3 newPos = player.transform.position;
                 newPos.y = transform.position.y;
                 transform.position = newPos;
+                grid.Nodes[gridPos.y, gridPos.x].walkable = true;
                 break;
             case ObjectState.None:
+                grid.Nodes[gridPos.y, gridPos.x].unit = unit;
                 break;
             case ObjectState.Thrown:
                 if (target.gameObject.HasComponent<CombatHealth>() && target.GetComponent<CombatHealth>().Damage(5))
                     Destroy(target.gameObject);
-                
+                grid.Nodes[gridPos.y, gridPos.x].walkable = true;
+                grid.Nodes[gridPos.y, gridPos.x].unit = null;
+
                 Destroy(gameObject);
                 state = ObjectState.None;
                 break;

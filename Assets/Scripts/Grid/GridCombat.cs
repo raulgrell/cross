@@ -27,6 +27,7 @@ public class GridCombat : MonoBehaviour
     private GridLayer grid;
     private GridUnit unit;
     private bool targeting;
+    private UnitAttack currentAttack;
 
     //Player Death
     private Vector3 playerOrigPos;
@@ -53,6 +54,7 @@ public class GridCombat : MonoBehaviour
             state = value;
         }
     }
+    
 
     void Start()
     {
@@ -62,7 +64,6 @@ public class GridCombat : MonoBehaviour
         if (transform.CompareTag("Player"))
         {
             animation = GetComponent<PlayerAnimation>();
-            gridOrigPos = grid.WorldToCell(transform.position);
             playerOrigPos = transform.position;
         }
         else if (transform.CompareTag("Enemy"))
@@ -70,8 +71,8 @@ public class GridCombat : MonoBehaviour
             enemySoundEffect = GetComponent<EnemySound>();
             enemyAnimation = GetComponent<EnemyAnimation>();
         }
-        grid = unit.grid;
         state = CombatState.Idle;
+        gridOrigPos = grid.WorldToCell(transform.position);
     }
 
     void Update()
@@ -107,7 +108,6 @@ public class GridCombat : MonoBehaviour
         
         stateTimer += Time.deltaTime;
     }
-    private UnitAttack currentAttack;
 
     public void Attack(UnitAttack attack)
     {
@@ -126,9 +126,9 @@ public class GridCombat : MonoBehaviour
             enemySoundEffect.onAttack();
             enemyAnimation.AttackAnimation();
         }
-        stateTimer = 0;
-        
 
+        stateTimer = 0;
+       
     }
 
     public void DamageTile()
@@ -139,12 +139,12 @@ public class GridCombat : MonoBehaviour
         {
             Target hit = threatened[i];
             Vector2Int gridPosition = hit.position;
-
             if (grid.InBounds(gridPosition.x, gridPosition.y))
             {
                 GridNode node = grid.Nodes[gridPosition.y, gridPosition.x];
                 Vector3 worldPosition = grid.CellToWorld(node.gridPosition);
                 worldPosition.y = transform.position.y;
+                Debug.Log(node.unit + "" + node.gridPosition);
 
                 Instantiate(meleeAttack.attackPrefab, worldPosition, meleeAttack.attackPrefab.transform.rotation, null);
 
@@ -156,7 +156,7 @@ public class GridCombat : MonoBehaviour
                         GridCombat playerCombat = node.unit.GetComponent<GridCombat>();
                         if (playerCombat.state != CombatState.Hurt && playerCombat.state != CombatState.Block)
                         {
-                            if (health.Damage(1))
+                            if (health.Damage(threatened[i].damage))
                             {
                                 Camera.main.transform.position = playerCombat.cameraOrigPos;
                                 node.unit.position = playerCombat.gridOrigPos;
@@ -177,10 +177,35 @@ public class GridCombat : MonoBehaviour
                     }
                     else if(node.unit.transform.CompareTag("Enemy"))
                     {
-                        node.unit.transform.GetComponent<GridCombat>().enemySoundEffect.onHurt();
-                        node.unit.transform.GetComponent<EnemyAnimation>().HurtAnimation();
-                        if(health.Damage(1))
-                        Destroy(node.unit.gameObject);
+                        if (threatened[i].effect == EffectType.Damage)
+                        {
+                            node.unit.transform.GetComponent<GridCombat>().enemySoundEffect.onHurt();
+                            node.unit.transform.GetComponent<EnemyAnimation>().HurtAnimation();
+                            if (health.Damage(threatened[i].damage))
+                                Destroy(node.unit.gameObject);
+                        }
+                        else if(threatened[i].effect == EffectType.Both)
+                        {
+                            node.unit.transform.GetComponent<GridCombat>().enemySoundEffect.onHurt();
+                            node.unit.transform.GetComponent<EnemyAnimation>().HurtAnimation();
+                            if (health.Damage(threatened[i].damage))
+                                Destroy(node.unit.gameObject);
+                            grid.Nodes[node.unit.position.y, node.unit.position.x].walkable = true;
+                            node.unit.MoveToPosition(node.unit.position + unit.Forward * threatened[i].knockback);
+                        }
+                    }
+                    else if (node.unit.transform.CompareTag("Interactable"))
+                    {
+                        InteractableObj obj = node.unit.GetComponent<InteractableObj>();
+                        if(threatened[i].effect == EffectType.Both || threatened[i].effect == EffectType.Condition)
+                        {
+                            grid.Nodes[obj.Position.y, obj.Position.x].walkable = true;
+                            node.unit.MoveToPosition(obj.Position + unit.Forward * threatened[i].knockback);
+                            grid.Nodes[obj.Position.y, obj.Position.x].unit = null;
+                            obj.SetPosition = grid.WorldToCell(obj.transform.position);
+                            grid.Nodes[obj.Position.y, obj.Position.x].unit = node.unit;
+
+                        }
                     }
                 }
             }
