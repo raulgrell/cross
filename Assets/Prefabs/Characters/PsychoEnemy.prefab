@@ -4209,7 +4209,7 @@ GameObject:
   - component: {fileID: 4433857010112071683}
   - component: {fileID: 1404205940570186787}
   m_Layer: 0
-  m_Name: Grunt
+  m_Name: PsychoEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4271,7 +4271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c39b782a9c96d44dabc0780652c9a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grid: {fileID: 0}
   speed: 16
 --- !u!114 &2663314018992895774
 MonoBehaviour:
@@ -4288,6 +4287,8 @@ MonoBehaviour:
   meleeAttack: {fileID: 0}
   rangedAttack: {fileID: 0}
   specialAttack: {fileID: 0}
+  Weapon:
+  - {fileID: 5240751176322535845}
   icon: {fileID: 0}
 --- !u!114 &8128761719107388533
 MonoBehaviour:
@@ -4343,6 +4344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433ac528af350b342b43715b9c87a120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DisarmIdle: {fileID: 7400000, guid: 7ab6213b7a0c333478b2e21c34454495, type: 2}
 --- !u!114 &5759035257408156971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4648,6 +4650,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fe4534a087841643954fc7d675fc398, type: 3}
+--- !u!1 &5240751176322535845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 867110858844451507, guid: 5fe4534a087841643954fc7d675fc398,
+    type: 3}
+  m_PrefabInstance: {fileID: 4950155103759033110}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9142794007028212662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4202915510592487584, guid: 5fe4534a087841643954fc7d675fc398,

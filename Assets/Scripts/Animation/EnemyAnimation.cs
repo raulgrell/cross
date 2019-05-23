@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class EnemyAnimation : MonoBehaviour
 {
+    public AnimationClip DisarmIdle;
+
     internal Animator enemyAnimator;
     private GridUnit input;
     private GridCombat combatInput;
+    private string walkingAnimation = "Walking";
     private bool playing;
     private float timer;
 
@@ -21,11 +24,12 @@ public class EnemyAnimation : MonoBehaviour
     {
         WalkingAnimation();
     }
+
     void WalkingAnimation()
     {
         if (input.State == GridUnitState.Moving)
         {
-            enemyAnimator.SetBool("Walking", true);
+            enemyAnimator.SetBool(walkingAnimation, true);
             playing = true;
             timer = 0;
         }
@@ -34,10 +38,16 @@ public class EnemyAnimation : MonoBehaviour
 
         if (timer > 1.5f)
         {
-            enemyAnimator.SetBool("Walking", false);
+            enemyAnimator.SetBool(walkingAnimation, false);
             playing = false;
             timer = 0;
         }
+    }
+
+    public void ChangeAnimationState()
+    {
+       walkingAnimation = "DisarmedWalking";
+       
     }
     public void HurtAnimation()
     {
@@ -51,16 +61,6 @@ public class EnemyAnimation : MonoBehaviour
 
     public void AttackAnimation()
     {
-        if (transform.name.Contains("Psycho"))
-        {
             enemyAnimator.Play(combatInput.meleeAttack.name);
-        }
-        else if (transform.name.Contains("Grunt"))
-        {
-            enemyAnimator.Play(combatInput.meleeAttack.name);
-        }
-        else
-            enemyAnimator.Play("Attack");
-
     }
 }

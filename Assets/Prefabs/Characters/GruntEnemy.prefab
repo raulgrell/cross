@@ -1009,7 +1009,7 @@ GameObject:
   - component: {fileID: 2577901376388642631}
   - component: {fileID: 6208181101606981734}
   m_Layer: 0
-  m_Name: RealGrunt
+  m_Name: GruntEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1081,7 +1081,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c39b782a9c96d44dabc0780652c9a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grid: {fileID: 0}
   speed: 16
 --- !u!114 &5566246928307940487
 MonoBehaviour:
@@ -1098,6 +1097,8 @@ MonoBehaviour:
   meleeAttack: {fileID: 11400000, guid: de262d8bf6d877e44a4cc6ae79cdd0ad, type: 2}
   rangedAttack: {fileID: 11400000, guid: a946122a5f42d94479ebbc3f909dcde0, type: 2}
   specialAttack: {fileID: 11400000, guid: 4c493b8e5208f00499c26304bb734491, type: 2}
+  Weapon:
+  - {fileID: 870257102155916153}
   icon: {fileID: 0}
 --- !u!114 &1803019150918180844
 MonoBehaviour:
@@ -4765,6 +4766,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee5435bb39ed112459f7121cf1200d01, type: 3}
+--- !u!4 &7613371841852744841 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6942610187676050174, guid: ee5435bb39ed112459f7121cf1200d01,
+    type: 3}
+  m_PrefabInstance: {fileID: 716418089694545527}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4485625196004990842 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4013021923222165773, guid: ee5435bb39ed112459f7121cf1200d01,
@@ -4792,12 +4799,6 @@ Transform:
 --- !u!4 &3799728661043164787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4416451653636550660, guid: ee5435bb39ed112459f7121cf1200d01,
-    type: 3}
-  m_PrefabInstance: {fileID: 716418089694545527}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7613371841852744841 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6942610187676050174, guid: ee5435bb39ed112459f7121cf1200d01,
     type: 3}
   m_PrefabInstance: {fileID: 716418089694545527}
   m_PrefabAsset: {fileID: 0}
@@ -4885,6 +4886,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446d62a5d99357f4eaffc92c69ffa4fc, type: 3}
+--- !u!1 &870257102155916153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9137125641163650358, guid: 446d62a5d99357f4eaffc92c69ffa4fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 8277142659671234127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &870257102155956057 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9137125641163614486, guid: 446d62a5d99357f4eaffc92c69ffa4fc,

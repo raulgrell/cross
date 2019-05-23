@@ -30,7 +30,7 @@ public class CameraProcessing : MonoBehaviour
  
         timer += 0.001f;
 
-        if (timer <= 0.2)
+        if (timer <= 0.1)
         {
             if (blurAmount >= 0.005 && !reversed)
                 reversed = true;

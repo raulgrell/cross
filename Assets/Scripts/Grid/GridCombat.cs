@@ -20,6 +20,7 @@ public class GridCombat : MonoBehaviour
     public UnitAttack meleeAttack;
     public UnitAttack rangedAttack;
     public UnitAttack specialAttack;
+    public GameObject[] Weapon;
     public MeleeIcon icon;
 
     private CombatState state;
@@ -33,6 +34,7 @@ public class GridCombat : MonoBehaviour
     private Vector3 playerOrigPos;
     private Vector3 cameraOrigPos;
     private Vector2Int gridOrigPos;
+    private UnitAttack origMeleeAttack;
 
     private float stateTimer;
     private new PlayerAnimation animation;
@@ -54,7 +56,7 @@ public class GridCombat : MonoBehaviour
             state = value;
         }
     }
-    
+
 
     void Start()
     {
@@ -65,6 +67,7 @@ public class GridCombat : MonoBehaviour
         {
             animation = GetComponent<PlayerAnimation>();
             playerOrigPos = transform.position;
+            origMeleeAttack = meleeAttack;
         }
         else if (transform.CompareTag("Enemy"))
         {
@@ -77,7 +80,7 @@ public class GridCombat : MonoBehaviour
 
     void Update()
     {
-        
+
         switch (state)
         {
             case CombatState.Idle:
@@ -105,7 +108,7 @@ public class GridCombat : MonoBehaviour
             default:
                 throw new ArgumentOutOfRangeException();
         }
-        
+
         stateTimer += Time.deltaTime;
     }
 
@@ -128,7 +131,7 @@ public class GridCombat : MonoBehaviour
         }
 
         stateTimer = 0;
-       
+
     }
 
     public void DamageTile()
@@ -156,26 +159,64 @@ public class GridCombat : MonoBehaviour
                         GridCombat playerCombat = node.unit.GetComponent<GridCombat>();
                         if (playerCombat.state != CombatState.Hurt && playerCombat.state != CombatState.Block)
                         {
-                            if (health.Damage(threatened[i].damage))
+                            if (threatened[i].effect == EffectType.Damage)
                             {
-                                Camera.main.transform.position = playerCombat.cameraOrigPos;
-                                node.unit.position = playerCombat.gridOrigPos;
-                                node.unit.transform.position = playerCombat.playerOrigPos;
-                                health.healthUI.ResetHearts();
-                                health.health = 5;
+                                if (health.Damage(threatened[i].damage))
+                                {
+                                    Camera.main.transform.position = playerCombat.cameraOrigPos;
+                                    node.unit.position = playerCombat.gridOrigPos;
+                                    node.unit.transform.position = playerCombat.playerOrigPos;
+                                    health.healthUI.ResetHearts();
+                                    health.health = 5;
+                                    playerCombat.meleeAttack = origMeleeAttack;
+                                    foreach(GameObject w in playerCombat.Weapon)
+                                    {
+                                        w.SetActive(false);
+                                    }
+                                }
+                                else
+                                    playerCombat.animation.HurtAnimation();
                             }
-                            else
-                                playerCombat.animation.HurtAnimation();
-
+                            else if (threatened[i].effect == EffectType.Both)
+                            {
+                                if (health.Damage(threatened[i].damage))
+                                {
+                                    Camera.main.transform.position = playerCombat.cameraOrigPos;
+                                    node.unit.position = playerCombat.gridOrigPos;
+                                    node.unit.transform.position = playerCombat.playerOrigPos;
+                                    health.healthUI.ResetHearts();
+                                    health.health = 5;
+                                    playerCombat.meleeAttack = playerCombat.origMeleeAttack;
+                                    foreach (GameObject w in playerCombat.Weapon)
+                                    {
+                                        w.SetActive(false);
+                                    }
+                                }
+                                else
+                                    playerCombat.animation.HurtAnimation();
+                                grid.Nodes[node.unit.position.y, node.unit.position.x].walkable = true;
+                                node.unit.MoveToPosition(node.unit.position + unit.Forward * threatened[i].knockback);
+                            }
                         }
                         else if (playerCombat.state == CombatState.Block)
                         {
                             playerCombat.icon.onChangeWeapon(meleeAttack);
-                            playerCombat.meleeAttack = meleeAttack;
+                            UnitAttack attack = meleeAttack;
+                            meleeAttack = playerCombat.meleeAttack;
+                            playerCombat.meleeAttack = attack;
+                            Weapon[0].SetActive(false);
+                            foreach (GameObject w in playerCombat.Weapon)
+                            {
+                                if (w.name == Weapon[0].name)
+                                    w.SetActive(true);
+                                else
+                                    w.SetActive(false);
+                            }
+                            enemyAnimation.ChangeAnimationState();
                             //if(node.unit.transform.CompareTag("Enemy"))
                         }
                     }
-                    else if(node.unit.transform.CompareTag("Enemy"))
+                    else if (node.unit.transform.CompareTag("Enemy"))
                     {
                         if (threatened[i].effect == EffectType.Damage)
                         {
@@ -184,7 +225,7 @@ public class GridCombat : MonoBehaviour
                             if (health.Damage(threatened[i].damage))
                                 Destroy(node.unit.gameObject);
                         }
-                        else if(threatened[i].effect == EffectType.Both)
+                        else if (threatened[i].effect == EffectType.Both)
                         {
                             node.unit.transform.GetComponent<GridCombat>().enemySoundEffect.onHurt();
                             node.unit.transform.GetComponent<EnemyAnimation>().HurtAnimation();
@@ -197,13 +238,13 @@ public class GridCombat : MonoBehaviour
                     else if (node.unit.transform.CompareTag("Interactable"))
                     {
                         InteractableObj obj = node.unit.GetComponent<InteractableObj>();
-                        if(threatened[i].effect == EffectType.Both || threatened[i].effect == EffectType.Condition)
+                        if (threatened[i].effect == EffectType.Both || threatened[i].effect == EffectType.Condition)
                         {
-                            grid.Nodes[obj.Position.y, obj.Position.x].walkable = true;
-                            node.unit.MoveToPosition(obj.Position + unit.Forward * threatened[i].knockback);
+                            grid.Nodes[node.unit.position.y, node.unit.position.x].walkable = true;
+                            node.unit.MoveToPosition(node.unit.position + unit.Forward * threatened[i].knockback);
                             grid.Nodes[obj.Position.y, obj.Position.x].unit = null;
-                            obj.SetPosition = grid.WorldToCell(obj.transform.position);
-                            grid.Nodes[obj.Position.y, obj.Position.x].unit = node.unit;
+                            //obj.SetPosition = grid.WorldToCell(obj.transform.position);
+                            //grid.Nodes[obj.Position.y, obj.Position.x].unit = node.unit;
 
                         }
                     }
@@ -230,4 +271,5 @@ public class GridCombat : MonoBehaviour
     {
         State = CombatState.Parry;
     }
+
 }
