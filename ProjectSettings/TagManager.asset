@@ -14,6 +14,7 @@ TagManager:
   - Wall
   - Exterior
   - Hole
+  - Trap
   layers:
   - Default
   - TransparentFX

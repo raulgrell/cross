@@ -4344,7 +4344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433ac528af350b342b43715b9c87a120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisarmIdle: {fileID: 7400000, guid: 7ab6213b7a0c333478b2e21c34454495, type: 2}
+  DisarmIdle:
+  - {fileID: 7400000, guid: 7ab6213b7a0c333478b2e21c34454495, type: 2}
 --- !u!114 &5759035257408156971
 MonoBehaviour:
   m_ObjectHideFlags: 0

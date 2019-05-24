@@ -22,11 +22,16 @@ public class GridUnit : MonoBehaviour
     private Vector2Int prevPosition;
     private Vector2Int forward = Vector2Int.up;
     private GridUnitState state;
-    
+
     public GridUnitState State => state;
 
     public Vector2Int Position => position;
-    public Vector2Int Forward => forward;
+    public Vector2Int Forward
+    {
+        get => forward;
+        set => forward = value;
+    }
+
     public Vector2Int Right => new Vector2Int(forward.y, -forward.x);
 
     private void Awake()

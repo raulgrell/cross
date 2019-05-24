@@ -51,14 +51,10 @@ public class PlayerAnimation : MonoBehaviour
 
     public void AttackAnimation()
     {
-        playerAnimator.Play("Attack3");
+        playerAnimator.Play(combatInput.meleeAttack.name);
     }
 
-    public void BasicAttackAnimation()
-    {
-        playerAnimator.Play("Attack2");
-    }
-    
+
     void WalkingAnimation()
     {
         if (input.State == GridUnitState.Moving)

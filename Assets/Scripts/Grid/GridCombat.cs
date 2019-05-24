@@ -119,16 +119,15 @@ public class GridCombat : MonoBehaviour
 
         if (unit.CompareTag("Player"))
         {
-            if (attack.name == "BasicAttack")
-                animation.BasicAttackAnimation();
-            else
-                animation.AttackAnimation();
+            animation.AttackAnimation();
         }
         else if (unit.CompareTag("Enemy"))
         {
             enemySoundEffect.onAttack();
             enemyAnimation.AttackAnimation();
         }
+        else if(unit.CompareTag("Trap"))
+            DamageTile();
 
         stateTimer = 0;
 
