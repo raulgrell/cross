@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -51,7 +52,18 @@ public class PlayerAnimation : MonoBehaviour
 
     public void AttackAnimation()
     {
-        playerAnimator.Play(combatInput.meleeAttack.name);
+        if(combatInput.meleeAttack.name == "BasicAttack")
+        {
+            playerAnimator.SetFloat("AttackXBlend", 0);
+            playerAnimator.SetFloat("AttackYBlend", -1);
+
+        }
+        if(combatInput.meleeAttack.name == "SlashAttack")
+        {
+            playerAnimator.SetFloat("AttackXBlend", 0);
+            playerAnimator.SetFloat("AttackYBlend", 1);
+        }
+        playerAnimator.Play("AttackBlendTree");
     }
 
 
@@ -75,4 +87,9 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
+    internal void ChangeAniamtionState()
+    {
+        playerAnimator.SetFloat("IdleBlend", 1);
+        playerAnimator.SetFloat("MoveBlend", 1);
+    }
 }

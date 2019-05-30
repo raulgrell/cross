@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EnemyAnimation : MonoBehaviour
 {
-    public AnimationClip[] DisarmIdle;
-
     internal Animator enemyAnimator;
     private GridUnit input;
     private GridCombat combatInput;
@@ -46,16 +44,9 @@ public class EnemyAnimation : MonoBehaviour
 
     public void ChangeAnimationState()
     {
-        AnimatorOverrideController overrideController = new AnimatorOverrideController();
-        overrideController.runtimeAnimatorController = enemyAnimator.runtimeAnimatorController;
+        enemyAnimator.SetFloat("IdleBlend", 1);
+        enemyAnimator.SetFloat("WalkingBlend", 1);
 
-        foreach (AnimationClip clipOverride in DisarmIdle)
-        {
-            overrideController["idle"] = clipOverride;
-        }
-
-       walkingAnimation = "DisarmedWalking";
-       enemyAnimator.runtimeAnimatorController = overrideController;
     }
     public void HurtAnimation()
     {
@@ -69,6 +60,13 @@ public class EnemyAnimation : MonoBehaviour
 
     public void AttackAnimation()
     {
-        enemyAnimator.Play(combatInput.meleeAttack.name);
+        if(combatInput.meleeAttack.name == "BasicAttack")
+        {
+            enemyAnimator.SetFloat("AttackBlend", 1);
+        }
+        else
+            enemyAnimator.SetFloat("AttackBlend", 0);
+
+        enemyAnimator.Play("AttackBlendTree");
     }
 }

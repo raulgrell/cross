@@ -26,7 +26,7 @@ public class BoxingGloveTrap : MonoBehaviour
         grid = FindObjectOfType<GridLayer>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<GridUnit>();
         trapPosition = new Vector2Int[range];
-        origPosition = unit.Position;
+        origPosition = grid.WorldToCell(transform.position);
         for(int i = 0; i < trapPosition.Length; i++)
         {
             trapPosition[i] = new Vector2Int(unit.position.x + (forward.x * (i + 1)), grid.WorldToCell(transform.position).y + (forward.y * (i + 1)));
