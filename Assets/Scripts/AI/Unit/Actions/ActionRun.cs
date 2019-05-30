@@ -7,6 +7,9 @@ public class ActionRun: UnitAction
 {
     public override bool Act(UnitController agent)
     {
+        if (!agent.Ready)
+            return false;
+        
         agent.MoveAwayFromTarget();
         return true;
     }

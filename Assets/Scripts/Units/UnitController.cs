@@ -15,6 +15,7 @@ public abstract class UnitController : MonoBehaviour
     protected GridNode[] path;
     protected int nodeIndex;
     protected float actionTimer;
+    protected bool needNewPath;
 
     public GridCombat Combat => combat;
     public GridUnit Unit => unit;
@@ -41,8 +42,9 @@ public abstract class UnitController : MonoBehaviour
             return;
 
         gridWaypoint = path[nodeIndex];
-        unit.MoveTowards(gridWaypoint.gridPosition);
         nodeIndex += 1;
+
+        needNewPath = !unit.MoveTowards(gridWaypoint.gridPosition);
     }
 
     public bool AtCurrentWaypoint()
@@ -80,7 +82,7 @@ public abstract class UnitController : MonoBehaviour
         {
             var targetPos = target.position;
             
-            if (targetPositionOld != targetPos)
+            if (needNewPath || targetPositionOld != targetPos)
             {
                 targetPositionOld = target.position;
                 path = GridPathfinding.RequestPath(transform.position, targetPos);

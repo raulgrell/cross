@@ -16,19 +16,47 @@ MonoBehaviour:
     type: 3}
   attackPrefab: {fileID: 6906343893548924209, guid: f31d377f02d4c9c429860c5791a57e45,
     type: 3}
-  targets:
+  frames:
   - position: {x: -1, y: 1}
     effect: 1
     damage: 1
     knockback: 1
+    frame: 0
   - position: {x: 0, y: 1}
     effect: 1
     damage: 1
     knockback: 1
+    frame: 0
   - position: {x: 1, y: 1}
     effect: 1
     damage: 1
     knockback: 1
+    frame: 0
+  - position: {x: 1, y: 0}
+    effect: 1
+    damage: 1
+    knockback: 1
+    frame: 0
+  - position: {x: 1, y: -1}
+    effect: 1
+    damage: 1
+    knockback: 1
+    frame: 0
+  - position: {x: 0, y: -1}
+    effect: 1
+    damage: 1
+    knockback: 1
+    frame: 0
+  - position: {x: -1, y: -1}
+    effect: 1
+    damage: 1
+    knockback: 1
+    frame: 0
+  - position: {x: -1, y: 0}
+    effect: 1
+    damage: 1
+    knockback: 1
+    frame: 0
   spread: 1
   range: 1
   melee: 0

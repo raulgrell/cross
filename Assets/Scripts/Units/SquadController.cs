@@ -11,15 +11,16 @@ public enum SquadState
     Flanking,
     Advancing,
     Retreating,
-    Special
+    Celebrating,
+    Defeated
 }
 
 public class SquadController : MonoBehaviour
 {
     public GridUnit target;
     public GridLayer grid;
-    public GridUnit leader;
-    public List<GridUnit> units;
+    public UnitController leader;
+    public List<UnitController> units;
     private SquadState state;
 
     List<GridNode> GetNodesAroundTarget()
@@ -35,12 +36,25 @@ public class SquadController : MonoBehaviour
         state = SquadState.None;
     }
 
+    private void Update()
+    {
+        switch (units.Count)
+        {
+            case 0: state = SquadState.Defeated; break;
+            case 1: state = SquadState.Retreating; break;
+            case 2: state = SquadState.Advancing; break;
+            default: state = SquadState.Flanking; break;
+        }
+    }
+   
     private void OnDrawGizmosSelected()
     {
-        foreach (GridUnit gridUnit in units)
+        if (units == null) return;
+        
+        foreach (var unit in units)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawSphere(gridUnit.transform.position, 0.1f);
+            Gizmos.DrawSphere(unit.transform.position, 0.1f);
         }
     }
 }

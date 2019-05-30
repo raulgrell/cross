@@ -17,7 +17,7 @@ public class SpecialAttackEditor : Editor
         SpecialAttack attack = (SpecialAttack) target;
         targetMap = new Dictionary<Vector2Int, Target>();
 
-        foreach (var t in attack.targets)
+        foreach (var t in attack.frames)
         {
             targetMap.Add(t.position, t);
         }
@@ -28,7 +28,7 @@ public class SpecialAttackEditor : Editor
         base.OnInspectorGUI();
         SpecialAttack attack = (SpecialAttack) target;
 
-        showTargets = EditorGUILayout.Foldout(showTargets, $"Targets ({attack.targets.Count})");
+        showTargets = EditorGUILayout.Foldout(showTargets, $"Targets ({attack.frames.Count})");
         if (showTargets)
         {
             EditorGUI.indentLevel = 0;
@@ -111,7 +111,7 @@ public class SpecialAttackEditor : Editor
                             t.effect = (EffectType) EditorGUILayout.EnumPopup(t.effect, enumStyle);
                             if (t.effect == EffectType.None)
                             {
-                                attack.targets.Remove(t);
+                                attack.frames.Remove(t);
                                 targetMap.Remove(pos);
                             }
                         }
@@ -120,8 +120,15 @@ public class SpecialAttackEditor : Editor
                             var effect = (EffectType) EditorGUILayout.EnumPopup(EffectType.None, enumStyle);
                             if (effect != EffectType.None)
                             {
-                                var t = new Target {damage = 0, effect = effect, position = pos};
-                                attack.targets.Add(t);
+                                var t = new Target
+                                {
+                                    position = pos,
+                                    effect = effect,
+                                    damage = 1,
+                                    knockback = 1,
+                                    frame = 0,
+                                };
+                                attack.frames.Add(t);
                                 targetMap[pos] = t;
                             }
                         }
@@ -138,8 +145,8 @@ public class SpecialAttackEditor : Editor
 
         if (GUI.changed)
         {
-            attack.targets.Clear();
-            attack.targets.AddRange(targetMap.Values);
+            attack.frames.Clear();
+            attack.frames.AddRange(targetMap.Values);
 
             Undo.RecordObject(attack, "Edit attack");
             EditorUtility.SetDirty(attack);

@@ -1140,8 +1140,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 4, z: 1}
-  m_Center: {x: 0, y: 2, z: 0}
+  m_Size: {x: 1, y: 2.7793958, z: 1}
+  m_Center: {x: 0, y: 1.3896979, z: 0}
 --- !u!95 &4101463359088614592
 Animator:
   serializedVersion: 3
@@ -1173,6 +1173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433ac528af350b342b43715b9c87a120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DisarmIdle: {fileID: 0}
 --- !u!82 &2577901376388642631
 AudioSource:
   m_ObjectHideFlags: 0

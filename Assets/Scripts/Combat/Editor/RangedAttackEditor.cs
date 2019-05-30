@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Dialogue;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.Serialization;
@@ -10,13 +11,13 @@ public class RangedAttackEditor : UnitAttackEditor
 {
     public bool showFrames = true;
 
-    HashSet<TargetFrame> frameSet;
+    HashSet<Target> frameSet;
 
     protected override void OnEnable()
     {
         base.OnEnable();
         RangedAttack attack = (RangedAttack) target;
-        frameSet = new HashSet<TargetFrame>();
+        frameSet = new HashSet<Target>();
 
         foreach (var t in attack.frames)
         {
@@ -110,7 +111,14 @@ public class RangedAttackEditor : UnitAttackEditor
                     {
                         EditorGUILayout.BeginHorizontal(rowStyle);
 
-                        var frame = new TargetFrame { position = pos, frame = attack.currentFrame };
+                        var frame = new Target
+                        {
+                            position = pos,
+                            effect = EffectType.None,
+                            damage = 1,
+                            knockback = 1,
+                            frame = attack.currentFrame
+                        };
                         
                         if (frameSet.Contains(frame))
                         {

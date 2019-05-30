@@ -16,10 +16,10 @@ public enum GridUnitState
 public class GridUnit : MonoBehaviour
 {
     public int speed = 16;
-
     internal GridLayer grid;
     internal Vector2Int position;
     private Vector2Int prevPosition;
+    private Vector2Int initialPosition;
     private Vector2Int forward = Vector2Int.up;
     private GridUnitState state;
 
@@ -43,10 +43,8 @@ public class GridUnit : MonoBehaviour
     {
         state = GridUnitState.Idle;
         position = grid.WorldToCell(transform.position);
-        prevPosition = Position;
-
-        if (grid.IsWalkable(Position.x, Position.y))
-            MoveToPosition(Position);
+        prevPosition = position;
+        initialPosition = position;
     }
 
     public void LookAt(Vector2Int target)
@@ -59,12 +57,11 @@ public class GridUnit : MonoBehaviour
             transform.GetChild(0).GetComponent<EnemyHealthBar>().FixRotation();
     }
 
-    public void Move(Vector2Int moveDir)
+    public bool Move(Vector2Int moveDir)
     {
         var target = Position + moveDir;
         LookAt(target);
-        MoveToPosition(target);
-;
+        return MoveToPosition(target);
     }
 
     public Vector2Int DirectionTo(Vector2Int target)
@@ -72,36 +69,44 @@ public class GridUnit : MonoBehaviour
         var direction = target - Position;
         var absDir = new Vector2Int(Mathf.Abs(direction.x), Mathf.Abs(direction.y));
         direction.Clamp(new Vector2Int(-1, -1), new Vector2Int(1, 1));
-        return absDir.x > absDir.y 
+        return absDir.x >= absDir.y 
             ? new Vector2Int(direction.x, 0) 
             : new Vector2Int(0, direction.y);
     }
 
-    public void MoveTowards(Vector2Int newPos)
+    public bool MoveTowards(Vector2Int newPos)
     {
         var direction = DirectionTo(newPos);
-        Move(direction);
+        return Move(direction);
     }
 
-    public void MoveToPosition(Vector2Int newPos)
+    public bool MoveToPosition(Vector2Int newPos)
     {
         if (newPos.x < 0 || newPos.x >= grid.numCols ||
             newPos.y < 0 || newPos.y >= grid.numRows)
-            return;
+            return false;
 
         if (!grid.IsWalkable(newPos.x, newPos.y))
-            return;
+            return false;
 
+        grid.Nodes[Position.y, Position.x].unit = null;
+        grid.Nodes[newPos.y, newPos.x].unit = this;
+        
         prevPosition = Position;
         position = newPos;
         state = GridUnitState.Moving;
-        grid.Nodes[newPos.y, newPos.x].unit = this;
+        return true;
     }
 
     public void MoveToWorldPosition(Vector3 newWorldPos)
     {
         var newPos = grid.WorldToCell(newWorldPos);
         MoveToPosition(newPos);
+    }
+
+    public void Respawn()
+    {
+        
     }
 
     void Update()
@@ -118,7 +123,6 @@ public class GridUnit : MonoBehaviour
                 if (Vector3.Distance(transform.position, cellPosition) < 0.1f)
                 {
                     state = GridUnitState.Idle;
-                    grid.Nodes[prevPosition.y, prevPosition.x].unit = null;
                 }
                 break;
             case GridUnitState.Attacking:
@@ -141,8 +145,10 @@ public class GridUnit : MonoBehaviour
     [Button("Sync")]
     private void Sync()
     {
+        grid = FindObjectOfType<GridLayer>();
         position = grid.WorldToCell(transform.position);
-        prevPosition = Position;
+        prevPosition = position;
+        transform.position = grid.CellToWorld(position).SetY(1);
     }
 
     public void SetGrabbed()

@@ -59671,9 +59671,10 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.9
-    functionName: DamageTile
+    functionName: Attack
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 11400000, guid: 0b090d983d9b8e345816cc42238ea057,
+      type: 2}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

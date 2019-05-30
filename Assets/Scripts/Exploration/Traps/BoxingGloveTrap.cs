@@ -62,13 +62,11 @@ public class BoxingGloveTrap : MonoBehaviour
         {
             DoDamage();
         }
-         //   DoDamage();
     }
     private void DoDamage()
     {
         unit.speed = 8;
         unit.MoveToPosition(origPosition);
-    //    readyToFire = true;
         if (grid.WorldToCell(transform.position) == origPosition)
         {
             timer = 0;
@@ -76,11 +74,11 @@ public class BoxingGloveTrap : MonoBehaviour
             readyToFire = true;
         }
     }
+    
     private void ActivatedTrap()
     {
         unit.speed = 16;
         unit.MoveToPosition(currentActive);
-        Debug.Log(Vector3.Distance(transform.position, grid.CellToWorld(currentActive)));
         if(Vector3.Distance(transform.position,grid.CellToWorld(currentActive)) < 5.9f)
         {
             combat.Attack(combat.meleeAttack);
