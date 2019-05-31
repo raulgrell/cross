@@ -564,6 +564,7 @@
             <e p="Attacks" t="Include">
               <e p="AreaAttack.cs" t="Include" />
               <e p="MeleeAttack.cs" t="Include" />
+              <e p="PathAttack.cs" t="Include" />
               <e p="RangedAttack.cs" t="Include" />
               <e p="SpecialAttack.cs" t="Include" />
               <e p="UnitAttack.cs" t="Include" />
@@ -573,6 +574,7 @@
             <e p="CombatProjectile.cs" t="Include" />
             <e p="CombatThreat.cs" t="Include" />
             <e p="Editor" t="Include">
+              <e p="AreaAttackEditor.cs" t="Include" />
               <e p="AttackEditor.cs" t="Include" />
               <e p="RangedAttackEditor.cs" t="Include" />
               <e p="SpecialAttackEditor.cs" t="Include" />
@@ -597,7 +599,7 @@
           </e>
           <e p="Exploration" t="Include">
             <e p="Checkpoint.cs" t="Include" />
-            <e p="DoorScripts.cs" t="Include" />
+            <e p="Door.cs" t="Include" />
             <e p="InteractableObj.cs" t="Include" />
             <e p="PlayerInteraction.cs" t="Include" />
             <e p="SecurityCameraMovement.cs" t="Include" />

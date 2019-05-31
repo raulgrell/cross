@@ -5,8 +5,8 @@ using UnityEngine.Serialization;
 using UnityEngine.SocialPlatforms;
 
 
-[CustomEditor(typeof(UnitAttack), true)]
-public class UnitAttackEditor : Editor
+[CustomEditor(typeof(MeleeAttack), true)]
+public class MeleeAttackEditor : Editor
 {
     public bool showTargets = true;
 

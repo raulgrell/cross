@@ -6,6 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Attacks/Ranged")]
 public class RangedAttack : UnitAttack
 {
+    public float frameTime = 0.1f;
+        
     [Range(0, 8)]
     public int currentFrame;
 
@@ -26,11 +28,11 @@ public class RangedAttack : UnitAttack
                 worldPosition.y = combat.Unit.transform.position.y;
                 Instantiate(attackPrefab, worldPosition, attackPrefab.transform.rotation, null);
                 combat.DamageTarget(node, attackFrame);
+                yield return new WaitForSeconds(frameTime);
             }
             else
             {
                 runningFrame += 1;
-                yield return new WaitForSeconds(0.1f);
             }
         }
     }

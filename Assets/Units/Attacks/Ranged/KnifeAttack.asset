@@ -16,53 +16,32 @@ MonoBehaviour:
     type: 3}
   attackPrefab: {fileID: 6906343893548924209, guid: 7f2d385af53dad745b4d12d1eb58ef89,
     type: 3}
-  targets:
-  - position: {x: 0, y: 2}
-    effect: 1
-    damage: 0
-  - position: {x: 0, y: 3}
-    effect: 1
-    damage: 0
-  - position: {x: 0, y: 4}
-    effect: 1
-    damage: 0
-  - position: {x: 0, y: 5}
-    effect: 1
-    damage: 0
-  - position: {x: 0, y: 6}
-    effect: 1
-    damage: 0
-  spread: 1
-  range: 6
-  currentFrame: 4
   frames:
   - position: {x: 0, y: 2}
-    frame: 1
-  - position: {x: 0, y: 3}
-    frame: 2
-  - position: {x: 0, y: 4}
-    frame: 2
-  - position: {x: 0, y: 2}
-    frame: 2
-  - position: {x: 0, y: 3}
-    frame: 1
-  - position: {x: 0, y: 2}
+    effect: 1
+    damage: 1
+    knockback: 1
     frame: 0
-  - position: {x: 0, y: 2}
-    frame: 3
   - position: {x: 0, y: 3}
-    frame: 3
+    effect: 1
+    damage: 1
+    knockback: 1
+    frame: 1
   - position: {x: 0, y: 4}
-    frame: 3
+    effect: 1
+    damage: 1
+    knockback: 1
+    frame: 2
   - position: {x: 0, y: 5}
+    effect: 1
+    damage: 1
+    knockback: 1
     frame: 3
-  - position: {x: 0, y: 2}
-    frame: 4
-  - position: {x: 0, y: 3}
-    frame: 4
-  - position: {x: 0, y: 4}
-    frame: 4
-  - position: {x: 0, y: 5}
-    frame: 4
   - position: {x: 0, y: 6}
-    frame: 4
+    effect: 1
+    damage: 1
+    knockback: 1
+    frame: 5
+  spread: 1
+  range: 6
+  currentFrame: 5

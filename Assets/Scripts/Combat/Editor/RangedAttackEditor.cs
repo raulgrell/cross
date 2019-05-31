@@ -7,15 +7,13 @@ using UnityEngine.SocialPlatforms;
 
 
 [CustomEditor(typeof(RangedAttack), true)]
-public class RangedAttackEditor : UnitAttackEditor
+public class RangedAttackEditor : Editor
 {
     public bool showFrames = true;
-
     HashSet<Target> frameSet;
 
-    protected override void OnEnable()
+    protected void OnEnable()
     {
-        base.OnEnable();
         RangedAttack attack = (RangedAttack) target;
         frameSet = new HashSet<Target>();
 
@@ -114,7 +112,7 @@ public class RangedAttackEditor : UnitAttackEditor
                         var frame = new Target
                         {
                             position = pos,
-                            effect = EffectType.None,
+                            effect = EffectType.Damage,
                             damage = 1,
                             knockback = 1,
                             frame = attack.currentFrame

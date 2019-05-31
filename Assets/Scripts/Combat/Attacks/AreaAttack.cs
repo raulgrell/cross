@@ -11,6 +11,7 @@ public class AreaAttack : UnitAttack
     
     private void OnEnable()
     {
+        if (frames != null) frames = new List<Target>();
         frames.Sort((a, b) => a.frame < b.frame);
     }
 
