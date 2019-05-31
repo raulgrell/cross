@@ -34,4 +34,4 @@ MonoBehaviour:
     frame: 0
   spread: 1
   range: 1
-  melee: 0
+  melee: 1

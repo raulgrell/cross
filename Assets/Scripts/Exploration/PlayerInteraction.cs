@@ -38,11 +38,11 @@ public class PlayerInteraction : MonoBehaviour
             {
                 if (info.transform.CompareTag("Interactable"))
                 {
-                    gridCombat.State = CombatState.Interacting;
                     currentObj = info.transform.GetComponent<InteractableObj>();
 
                     if (Vector2.Distance(gridUnit.Position, currentObj.Position) <= 1.5f)
                     {
+                        gridCombat.State = CombatState.Interacting;
                         gridUnit.grid.Nodes[currentObj.Position.y, currentObj.Position.x].walkable = true;
                         Vector3 newPos = gridUnit.grid.CellToWorld(gridUnit.Position);
                         newPos.y = interactableY + currentObj.getGroundedY;

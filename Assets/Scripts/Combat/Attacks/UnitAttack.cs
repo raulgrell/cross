@@ -42,7 +42,8 @@ public abstract class UnitAttack : ScriptableObject
             {
                 position = unit.Position + unit.Right * p.position.x + unit.Forward * p.position.y,
                 effect = p.effect,
-                damage = p.damage
+                damage = p.damage,
+                knockback = p.knockback
             };
         }
 
@@ -59,7 +60,8 @@ public abstract class UnitAttack : ScriptableObject
             {
                 position = unit.Position + unit.Right * p.position.x + unit.Forward * p.position.y,
                 effect = p.effect,
-                damage = p.damage
+                damage = p.damage,
+                knockback = p.knockback
             };
         }
 
@@ -76,7 +78,8 @@ public abstract class UnitAttack : ScriptableObject
             {
                 position = unit.Position + unit.Right * p.position.x + unit.Forward * p.position.y,
                 effect = p.effect,
-                damage = p.damage
+                damage = p.damage,
+                knockback = p.knockback
             };
         }
 

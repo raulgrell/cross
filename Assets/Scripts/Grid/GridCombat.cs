@@ -105,6 +105,8 @@ public class GridCombat : MonoBehaviour
                     State = CombatState.Idle;
                 break;
             case CombatState.Hurt:
+                if (stateTimer > 0.2f)
+                    State = CombatState.Idle;
                 break;
             case CombatState.Interacting:
                 break;
@@ -168,11 +170,15 @@ public class GridCombat : MonoBehaviour
                         }
                     }
                     else
+                    {
                         playerCombat.playerAnimation.HurtAnimation();
+                        playerCombat.state = CombatState.Hurt;
+                    }
 
                 }
                 if (target.effect == EffectType.Both)
                 {
+                    Debug.Log("here");
                      grid.Nodes[node.unit.position.y, node.unit.position.x].walkable = true;
                      node.unit.MoveToPosition(node.unit.position + unit.Forward * target.knockback);
                 }
@@ -199,7 +205,7 @@ public class GridCombat : MonoBehaviour
                 if (health.Damage(target.damage))
                     Destroy(node.unit.gameObject);
             }
-            else if (target.effect == EffectType.Both)
+            if (target.effect == EffectType.Both)
             {
                 grid.Nodes[node.unit.position.y, node.unit.position.x].walkable = true;
                 node.unit.MoveToPosition(node.unit.position + unit.Forward * target.knockback);

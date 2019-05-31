@@ -15,11 +15,11 @@ public class CannonController : MonoBehaviour
         line = GetComponent<LineRenderer>();
         line.positionCount = numbPoint;
         positions = new Vector3[numbPoint];
-        DrawQuadraticCurve();
+        DrawLinearCurve();
     }
     private void Update()
     {
-        DrawQuadraticCurve();
+       // DrawQuadraticCurve();
     }        
 
 
@@ -34,21 +34,12 @@ public class CannonController : MonoBehaviour
     }
     private void DrawQuadraticCurve()
     {
-        Vector2[] actualPositions =
-        {
-            new Vector2(point0.position.y, point0.position.z),
-            new Vector2(point1.position.y, point1.position.z),
-            new Vector2(point2.position.y, point2.position.z),
-        };
         for (int i = 1; i < numbPoint + 1; i++)
         {
             float t = i / numbPoint;
-            positions[i - 1] = CalculateQuadraticBezierPoint(t, actualPositions[0], actualPositions[1], actualPositions[2]);
+            positions[i - 1] = CalculateQuadraticBezierPoint(t, point0.position, point1.position, point2.position);
         }
-        foreach (Vector3 pos in positions)
-        {
-          //  line.SetPosition(new Vector3(pos.x);
-        }
+        line.SetPositions(positions);
     }
 
     private Vector3 CalculateLinearBezierPoint(float t, Vector3 p0, Vector3 p1)
@@ -56,12 +47,13 @@ public class CannonController : MonoBehaviour
         return p0 + t * (p1 - p0);
     }
 
-    private Vector2 CalculateQuadraticBezierPoint(float t, Vector2 p0, Vector2 p1, Vector2 p2)
+
+    private Vector3 CalculateQuadraticBezierPoint(float t, Vector3 p0, Vector3 p1, Vector3 p2)
     {
         float u = 1 - t;
         float tt = t * t;
         float uu = u * u;
-        Vector2 p = uu * p0;
+        Vector3 p = uu * p0;
         p += 2 * u * t * p1;
         p += tt * p2;
         return p;
