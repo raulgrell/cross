@@ -119,6 +119,7 @@ public class MeleeAttackEditor : Editor
                         else
                         {
                             var effect = (EffectType) EditorGUILayout.EnumPopup(EffectType.None, enumStyle);
+
                             if (effect != EffectType.None)
                             {
                                 var t = new Target

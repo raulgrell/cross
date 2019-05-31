@@ -4,6 +4,9 @@ using UnityEngine;
 [CustomPropertyDrawer(typeof(Target))]
 public class TargetDrawer : PropertyDrawer
 {
+    GUIContent damageLabel = new GUIContent("Damage");
+    GUIContent knockbackLabel = new GUIContent("Knockback");
+
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
         EditorGUI.BeginProperty(position, label, property);
@@ -23,8 +26,8 @@ public class TargetDrawer : PropertyDrawer
         // Draw fields - pass GUIContent.none to each so they are drawn without labels
         EditorGUI.PropertyField(positionRect, property.FindPropertyRelative("position"), GUIContent.none);
         EditorGUI.PropertyField(effectRect, property.FindPropertyRelative("effect"), GUIContent.none);
-        EditorGUI.PropertyField(damageRect, property.FindPropertyRelative("damage"), GUIContent.none);
-        EditorGUI.PropertyField(knockbackRect, property.FindPropertyRelative("knockback"), GUIContent.none);
+        EditorGUI.PropertyField(damageRect, property.FindPropertyRelative("damage"), damageLabel);
+        EditorGUI.PropertyField(knockbackRect, property.FindPropertyRelative("knockback"), knockbackLabel);
         EditorGUI.PropertyField(frameRect, property.FindPropertyRelative("frame"), GUIContent.none);
 
         // Reset indent
