@@ -598,6 +598,8 @@
             </e>
           </e>
           <e p="Exploration" t="Include">
+            <e p="CannonBallController.cs" t="Include" />
+            <e p="CannonController.cs" t="Include" />
             <e p="Checkpoint.cs" t="Include" />
             <e p="Door.cs" t="Include" />
             <e p="InteractableObj.cs" t="Include" />
