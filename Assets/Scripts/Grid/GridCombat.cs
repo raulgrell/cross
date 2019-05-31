@@ -68,6 +68,7 @@ public class GridCombat : MonoBehaviour
         if (transform.CompareTag("Player"))
         {
             playerAnimation = GetComponent<PlayerAnimation>();
+            cameraOrigPos = Camera.main.transform.position;
             playerOrigPos = transform.position;
             origMeleeAttack = meleeAttack;
         }

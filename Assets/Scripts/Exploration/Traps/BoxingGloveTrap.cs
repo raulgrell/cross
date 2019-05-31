@@ -29,12 +29,12 @@ public class BoxingGloveTrap : MonoBehaviour
         origPosition = grid.WorldToCell(transform.position);
         for(int i = 0; i < trapPosition.Length; i++)
         {
-            trapPosition[i] = new Vector2Int(unit.position.x + (forward.x * (i + 1)), grid.WorldToCell(transform.position).y + (forward.y * (i + 1)));
+            trapPosition[i] = new Vector2Int(origPosition.x + (forward.x * (i + 1)), origPosition.y + (forward.y * (i + 1)));
         }
     }
     private void Update()
     {
-        if(Vector2.Distance(grid.WorldToCell(target.transform.position), unit.Position) < 5 && readyToFire)
+        if(Vector2.Distance(target.Position, unit.Position) < 5 && readyToFire)
         {
             for (int i = 0; i < trapPosition.Length; i++)
             {
@@ -67,8 +67,9 @@ public class BoxingGloveTrap : MonoBehaviour
     {
         unit.speed = 8;
         unit.MoveToPosition(origPosition);
-        if (grid.WorldToCell(transform.position) == origPosition)
+        if (Vector2.Distance(grid.WorldToCell(transform.position),origPosition) < 2)
         {
+            Debug.Log("here");
             timer = 0;
             deative = false;
             readyToFire = true;
