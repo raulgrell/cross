@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Dark
-    second: {fileID: 2100000, guid: 85b1393ac72d7ed409af93f4bc59dddf, type: 2}
+    second: {fileID: 2100000, guid: d4263f4d49b6b454ab370024d8ed6881, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -23,12 +23,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Light
-    second: {fileID: 2100000, guid: 0c476700d47ce3942bb8f2b297100e68, type: 2}
+    second: {fileID: 2100000, guid: 0d5a4a6be127b2e47890c1eeb974c18a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Med
-    second: {fileID: 2100000, guid: c5435bc1177f14d4c98700b0e9d3c6bb, type: 2}
+    second: {fileID: 2100000, guid: b6ec978da431a2c428c3ef36029a79f1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

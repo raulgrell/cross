@@ -28,6 +28,18 @@ public class MeleeAttackEditor : Editor
         base.OnInspectorGUI();
         UnitAttack attack = (UnitAttack) target;
 
+        if (GUI.changed)
+        {
+            targetMap = new Dictionary<Vector2Int, Target>();
+
+            foreach (var t in attack.frames)
+            {
+                targetMap.Add(t.position, t);
+            }
+        }
+        
+        EditorGUI.BeginChangeCheck();
+
         showTargets = EditorGUILayout.Foldout(showTargets, $"Targets ({attack.frames.Count})");
         if (showTargets)
         {
@@ -145,7 +157,7 @@ public class MeleeAttackEditor : Editor
             EditorGUILayout.EndHorizontal();
         }
 
-        if (GUI.changed)
+        if (EditorGUI.EndChangeCheck())
         {
             attack.frames.Clear();
             attack.frames.AddRange(targetMap.Values);

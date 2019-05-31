@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Dialogue;
 using UnityEngine;
 using UnityEditor;
@@ -16,7 +17,6 @@ public class RangedAttackEditor : Editor
     {
         RangedAttack attack = (RangedAttack) target;
         frameSet = new HashSet<Target>();
-
         foreach (var t in attack.frames)
         {
             frameSet.Add(t);
@@ -27,6 +27,17 @@ public class RangedAttackEditor : Editor
     {
         base.OnInspectorGUI();
         RangedAttack attack = (RangedAttack) target;
+
+        if (GUI.changed)
+        {
+            frameSet = new HashSet<Target>();
+            foreach (var t in attack.frames)
+            {
+                frameSet.Add(t);
+            }
+        }
+        
+        EditorGUI.BeginChangeCheck();
 
         showFrames = EditorGUILayout.Foldout(showFrames, $"Frames");
         if (showFrames)
@@ -147,7 +158,7 @@ public class RangedAttackEditor : Editor
             EditorGUILayout.EndHorizontal();
         }
 
-        if (GUI.changed)
+        if (EditorGUI.EndChangeCheck())
         {
             attack.frames.Clear();
             attack.frames.AddRange(frameSet);
