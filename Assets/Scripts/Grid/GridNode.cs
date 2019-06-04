@@ -76,8 +76,9 @@ public class GridNode : MonoBehaviour, IHeapItem<GridNode>
                 return node;
             }
         }
-        
-        obj = Instantiate(blocks.metals[blockIndex], worldPos, Quaternion.Euler(0, 90 * randomRotation, 0), parent);
+
+        bool isEven = (worldPos.x + worldPos.y) % 2 == 0;
+        obj = Instantiate(blocks.metals[isEven ? 0 : blockIndex], worldPos, Quaternion.Euler(0, 90 * randomRotation, 0), parent);
         node = obj.GetComponent<GridNode>();
         node.gridPosition = gridPos;
         node.walkable = true;

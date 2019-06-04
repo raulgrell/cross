@@ -33,8 +33,6 @@ public class GridCombat : MonoBehaviour
     //Player Death
     public GameObject playerCorpse;
     private Vector3 cameraOrigPos;
-    private Vector3 playerOrigPos;
-    private Vector2Int gridOrigPos;
     private UnitAttack origMeleeAttack;
 
     private float stateTimer;
@@ -64,12 +62,11 @@ public class GridCombat : MonoBehaviour
     void Start()
     {
         unit = GetComponent<GridUnit>();
-        grid = unit.grid;
+        grid = unit.Grid;
         if (transform.CompareTag("Player"))
         {
             playerAnimation = GetComponent<PlayerAnimation>();
             cameraOrigPos = Camera.main.transform.position;
-            playerOrigPos = transform.position;
             origMeleeAttack = meleeAttack;
         }
         else if (transform.CompareTag("Enemy"))
@@ -79,7 +76,6 @@ public class GridCombat : MonoBehaviour
         }
 
         state = CombatState.Idle;
-        gridOrigPos = grid.WorldToCell(transform.position);
     }
 
     void Update()
@@ -159,8 +155,7 @@ public class GridCombat : MonoBehaviour
                                 playerCombat.transform.position.z),
                             playerCombat.playerCorpse.transform.rotation, null);
                         Camera.main.transform.position = playerCombat.cameraOrigPos;
-                        node.unit.position = playerCombat.gridOrigPos;
-                        node.unit.transform.position = playerCombat.playerOrigPos;
+                        node.unit.Respawn();
                         health.healthUI.ResetHearts();
                         health.health = 5;
                         playerCombat.meleeAttack = playerCombat.origMeleeAttack;
@@ -178,9 +173,8 @@ public class GridCombat : MonoBehaviour
                 }
                 if (target.effect == EffectType.Both)
                 {
-                    Debug.Log("here");
-                     grid.Nodes[node.unit.position.y, node.unit.position.x].walkable = true;
-                     node.unit.MoveToPosition(node.unit.position + unit.Forward * target.knockback);
+                     grid.Nodes[node.unit.Position.y, node.unit.Position.x].walkable = true;
+                     node.unit.MoveToPosition(node.unit.Position + unit.Forward * target.knockback);
                 }
             }
             else if(playerCombat.state == CombatState.Block)
@@ -207,8 +201,8 @@ public class GridCombat : MonoBehaviour
             }
             if (target.effect == EffectType.Both)
             {
-                grid.Nodes[node.unit.position.y, node.unit.position.x].walkable = true;
-                node.unit.MoveToPosition(node.unit.position + unit.Forward * target.knockback);
+                grid.Nodes[node.unit.Position.y, node.unit.Position.x].walkable = true;
+                node.unit.MoveToPosition(node.unit.Position + unit.Forward * target.knockback);
             }
         }
         else if (node.unit.transform.CompareTag("Interactable"))
@@ -216,8 +210,8 @@ public class GridCombat : MonoBehaviour
             InteractableObj obj = node.unit.GetComponent<InteractableObj>();
             if (target.effect == EffectType.Both || target.effect == EffectType.Condition)
             {
-                grid.Nodes[node.unit.position.y, node.unit.position.x].walkable = true;
-                node.unit.MoveToPosition(node.unit.position + unit.Forward * target.knockback);
+                grid.Nodes[node.unit.Position.y, node.unit.Position.x].walkable = true;
+                node.unit.MoveToPosition(node.unit.Position + unit.Forward * target.knockback);
                 grid.Nodes[obj.Position.y, obj.Position.x].unit = null;
             }
         }

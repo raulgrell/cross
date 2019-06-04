@@ -23,7 +23,7 @@ public abstract class UnitController : MonoBehaviour
     
     public bool Ready => actionTimer < 0;
 
-    [Range(0.01f, 1f)] public float refreshInterval = 0.2f;
+    [Range(0.01f, 1f)] public float refreshInterval = 0.5f;
 
     protected virtual void Start()
     {
@@ -62,14 +62,14 @@ public abstract class UnitController : MonoBehaviour
 
     public void MoveAwayFromTarget()
     {
-        var targetPos = unit.grid.WorldToCell(target.position);
+        var targetPos = unit.Grid.WorldToCell(target.position);
         var d = unit.Position - targetPos;
         unit.MoveTowards(d);
     }
     
     public void MoveTowardsTarget()
     {
-        var targetPos = unit.grid.WorldToCell(target.position);
+        var targetPos = unit.Grid.WorldToCell(target.position);
         var d = targetPos - unit.Position;
         unit.MoveTowards(d);
     }
@@ -100,7 +100,7 @@ public abstract class UnitController : MonoBehaviour
 
     public void LookAtTarget()
     {
-        unit.LookAt(unit.grid.WorldToCell(target.position));
+        unit.LookAt(unit.Grid.WorldToCell(target.position));
     }
 
     public void GrabTarget()

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Follow
   m_EditorClassIdentifier: 
   actionTime: 1
-  variance: 0.297
+  variance: 0.1

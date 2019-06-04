@@ -16,23 +16,18 @@ public enum GridUnitState
 public class GridUnit : MonoBehaviour
 {
     public int speed = 16;
-    internal GridLayer grid;
-    internal Vector2Int position;
+    private GridLayer grid;
+    private Vector2Int position;
     private Vector2Int prevPosition;
     private Vector2Int initialPosition;
     private Vector2Int forward = Vector2Int.up;
     private GridUnitState state;
 
-    public GridUnitState State => state;
-
+    public GridLayer Grid => grid;
     public Vector2Int Position => position;
-    public Vector2Int Forward
-    {
-        get => forward;
-        set => forward = value;
-    }
-
+    public Vector2Int Forward { get => forward; set => forward = value; }
     public Vector2Int Right => new Vector2Int(forward.y, -forward.x);
+    public GridUnitState State => state;
 
     private void Awake()
     {
@@ -82,8 +77,7 @@ public class GridUnit : MonoBehaviour
 
     public bool MoveToPosition(Vector2Int newPos)
     {
-        if (newPos.x < 0 || newPos.x >= grid.numCols ||
-            newPos.y < 0 || newPos.y >= grid.numRows)
+        if (!grid.InBounds(newPos.x, newPos.y))
             return false;
 
         if (!grid.IsWalkable(newPos.x, newPos.y))
@@ -98,7 +92,7 @@ public class GridUnit : MonoBehaviour
         return true;
     }
 
-    public void MoveToWorldPosition(Vector3 newWorldPos)
+    public void MoveToPosition(Vector3 newWorldPos)
     {
         var newPos = grid.WorldToCell(newWorldPos);
         MoveToPosition(newPos);
@@ -106,7 +100,8 @@ public class GridUnit : MonoBehaviour
 
     public void Respawn()
     {
-        
+        position = initialPosition;
+        transform.position = grid.CellToWorld(position).SetY(1);;
     }
 
     void Update()

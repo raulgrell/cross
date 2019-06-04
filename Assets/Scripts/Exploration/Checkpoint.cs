@@ -9,6 +9,6 @@ public class Checkpoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        activate?.Invoke();
+        if (other.CompareTag("Player")) activate?.Invoke();
     }
 }

@@ -24,8 +24,8 @@ MonoBehaviour:
     frame: 0
   - position: {x: 0, y: 1}
     effect: 1
-    damage: 1
-    knockback: 1
+    damage: 2
+    knockback: 2
     frame: 0
   spread: 0
   range: 3

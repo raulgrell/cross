@@ -9,25 +9,23 @@ using Random = UnityEngine.Random;
 
 public class GridLayer : MonoBehaviour
 {
-    public LayerMask customMask;
-    public Transform floor;
-    public GridBlocks floorBlocks;
-    public int numCols = 12;
-    public int numRows = 8;
-    public float cellSize = 2;
-    public float gutterSize = 0.5f;
+    [SerializeField] private LayerMask customMask;
+    [SerializeField] private Transform floor;
+    [SerializeField] private GridBlocks floorBlocks;
+    [SerializeField] private int numCols = 12;
+    [SerializeField] private int numRows = 8;
+    [SerializeField] private float cellSize = 2;
+    [SerializeField] private float gutterSize = 0.5f;
+    
     private GridNode[,] nodes;
     
     public int Count => numCols * numRows;
-
     public GridNode[,] Nodes => nodes;
 
     void Awake()
     {
         if (nodes == null)
-        {
             GenerateFloor();
-        }
     }
 
     private void OnDrawGizmos()
@@ -72,8 +70,8 @@ public class GridLayer : MonoBehaviour
         float layerHeight = numRows * cellSize;
         float percentX = Mathf.Clamp01((worldPosition.x - transform.position.x) / layerWidth);
         float percentY = Mathf.Clamp01((worldPosition.z - transform.position.z) / layerHeight);
-        int x = Mathf.RoundToInt((numCols - 1) * percentX);
-        int y = Mathf.RoundToInt((numRows - 1) * percentY);
+        int x = Mathf.RoundToInt((numCols) * percentX);
+        int y = Mathf.RoundToInt((numRows) * percentY);
         return new Vector2Int(x, y);
     }
     
@@ -119,14 +117,14 @@ public class GridLayer : MonoBehaviour
     {
         for (int i = -radius; i <= radius; i++)
         {
-            int vx = i + x;
-            int hy = i + y;
+            int c = i + x;
+            int r = i + y;
 
             // top, right, bottom, left
-            if (IsWalkable(vx, y + radius)) return Nodes[y + radius, vx];
-            if (IsWalkable(x + radius, hy)) return Nodes[hy, x + radius];
-            if (IsWalkable(vx, y - radius)) return Nodes[y - radius, vx];
-            if (IsWalkable(x - radius, hy)) return Nodes[hy, x - radius];
+            if (IsWalkable(c, y + radius)) return Nodes[y + radius, c];
+            if (IsWalkable(x + radius, r)) return Nodes[r, x + radius];
+            if (IsWalkable(c, y - radius)) return Nodes[y - radius, c];
+            if (IsWalkable(x - radius, r)) return Nodes[r, x - radius];
         }
 
         return null;
@@ -139,8 +137,7 @@ public class GridLayer : MonoBehaviour
         return dstX + dstY;
     }
 
-    [Button("Clear Floor")]
-    public void ClearFloor()
+    private void ClearFloor()
     {
         if (!floor) return;
         var children = new List<GameObject>();
@@ -149,18 +146,17 @@ public class GridLayer : MonoBehaviour
         nodes = null;
     }
     
-    [Button("Generate Floor")]
-    public void GenerateFloor()
+    [Button("Regenerate Floor")]
+    private void GenerateFloor()
     {
         ClearFloor();
         
         if (!floor || floor.childCount != 0)
             return;
         
-        var origin = transform.position;
-        var noiseOffset = Random.Range(0f, 100f);
-        
         nodes = new GridNode[numRows, numCols];
+        
+        var origin = transform.position;
         for (int i = 0; i < numCols; i++)
         {
             for (int j = 0; j < numRows; j++)

@@ -41,8 +41,8 @@ MonoBehaviour:
     effect: 1
     damage: 1
     knockback: 1
-    frame: 5
+    frame: 4
   spread: 1
   range: 6
   frameTime: 0.1
-  currentFrame: 5
+  currentFrame: 4

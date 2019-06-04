@@ -15,11 +15,6 @@ MonoBehaviour:
   targetPrefab: {fileID: 0}
   attackPrefab: {fileID: 0}
   frames:
-  - position: {x: -1, y: 0}
-    effect: 1
-    damage: 1
-    knockback: 1
-    frame: 0
   - position: {x: -1, y: 1}
     effect: 1
     damage: 1
@@ -55,6 +50,11 @@ MonoBehaviour:
     damage: 1
     knockback: 1
     frame: 0
+  - position: {x: -1, y: 0}
+    effect: 1
+    damage: 1
+    knockback: 1
+    frame: 0
   - position: {x: -2, y: 2}
     effect: 1
     damage: 1
@@ -80,12 +80,12 @@ MonoBehaviour:
     damage: 1
     knockback: 1
     frame: 1
-  - position: {x: 2, y: 1}
+  - position: {x: 2, y: 0}
     effect: 1
     damage: 1
     knockback: 1
     frame: 1
-  - position: {x: 2, y: 0}
+  - position: {x: 2, y: 1}
     effect: 1
     damage: 1
     knockback: 1

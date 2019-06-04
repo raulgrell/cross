@@ -571,6 +571,7 @@
             </e>
             <e p="CombatEffect.cs" t="Include" />
             <e p="CombatHealth.cs" t="Include" />
+            <e p="CombatLauncher.cs" t="Include" />
             <e p="CombatProjectile.cs" t="Include" />
             <e p="CombatThreat.cs" t="Include" />
             <e p="Editor" t="Include">
@@ -665,6 +666,7 @@
           </e>
           <e p="Units" t="Include">
             <e p="EnemyController.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
             <e p="SquadController.cs" t="Include" />
             <e p="UnitController.cs" t="Include" />
           </e>

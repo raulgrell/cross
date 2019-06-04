@@ -14,7 +14,7 @@ public class GridInput : MonoBehaviour
     private GridUnit unit;
     private GridCombat combat;
     private new PlayerAnimation animation;
-    public new Camera camera;
+    private new Camera camera;
 
     private TargetState state;
 
@@ -23,6 +23,7 @@ public class GridInput : MonoBehaviour
         unit = GetComponent<GridUnit>();
         combat = GetComponent<GridCombat>();
         animation = GetComponent<PlayerAnimation>();
+        camera = Camera.main;
     }
 
     void Update()
