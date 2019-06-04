@@ -58,7 +58,7 @@ public class BoxingGloveTrap : MonoBehaviour
         {
             timer += Time.deltaTime;
         }
-        if (timer > 0.05f * range)
+        if (timer > 0.025f * range)
         {
             combat.Attack(combat.meleeAttack);
             DoDamage();

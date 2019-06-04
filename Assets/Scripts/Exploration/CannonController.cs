@@ -29,6 +29,8 @@ public class CannonController : MonoBehaviour
         {
             float t = i / numbPoint;
             positions[i - 1] = CalculateLinearBezierPoint(t, point0.position, point1.position);
+            Debug.Log(positions[i -1]);
+            
         }
         line.SetPositions(positions);
     }

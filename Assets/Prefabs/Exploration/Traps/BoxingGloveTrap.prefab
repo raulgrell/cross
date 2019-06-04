@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb44bc06cd74052b21e936ca15a7dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meleeAttack: {fileID: 11400000, guid: 0b090d983d9b8e345816cc42238ea057, type: 2}
+  meleeAttack: {fileID: 11400000, guid: 18bd96227404a8a499c650189e484c8b, type: 2}
   rangedAttack: {fileID: 0}
   specialAttack: {fileID: 0}
   Weapon: []

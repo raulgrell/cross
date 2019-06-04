@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPrefab: {fileID: 288449397181996993, guid: 0e62e755c24d4f44eb72db6e75d6937c,
     type: 3}
-  attackPrefab: {fileID: 6906343893548924209, guid: f31d377f02d4c9c429860c5791a57e45,
+  attackPrefab: {fileID: 6906343893548924209, guid: f9a9220bf4bf50a4696903251a43468f,
     type: 3}
   frames:
   - position: {x: -1, y: 1}

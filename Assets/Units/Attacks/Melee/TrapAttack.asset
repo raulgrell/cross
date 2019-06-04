@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f376d3fd7fb4d89b27dce20f4b480e4, type: 3}
   m_Name: TrapAttack
   m_EditorClassIdentifier: 
-  targetPrefab: {fileID: 0}
-  attackPrefab: {fileID: 0}
-  frames: []
+  targetPrefab: {fileID: 288449397181996993, guid: 0e62e755c24d4f44eb72db6e75d6937c,
+    type: 3}
+  attackPrefab: {fileID: 6906343893548924209, guid: f9a9220bf4bf50a4696903251a43468f,
+    type: 3}
+  frames:
+  - position: {x: 0, y: 1}
+    effect: 3
+    damage: 1
+    knockback: 2
+    frame: 0
   spread: 1
   range: 1
   melee: 0
