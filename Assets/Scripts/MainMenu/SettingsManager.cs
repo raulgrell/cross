@@ -9,7 +9,7 @@ public class SettingsManager : MonoBehaviour
     private AudioSource source;
     private Slider[] sliders = new Slider[3];
 
-    private void OnEnable()
+    private void Awake()
     {
         source = GetComponent<AudioSource>();
     }
@@ -17,6 +17,10 @@ public class SettingsManager : MonoBehaviour
     public void changedMusic()
     {
         sliders = FindObjectsOfType<Slider>();
-        source.volume = sliders[0].value;
+        foreach (Slider s in sliders)
+        {
+            if(s.transform.name == "SliderM")
+            source.volume = s.value;
+        }
     }
 }

@@ -3,12 +3,22 @@ guid: 75d15c9613972104ab9141cc384a1b26
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TentRed
+    second: {fileID: 2100000, guid: 0df0a739c9f88fe408ace2beaf53e218, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TentWhite
+    second: {fileID: 2100000, guid: a56721997ba129f4b8262ffbd4d5631e, type: 2}
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
