@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animations/ClownBig/Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Animations/ClownBig/Death.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animations/ClownMini/DeathMini.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Animations/ClownMini/DeathMini.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Speaker/Body.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Speaker/Body.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/GridLayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/GridLayer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NewestScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NewestScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ShowScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ShowScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Attacks/Area/Explosion.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Attacks/Area/Explosion.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Animation/EnemyAnimation.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
@@ -84,6 +71,19 @@
                 <marker date="1559753986481" expanded="true" signature="1478:1544" ph="{...}" />
                 <marker date="1559753986481" expanded="true" signature="1579:1838" ph="{...}" />
                 <marker date="1559753986481" expanded="true" signature="1643:1717" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Buttons/ExitButton.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1557597475508" expanded="false" signature="6:78" ph="..." />
+                <marker date="1557597475508" expanded="true" signature="119:196" ph="{...}" />
+                <marker date="1557597475508" expanded="true" signature="154:194" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -130,73 +130,6 @@
                 <marker date="1559748065861" expanded="true" signature="5144:5480" ph="{...}" />
                 <marker date="1559748065861" expanded="true" signature="5283:5454" ph="{...}" />
                 <marker date="1559748065861" expanded="true" signature="5761:5960" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Extensions/IListExtension.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3472">
-              <caret line="218" selection-start-line="218" selection-end-line="218" />
-              <folding>
-                <marker date="1557873599365" expanded="false" signature="6:52" ph="..." />
-                <marker date="1557873599365" expanded="true" signature="54:156" ph="/// Utility functions that applies to any containers that can be indexed. ... " />
-                <marker date="1557873599365" expanded="true" signature="191:8518" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="198:444" ph="/// Applies a passed function to every member of the IList. Passed in function changes the item itself. ... " />
-                <marker date="1557873599365" expanded="true" signature="528:659" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="581:653" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="665:911" ph="/// Applies a passed function to every member of the 2D list. Passed in function changes the item itself. ... " />
-                <marker date="1557873599365" expanded="true" signature="1017:1240" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="1070:1234" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="1134:1224" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="1246:1500" ph="/// Returns a portion of the original IList. ... " />
-                <marker date="1557873599365" expanded="true" signature="1582:2058" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="1620:1730" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="1758:1876" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="1965:2028" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="2064:2207" ph="/// Adds a generic collection of items to IList. ... " />
-                <marker date="1557873599365" expanded="true" signature="2286:2376" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="2323:2370" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="2382:2599" ph="/// Adds an item to the IList, but only if that item doesn't already exists. ... " />
-                <marker date="1557873599365" expanded="true" signature="2663:2809" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="2705:2780" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="2815:3003" ph="/// Adds a generic collection of items to IList, but only if those items don't already exist. ... " />
-                <marker date="1557873599365" expanded="true" signature="3086:3245" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="3123:3239" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="3170:3229" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="3251:3523" ph="/// Adds an item to the IList. If the IList is longer than max, cull out the first values to make the list length ... " />
-                <marker date="1557873599365" expanded="true" signature="3597:3789" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="3636:3756" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="3795:4086" ph="/// Adds a collection of items to the IList. If the IList is longer than max, cull out the first values to make t ... " />
-                <marker date="1557873599365" expanded="true" signature="4179:4477" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="4239:4280" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="4314:4438" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="4483:4799" ph="/// Add an item to the IList, but only if those items don't already exist. If the list is longer than max, cull o ... " />
-                <marker date="1557873599365" expanded="true" signature="4877:5149" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="4919:5143" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="4966:5102" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="5155:5480" ph="/// Add an item set to the IList, but only if those items don't already exist. If the IList is longer than max, c ... " />
-                <marker date="1557873599365" expanded="true" signature="5577:6016" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="5677:5818" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="5724:5808" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="5852:5977" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="6022:6238" ph="/// Removes multiple items at once.. ... " />
-                <marker date="1557873599365" expanded="true" signature="6331:6654" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="6390:6540" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="6587:6648" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="6660:7181" ph="/// Extention of the Sort function. Takes a simple bool function in a similar fashion to Linq's OrderBy function. ... " />
-                <marker date="1557873599365" expanded="true" signature="7270:7928" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="7364:7898" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="7398:7491" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="7574:7797" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="7638:7783" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="7821:7888" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="7934:8076" ph="/// Removes the last item in the IList and returns it. ... " />
-                <marker date="1557873599365" expanded="true" signature="8125:8310" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="8162:8213" ph="{...}" />
-                <marker date="1557873599365" expanded="true" signature="8388:8516" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -457,6 +390,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Unit/Conditions/ConditionManhattan.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Unit/Conditions/ConditionVisibility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/FSM/State.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Buttons/ExitButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Unit/Actions/ActionApproach.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/FSM/StateTransition.cs" root0="FORCE_HIGHLIGHTING" />
@@ -768,12 +702,12 @@
       <workItem from="1559696998095" duration="1984000" />
       <workItem from="1559729692631" duration="8699000" />
       <workItem from="1559747729013" duration="1121000" />
-      <workItem from="1559754778381" duration="1018000" />
+      <workItem from="1559754778381" duration="1325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="485598000" />
+    <option name="totallyTimeSpent" value="485905000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -941,17 +875,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/Unit/UnitState.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <marker date="1557873599442" expanded="false" signature="6:78" ph="..." />
-            <marker date="1557873599442" expanded="true" signature="165:174" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/Unit/UnitCondition.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1816,6 +1739,17 @@
             <marker date="1559753986481" expanded="true" signature="1478:1544" ph="{...}" />
             <marker date="1559753986481" expanded="true" signature="1579:1838" ph="{...}" />
             <marker date="1559753986481" expanded="true" signature="1643:1717" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Buttons/ExitButton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1557597475508" expanded="false" signature="6:78" ph="..." />
+            <marker date="1557597475508" expanded="true" signature="119:196" ph="{...}" />
+            <marker date="1557597475508" expanded="true" signature="154:194" ph="{...}" />
           </folding>
         </state>
       </provider>

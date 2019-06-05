@@ -19,6 +19,6 @@ public class StartButton : MonoBehaviour
     {
         MenuGlitch.Instance.active = true;
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("MainScene"); 
+        SceneManager.LoadScene("ShowScene"); 
     }
 }

@@ -17,10 +17,10 @@ MonoBehaviour:
   attackPrefab: {fileID: 6906343893548924209, guid: f9a9220bf4bf50a4696903251a43468f,
     type: 3}
   frames:
-  - position: {x: 0, y: 2}
+  - position: {x: 0, y: 1}
     effect: 3
     damage: 1
-    knockback: 2
+    knockback: 1
     frame: 0
   spread: 0
   range: 2
