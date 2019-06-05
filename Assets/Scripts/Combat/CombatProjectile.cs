@@ -16,6 +16,7 @@ public class CombatProjectile : MonoBehaviour
         var projectile = gameObject.GetComponent<CombatProjectile>();
         projectile.start = start;
         projectile.end = end;
+        projectile.launcher = launcher;
         return projectile;
     }
 
@@ -29,6 +30,7 @@ public class CombatProjectile : MonoBehaviour
         }
         else
         {
+            launcher.Combat.Attack(launcher.Combat.meleeAttack);
             Destroy(gameObject);
         }
     }

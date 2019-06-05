@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    public bool open;
     private Animator animator;
     private static readonly int isOpen = Animator.StringToHash("IsOpen");
 
@@ -14,11 +15,13 @@ public class Door : MonoBehaviour
 
     public void Open()
     {
+        open = true;
         animator.SetBool(isOpen, true);
     }
 
     public void Close()
     {
+        open = false;
         animator.SetBool(isOpen, false);
     }
 }

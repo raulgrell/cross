@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 8974552924782148347}
   - component: {fileID: 1913012863311682536}
   - component: {fileID: 6962158109603569079}
+  - component: {fileID: 230746763430571070}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -106,6 +107,24 @@ MonoBehaviour:
   prefab: {fileID: 3369827675480516660, guid: 9d10a42a6a3fb694dbf7ebfdb4bad1f2, type: 3}
   actionTime: 3
   start: {fileID: 2184135564601398991}
+--- !u!114 &230746763430571070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8974552924782148346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb44bc06cd74052b21e936ca15a7dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meleeAttack: {fileID: 11400000, guid: 30de184046c1b19489859d7c0335d0e5, type: 2}
+  rangedAttack: {fileID: 11400000, guid: 30de184046c1b19489859d7c0335d0e5, type: 2}
+  specialAttack: {fileID: 11400000, guid: 30de184046c1b19489859d7c0335d0e5, type: 2}
+  Weapon: []
+  icon: {fileID: 0}
+  playerCorpse: {fileID: 0}
 --- !u!1001 &8974552923561738688
 PrefabInstance:
   m_ObjectHideFlags: 0

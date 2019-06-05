@@ -6,8 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour
 {
+    private bool active;
+    
     public void StartScene()
     {
-        SceneManager.LoadScene(1); 
+        if (active) return;
+        active = true;
+        StartCoroutine(LoadGame());
+    }
+
+    IEnumerator LoadGame()
+    {
+        MenuGlitch.Instance.active = true;
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("MainScene"); 
     }
 }

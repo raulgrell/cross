@@ -11,11 +11,13 @@ public enum GridUnitState
     Attacking,
     Grabbed,
     Stunned,
+    Falling,
 }
 
 public class GridUnit : MonoBehaviour
 {
     public int speed = 16;
+    
     private GridLayer grid;
     private Vector2Int position;
     private Vector2Int prevPosition;
@@ -54,14 +56,14 @@ public class GridUnit : MonoBehaviour
 
     public bool Move(Vector2Int moveDir)
     {
-        var target = Position + moveDir;
+        var target = position + moveDir;
         LookAt(target);
         return MoveToPosition(target);
     }
 
     public Vector2Int DirectionTo(Vector2Int target)
     {
-        var direction = target - Position;
+        var direction = target - position;
         var absDir = new Vector2Int(Mathf.Abs(direction.x), Mathf.Abs(direction.y));
         direction.Clamp(new Vector2Int(-1, -1), new Vector2Int(1, 1));
         return absDir.x >= absDir.y 
@@ -81,10 +83,10 @@ public class GridUnit : MonoBehaviour
         if (!grid.InBounds(newPos.x, newPos.y)) return false;
         if (!grid.IsWalkable(newPos.x, newPos.y)) return false;
 
-        grid.Nodes[Position.y, Position.x].unit = null;
+        grid.Nodes[position.y, position.x].unit = null;
         grid.Nodes[newPos.y, newPos.x].unit = this;
         
-        prevPosition = Position;
+        prevPosition = position;
         position = newPos;
         state = GridUnitState.Moving;
         return true;
@@ -110,17 +112,22 @@ public class GridUnit : MonoBehaviour
                 break;
             case GridUnitState.Moving:
                 var unitPosition = transform.position;
-                var cellPosition = grid.CellToWorld(Position);
+                var cellPosition = grid.CellToWorld(position);
                 cellPosition.y = unitPosition.y;
                 transform.position = Vector3.MoveTowards(unitPosition, cellPosition, speed * Time.deltaTime);
                 if (Vector3.Distance(transform.position, cellPosition) < 0.1f)
                 {
+                    if (grid.Nodes[position.y, position.x].type == NodeType.Fall)
+                    {
+                        state = GridUnitState.Falling;
+                    }
                     state = GridUnitState.Idle;
                 }
                 break;
             case GridUnitState.Attacking:
             case GridUnitState.Grabbed:
             case GridUnitState.Stunned:
+            case GridUnitState.Falling:
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -132,7 +139,7 @@ public class GridUnit : MonoBehaviour
         if (grid == null)
             return;
 
-        Gizmos.DrawWireSphere(grid.CellToWorld(Position), 1);
+        Gizmos.DrawWireSphere(grid.CellToWorld(position), 1);
     }
 
     [Button("Sync")]
@@ -152,5 +159,10 @@ public class GridUnit : MonoBehaviour
     public void SetStunned()
     {
         state = GridUnitState.Stunned;
+    }
+    
+    public void SetFalling()
+    {
+        state = GridUnitState.Falling;
     }
 }

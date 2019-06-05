@@ -22,7 +22,7 @@ public abstract class UnitAttack : ScriptableObject
 {
     public GameObject targetPrefab;
     public GameObject attackPrefab;
-    public List<Target> frames;
+    public List<Target> frames = new List<Target>();
 
     [Range(0, 3)] public int spread = 1;
     [Range(1, 6)] public int range = 1;
@@ -30,24 +30,6 @@ public abstract class UnitAttack : ScriptableObject
     private void OnEnable()
     {
         frames.Sort((a, b) => a.frame < b.frame);
-    }
-
-    public Target[] GetRange(GridUnit unit)
-    {
-        var t = new Target[frames.Count];
-        for (int i = 0; i < frames.Count; i++)
-        {
-            var p = frames[i];
-            t[i] = new Target
-            {
-                position = unit.Position + unit.Right * p.position.x + unit.Forward * p.position.y,
-                effect = p.effect,
-                damage = p.damage,
-                knockback = p.knockback
-            };
-        }
-
-        return t;
     }
     
     public Target[] GetTargets(GridUnit unit)
@@ -68,7 +50,7 @@ public abstract class UnitAttack : ScriptableObject
         return t;
     }
     
-    public Target[] GetThreatened(GridUnit unit)
+    public virtual Target[] GetThreatened(GridUnit unit)
     {
         var t = new Target[frames.Count];
         for (int i = 0; i < frames.Count; i++)

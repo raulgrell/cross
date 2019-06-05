@@ -14,19 +14,32 @@ public class AreaAttackEditor : Editor
 
     protected void OnEnable()
     {
+        AssetDatabase.Refresh();
+
         AreaAttack attack = (AreaAttack) target;
         frameSet = new HashSet<Target>();
 
         foreach (var t in attack.frames)
-        {
             frameSet.Add(t);
-        }
+        
+        AssetDatabase.SaveAssets();
     }
 
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
         AreaAttack attack = (AreaAttack) target;
+        
+        if (GUI.changed)
+        {
+            frameSet = new HashSet<Target>();
+            foreach (var t in attack.frames)
+                frameSet.Add(t);
+            
+            EditorUtility.SetDirty(attack);
+        }
+        
+        EditorGUI.BeginChangeCheck();
 
         showFrames = EditorGUILayout.Foldout(showFrames, $"Frames");
         if (showFrames)
@@ -147,11 +160,10 @@ public class AreaAttackEditor : Editor
             EditorGUILayout.EndHorizontal();
         }
 
-        if (GUI.changed)
+        if (EditorGUI.EndChangeCheck())
         {
             attack.frames.Clear();
             attack.frames.AddRange(frameSet);
-            
             Undo.RecordObject(attack, "Edit attack");
             EditorUtility.SetDirty(attack);
         }

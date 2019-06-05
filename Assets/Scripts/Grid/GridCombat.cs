@@ -116,24 +116,22 @@ public class GridCombat : MonoBehaviour
     public void Attack(UnitAttack attack)
     {
         state = CombatState.Attack;
+        
+        StartCoroutine(attack.Attack(this));
 
         if (unit.CompareTag("Player"))
         {
-            StartCoroutine(attack.Attack(this));
             playerAnimation.AttackAnimation();
         }
         else if (unit.CompareTag("Enemy"))
         {
-            StartCoroutine(attack.Attack(this));
             enemySoundEffect.onAttack();
             enemyAnimation.AttackAnimation();
         }
-        else if (unit.CompareTag("Trap"))
-            StartCoroutine(attack.Attack(this));
 
         stateTimer = 0;
     }
-
+    
     public void DamageTarget(GridNode node, Target target)
     {
         if (node.unit == null || node.unit == unit)
@@ -237,4 +235,6 @@ public class GridCombat : MonoBehaviour
     {
         State = CombatState.Parry;
     }
+
+
 }

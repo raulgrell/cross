@@ -27,6 +27,20 @@
             <e p="Hologram.shader" t="Include" />
           </e>
         </e>
+        <e p="Kino" t="Include">
+          <e p="Glitch" t="Include">
+            <e p="AnalogGlitch.cs" t="Include" />
+            <e p="DigitalGlitch.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="AnalogGlitchEditor.cs" t="Include" />
+              <e p="DigitalGlitchEditor.cs" t="Include" />
+            </e>
+            <e p="Shader" t="Include">
+              <e p="AnalogGlitch.shader" t="Include" />
+              <e p="DigitalGlitch.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="Attributes" t="Include">
             <e p="ExpandableAttribute.cs" t="Include" />
@@ -524,6 +538,7 @@
                 <e p="ActionGrab.cs" t="Include" />
                 <e p="ActionRun.cs" t="Include" />
                 <e p="ActionStop.cs" t="Include" />
+                <e p="ActionTask.cs" t="Include" />
                 <e p="ActionWait.cs" t="Include" />
               </e>
               <e p="Conditions" t="Include">
@@ -564,7 +579,6 @@
             <e p="Attacks" t="Include">
               <e p="AreaAttack.cs" t="Include" />
               <e p="MeleeAttack.cs" t="Include" />
-              <e p="PathAttack.cs" t="Include" />
               <e p="RangedAttack.cs" t="Include" />
               <e p="SpecialAttack.cs" t="Include" />
               <e p="UnitAttack.cs" t="Include" />
@@ -628,12 +642,14 @@
               <e p="SettingsButton.cs" t="Include" />
               <e p="StartButton.cs" t="Include" />
             </e>
+            <e p="MenuGlitch.cs" t="Include" />
             <e p="RotateMenuCamera.cs" t="Include" />
             <e p="RotateMenuPlanet.cs" t="Include" />
             <e p="SettingsManager.cs" t="Include" />
           </e>
           <e p="Session.cs" t="Include" />
           <e p="Sound" t="Include">
+            <e p="AmbientSoundController.cs" t="Include" />
             <e p="EnemySound.cs" t="Include" />
           </e>
           <e p="State" t="Include">
@@ -668,10 +684,7 @@
             <e p="SquadController.cs" t="Include" />
             <e p="UnitController.cs" t="Include" />
           </e>
-          <e p="World" t="Include">
-            <e p="World.cs" t="Include" />
-            <e p="WorldInfo.cs" t="Include" />
-          </e>
+          <e p="World.cs" t="Include" />
         </e>
         <e p="Shader" t="Include">
           <e p="BlurShader.shader" t="Include" />

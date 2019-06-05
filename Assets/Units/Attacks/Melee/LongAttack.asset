@@ -28,5 +28,5 @@ MonoBehaviour:
     knockback: 2
     frame: 0
   spread: 0
-  range: 3
+  range: 2
   melee: 0

@@ -23,6 +23,8 @@ public class SquadController : MonoBehaviour
     private UnitController target;
     private UnitController[] units;
     private SquadState state;
+    
+    public IEnumerable<UnitController> Units => units;
 
     List<GridNode> GetNodesAroundTarget()
     {

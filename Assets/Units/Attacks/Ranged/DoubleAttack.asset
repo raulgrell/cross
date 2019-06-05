@@ -65,4 +65,4 @@ MonoBehaviour:
   spread: 1
   range: 1
   frameTime: 0.1
-  currentFrame: 5
+  currentFrame: 0
