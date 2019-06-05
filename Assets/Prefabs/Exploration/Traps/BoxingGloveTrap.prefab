@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d29b092d025094183a635cbb4f15a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 5
+  range: 10
   forward: {x: 1, y: 0}
 --- !u!1001 &8526252689895870777
 PrefabInstance:

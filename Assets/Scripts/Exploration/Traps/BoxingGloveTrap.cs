@@ -17,7 +17,7 @@ public class BoxingGloveTrap : MonoBehaviour
     private Vector2Int currentActive;
     private Vector2Int origPosition;
     private bool deative;
-
+    private bool damaged;
     private void Start()
     { 
         combat = GetComponent<GridCombat>();
@@ -60,7 +60,11 @@ public class BoxingGloveTrap : MonoBehaviour
         }
         if (timer > 0.025f * range)
         {
-            combat.Attack(combat.meleeAttack);
+            if (!damaged)
+            {
+                combat.Attack(combat.meleeAttack);
+                damaged = true;
+            }
             DoDamage();
         }
     }
@@ -73,6 +77,7 @@ public class BoxingGloveTrap : MonoBehaviour
             timer = 0;
             deative = false;
             readyToFire = true;
+            damaged = false;
         }
     }
     

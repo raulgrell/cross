@@ -280,7 +280,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit
+  m_Text: Exit to Menu
 --- !u!1 &1669392653868530126
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 1669392653868530124}
   - component: {fileID: 1669392653868530123}
   - component: {fileID: 1669392653868530120}
-  - component: {fileID: 2856157714120653848}
+  - component: {fileID: 36458642}
   m_Layer: 5
   m_Name: Exitbutton
   m_TagString: Untagged
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8e5d234f2ed9d248bef73a24905f464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2856157714120653848
+--- !u!114 &36458642
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1669392653868530126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1eab5212ea75e34b9ae5b2bfd0335f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 160d55f8e3d850040b45be63dabd8003, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2856157713401412307
@@ -1373,6 +1373,27 @@ PrefabInstance:
       propertyPath: StartMenu
       value: 
       objectReference: {fileID: 1888722454}
+    - target: {fileID: 2505809732152339559, guid: e482fa2220b6ead47ad7f46274ba40ce,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505809731979951315, guid: e482fa2220b6ead47ad7f46274ba40ce,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3001577140568403401, guid: e248a9858cfc1044ab6a4342af2225d3,
+        type: 3}
+    - target: {fileID: 2505809731979951315, guid: e482fa2220b6ead47ad7f46274ba40ce,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changedMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505809731979951315, guid: e482fa2220b6ead47ad7f46274ba40ce,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2505809732936495020, guid: e482fa2220b6ead47ad7f46274ba40ce,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -1387,6 +1408,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505809732958126893, guid: e482fa2220b6ead47ad7f46274ba40ce,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2505809732808007450, guid: e482fa2220b6ead47ad7f46274ba40ce,
         type: 3}

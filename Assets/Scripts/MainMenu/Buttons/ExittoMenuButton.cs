@@ -7,6 +7,7 @@ public class ExittoMenuButton : MonoBehaviour
 {
     public void GoBacktoMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 }
