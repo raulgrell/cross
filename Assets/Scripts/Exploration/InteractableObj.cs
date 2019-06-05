@@ -41,9 +41,8 @@ public class InteractableObj : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteraction>();
         Vector3 actualWorldPosition = new Vector3(transform.position.x, grid.transform.position.y, transform.position.z);
         gridPos = grid.WorldToCell(actualWorldPosition);
-        grid.Nodes[gridPos.y, gridPos.x].walkable = false;
+        grid.Nodes[gridPos.y, gridPos.x].unit = unit;
     }
-
 
     private void Update()
     {
@@ -56,7 +55,6 @@ public class InteractableObj : MonoBehaviour
                     Vector3 pos = info.transform.position;
                     
                     pos.y = getGroundedY;
-                    grid.Nodes[gridPos.y, gridPos.x].walkable = true;
                     grid.Nodes[gridPos.y, gridPos.x].unit = null;
 
                     gridPos = grid.WorldToCell(pos);
@@ -80,7 +78,6 @@ public class InteractableObj : MonoBehaviour
                             state = ObjectState.None;
                     }
 
-                    grid.Nodes[gridPos.y, gridPos.x].walkable = false;
                     grid.Nodes[gridPos.y, gridPos.x].unit = unit;
                     player.Unit.speed = 16;
                 }
@@ -90,7 +87,7 @@ public class InteractableObj : MonoBehaviour
                 Vector3 newPos = player.transform.position;
                 newPos.y = transform.position.y;
                 transform.position = newPos;
-                grid.Nodes[gridPos.y, gridPos.x].walkable = true;
+                grid.Nodes[gridPos.y, gridPos.x].unit = null;
                 break;
             case ObjectState.None:
                 grid.Nodes[gridPos.y, gridPos.x].unit = unit;
@@ -98,7 +95,6 @@ public class InteractableObj : MonoBehaviour
             case ObjectState.Thrown:
                 if (target.gameObject.HasComponent<CombatHealth>() && target.GetComponent<CombatHealth>().Damage(5))
                     Destroy(target.gameObject);
-                grid.Nodes[gridPos.y, gridPos.x].walkable = true;
                 grid.Nodes[gridPos.y, gridPos.x].unit = null;
 
                 Destroy(gameObject);

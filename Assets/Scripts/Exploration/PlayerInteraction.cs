@@ -43,7 +43,7 @@ public class PlayerInteraction : MonoBehaviour
                     if (Vector2.Distance(gridUnit.Position, currentObj.Position) <= 1.5f)
                     {
                         gridCombat.State = CombatState.Interacting;
-                        gridUnit.Grid.Nodes[currentObj.Position.y, currentObj.Position.x].walkable = true;
+                        gridUnit.Grid.Nodes[currentObj.Position.y, currentObj.Position.x].unit = null;
                         Vector3 newPos = gridUnit.Grid.CellToWorld(gridUnit.Position);
                         newPos.y = interactableY + currentObj.getGroundedY;
                         currentObj.transform.position = newPos;

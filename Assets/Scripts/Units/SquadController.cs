@@ -17,16 +17,17 @@ public enum SquadState
 
 public class SquadController : MonoBehaviour
 {
-    public GridUnit target;
     public GridLayer grid;
     public UnitController leader;
-    public List<UnitController> units;
+    
+    private UnitController target;
+    private UnitController[] units;
     private SquadState state;
 
     List<GridNode> GetNodesAroundTarget()
     {
         if (!target) return null;
-        var pos = target.Position;
+        var pos = target.Unit.Position;
         var targetNode = grid.Nodes[pos.y, pos.x];
         return grid.GetNeighbours(targetNode, 1);
     }
@@ -34,11 +35,13 @@ public class SquadController : MonoBehaviour
     private void Start()
     {
         state = SquadState.None;
+        target = FindObjectOfType<PlayerController>();
+        units = GetComponentsInChildren<UnitController>();
     }
 
     private void Update()
     {
-        switch (units.Count)
+        switch (units.Length)
         {
             case 0: state = SquadState.Defeated; break;
             case 1: state = SquadState.Retreating; break;
@@ -49,12 +52,8 @@ public class SquadController : MonoBehaviour
    
     private void OnDrawGizmosSelected()
     {
-        if (units == null) return;
-        
-        foreach (var unit in units)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawSphere(unit.transform.position, 0.1f);
-        }
+        if (leader == null) return;
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(leader.transform.position, 0.1f);
     }
 }

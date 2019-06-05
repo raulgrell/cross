@@ -77,11 +77,9 @@ public class GridUnit : MonoBehaviour
 
     public bool MoveToPosition(Vector2Int newPos)
     {
-        if (!grid.InBounds(newPos.x, newPos.y))
-            return false;
-
-        if (!grid.IsWalkable(newPos.x, newPos.y))
-            return false;
+        if (state != GridUnitState.Idle) return false;
+        if (!grid.InBounds(newPos.x, newPos.y)) return false;
+        if (!grid.IsWalkable(newPos.x, newPos.y)) return false;
 
         grid.Nodes[Position.y, Position.x].unit = null;
         grid.Nodes[newPos.y, newPos.x].unit = this;

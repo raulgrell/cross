@@ -23,7 +23,7 @@ public abstract class UnitController : MonoBehaviour
     
     public bool Ready => actionTimer < 0;
 
-    [Range(0.01f, 1f)] public float refreshInterval = 0.5f;
+    [Range(0f, 1f)] public float refreshInterval = 0.5f;
 
     protected virtual void Start()
     {

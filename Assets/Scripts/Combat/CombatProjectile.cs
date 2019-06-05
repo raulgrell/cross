@@ -4,27 +4,30 @@ using UnityEngine.Events;
 
 public class CombatProjectile : MonoBehaviour
 {
-    public Vector3 start;
-    public Vector3 end;
-    public float lifetime;
-    
-    [Range(0.1f, 10f)]
-    public float factor;
+    [Range(0.1f, 10f)] public float factor = 1;
+    private CombatLauncher launcher;
+    private Vector3 start;
+    private Vector3 end;
+    private float lifetime;
 
-    public UnityEvent OnComplete;
-
-    public static CombatProjectile Spawn(GameObject prefab, Vector3 start, Vector3 end)
+    public static CombatProjectile Spawn(GameObject prefab, Vector3 start, Vector3 end, CombatLauncher launcher)
     {
         var gameObject = Instantiate(prefab, start, Quaternion.identity);
         var projectile = gameObject.GetComponent<CombatProjectile>();
+        projectile.start = start;
+        projectile.end = end;
         return projectile;
     }
 
     private void Update()
     {
-        transform.position = Bezier2(start, (start + end / 2).SetY(start.y), end, lifetime);
-        lifetime += Time.deltaTime * factor;
-        if (lifetime > 1)
+        if (lifetime < 1)
+        {
+            var midpoint = new Vector3((start.x + end.x)/ 2, start.y * 2, (start.z + end.z)/2);
+            transform.position = Bezier2(start, midpoint, end, lifetime);
+            lifetime += Time.deltaTime * factor;
+        }
+        else
         {
             Destroy(gameObject);
         }

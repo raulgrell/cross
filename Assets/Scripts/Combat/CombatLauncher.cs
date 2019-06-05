@@ -4,21 +4,29 @@ using UnityEngine;
 
 public class CombatLauncher : MonoBehaviour
 {
-    public Transform start;
-    public Transform end;
+    [SerializeField] private GameObject prefab;
+    [SerializeField] private float actionTime;
+    [SerializeField] private Transform start;
+    private Transform end;
+    private GridCombat combat;
+    private float timer;
 
-    public List<Transform> projectiles;
-
+    public GridCombat Combat => combat;
+    
     private void Start()
     {
-        projectiles = new List<Transform>();
+        combat = GetComponent<GridCombat>();
         end = FindObjectOfType<PlayerController>().transform;
     }
-    
+
     private void Update()
     {
-        foreach (var p in projectiles)
+        if (timer < 0 && Vector3.Distance(start.position, end.position) < 10)
         {
+            CombatProjectile.Spawn(prefab, start.position, end.position, this);
+            timer = Random.Range(actionTime - 0.2f, actionTime + 0.2f);
         }
+
+        timer -= Time.deltaTime;
     }
 }

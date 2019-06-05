@@ -31,13 +31,13 @@ public class GridPathfinding : MonoBehaviour
                 
         startNode.parent = startNode;
 
-        if (!startNode.walkable)
+        if (!startNode.Walkable)
             startNode = grid.ClosestWalkableNode(startNode);
 
-        if (!targetNode.walkable)
+        if (!targetNode.Walkable)
             targetNode = grid.ClosestWalkableNode(targetNode);
         
-        if (startNode.walkable && targetNode.walkable)
+        if (startNode.Walkable && targetNode.Walkable)
         {
             var openSet = new Heap<GridNode>(grid.Count);
             var closedSet = new HashSet<GridNode>();
@@ -56,7 +56,7 @@ public class GridPathfinding : MonoBehaviour
 
                 foreach (GridNode neighbour in grid.GetNeighbours(currentGridNode))
                 {
-                    if (!neighbour.walkable || closedSet.Contains(neighbour))
+                    if (!neighbour.Walkable || closedSet.Contains(neighbour))
                         continue;
 
                     int newCostToNeighbour = currentGridNode.gCost + GridLayer.GetDistance(currentGridNode, neighbour);

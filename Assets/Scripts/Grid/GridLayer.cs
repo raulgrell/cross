@@ -55,7 +55,7 @@ public class GridLayer : MonoBehaviour
 
     public bool IsWalkable(int x, int y)
     {
-        return InBounds(x, y) && IsEmpty(x, y) && Nodes[y, x].walkable;
+        return InBounds(x, y) && IsEmpty(x, y) && Nodes[y, x].Walkable;
     }
 
     public Vector3 CellToWorld(Vector2Int position)

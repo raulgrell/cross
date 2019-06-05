@@ -48,10 +48,10 @@ public class GridInput : MonoBehaviour
                     if (Input.GetMouseButtonDown(1)) combat.Attack(combat.rangedAttack);
                 }
 
-                if (Input.GetKeyDown(KeyCode.A)) unit.Move(Vector2Int.left);
-                if (Input.GetKeyDown(KeyCode.D)) unit.Move(Vector2Int.right);
-                if (Input.GetKeyDown(KeyCode.S)) unit.Move(Vector2Int.down);
-                if (Input.GetKeyDown(KeyCode.W)) unit.Move(Vector2Int.up);
+                if (Input.GetKey(KeyCode.A)) unit.Move(Vector2Int.left);
+                if (Input.GetKey(KeyCode.D)) unit.Move(Vector2Int.right);
+                if (Input.GetKey(KeyCode.S)) unit.Move(Vector2Int.down);
+                if (Input.GetKey(KeyCode.W)) unit.Move(Vector2Int.up);
                 break;
             case CombatState.Block:
                 break;

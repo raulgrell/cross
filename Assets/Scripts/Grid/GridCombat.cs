@@ -149,10 +149,11 @@ public class GridCombat : MonoBehaviour
                 {
                     if (health.Damage(target.damage))
                     {
+                        Vector3 playerPos = playerCombat.transform.position;
                         Instantiate(playerCombat.playerCorpse,
-                            new Vector3(playerCombat.transform.position.x,
+                            new Vector3(playerPos.x,
                                 playerCombat.playerCorpse.transform.position.y,
-                                playerCombat.transform.position.z),
+                                playerPos.z),
                             playerCombat.playerCorpse.transform.rotation, null);
                         Camera.main.transform.position = playerCombat.cameraOrigPos;
                         node.unit.Respawn();
@@ -163,17 +164,16 @@ public class GridCombat : MonoBehaviour
                         {
                             w.SetActive(false);
                         }
-                    }
-                    else
-                    {
-                        playerCombat.playerAnimation.HurtAnimation();
-                        playerCombat.state = CombatState.Hurt;
-                    }
 
+                        node.unit = null;
+                        return;
+                    }
+                    
+                    playerCombat.playerAnimation.HurtAnimation();
+                    playerCombat.state = CombatState.Hurt;
                 }
                 if (target.effect == EffectType.Both)
                 {
-                     grid.Nodes[node.unit.Position.y, node.unit.Position.x].walkable = true;
                      node.unit.MoveToPosition(node.unit.Position + unit.Forward * target.knockback);
                 }
             }
@@ -197,11 +197,14 @@ public class GridCombat : MonoBehaviour
                 node.unit.transform.GetComponent<GridCombat>().enemySoundEffect.onHurt();
                 node.unit.transform.GetComponent<EnemyAnimation>().HurtAnimation();
                 if (health.Damage(target.damage))
+                {
                     Destroy(node.unit.gameObject);
+                    node.unit = null;
+                    return;
+                }
             }
             if (target.effect == EffectType.Both)
             {
-                grid.Nodes[node.unit.Position.y, node.unit.Position.x].walkable = true;
                 node.unit.MoveToPosition(node.unit.Position + unit.Forward * target.knockback);
             }
         }
@@ -210,7 +213,6 @@ public class GridCombat : MonoBehaviour
             InteractableObj obj = node.unit.GetComponent<InteractableObj>();
             if (target.effect == EffectType.Both || target.effect == EffectType.Condition)
             {
-                grid.Nodes[node.unit.Position.y, node.unit.Position.x].walkable = true;
                 node.unit.MoveToPosition(node.unit.Position + unit.Forward * target.knockback);
                 grid.Nodes[obj.Position.y, obj.Position.x].unit = null;
             }
