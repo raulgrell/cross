@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public GameObject player;
     public float cameraSpeed = 16;
     public float horizontalSway = -2;
     public float verticalSway = 8;
     public float horizontalRotation = -8;
     public float verticalRotation = -2;
 
+    private GameObject player;
     private Vector3 offset;
     private Vector3 direction;
 
@@ -18,6 +18,7 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
+        player = FindObjectOfType<PlayerController>().gameObject;
         var initialPosition = transform.position;
         camera = GetComponent<Camera>();
         offset = (player == null)
