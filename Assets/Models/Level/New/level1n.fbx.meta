@@ -1,9 +1,29 @@
 fileFormatVersion: 2
-guid: a5f55f6bd1a130d458b2bc2bac787aca
+guid: 4592be4dc354d474daec6cfd165092ea
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallOrange
+    second: {fileID: 2100000, guid: b1e2a0de96872e84fbae89234e901ed9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPink
+    second: {fileID: 2100000, guid: f8d29c7695b23eb4bb886b99e7bbcf5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPurple
+    second: {fileID: 2100000, guid: 4590e19d20a7aa04995440d7c48a52d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallYellow
+    second: {fileID: 2100000, guid: fdb4501c1068f084bbdf29fe25862faa, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
