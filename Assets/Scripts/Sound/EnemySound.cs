@@ -45,11 +45,13 @@ public class EnemySound : MonoBehaviour
         {
             source.Stop();
         }
+        source.volume = 0.5f;
         int r = Random.Range(0, DeathClip.Length);
         source.PlayOneShot(DeathClip[r]);
     }
     public void onActualDeath()
     {
+
         Destroy(gameObject);
     }
 }

@@ -196,7 +196,7 @@ public class GridCombat : MonoBehaviour
                 node.unit.transform.GetComponent<EnemyAnimation>().HurtAnimation();
                 if (health.Damage(target.damage))
                 {
-                    Destroy(node.unit.gameObject);
+                    node.unit.transform.GetComponent<EnemyAnimation>().DeathAniamtion();
                     node.unit = null;
                     return;
                 }

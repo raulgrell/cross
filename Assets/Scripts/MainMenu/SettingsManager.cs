@@ -5,17 +5,17 @@ using UnityEngine.UI;
 
 public class SettingsManager : MonoBehaviour
 {
-    private AudioSource audio;
+    private AudioSource source;
     private Slider[] sliders = new Slider[3];
 
-    private void Start()
+    private void OnEnable()
     {
-        audio = GetComponent<AudioSource>();
+        source = GetComponent<AudioSource>();
     }
 
     public void changedMusic()
     {
         sliders = FindObjectsOfType<Slider>();
-        Debug.Log(sliders[0].value);
+        source.volume = sliders[0].value;
     }
 }

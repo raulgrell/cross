@@ -1289,6 +1289,10 @@ MonoBehaviour:
   HurtClips:
   - {fileID: 8300000, guid: c24aa308536766244a5825ae541c9b5e, type: 3}
   - {fileID: 8300000, guid: 4ed83e91bb1970b4cbe6353a4ce97074, type: 3}
+  DeathClip:
+  - {fileID: 8300000, guid: 86269e1b0e817494794b0004322e3ea7, type: 3}
+  - {fileID: 8300000, guid: 3f7210eef6a6af340a1d9374a5110bf1, type: 3}
+  - {fileID: 8300000, guid: 36e2216d4781ecc4eb27096099661cbf, type: 3}
 --- !u!1 &1845626759410205726
 GameObject:
   m_ObjectHideFlags: 0

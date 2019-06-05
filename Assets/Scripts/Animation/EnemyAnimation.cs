@@ -7,12 +7,14 @@ public class EnemyAnimation : MonoBehaviour
     internal Animator enemyAnimator;
     private GridUnit input;
     private GridCombat combatInput;
+    private EnemySound sound;
     private string walkingAnimation = "Walking";
     private bool playing;
     private float timer;
 
     void Start()
     {
+        sound = GetComponent<EnemySound>();
         input = GetComponent<GridUnit>();
         combatInput = GetComponent<GridCombat>();
         enemyAnimator = GetComponent<Animator>();
@@ -47,6 +49,11 @@ public class EnemyAnimation : MonoBehaviour
         enemyAnimator.SetFloat("IdleBlend", 1);
         enemyAnimator.SetFloat("WalkingBlend", 1);
 
+    }
+    public void DeathAniamtion()
+    {
+        sound.onDeath();
+        enemyAnimator.Play("Death");
     }
     public void HurtAnimation()
     {
