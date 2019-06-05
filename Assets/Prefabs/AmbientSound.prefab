@@ -4806,7 +4806,7 @@ AudioSource:
   Priority: 256
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 7
+  MaxDistance: 4.71
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -4816,23 +4816,41 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.14285715
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -7.002809
+      outSlope: -7.002809
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      time: 0.2857143
+      value: 0.5
+      inSlope: -1.7507023
+      outSlope: -1.7507023
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5436576
+      value: 0.16363525
+      inSlope: -0.43767557
+      outSlope: -0.43767557
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.8240967
+      value: 0
+      inSlope: -0.14291406
+      outSlope: -0.14291406
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -4898,3 +4916,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9afbb4d8b5c366843a2434c787890507, type: 3}
   - {fileID: 8300000, guid: b45ddf46d9b8d874a8169918aa1c208e, type: 3}
   - {fileID: 8300000, guid: 8b50cead8732baa45955c47c7f595c01, type: 3}
+  - {fileID: 8300000, guid: 28b34365e1bd9744897b24d144e08709, type: 3}
+  - {fileID: 8300000, guid: 5336118bf6ea98a449212e44d1c49449, type: 3}
+  - {fileID: 8300000, guid: d85860add9a26e048894b70d6c37083b, type: 3}

@@ -6,6 +6,7 @@ public class EnemySound : MonoBehaviour
 {
     public AudioClip[] AttackClips;
     public AudioClip[] HurtClips;
+    public AudioClip[] DeathClip;
 
 
     private AudioSource source;
@@ -37,6 +38,19 @@ public class EnemySound : MonoBehaviour
             int r = Random.Range(0, HurtClips.Length);
         source.PlayOneShot(HurtClips[r]);
         
+    }
+    public void onDeath()
+    {
+        if (source.isPlaying)
+        {
+            source.Stop();
+        }
+        int r = Random.Range(0, DeathClip.Length);
+        source.PlayOneShot(DeathClip[r]);
+    }
+    public void onActualDeath()
+    {
+        Destroy(gameObject);
     }
 }
 
