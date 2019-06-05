@@ -2,57 +2,124 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce84f2c0-5a5e-49b3-a6b3-fe0f64450354" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Animations/Door/Door.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Animations/Door/Door.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Animations/Door/DoorAnimation.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Animations/Door/DoorAnimation.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Animations/Sid.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Animations/Sid/Sid.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Animations/Sid/Sid.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Animations/Sid/SidAnimation.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Animations/Sid/SidAnimation.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Walls.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Collections/levels_final.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Collections/levels_final.blend1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Collections/levels_final.blend1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallGold.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallGreen.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallGreen.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallGrey.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallGrey.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallLight.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallLight.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallOrange.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallPink.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallPink.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallPurple.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallRed.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallRed.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallYellow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/commonn.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/level2n.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Level/New/level3n.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ShowScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ShowScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animations/ClownMini/ClownMiniController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Animations/ClownMini/ClownMiniController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Empty.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Empty.playable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Lights/BlueLight.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Lights/BlueLight.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Doors/blue_door_med.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Doors/blue_door_med.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Doors/blue_door_narrow.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Doors/blue_door_narrow.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Doors/blue_door_wide.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Doors/blue_door_wide.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Doors/grey_door_med.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Doors/grey_door_med.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Doors/grey_door_narrow.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Doors/grey_door_narrow.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Doors/grey_door_wide.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Doors/grey_door_wide.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Doors/red_door_med.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Doors/red_door_med.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Doors/red_door_narrow.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Doors/red_door_narrow.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Doors/red_door_wide.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Doors/red_door_wide.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Interior/Tents/Materials/TentRed.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Interior/Tents/Materials/TentRed.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Panels/panel_big.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Panels/panel_big.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Panels/panel_big.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Panels/panel_big.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Mime.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Mime.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Collections/sid.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Collections/sid.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Collections/sid.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Collections/sid.blend1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 002_4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallOrange.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 002_4.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallBrown.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 002_5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 002_5.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallBlue.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 002_6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallPurple.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 002_6.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallDark.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 002_7.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallYellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 002_7.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/Ground.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 002_8.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 002_8.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 009.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallBlue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 009.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 009_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 009_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 009_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 009_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 009_4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 009_4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 009_5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 009_5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 009_6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 009_6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 012.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 012.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 012_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallDark.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 012_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 012_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallGold.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 012_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 012_4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 012_4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 012_5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 012_5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 012_6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 012_6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 014_5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 014_5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 014_6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 014_6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 016.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/Materials/WallBrown.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 016.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 016_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 016_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 016_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 016_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 016_4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 016_4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 016_5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 016_5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 016_6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/Materials/New material 016_6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/New/level1 2.0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/New/level1 2.0.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Collections/levels_final.blend.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/New/level1n.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/level1n.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/New/level1n.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/level1n.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/New/level2 2.0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/New/level2 2.0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/New/level3 2.0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/New/level3 2.0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/level1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/level1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/level2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/level2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/level3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/level3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/levela.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/levela.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/levelb.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/levelb.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/level3n.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/levelc.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/levelc.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/level2n.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/levelcommon.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Level/levelcommon.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Level/New/commonn.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ringmaster/sid.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/ringmaster/sid.fbx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Sid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Sid.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Combat/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Combat/Projectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Envoirment/Panel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Envoirment/Panel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Envoirment/PanelCameraView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Envoirment/PanelCameraView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Exploration/SpecificObjects/DeadMime.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Exploration/SpecificObjects/DeadMime.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Exploration/Traps/Cannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Exploration/Traps/Cannon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Doors/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Doors/Door.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grid/Split.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Grid/Split.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoScene.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoScene/LightingData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoScene/LightingData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene_Profiles.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene_Profiles/Cinecam Profile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene_Profiles/Cinecam Profile.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ModelScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ModelScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RecoveredScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RecoveredScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/CombatLauncher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/CombatLauncher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/CombatProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/CombatProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Exploration/InteractableObj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Exploration/InteractableObj.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Exploration/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Exploration/PlayerInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridPathfinding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridPathfinding.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/SquadController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/SquadController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/UnitController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/UnitController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Exploration/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Exploration/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Exploration/Traps.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Animations/Door.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Exploration/Traps/BoxingGloveTrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Exploration/BoxingGloveTrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Exploration/Traps/BoxingGloveTrap.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Exploration/BoxingGloveTrap.cs.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,36 +129,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="848">
-              <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
-              <folding>
-                <marker date="1559688629060" expanded="false" signature="6:124" ph="..." />
-                <marker date="1559688629060" expanded="true" signature="151:218" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="257:4282" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="796:854" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="872:1046" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="1089:1382" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="1424:1540" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="1594:1934" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="1982:2071" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="2122:2552" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="2605:2701" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="2728:2842" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="2861:3701" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="2890:3695" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="3355:3439" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="3734:3855" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="3901:4114" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="4144:4195" ph="{...}" />
-                <marker date="1559688629060" expanded="true" signature="4229:4280" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatLauncher.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
+            <state relative-caret-position="1056">
               <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
               <folding>
                 <marker date="1559690206637" expanded="false" signature="6:230" ph="..." />
@@ -146,8 +183,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1506">
-              <caret line="136" column="25" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
+            <state relative-caret-position="272">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding>
                 <marker date="1559690528404" expanded="false" signature="6:151" ph="..." />
                 <marker date="1559690528404" expanded="true" signature="176:263" ph="{...}" />
@@ -185,10 +222,26 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/Door.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <marker date="1559697132376" expanded="false" signature="6:78" ph="..." />
+                <marker date="1559697132376" expanded="true" signature="113:451" ph="{...}" />
+                <marker date="1559697132376" expanded="true" signature="238:295" ph="{...}" />
+                <marker date="1559697132376" expanded="true" signature="319:371" ph="{...}" />
+                <marker date="1559697132376" expanded="true" signature="396:449" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
+            <state relative-caret-position="1168">
               <caret line="78" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <marker date="1559689641247" expanded="false" signature="6:128" ph="..." />
@@ -209,7 +262,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridPathfinding.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
+            <state relative-caret-position="848">
               <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
               <folding>
                 <marker date="1559690209215" expanded="false" signature="6:158" ph="..." />
@@ -268,11 +321,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://C:/Program Files/Unity/Hub/Editor/2019.1.2f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.timeline/Runtime/Scripting/PlayableTrack.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="64">
-              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -280,7 +333,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/PlayerInteraction.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="672">
               <caret line="46" column="86" selection-start-line="46" selection-start-column="86" selection-end-line="46" selection-end-column="86" />
               <folding>
                 <marker date="1559690209206" expanded="false" signature="6:126" ph="..." />
@@ -368,7 +421,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Cutscene/Panel.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/SaveManager/SaveManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/Traps/BoxingGloveTrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Components/UpdateRegistry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/Hierarchy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -446,6 +498,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/ComplexBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Graph/Editor/StateGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/ButtonScripted.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Graph/Nodes/ActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Editor/AttackEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MeleeIcon.cs" root0="FORCE_HIGHLIGHTING" />
@@ -536,7 +589,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Exploration/SpecificObjects/DoorScripts.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionAim.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/ActionAttack.cs" />
@@ -587,6 +639,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Combat/CombatLauncher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Combat/CombatProjectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Exploration/Door.cs" />
       </list>
     </option>
   </component>
@@ -603,6 +656,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -621,11 +678,7 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
       <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -715,11 +768,13 @@
       <workItem from="1559309265750" duration="3104000" />
       <workItem from="1559487940764" duration="3949000" />
       <workItem from="1559559316706" duration="13820000" />
+      <workItem from="1559693056476" duration="744000" />
+      <workItem from="1559696998095" duration="1984000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="472032000" />
+    <option name="totallyTimeSpent" value="474760000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -733,7 +788,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28464818" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29104477" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -873,30 +928,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Attacks/UnitAttack.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1376">
-          <caret line="92" column="14" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
-          <folding>
-            <marker date="1559300349444" expanded="false" signature="6:92" ph="..." />
-            <marker date="1559300349444" expanded="true" signature="116:155" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="179:230" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="283:2098" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="504:566" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="611:1051" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="706:1026" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="790:1015" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="1102:1542" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="1197:1517" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="1281:1506" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="1596:2036" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="1691:2011" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="1775:2000" ph="{...}" />
-            <marker date="1559300349444" expanded="true" signature="2142:2279" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Editor/RangedAttackEditor.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2480">
@@ -1548,9 +1579,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+          <folding>
+            <marker date="1559688629060" expanded="false" signature="6:124" ph="..." />
+            <marker date="1559688629060" expanded="true" signature="151:218" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="257:4282" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="796:854" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="872:1046" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="1089:1382" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="1424:1540" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="1594:1934" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="1982:2071" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="2122:2552" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="2605:2701" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="2728:2842" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="2861:3701" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="2890:3695" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="3355:3439" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="3734:3855" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="3901:4114" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="4144:4195" ph="{...}" />
+            <marker date="1559688629060" expanded="true" signature="4229:4280" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatLauncher.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <marker date="1559691669625" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559691669625" expanded="true" signature="123:864" ph="{...}" />
+            <marker date="1559691669625" expanded="true" signature="420:539" ph="{...}" />
+            <marker date="1559691669625" expanded="true" signature="566:862" ph="{...}" />
+            <marker date="1559691669625" expanded="true" signature="650:822" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+          <folding>
+            <marker date="1559690206637" expanded="false" signature="6:230" ph="..." />
+            <marker date="1559690206637" expanded="true" signature="270:5307" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="759:827" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="860:1327" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="1030:1321" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="1086:1311" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="1371:1448" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="1491:1544" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="1586:1670" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="1723:1886" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="1944:2391" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="2451:2548" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="2623:3167" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="2723:3133" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="2783:3123" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="3227:3526" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="3334:3499" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="3587:4072" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="3641:4044" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="4147:4353" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="4384:4639" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="4710:5305" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="4961:5299" ph="{...}" />
+            <marker date="1559690206637" expanded="true" signature="5017:5289" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <marker date="1559690528404" expanded="false" signature="6:151" ph="..." />
+            <marker date="1559690528404" expanded="true" signature="176:263" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="304:7614" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="942:1008" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="1038:1159" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="1078:1153" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="1247:1779" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="1364:1550" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="1598:1738" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="1798:2814" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="1827:2769" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="2857:3376" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="2939:3055" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="3098:3254" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="3436:7207" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="3569:5922" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="3839:5384" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="3945:5179" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="4017:5015" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="4818:4918" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="5233:5370" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="5445:5912" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="5980:6752" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="6163:6568" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="6401:6554" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="6618:6742" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="6817:7201" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="6995:7191" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="7240:7468" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="7493:7540" ph="{...}" />
+            <marker date="1559690528404" expanded="true" signature="7565:7612" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridNode.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
+        <state relative-caret-position="1168">
           <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
             <marker date="1559689641247" expanded="false" signature="6:128" ph="..." />
@@ -1569,7 +1715,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridPathfinding.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
+        <state relative-caret-position="848">
           <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
           <folding>
             <marker date="1559690209215" expanded="false" signature="6:158" ph="..." />
@@ -1607,9 +1753,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatProjectile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding>
+            <marker date="1559692038460" expanded="false" signature="6:83" ph="..." />
+            <marker date="1559692038460" expanded="true" signature="130:1216" ph="{...}" />
+            <marker date="1559692038460" expanded="true" signature="411:658" ph="{...}" />
+            <marker date="1559692038460" expanded="true" signature="685:1028" ph="{...}" />
+            <marker date="1559692038460" expanded="true" signature="717:956" ph="{...}" />
+            <marker date="1559692038460" expanded="true" signature="969:1022" ph="{...}" />
+            <marker date="1559692038460" expanded="true" signature="1118:1214" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Unity/Hub/Editor/2019.1.2f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.timeline/Runtime/Scripting/PlayableTrack.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/PlayerInteraction.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="672">
           <caret line="46" column="86" selection-start-line="46" selection-start-column="86" selection-end-line="46" selection-end-column="86" />
           <folding>
             <marker date="1559690209206" expanded="false" signature="6:126" ph="..." />
@@ -1634,141 +1803,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridUnit.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Exploration/Door.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+        <state relative-caret-position="352">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
-            <marker date="1559688629060" expanded="false" signature="6:124" ph="..." />
-            <marker date="1559688629060" expanded="true" signature="151:218" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="257:4282" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="796:854" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="872:1046" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="1089:1382" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="1424:1540" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="1594:1934" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="1982:2071" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="2122:2552" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="2605:2701" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="2728:2842" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="2861:3701" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="2890:3695" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="3355:3439" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="3734:3855" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="3901:4114" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="4144:4195" ph="{...}" />
-            <marker date="1559688629060" expanded="true" signature="4229:4280" ph="{...}" />
+            <marker date="1559697132376" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559697132376" expanded="true" signature="113:451" ph="{...}" />
+            <marker date="1559697132376" expanded="true" signature="238:295" ph="{...}" />
+            <marker date="1559697132376" expanded="true" signature="319:371" ph="{...}" />
+            <marker date="1559697132376" expanded="true" signature="396:449" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridLayer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
-          <folding>
-            <marker date="1559690206637" expanded="false" signature="6:230" ph="..." />
-            <marker date="1559690206637" expanded="true" signature="270:5307" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="759:827" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="860:1327" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="1030:1321" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="1086:1311" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="1371:1448" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="1491:1544" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="1586:1670" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="1723:1886" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="1944:2391" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="2451:2548" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="2623:3167" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="2723:3133" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="2783:3123" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="3227:3526" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="3334:3499" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="3587:4072" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="3641:4044" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="4147:4353" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="4384:4639" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="4710:5305" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="4961:5299" ph="{...}" />
-            <marker date="1559690206637" expanded="true" signature="5017:5289" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatLauncher.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <marker date="1559691669625" expanded="false" signature="6:78" ph="..." />
-            <marker date="1559691669625" expanded="true" signature="123:864" ph="{...}" />
-            <marker date="1559691669625" expanded="true" signature="420:539" ph="{...}" />
-            <marker date="1559691669625" expanded="true" signature="566:862" ph="{...}" />
-            <marker date="1559691669625" expanded="true" signature="650:822" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridCombat.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1506">
-          <caret line="136" column="25" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
-          <folding>
-            <marker date="1559690528404" expanded="false" signature="6:151" ph="..." />
-            <marker date="1559690528404" expanded="true" signature="176:263" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="304:7614" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="942:1008" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="1038:1159" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="1078:1153" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="1247:1779" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="1364:1550" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="1598:1738" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="1798:2814" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="1827:2769" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="2857:3376" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="2939:3055" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="3098:3254" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="3436:7207" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="3569:5922" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="3839:5384" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="3945:5179" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="4017:5015" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="4818:4918" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="5233:5370" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="5445:5912" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="5980:6752" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="6163:6568" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="6401:6554" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="6618:6742" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="6817:7201" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="6995:7191" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="7240:7468" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="7493:7540" ph="{...}" />
-            <marker date="1559690528404" expanded="true" signature="7565:7612" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatProjectile.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding>
-            <marker date="1559692038460" expanded="false" signature="6:83" ph="..." />
-            <marker date="1559692038460" expanded="true" signature="130:1216" ph="{...}" />
-            <marker date="1559692038460" expanded="true" signature="411:658" ph="{...}" />
-            <marker date="1559692038460" expanded="true" signature="685:1028" ph="{...}" />
-            <marker date="1559692038460" expanded="true" signature="717:956" ph="{...}" />
-            <marker date="1559692038460" expanded="true" signature="969:1022" ph="{...}" />
-            <marker date="1559692038460" expanded="true" signature="1118:1214" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Unity/Hub/Editor/2019.1.2f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.timeline/Runtime/Scripting/PlayableTrack.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>

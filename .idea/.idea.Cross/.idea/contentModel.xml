@@ -599,6 +599,7 @@
             </e>
           </e>
           <e p="Exploration" t="Include">
+            <e p="BoxingGloveTrap.cs" t="Include" />
             <e p="CannonBallController.cs" t="Include" />
             <e p="CannonController.cs" t="Include" />
             <e p="Checkpoint.cs" t="Include" />
@@ -608,9 +609,6 @@
             <e p="SecurityCameraMovement.cs" t="Include" />
             <e p="SecurityCameraTexture.cs" t="Include" />
             <e p="SecurityCameraView.cs" t="Include" />
-            <e p="Traps" t="Include">
-              <e p="BoxingGloveTrap.cs" t="Include" />
-            </e>
           </e>
           <e p="Grid" t="Include">
             <e p="GridBlocks.cs" t="Include" />
